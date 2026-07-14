@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Python ${{ matrix.python-version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Poetry
+        run: pipx install "poetry>=2.0,<3.0"
+
+      - name: Configure Poetry
+        run: poetry config virtualenvs.in-project true
+
+      - name: Install dependencies
+        run: poetry install --with dev --no-interaction --no-ansi
+
+      - name: Check Poetry metadata
+        run: poetry check --lock
+
+      - name: Lint
+        run: poetry run ruff check .
+
+      - name: Format check
+        run: poetry run ruff format --check .
+
+      - name: Type check
+        run: poetry run mypy
+
+      - name: Run pre-commit hooks
+        run: poetry run pre-commit run --all-files
+
+      - name: Run tests
+        run: poetry run pytest
+
+      - name: Validate source registry
+        run: poetry run aikb validate
+
+      - name: Build package
+        run: poetry build --no-interaction --no-ansi
+
+      - name: Build documentation
+        run: poetry run mkdocs build --strict

@@ -1,0 +1,57 @@
+sources:
+  - id: openai_agents_docs
+    name: OpenAI Agents SDK Documentation
+    category: agent_framework
+    authority: primary
+    type: documentation
+    url: https://openai.github.io/openai-agents-python/
+    release_url: https://openai.github.io/openai-agents-python/release/
+    priority: 100
+    enabled: true
+
+  - id: openai_platform_docs
+    name: OpenAI Platform Documentation
+    category: platform
+    authority: primary
+    type: documentation
+    url: https://platform.openai.com/docs/
+    priority: 100
+    enabled: true
+
+  - id: langgraph_docs
+    name: LangGraph Documentation
+    category: agent_framework
+    authority: primary
+    type: documentation
+    url: https://docs.langchain.com/oss/python/langgraph/overview
+    release_url: https://docs.langchain.com/oss/python/releases/changelog
+    priority: 100
+    enabled: true
+
+  - id: langgraph_github
+    name: LangGraph GitHub
+    category: agent_framework
+    authority: primary
+    type: github
+    url: https://github.com/langchain-ai/langgraph
+    release_url: https://github.com/langchain-ai/langgraph/releases
+    priority: 95
+    enabled: true
+
+  - id: arxiv_cs_ai
+    name: arXiv Artificial Intelligence
+    category: research
+    authority: primary
+    type: rss
+    url: https://export.arxiv.org/rss/cs.AI
+    priority: 60
+    enabled: true
+
+  - id: arxiv_cs_se
+    name: arXiv Software Engineering
+    category: research
+    authority: primary
+    type: rss
+    url: https://export.arxiv.org/rss/cs.SE
+    priority: 60
+    enabled: true

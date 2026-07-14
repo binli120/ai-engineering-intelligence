@@ -1,0 +1,29 @@
+name: Weekly digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pipx install "poetry>=2.0,<3.0"
+      - run: poetry install --with dev --no-interaction --no-ansi
+      - run: poetry run aikb validate
+      - run: poetry run aikb digest
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "docs: generate weekly AI engineering digest"
+          title: "Weekly AI engineering digest"
+          body: "Automated digest scaffold. Human editorial review is required before merge."
+          branch: "automation/weekly-digest"

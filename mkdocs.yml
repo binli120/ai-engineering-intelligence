@@ -1,0 +1,21 @@
+site_name: AI Engineering Intelligence
+site_description: Curated AI coding, agents, MCP, tutorials, and production engineering
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Start Here: start-here.md
+  - Agent Engineering:
+      - Overview: agents/index.md
+      - Framework comparison: agents/framework-comparison.md
+      - OpenAI Agents SDK: agents/openai-agents-sdk.md
+      - LangGraph: agents/langgraph.md
+  - MCP: mcp/index.md
+  - AI Coding: coding/index.md
+  - Tutorials: tutorials/index.md
+  - Weekly Updates: weekly/index.md
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
