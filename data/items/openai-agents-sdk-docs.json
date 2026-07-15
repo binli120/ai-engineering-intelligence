@@ -1,0 +1,22 @@
+{
+  "id": "openai-agents-sdk-docs",
+  "title": "OpenAI Agents SDK documentation",
+  "source_id": "openai_agents_docs",
+  "url": "https://openai.github.io/openai-agents-python/",
+  "published_at": null,
+  "collected_at": "2026-07-14T00:00:00Z",
+  "category": "agent_framework",
+  "summary": "Official documentation for the OpenAI Agents SDK, covering agents, tools, handoffs, guardrails, sessions, running agents, tracing, realtime agents, sandbox agents, MCP tools, and release notes.",
+  "evidence_quality": 100,
+  "engineering_impact": 95,
+  "maturity": "stable",
+  "tags": [
+    "openai",
+    "agents",
+    "tools",
+    "handoffs",
+    "guardrails",
+    "sessions",
+    "tracing"
+  ]
+}
