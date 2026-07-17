@@ -1,0 +1,22 @@
+{
+  "id": "mcp-specification",
+  "title": "Model Context Protocol specification",
+  "source_id": "mcp_spec",
+  "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+  "published_at": null,
+  "collected_at": "2026-07-15T00:00:00Z",
+  "category": "mcp",
+  "summary": "Official Model Context Protocol specification covering protocol versioning, lifecycle negotiation, JSON-RPC communication, server primitives such as tools, resources, and prompts, client primitives such as sampling and elicitation, and transport behavior.",
+  "evidence_quality": 100,
+  "engineering_impact": 95,
+  "maturity": "stable",
+  "tags": [
+    "mcp",
+    "tools",
+    "resources",
+    "prompts",
+    "json-rpc",
+    "stdio",
+    "streamable-http"
+  ]
+}

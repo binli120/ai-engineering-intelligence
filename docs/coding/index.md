@@ -12,5 +12,10 @@ Coverage will include:
 - migrations and refactoring,
 - terminal and browser integration,
 - coding-agent security,
+- AI skills and reusable agent workflows,
 - benchmark interpretation,
 - workflow comparisons across coding assistants.
+
+## Topics
+
+- [AI Skills](ai-skills.md)

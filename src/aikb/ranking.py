@@ -12,6 +12,11 @@ MATURITY_WEIGHT = {
 
 
 def score(item: KnowledgeItem, source: Source) -> float:
+    """Compute a weighted relevance score for a knowledge item.
+
+    The score combines engineering impact, evidence quality, source priority,
+    maturity, and authority into a single normalized value.
+    """
     weighted = (
         0.35 * item.engineering_impact
         + 0.30 * item.evidence_quality

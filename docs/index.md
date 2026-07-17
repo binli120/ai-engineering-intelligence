@@ -5,8 +5,11 @@ This knowledge base tracks practical AI engineering:
 - AI coding workflows and assistants
 - Agent architecture and development frameworks
 - Model Context Protocol
+- MCP server security and production integration patterns
 - Retrieval and memory
+- Source-grounded learning tools
 - Evaluation, observability, security, and deployment
+- RAG architecture, evaluation gates, and operational telemetry
 - High-quality tutorials and runnable examples
 - Important releases, papers, and engineering patterns
 

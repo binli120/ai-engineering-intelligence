@@ -18,6 +18,123 @@ sources:
     priority: 100
     enabled: true
 
+  - id: openai_responses_api_docs
+    name: OpenAI Responses API Documentation
+    category: platform
+    authority: primary
+    type: documentation
+    url: https://platform.openai.com/docs/api-reference/responses
+    priority: 100
+    enabled: true
+
+  - id: mcp_docs
+    name: Model Context Protocol Documentation
+    category: mcp
+    authority: primary
+    type: documentation
+    url: https://modelcontextprotocol.io/
+    priority: 100
+    enabled: true
+
+  - id: mcp_spec
+    name: Model Context Protocol Specification
+    category: mcp
+    authority: primary
+    type: documentation
+    url: https://modelcontextprotocol.io/specification/2025-06-18
+    priority: 100
+    enabled: true
+
+  - id: openai_file_search_docs
+    name: OpenAI File Search Documentation
+    category: rag
+    authority: primary
+    type: documentation
+    url: https://developers.openai.com/api/docs/guides/tools-file-search
+    priority: 95
+    enabled: true
+
+  - id: openai_embeddings_docs
+    name: OpenAI Embeddings Documentation
+    category: rag
+    authority: primary
+    type: documentation
+    url: https://developers.openai.com/api/docs/guides/embeddings
+    priority: 95
+    enabled: true
+
+  - id: openai_evals_docs
+    name: OpenAI Evals Documentation
+    category: evaluation
+    authority: primary
+    type: documentation
+    url: https://developers.openai.com/api/docs/guides/evals
+    priority: 95
+    enabled: true
+
+  - id: opentelemetry_docs
+    name: OpenTelemetry Documentation
+    category: observability
+    authority: primary
+    type: documentation
+    url: https://opentelemetry.io/docs/
+    priority: 90
+    enabled: true
+
+  - id: owasp_llm_top_10
+    name: OWASP Top 10 for LLM Applications
+    category: security
+    authority: primary
+    type: documentation
+    url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+    priority: 95
+    enabled: true
+
+  - id: nist_ai_rmf
+    name: NIST AI Risk Management Framework
+    category: security
+    authority: primary
+    type: documentation
+    url: https://www.nist.gov/itl/ai-risk-management-framework
+    priority: 90
+    enabled: true
+
+  - id: agent_skills_standard
+    name: Agent Skills Standard
+    category: ai_coding
+    authority: primary
+    type: documentation
+    url: https://agentskills.io/
+    priority: 95
+    enabled: true
+
+  - id: claude_code_skills_docs
+    name: Claude Code Skills Documentation
+    category: ai_coding
+    authority: primary
+    type: documentation
+    url: https://code.claude.com/docs/en/skills
+    priority: 90
+    enabled: true
+
+  - id: google_notebooklm
+    name: Google NotebookLM
+    category: learning_tools
+    authority: primary
+    type: documentation
+    url: https://notebooklm.google/
+    priority: 90
+    enabled: true
+
+  - id: arxiv_notebooklm_active_learning
+    name: NotebookLM Active Learning Study
+    category: learning_tools
+    authority: secondary
+    type: paper
+    url: https://arxiv.org/abs/2504.09720
+    priority: 70
+    enabled: true
+
   - id: langgraph_docs
     name: LangGraph Documentation
     category: agent_framework

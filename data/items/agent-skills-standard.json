@@ -1,0 +1,20 @@
+{
+  "id": "agent-skills-standard",
+  "title": "Agent Skills standard",
+  "source_id": "agent_skills_standard",
+  "url": "https://agentskills.io/",
+  "published_at": null,
+  "collected_at": "2026-07-14T00:00:00Z",
+  "category": "ai_coding",
+  "summary": "Open format for packaging AI agent capabilities as reusable skill directories with a SKILL.md entrypoint, metadata, instructions, and optional scripts, references, assets, and templates.",
+  "evidence_quality": 95,
+  "engineering_impact": 90,
+  "maturity": "stable",
+  "tags": [
+    "skills",
+    "agents",
+    "progressive-disclosure",
+    "workflow-automation",
+    "ai-coding"
+  ]
+}

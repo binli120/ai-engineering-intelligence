@@ -1,0 +1,21 @@
+{
+  "id": "ai-observability-tracing",
+  "title": "AI observability and tracing",
+  "source_id": "opentelemetry_docs",
+  "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+  "published_at": null,
+  "collected_at": "2026-07-15T00:00:00Z",
+  "category": "observability",
+  "summary": "Observability pattern for AI systems combining traces, metrics, logs, model usage, retrieval results, tool calls, guardrails, eval scores, and human feedback.",
+  "evidence_quality": 90,
+  "engineering_impact": 95,
+  "maturity": "stable",
+  "tags": [
+    "observability",
+    "tracing",
+    "metrics",
+    "logs",
+    "agent-ops",
+    "telemetry"
+  ]
+}

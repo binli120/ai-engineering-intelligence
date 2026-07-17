@@ -1,0 +1,20 @@
+{
+  "id": "openai-evals-docs",
+  "title": "OpenAI evals documentation",
+  "source_id": "openai_evals_docs",
+  "url": "https://developers.openai.com/api/docs/guides/evals",
+  "published_at": null,
+  "collected_at": "2026-07-15T00:00:00Z",
+  "category": "evaluation",
+  "summary": "Official OpenAI documentation for creating and running evals, including datasets, graders, workflows, and best practices for measuring AI application behavior.",
+  "evidence_quality": 100,
+  "engineering_impact": 95,
+  "maturity": "stable",
+  "tags": [
+    "evals",
+    "graders",
+    "regression-testing",
+    "quality",
+    "release-gates"
+  ]
+}

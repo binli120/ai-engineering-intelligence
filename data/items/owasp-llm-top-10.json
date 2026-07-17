@@ -1,0 +1,22 @@
+{
+  "id": "owasp-llm-top-10",
+  "title": "OWASP Top 10 for LLM Applications",
+  "source_id": "owasp_llm_top_10",
+  "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+  "published_at": null,
+  "collected_at": "2026-07-15T00:00:00Z",
+  "category": "security",
+  "summary": "OWASP guidance for security risks in LLM applications, including prompt injection, insecure output handling, sensitive information disclosure, insecure plugin design, excessive agency, supply-chain vulnerabilities, denial of service, and overreliance.",
+  "evidence_quality": 95,
+  "engineering_impact": 100,
+  "maturity": "stable",
+  "tags": [
+    "security",
+    "prompt-injection",
+    "tool-security",
+    "excessive-agency",
+    "sensitive-data",
+    "supply-chain",
+    "owasp"
+  ]
+}

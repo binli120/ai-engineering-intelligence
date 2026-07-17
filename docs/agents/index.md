@@ -18,3 +18,10 @@ An agent is a model-driven system that selects actions, uses tools, maintains re
 ## Engineering rule
 
 Treat an agent as a distributed application with a probabilistic decision component—not as a large prompt.
+
+## Topics
+
+- [Framework comparison](framework-comparison.md)
+- [Responses API](responses-api.md)
+- [OpenAI Agents SDK](openai-agents-sdk.md)
+- [LangGraph](langgraph.md)

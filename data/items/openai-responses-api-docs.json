@@ -1,0 +1,22 @@
+{
+  "id": "openai-responses-api-docs",
+  "title": "OpenAI Responses API documentation",
+  "source_id": "openai_responses_api_docs",
+  "url": "https://platform.openai.com/docs/api-reference/responses",
+  "published_at": null,
+  "collected_at": "2026-07-14T00:00:00Z",
+  "category": "platform",
+  "summary": "Official API reference for creating, retrieving, cancelling, compacting, streaming, storing, and continuing model responses with text, image, file inputs, structured output, tools, conversation state, and background execution.",
+  "evidence_quality": 100,
+  "engineering_impact": 100,
+  "maturity": "stable",
+  "tags": [
+    "openai",
+    "responses-api",
+    "tools",
+    "structured-outputs",
+    "conversation-state",
+    "streaming",
+    "background-mode"
+  ]
+}

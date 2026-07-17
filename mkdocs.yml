@@ -2,16 +2,29 @@ site_name: AI Engineering Intelligence
 site_description: Curated AI coding, agents, MCP, tutorials, and production engineering
 theme:
   name: material
+extra_css:
+  - assets/learning-tools.css
+extra_javascript:
+  - assets/learning-tools.js
 nav:
   - Home: index.md
   - Start Here: start-here.md
   - Agent Engineering:
       - Overview: agents/index.md
       - Framework comparison: agents/framework-comparison.md
+      - Responses API: agents/responses-api.md
       - OpenAI Agents SDK: agents/openai-agents-sdk.md
       - LangGraph: agents/langgraph.md
   - MCP: mcp/index.md
-  - AI Coding: coding/index.md
+  - AI Coding:
+      - Overview: coding/index.md
+      - AI Skills: coding/ai-skills.md
+  - Learning Tools: learning-tools/index.md
+  - Production AI:
+      - RAG: production/rag.md
+      - Evaluation: production/evaluation.md
+      - Observability: production/observability.md
+      - Security: production/security.md
   - Tutorials: tutorials/index.md
   - Weekly Updates: weekly/index.md
 markdown_extensions:
