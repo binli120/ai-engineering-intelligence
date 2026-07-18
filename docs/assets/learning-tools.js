@@ -4,6 +4,7 @@
   var MAX_ITEMS = 8;
   var NOTES_KEY = "aikb.notes.v1";
   var MIND_MAP_KEY = "aikb.mindmaps.v1";
+  var CHAT_KEY = "aikb.chat.v1";
   var sourcePreviewCache = null;
 
   function ready(callback) {
@@ -60,7 +61,7 @@
       .map(function (node) {
         return {
           level: node.tagName.toLowerCase(),
-          text: clean(node.textContent.replace("#", "")),
+          text: clean(node.textContent.replace(/[¶#]/g, "")),
         };
       })
       .filter(function (item) {
@@ -91,7 +92,7 @@
 
   function sectionText(root, headingText) {
     var match = Array.prototype.slice.call(root.querySelectorAll("h2, h3")).find(function (node) {
-      return clean(node.textContent.replace("#", "")) === headingText;
+      return clean(node.textContent.replace(/[¶#]/g, "")) === headingText;
     });
     if (!match) {
       return "";
@@ -139,7 +140,9 @@
     var close = document.createElement("button");
     close.className = "aikb-study-button aikb-study-button--quiet";
     close.type = "button";
-    close.textContent = "Close";
+    close.textContent = "×";
+    close.setAttribute("aria-label", "Close");
+    close.setAttribute("title", "Close");
     close.addEventListener("click", function () {
       output.dataset.open = "false";
       stopAudio();
@@ -1016,7 +1019,7 @@
     panel.innerHTML =
       "<div class=\"aikb-notes-panel__header\"><div><span>Notes</span><strong>" +
       notes.length +
-      " saved</strong></div><button type=\"button\" data-notes-close aria-label=\"Close notes\">Close</button></div>" +
+      " saved</strong></div><button type=\"button\" data-notes-close aria-label=\"Close notes\" title=\"Close notes\">×</button></div>" +
       "<div class=\"aikb-notes-actions\"><button type=\"button\" data-note-new>New note</button><button type=\"button\" data-google-docs-export>Save to Google Docs</button></div>" +
       (notes.length
         ? "<div class=\"aikb-notes-list\">" +
@@ -1151,6 +1154,7 @@
     var icons = {
       audio: "<path d=\"M11 5 6 9H3v6h3l5 4V5Z\"></path><path d=\"M15.5 8.5a5 5 0 0 1 0 7\"></path><path d=\"M18.5 5.5a9 9 0 0 1 0 13\"></path>",
       cards: "<rect x=\"3\" y=\"7\" width=\"13\" height=\"10\" rx=\"2\"></rect><path d=\"M7 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-1\"></path>",
+      chat: "<path d=\"M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z\"></path><path d=\"M8 9h8\"></path><path d=\"M8 13h5\"></path>",
       doc: "<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z\"></path><path d=\"M14 2v6h6\"></path>",
       guide: "<path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20\"></path><path d=\"M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15Z\"></path>",
       grid: "<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect>",
@@ -1593,6 +1597,333 @@
       });
   }
 
+  function chatState() {
+    try {
+      var state = JSON.parse(window.localStorage.getItem(CHAT_KEY) || "{}");
+      return state && typeof state === "object" ? state : {};
+    } catch (_error) {
+      return {};
+    }
+  }
+
+  function saveChatState(state) {
+    try {
+      window.localStorage.setItem(CHAT_KEY, JSON.stringify(state));
+    } catch (_error) {
+      // Chat remains usable when storage is disabled or full.
+    }
+  }
+
+  function chatConfig() {
+    var state = chatState();
+    return {
+      endpoint: state.endpoint || "http://127.0.0.1:11434",
+      model: state.model || "gemma3:1b",
+    };
+  }
+
+  function pageChatHistory() {
+    var state = chatState();
+    return state.history && Array.isArray(state.history[location.pathname])
+      ? state.history[location.pathname]
+      : [];
+  }
+
+  function savePageChatHistory(messages) {
+    var state = chatState();
+    state.history = state.history || {};
+    state.history[location.pathname] = messages.slice(-30);
+    saveChatState(state);
+  }
+
+  function chatChunks(reader) {
+    var chunks = [];
+    var current = { heading: pageTitle(reader), parts: [] };
+    Array.prototype.slice.call(reader.querySelectorAll("h1, h2, h3, p, li, pre")).forEach(
+      function (node) {
+        if (node.closest(".aikb-source-preview, .aikb-study-panel")) {
+          return;
+        }
+        var text = clean(node.textContent);
+        if (!text) {
+          return;
+        }
+        if (/^H[1-3]$/.test(node.tagName)) {
+          if (current.parts.length) {
+            chunks.push({ heading: current.heading, text: current.parts.join(" ") });
+          }
+          current = { heading: clean(text.replace("#", "")), parts: [] };
+        } else {
+          current.parts.push(text);
+        }
+      }
+    );
+    if (current.parts.length) {
+      chunks.push({ heading: current.heading, text: current.parts.join(" ") });
+    }
+    return chunks.filter(function (chunk) {
+      return chunk.text.length > 40;
+    });
+  }
+
+  function retrieveChatContext(reader, question) {
+    var queryTerms = clean(question)
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, " ")
+      .split(/\s+/)
+      .filter(function (term) {
+        return term.length > 2 && !COMMON_WORDS[term];
+      });
+    return chatChunks(reader)
+      .map(function (chunk, index) {
+        var haystack = (chunk.heading + " " + chunk.text).toLowerCase();
+        var score = queryTerms.reduce(function (total, term) {
+          return total + (haystack.indexOf(term) === -1 ? 0 : 1);
+        }, 0);
+        return { chunk: chunk, score: score, index: index };
+      })
+      .sort(function (left, right) {
+        return right.score - left.score || left.index - right.index;
+      })
+      .slice(0, 8)
+      .map(function (ranked) {
+        return "## " + ranked.chunk.heading + "\n" + truncate(ranked.chunk.text, 1800);
+      })
+      .join("\n\n")
+      .slice(0, 12000);
+  }
+
+  function relatedChatSections(reader, answer) {
+    var normalized = answer.toLowerCase();
+    return headings(reader)
+      .map(function (heading) {
+        return heading.text;
+      })
+      .filter(function (heading) {
+        return normalized.indexOf(heading.toLowerCase()) !== -1;
+      })
+      .slice(0, 4);
+  }
+
+  function renderChatMessages(panel, reader, messages) {
+    var conversation = panel.querySelector(".aikb-chat__messages");
+    conversation.innerHTML = "";
+    if (!messages.length) {
+      conversation.innerHTML =
+        "<div class=\"aikb-chat__welcome\"><span>Grounded in this page</span><strong>What would you like to understand?</strong><p>Ask for an explanation, compare concepts, or explore a specific section.</p></div>";
+      return;
+    }
+    messages.forEach(function (message) {
+      var article = document.createElement("article");
+      article.className = "aikb-chat__message aikb-chat__message--" + message.role;
+      var label = document.createElement("small");
+      label.textContent = message.role === "user" ? "You" : "Learning guide";
+      var body = document.createElement("p");
+      body.textContent = message.content;
+      article.appendChild(label);
+      article.appendChild(body);
+      if (message.role === "assistant") {
+        var sections = relatedChatSections(reader, message.content);
+        if (sections.length) {
+          var links = document.createElement("div");
+          links.className = "aikb-chat__section-links";
+          sections.forEach(function (section) {
+            var button = document.createElement("button");
+            button.type = "button";
+            button.dataset.chatSection = section;
+            button.textContent = "Open " + section;
+            links.appendChild(button);
+          });
+          article.appendChild(links);
+        }
+      }
+      conversation.appendChild(article);
+    });
+    conversation.scrollTop = conversation.scrollHeight;
+  }
+
+  function streamOllamaChat(config, messages, onToken, signal) {
+    var endpoint = config.endpoint.replace(/\/+$/, "") + "/api/chat";
+    return fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ model: config.model, messages: messages, stream: true }),
+      signal: signal,
+    }).then(function (response) {
+      if (!response.ok) {
+        throw new Error("Ollama returned " + response.status + ".");
+      }
+      if (!response.body || !response.body.getReader) {
+        return response.json().then(function (payload) {
+          onToken((payload.message && payload.message.content) || "");
+        });
+      }
+      var reader = response.body.getReader();
+      var decoder = new TextDecoder();
+      var buffer = "";
+      function read() {
+        return reader.read().then(function (result) {
+          buffer += decoder.decode(result.value || new Uint8Array(), { stream: !result.done });
+          var lines = buffer.split("\n");
+          buffer = result.done ? "" : lines.pop();
+          lines.forEach(function (line) {
+            if (!line.trim()) {
+              return;
+            }
+            var payload = JSON.parse(line);
+            if (payload.message && payload.message.content) {
+              onToken(payload.message.content);
+            }
+            if (payload.error) {
+              throw new Error(payload.error);
+            }
+          });
+          return result.done ? undefined : read();
+        });
+      }
+      return read();
+    });
+  }
+
+  function renderChatPanel(panel, reader) {
+    var config = chatConfig();
+    var messages = pageChatHistory();
+    panel.dataset.open = "true";
+    panel.innerHTML =
+      "<div class=\"aikb-chat__header\"><div><span>Learning chat</span><small>Local · " +
+      escapeHtml(config.model) +
+      "</small></div><button type=\"button\" data-chat-close aria-label=\"Close chat\" title=\"Close chat\">×</button></div>" +
+      "<details class=\"aikb-chat__settings\"><summary>Model settings</summary><label>Ollama URL<input name=\"chat-endpoint\" type=\"url\" value=\"" +
+      escapeHtml(config.endpoint) +
+      "\"></label><label>Model<input name=\"chat-model\" value=\"" +
+      escapeHtml(config.model) +
+      "\"></label><button type=\"button\" data-chat-save-settings>Save settings</button></details>" +
+      "<div class=\"aikb-chat__suggestions\"><button type=\"button\" data-chat-prompt=\"Explain the core idea in simpler terms.\">Explain simply</button><button type=\"button\" data-chat-prompt=\"What are the main engineering tradeoffs?\">Compare tradeoffs</button><button type=\"button\" data-chat-prompt=\"Quiz me on the most important concepts.\">Quiz me</button></div>" +
+      "<div class=\"aikb-chat__messages\" role=\"log\" aria-live=\"polite\"></div>" +
+      "<p class=\"aikb-chat__status\" aria-live=\"polite\"></p>" +
+      "<form class=\"aikb-chat__form\"><textarea name=\"chat-question\" rows=\"3\" placeholder=\"Ask about this page…\" required></textarea><div><small>Enter to send · Shift+Enter for a new line</small><button type=\"submit\">Send</button></div></form>";
+    renderChatMessages(panel, reader, messages);
+
+    var form = panel.querySelector(".aikb-chat__form");
+    var textarea = form.querySelector("textarea");
+    var status = panel.querySelector(".aikb-chat__status");
+    var submit = form.querySelector("button[type='submit']");
+    function submitQuestion(question) {
+      question = clean(question);
+      if (!question || submit.disabled) {
+        return;
+      }
+      config = chatConfig();
+      messages.push({ role: "user", content: question });
+      messages.push({ role: "assistant", content: "" });
+      renderChatMessages(panel, reader, messages);
+      submit.disabled = true;
+      textarea.disabled = true;
+      status.textContent = "Reading the most relevant sections…";
+      var context = retrieveChatContext(reader, question);
+      var requestMessages = [
+        {
+          role: "system",
+          content:
+            "You are a concise learning guide for the current documentation page. Answer only from the supplied context. If the context is insufficient, say what is missing. Cite section names in plain text. Explain relationships and tradeoffs; do not invent APIs or facts.\n\nPAGE CONTEXT\n" +
+            context,
+        },
+      ].concat(
+        messages.slice(0, -1).slice(-8).map(function (message) {
+          return { role: message.role, content: message.content };
+        })
+      );
+      var answer = "";
+      streamOllamaChat(
+        config,
+        requestMessages,
+        function (token) {
+          answer += token;
+          messages[messages.length - 1].content = answer;
+          renderChatMessages(panel, reader, messages);
+          status.textContent = "Generating with " + config.model + "…";
+        },
+        new AbortController().signal
+      )
+        .then(function () {
+          if (!answer) {
+            throw new Error("The model returned an empty response.");
+          }
+          savePageChatHistory(messages);
+          status.textContent = "Answer grounded in this page.";
+        })
+        .catch(function (error) {
+          messages.pop();
+          savePageChatHistory(messages);
+          renderChatMessages(panel, reader, messages);
+          status.textContent =
+            error.name === "AbortError"
+              ? "Generation stopped."
+              : "Could not reach Ollama. Start Ollama, pull " +
+                config.model +
+                ", and allow this site's origin. " +
+                error.message;
+        })
+        .finally(function () {
+          submit.disabled = false;
+          textarea.disabled = false;
+          textarea.value = "";
+          textarea.focus();
+        });
+    }
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      submitQuestion(textarea.value);
+    });
+    textarea.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        form.requestSubmit();
+      }
+    });
+    panel.querySelectorAll("[data-chat-prompt]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        textarea.value = button.dataset.chatPrompt;
+        submitQuestion(textarea.value);
+      });
+    });
+    panel.querySelector("[data-chat-close]").addEventListener("click", function () {
+      panel.dataset.open = "false";
+    });
+    panel.querySelector("[data-chat-save-settings]").addEventListener("click", function () {
+      var endpoint = clean(panel.querySelector("[name='chat-endpoint']").value);
+      var model = clean(panel.querySelector("[name='chat-model']").value);
+      if (!/^https?:\/\//.test(endpoint) || !model) {
+        status.textContent = "Enter a valid HTTP Ollama URL and model name.";
+        return;
+      }
+      var state = chatState();
+      state.endpoint = endpoint;
+      state.model = model;
+      saveChatState(state);
+      status.textContent = "Model settings saved.";
+      panel.querySelector(".aikb-chat__header small").textContent = "Local · " + model;
+    });
+    panel.addEventListener("click", function (event) {
+      var sectionButton = event.target.closest("[data-chat-section]");
+      if (!sectionButton) {
+        return;
+      }
+      var target = Array.prototype.slice.call(reader.querySelectorAll("h2, h3")).find(
+        function (heading) {
+          return clean(heading.textContent.replace(/[¶#]/g, "")) === sectionButton.dataset.chatSection;
+        }
+      );
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        target.classList.add("aikb-knowledge-focus");
+        window.setTimeout(function () {
+          target.classList.remove("aikb-knowledge-focus");
+        }, 2200);
+      }
+    });
+  }
+
   function buildWorkspace() {
     var root = article();
     if (!root || root.querySelector(".aikb-workspace")) {
@@ -1631,7 +1962,8 @@
       toolButton("mindmap", "map", "Mind Map") +
       toolButton("flashcards", "cards", "Flashcards") +
       toolButton("quiz", "quiz", "Quiz") +
-      "</div><div class=\"aikb-study-panel__output\" aria-live=\"polite\"></div><div class=\"aikb-notes-panel\" aria-live=\"polite\"></div></aside>";
+      toolButton("chat", "chat", "Learning Chat") +
+      "</div><div class=\"aikb-study-panel__output\" aria-live=\"polite\"></div><div class=\"aikb-chat-panel\" aria-live=\"polite\"></div><div class=\"aikb-notes-panel\" aria-live=\"polite\"></div></aside>";
 
     root.innerHTML = "";
     root.appendChild(appHeader);
@@ -1674,6 +2006,7 @@
     }
 
     var output = workspace.querySelector(".aikb-study-panel__output");
+    var chatPanel = workspace.querySelector(".aikb-chat-panel");
     var topicHtml = reader.innerHTML;
 
     workspace.addEventListener("click", function (event) {
@@ -1764,6 +2097,7 @@
         return;
       }
       var tool = button.getAttribute("data-tool");
+      chatPanel.dataset.open = "false";
       if (tool === "quiz") {
         renderQuiz(reader, output);
       } else if (tool === "flashcards") {
@@ -1775,6 +2109,9 @@
         renderMindMap(reader, output, sources, topicHtml);
       } else if (tool === "guide") {
         renderGuide(reader, output);
+      } else if (tool === "chat") {
+        output.dataset.open = "false";
+        renderChatPanel(chatPanel, reader);
       }
     });
   }

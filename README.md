@@ -50,6 +50,20 @@ scripts/aikb run
 
 `scripts/aikb sources` builds `docs/assets/source-previews.json`, a server-side cache of external source excerpts used by the in-app source preview panel.
 
+## Local learning chat
+
+The Studio panel includes a page-grounded Learning Chat powered by a free local Ollama model.
+Install Ollama, pull the default lightweight model, and allow the local MkDocs origin:
+
+```bash
+ollama pull gemma3:1b
+OLLAMA_ORIGINS=http://127.0.0.1:8001 ollama serve
+```
+
+Start the app with `scripts/aikb run`, open a handbook page, and select **Learning Chat** in
+Studio. Model and Ollama URL settings are available inside the chat panel. Chat history is stored
+per page in browser `localStorage`; page excerpts are sent only to the configured Ollama endpoint.
+
 Install local hooks with:
 
 ```bash

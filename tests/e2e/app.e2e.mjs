@@ -77,7 +77,7 @@ async function workspaceTest(page) {
   await expectVisible(page, ".aikb-studio-pane", "studio panel");
 
   const toolCount = await page.locator(".aikb-study-tool").count();
-  assert(toolCount === 5, `Expected 5 study tools, found ${toolCount}.`);
+  assert(toolCount === 6, `Expected 6 study tools, found ${toolCount}.`);
 
   const localSourceRows = await page
     .locator(".aikb-source-item")
@@ -265,6 +265,69 @@ async function mindMapPersistenceAndNavigationTest(page) {
   );
 }
 
+async function groundedLearningChatTest(page) {
+  let chatPayload;
+  await page.route("http://127.0.0.1:11434/api/chat", async (route) => {
+    chatPayload = route.request().postDataJSON();
+    await route.fulfill({
+      status: 200,
+      contentType: "application/x-ndjson",
+      body:
+        '{"message":{"role":"assistant","content":"Architecture explains the main components. "},"done":false}\n' +
+        '{"message":{"role":"assistant","content":"Use the Architecture section to inspect their relationships."},"done":true}\n',
+    });
+  });
+  await page.goto(`${baseUrl}/agents/openai-agents-sdk/`, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => window.localStorage.removeItem("aikb.chat.v1"));
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".aikb-workspace", { timeout: 10_000 });
+
+  await page.locator("[data-tool='chat']").click();
+  await page.waitForSelector(".aikb-chat-panel[data-open='true']");
+  assert(
+    (await page.locator("[name='chat-model']").inputValue()) === "gemma3:1b",
+    "Expected the free local model default."
+  );
+  assert(
+    (await page.locator("[data-chat-prompt]").count()) === 3,
+    "Expected learning-oriented starter prompts."
+  );
+
+  await page.locator("[name='chat-question']").fill("How is the SDK architecture organized?");
+  await page.locator(".aikb-chat__form button[type='submit']").click();
+  await page.waitForFunction(() => {
+    const status = document.querySelector(".aikb-chat__status");
+    return status?.textContent.includes("grounded in this page");
+  });
+  assert(chatPayload?.model === "gemma3:1b", "Expected configured Ollama model in request.");
+  assert(chatPayload?.stream === true, "Expected streaming Ollama chat request.");
+  assert(
+    chatPayload.messages[0].role === "system" &&
+      chatPayload.messages[0].content.includes("PAGE CONTEXT") &&
+      chatPayload.messages[0].content.includes("Architecture"),
+    "Expected a grounded system prompt with retrieved page context."
+  );
+  const assistantText = await page.locator(".aikb-chat__message--assistant p").textContent();
+  assert(assistantText.includes("main components"), "Expected streamed assistant response.");
+  const history = await page.evaluate(() => {
+    const state = JSON.parse(window.localStorage.getItem("aikb.chat.v1"));
+    return state.history[window.location.pathname];
+  });
+  assert(history.length === 2, `Expected persisted user and assistant messages, found ${history.length}.`);
+
+  const sectionLink = page.locator("[data-chat-section='Architecture']");
+  assert((await sectionLink.count()) === 1, "Expected answer-linked Reading navigation.");
+  await sectionLink.click();
+  await page.waitForSelector(".aikb-reader h2.aikb-knowledge-focus", { timeout: 2_000 });
+
+  await page.locator("[data-chat-close]").click();
+  assert(
+    !(await page.locator(".aikb-chat-panel").isVisible()),
+    "Expected the Learning Chat panel to close."
+  );
+  await page.unroute("http://127.0.0.1:11434/api/chat");
+}
+
 async function tutorialRouteTest(page) {
   await page.goto(`${baseUrl}/tutorials/agent-tool-calling/`, { waitUntil: "domcontentloaded" });
   await page.evaluate(() => window.localStorage.clear());
@@ -317,6 +380,7 @@ async function main() {
     await cachedSourcePreviewTest(page);
     await quizLifecycleTest(page);
     await mindMapPersistenceAndNavigationTest(page);
+    await groundedLearningChatTest(page);
     await tutorialRouteTest(page);
     console.log("E2E tests passed.");
   } finally {
