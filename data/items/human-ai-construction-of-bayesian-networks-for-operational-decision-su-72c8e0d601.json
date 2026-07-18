@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "human-ai-construction-of-bayesian-networks-for-operational-decision-su-72c8e0d601",
+  "maturity": "unknown",
+  "published_at": "2026-07-18T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2607.14141v1 Announce Type: new Abstract: Bayesian Belief Networks (BBNs) are powerful tools for decision-making under uncertainty. However, building their structures and estimating parameters are difficult. Currently, researchers must choose between relying on expert judgement or using large datasets to learn the structure and parameters of the network. We propose a new methodology using Large Language Models to bridge the gap between expert opinion and data-driven learning. This approach uses a panel of AI agents to estimate probabilities based on specific personas and context. We then apply a trimmed-mean rule to remove noise from these responses. We develop a six step BBN framework and illustrate it to model customer intention to consult a doctor in an alternative healthcare system. The model reveals that while self efficacy appears to be a major factor, its actual causal impact is small. In contrast, subjective norms have a much stronger effect in modelling customers' intention. The most effective strategy is to improve both confidence and community norms simultaneously.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Human AI Construction of Bayesian Networks for Operational Decision Support -- A Virtual Survey Approach",
+  "url": "https://arxiv.org/abs/2607.14141"
+}

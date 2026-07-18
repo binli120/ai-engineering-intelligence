@@ -1,0 +1,17 @@
+{
+  "category": "ai_coding",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 90,
+  "evidence_quality": 90,
+  "id": "extend-claude-with-skills-claude-code-docs-c2e414e1e3",
+  "maturity": "stable",
+  "published_at": null,
+  "source_id": "claude_code_skills_docs",
+  "summary": "Create, manage, and share skills to extend Claude&#x27;s capabilities in Claude Code. Includes custom commands and bundled skills.",
+  "tags": [
+    "ai-coding",
+    "documentation"
+  ],
+  "title": "Extend Claude with skills - Claude Code Docs",
+  "url": "https://code.claude.com/docs/en/skills"
+}

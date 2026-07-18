@@ -1,0 +1,17 @@
+{
+  "category": "ai_coding",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 95,
+  "evidence_quality": 90,
+  "id": "github-openai-codex-lightweight-coding-agent-that-runs-in-your-termina-45f6ad90eb",
+  "maturity": "stable",
+  "published_at": null,
+  "source_id": "openai_codex_github",
+  "summary": "Lightweight coding agent that runs in your terminal - openai/codex",
+  "tags": [
+    "ai-coding",
+    "github"
+  ],
+  "title": "GitHub - openai/codex: Lightweight coding agent that runs in your terminal \u00b7 GitHub",
+  "url": "https://github.com/openai/codex"
+}

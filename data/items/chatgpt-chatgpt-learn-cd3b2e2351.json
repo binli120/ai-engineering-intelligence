@@ -1,0 +1,17 @@
+{
+  "category": "ai_coding",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 100,
+  "evidence_quality": 90,
+  "id": "chatgpt-chatgpt-learn-cd3b2e2351",
+  "maturity": "stable",
+  "published_at": "2026-07-18T06:50:22Z",
+  "source_id": "openai_codex_docs",
+  "summary": "Use ChatGPT for ambitious work and software development",
+  "tags": [
+    "ai-coding",
+    "documentation"
+  ],
+  "title": "ChatGPT | ChatGPT Learn",
+  "url": "https://learn.chatgpt.com/docs"
+}
