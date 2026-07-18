@@ -1,0 +1,60 @@
+name: E2E
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "docs/**"
+      - "scripts/aikb"
+      - "tests/e2e/**"
+      - "mkdocs.yml"
+      - "pyproject.toml"
+      - "poetry.lock"
+      - ".github/workflows/e2e.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Poetry
+        run: pipx install "poetry>=2.0,<3.0"
+
+      - name: Configure Poetry
+        run: poetry config virtualenvs.in-project true
+
+      - name: Install Python dependencies
+        run: poetry install --with dev --no-interaction --no-ansi
+
+      - name: Install Playwright
+        run: |
+          npm install --prefix .e2e playwright@^1
+          npx --prefix .e2e playwright install --with-deps chromium
+
+      - name: Run browser e2e tests
+        env:
+          PLAYWRIGHT_NODE_MODULES: ${{ github.workspace }}/.e2e/node_modules
+        run: scripts/aikb e2e
+
+      - name: Upload e2e server log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mkdocs-e2e-log
+          path: output/playwright/mkdocs-e2e.log

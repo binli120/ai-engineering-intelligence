@@ -17,6 +17,9 @@ class Source(BaseModel):
     release_url: HttpUrl | None = None
     priority: int = Field(ge=0, le=100)
     enabled: bool = True
+    refresh_interval_days: int = Field(default=1, ge=1)
+    retention_days: int = Field(default=365, ge=1)
+    max_items: int = Field(default=20, ge=1, le=100)
 
 
 class KnowledgeItem(BaseModel):

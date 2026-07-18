@@ -1,0 +1,11 @@
+{
+  "id": "cursor-docs",
+  "title": "Cursor Documentation",
+  "url": "https://docs.cursor.com/",
+  "source_id": "cursor_docs",
+  "category": "ai_coding",
+  "summary": "Official Cursor documentation for editor-native AI coding workflows, including agent mode, inline edits, project rules, tools, and MCP integrations.",
+  "tags": ["cursor", "ai-coding", "editor", "agent", "mcp"],
+  "maturity": "stable",
+  "collected_at": "2026-07-17T00:00:00Z"
+}

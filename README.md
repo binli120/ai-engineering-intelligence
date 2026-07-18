@@ -25,19 +25,59 @@ Open the local URL printed by MkDocs.
 ## Development checks
 
 ```bash
-poetry run ruff check .
-poetry run ruff format --check .
-poetry run mypy
-poetry run pytest
-poetry run mkdocs build --strict
+poetry run aikb lint
+poetry run aikb check
 poetry build
 ```
+
+Use `poetry run aikb lint --fix` to apply Ruff fixes and formatting.
+
+The project helper script wraps the common commands:
+
+```bash
+scripts/aikb lint
+scripts/aikb test
+scripts/aikb build
+scripts/aikb check
+scripts/aikb e2e
+scripts/aikb sources
+scripts/aikb run
+```
+
+`scripts/aikb run` starts MkDocs on `http://127.0.0.1:8001` by default. Override it with `PORT=8002 scripts/aikb run`.
+
+`scripts/aikb e2e` starts a temporary MkDocs server on `http://127.0.0.1:8011`, runs browser checks with Playwright, and stops the server. Override it with `E2E_PORT=8012 scripts/aikb e2e`.
+
+`scripts/aikb sources` builds `docs/assets/source-previews.json`, a server-side cache of external source excerpts used by the in-app source preview panel.
 
 Install local hooks with:
 
 ```bash
 poetry run pre-commit install
 ```
+
+## Content refresh
+
+Sources in `data/sources.yaml` can define:
+
+- `refresh_interval_days`: how often the source is eligible to fetch new items.
+- `retention_days`: how long source-backed items remain current before pruning.
+- `max_items`: maximum items to collect from feed-style sources.
+
+Run a local refresh with:
+
+```bash
+poetry run aikb refresh
+```
+
+Preview changes without writing or deleting files:
+
+```bash
+poetry run aikb refresh --dry-run
+poetry run aikb prune --dry-run
+```
+
+The scheduled GitHub workflow runs daily, commits newly fetched `data/items/*.json`, and removes stale or unbacked items after the quality gate passes.
 
 ## Repository structure
 

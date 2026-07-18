@@ -2,6 +2,9 @@
   "use strict";
 
   var MAX_ITEMS = 8;
+  var NOTES_KEY = "aikb.notes.v1";
+  var MIND_MAP_KEY = "aikb.mindmaps.v1";
+  var sourcePreviewCache = null;
 
   function ready(callback) {
     if (document.readyState === "loading") {
@@ -108,6 +111,7 @@
   function clear(output) {
     output.innerHTML = "";
     output.dataset.open = "true";
+    output.classList.remove("aikb-study-panel__output--map", "aikb-study-panel__output--quiz");
   }
 
   function header(output, title) {
@@ -157,46 +161,148 @@
   function renderQuiz(root, output) {
     clear(output);
     header(output, "Quiz");
+    output.classList.add("aikb-study-panel__output--quiz");
 
-    var facts = sentences(root).slice(0, MAX_ITEMS);
-    var terms = keywords(root);
-    if (facts.length === 0) {
+    var sectionFacts = headings(root)
+      .map(function (heading) {
+        var fact = sectionText(root, heading.text)
+          .split(/(?<=[.!?])\s+/)
+          .map(clean)
+          .find(function (sentence) {
+            return sentence.length > 45 && sentence.length < 230;
+          });
+        return fact ? { topic: heading.text, fact: fact } : null;
+      })
+      .filter(Boolean)
+      .slice(0, MAX_ITEMS);
+    if (sectionFacts.length < 4) {
+      sectionFacts = sentences(root)
+        .slice(0, MAX_ITEMS)
+        .map(function (fact, index) {
+          return { topic: "the page's key ideas", fact: fact, index: index };
+        });
+    }
+    if (sectionFacts.length < 2) {
       renderEmpty(output);
       return;
     }
 
-    facts.forEach(function (fact, index) {
-      var key = terms[index % Math.max(terms.length, 1)] || "this topic";
-      var distractors = terms
-        .filter(function (term) {
-          return term !== key;
-        })
-        .slice(0, 3);
-
-      while (distractors.length < 3) {
-        distractors.push(["workflow", "security", "evaluation"][distractors.length]);
+    var questions = sectionFacts.map(function (item, index) {
+      var distractors = [];
+      for (var offset = 1; offset < sectionFacts.length && distractors.length < 3; offset += 1) {
+        var candidate = sectionFacts[(index + offset) % sectionFacts.length].fact;
+        if (candidate !== item.fact && distractors.indexOf(candidate) === -1) {
+          distractors.push(candidate);
+        }
       }
+      while (distractors.length < 3) {
+        distractors.push(
+          [
+            "This topic is presented as independent from the surrounding engineering workflow.",
+            "The page recommends avoiding validation until after production deployment.",
+            "The section treats observability and evaluation as interchangeable concerns.",
+          ][distractors.length]
+        );
+      }
+      var correctIndex = index % 4;
+      var options = distractors.slice(0, 3);
+      options.splice(correctIndex, 0, item.fact);
+      return {
+        prompt: "Which statement does this page make about “" + item.topic + "”?",
+        hint: "Look for the option grounded directly in the “" + item.topic + "” section.",
+        options: options,
+        correctIndex: correctIndex,
+      };
+    });
 
-      var card = document.createElement("section");
-      card.className = "aikb-study-question";
-      card.innerHTML =
-        "<h3>Question " +
-        (index + 1) +
-        "</h3>" +
-        "<p>Which idea is most directly supported by this page?</p>" +
-        "<ol>" +
-        "<li>" +
-        escapeHtml(fact) +
-        "</li>" +
-        distractors
-          .map(function (term) {
-            return "<li>A general note about " + escapeHtml(term) + ".</li>";
+    var quiz = document.createElement("section");
+    quiz.className = "aikb-quiz";
+    output.appendChild(quiz);
+    var current = 0;
+    var score = 0;
+    var answers = [];
+
+    function renderQuestion() {
+      var question = questions[current];
+      var selected = answers[current];
+      quiz.innerHTML =
+        "<div class=\"aikb-quiz__progress\"><span>" +
+        (current + 1) +
+        " / " +
+        questions.length +
+        "</span><span class=\"aikb-quiz__track\"><i style=\"width:" +
+        ((current + 1) / questions.length) * 100 +
+        "%\"></i></span></div>" +
+        "<fieldset class=\"aikb-quiz__question\"><legend tabindex=\"-1\">" +
+        escapeHtml(question.prompt) +
+        "</legend><div class=\"aikb-quiz__options\">" +
+        question.options
+          .map(function (option, optionIndex) {
+            return (
+              "<label class=\"aikb-quiz__option" +
+              (selected === optionIndex ? " is-selected" : "") +
+              "\"><input type=\"radio\" name=\"quiz-answer\" value=\"" +
+              optionIndex +
+              "\"" +
+              (selected === optionIndex ? " checked" : "") +
+              "><span class=\"aikb-quiz__letter\">" +
+              String.fromCharCode(65 + optionIndex) +
+              ".</span><span>" +
+              escapeHtml(option) +
+              "</span></label>"
+            );
           })
           .join("") +
-        "</ol>" +
-        "<details class=\"aikb-study-answer\"><summary>Answer</summary><p>The first option is source-grounded in this page section.</p></details>";
-      output.appendChild(card);
+        "</div></fieldset><div class=\"aikb-quiz__footer\"><details class=\"aikb-quiz__hint\"><summary>Hint</summary><p>" +
+        escapeHtml(question.hint) +
+        "</p></details><button class=\"aikb-quiz__next\" type=\"button\" data-quiz-next" +
+        (selected === undefined ? " disabled" : "") +
+        ">" +
+        (current === questions.length - 1 ? "See results" : "Next") +
+        "</button></div>";
+    }
+
+    quiz.addEventListener("change", function (event) {
+      var input = event.target.closest("input[name='quiz-answer']");
+      if (!input) {
+        return;
+      }
+      answers[current] = Number(input.value);
+      renderQuestion();
+      quiz.querySelector("input:checked").focus();
     });
+    quiz.addEventListener("click", function (event) {
+      if (!event.target.closest("[data-quiz-next]")) {
+        return;
+      }
+      if (answers[current] === questions[current].correctIndex) {
+        score += 1;
+      }
+      if (current < questions.length - 1) {
+        current += 1;
+        renderQuestion();
+        quiz.querySelector("legend").focus({ preventScroll: true });
+        return;
+      }
+      quiz.innerHTML =
+        "<div class=\"aikb-quiz__results\"><span>Quiz complete</span><strong>" +
+        score +
+        " / " +
+        questions.length +
+        "</strong><p>You answered " +
+        Math.round((score / questions.length) * 100) +
+        "% correctly.</p><button type=\"button\" data-quiz-restart>Try again</button></div>";
+    });
+    quiz.addEventListener("click", function (event) {
+      if (!event.target.closest("[data-quiz-restart]")) {
+        return;
+      }
+      current = 0;
+      score = 0;
+      answers = [];
+      renderQuestion();
+    });
+    renderQuestion();
   }
 
   function renderFlashcards(root, output) {
@@ -214,16 +320,45 @@
       var answer = body || "Review this section in the source page.";
       var card = document.createElement("section");
       card.className = "aikb-study-card";
+      card.setAttribute("aria-pressed", "false");
+      card.dataset.title = heading.text;
+      card.dataset.content = truncate(answer, 500);
       card.innerHTML =
-        "<div class=\"aikb-study-card__front\">What should you remember about " +
+        "<div class=\"aikb-study-card__flip\" role=\"button\" tabindex=\"0\" aria-label=\"Show answer for " +
         escapeHtml(heading.text) +
-        "?</div>" +
-        "<div class=\"aikb-study-card__back\">" +
+        "\">" +
+        "<span class=\"aikb-study-card__inner\">" +
+        "<span class=\"aikb-study-card__face aikb-study-card__front\"><span class=\"aikb-study-card__eyebrow\">Title</span><strong>" +
+        escapeHtml(heading.text) +
+        "</strong><small>Click to reveal</small></span>" +
+        "<span class=\"aikb-study-card__face aikb-study-card__back\"><span class=\"aikb-study-card__backbar\"><span class=\"aikb-study-card__eyebrow\">Content</span><span class=\"aikb-card-menu\"><button type=\"button\" data-card-menu aria-label=\"Card menu\">...</button><span class=\"aikb-card-menu__items\" hidden><button type=\"button\" data-card-listen>Listen</button><button type=\"button\" data-card-add-note>Add to note</button></span></span></span><span>" +
         escapeHtml(truncate(answer, 260)) +
-        "</div>" +
-        "<div class=\"aikb-study-meta\">Source section: " +
+        "</span><small>Source section: " +
         escapeHtml(heading.text) +
-        "</div>";
+        "</small></span>" +
+        "</span></div>";
+      var flip = card.querySelector(".aikb-study-card__flip");
+      function toggleCard() {
+        var flipped = card.dataset.flipped === "true";
+        card.dataset.flipped = flipped ? "false" : "true";
+        card.setAttribute("aria-pressed", flipped ? "false" : "true");
+        flip.setAttribute(
+          "aria-label",
+          (flipped ? "Show answer for " : "Show title for ") + heading.text
+        );
+      }
+      flip.addEventListener("click", function (event) {
+        if (event.target.closest("button")) {
+          return;
+        }
+        toggleCard();
+      });
+      flip.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          toggleCard();
+        }
+      });
       output.appendChild(card);
     });
   }
@@ -278,34 +413,481 @@
     output.appendChild(controls);
   }
 
-  function renderMindMap(root, output) {
+  function mindMapStorage() {
+    try {
+      var maps = JSON.parse(window.localStorage.getItem(MIND_MAP_KEY) || "{}");
+      return maps && typeof maps === "object" && !Array.isArray(maps) ? maps : {};
+    } catch (_error) {
+      return {};
+    }
+  }
+
+  function mindMapFingerprint(root) {
+    return Array.prototype.slice
+      .call(root.querySelectorAll("h1, h2, h3, p, li"))
+      .filter(function (node) {
+        return !node.closest(".aikb-study-panel, .aikb-source-preview");
+      })
+      .map(function (node) {
+        return node.tagName + ":" + clean(node.textContent).length;
+      })
+      .join("|");
+  }
+
+  function tagMindMapTargets(root) {
+    Array.prototype.slice.call(root.querySelectorAll("h2, h3, p, li")).forEach(function (node, index) {
+      if (!node.closest(".aikb-study-panel, .aikb-source-preview")) {
+        node.dataset.knowledgeId = "aikb-knowledge-" + index;
+      }
+    });
+  }
+
+  function mindMapLeaf(node, index, parentId) {
+    var text = clean(node.textContent);
+    var targetId = "aikb-knowledge-" + index;
+    node.dataset.knowledgeId = targetId;
+    return {
+      id: parentId + "-item-" + index,
+      label: truncate(text, 92),
+      summary: text,
+      targetId: targetId,
+      type: node.tagName === "LI" ? "item" : "detail",
+      children: [],
+    };
+  }
+
+  function generateMindMap(root, sources) {
+    var title = pageTitle(root);
+    var contentNodes = Array.prototype.slice.call(root.querySelectorAll("h2, h3, p, li"));
+    var map = {
+      version: 1,
+      path: location.pathname,
+      title: title,
+      fingerprint: mindMapFingerprint(root),
+      generatedAt: new Date().toISOString(),
+      root: {
+        id: "root",
+        label: title,
+        summary: "Knowledge map for " + title,
+        type: "root",
+        children: [],
+      },
+    };
+    var currentSection = null;
+    var currentSubsection = null;
+
+    contentNodes.forEach(function (node, index) {
+      if (node.closest(".aikb-study-panel, .aikb-source-preview")) {
+        return;
+      }
+      var text = clean(node.textContent.replace("#", ""));
+      if (!text) {
+        return;
+      }
+      if (node.tagName === "H2") {
+        node.dataset.knowledgeId = "aikb-knowledge-" + index;
+        currentSection = {
+          id: "section-" + index,
+          label: text,
+          summary: sectionText(root, text),
+          targetId: node.dataset.knowledgeId,
+          type: "topic",
+          children: [],
+        };
+        map.root.children.push(currentSection);
+        currentSubsection = null;
+        return;
+      }
+      if (node.tagName === "H3") {
+        node.dataset.knowledgeId = "aikb-knowledge-" + index;
+        currentSubsection = {
+          id: "subsection-" + index,
+          label: text,
+          summary: sectionText(root, text),
+          targetId: node.dataset.knowledgeId,
+          type: "subtopic",
+          children: [],
+        };
+        if (!currentSection) {
+          currentSection = {
+            id: "section-overview",
+            label: "Overview",
+            summary: "Introductory knowledge",
+            type: "topic",
+            children: [],
+          };
+          map.root.children.push(currentSection);
+        }
+        currentSection.children.push(currentSubsection);
+        return;
+      }
+      if (!currentSection) {
+        currentSection = {
+          id: "section-overview",
+          label: "Overview",
+          summary: "Introductory knowledge",
+          type: "topic",
+          children: [],
+        };
+        map.root.children.push(currentSection);
+      }
+      var parent = currentSubsection || currentSection;
+      parent.children.push(mindMapLeaf(node, index, parent.id));
+    });
+
+    if (sources.length) {
+      map.root.children.push({
+        id: "sources",
+        label: "Sources",
+        summary: sources.length + " cited source pages",
+        type: "sources",
+        children: sources.map(function (source, index) {
+          return {
+            id: "source-" + index,
+            label: source.label,
+            summary: source.description,
+            href: source.href,
+            type: "source",
+            children: [],
+          };
+        }),
+      });
+    }
+    return map;
+  }
+
+  function saveMindMap(map) {
+    try {
+      var maps = mindMapStorage();
+      maps[map.path] = map;
+      window.localStorage.setItem(MIND_MAP_KEY, JSON.stringify(maps));
+      return true;
+    } catch (_error) {
+      return false;
+    }
+  }
+
+  function drawMindMap(map, output, root, sources, topicHtml) {
+    tagMindMapTargets(root);
     clear(output);
     header(output, "Mind Map");
+    output.classList.add("aikb-study-panel__output--map");
 
-    var title = pageTitle(root);
-    var topicHeadings = headings(root).slice(0, 10);
-    if (topicHeadings.length === 0) {
-      renderEmpty(output);
-      return;
+    var artifact = document.createElement("section");
+    artifact.className = "aikb-mindmap-artifact";
+    artifact.innerHTML =
+      "<div class=\"aikb-map-toolbar\"><div><strong>Knowledge atlas</strong><span>Generated " +
+      new Date(map.generatedAt).toLocaleString() +
+      " · Expand topics, then open a leaf in Reading</span></div><div class=\"aikb-map-controls\"><button type=\"button\" data-map-zoom-out aria-label=\"Zoom out\">−</button><output data-map-zoom>100%</output><button type=\"button\" data-map-zoom-in aria-label=\"Zoom in\">+</button><button type=\"button\" data-map-fit>Fit</button><button type=\"button\" data-map-regenerate>Regenerate</button></div></div>" +
+      "<div class=\"aikb-map-viewport\" tabindex=\"0\" aria-label=\"Mind map canvas. Drag to pan, use arrow keys to move, and plus or minus to zoom.\"><div class=\"aikb-map-stage\"><div class=\"aikb-map-scene\"><svg class=\"aikb-map-connectors\" aria-hidden=\"true\"></svg><div class=\"aikb-map-nodes\"></div></div></div></div>";
+    output.appendChild(artifact);
+
+    var viewport = artifact.querySelector(".aikb-map-viewport");
+    var stage = artifact.querySelector(".aikb-map-stage");
+    var scene = artifact.querySelector(".aikb-map-scene");
+    var connectors = artifact.querySelector(".aikb-map-connectors");
+    var nodesLayer = artifact.querySelector(".aikb-map-nodes");
+    var zoomOutput = artifact.querySelector("[data-map-zoom]");
+    var zoom = 1;
+    var sceneWidth = 800;
+    var sceneHeight = 500;
+    var expanded = {};
+    expanded[map.root.id] = true;
+
+    function setZoom(nextZoom, keepCenter) {
+      var oldZoom = zoom;
+      var centerX = (viewport.scrollLeft + viewport.clientWidth / 2) / oldZoom;
+      var centerY = (viewport.scrollTop + viewport.clientHeight / 2) / oldZoom;
+      zoom = Math.min(1.4, Math.max(0.55, nextZoom));
+      scene.style.setProperty("--aikb-map-zoom", zoom);
+      stage.style.width = sceneWidth * zoom + "px";
+      stage.style.height = sceneHeight * zoom + "px";
+      zoomOutput.textContent = Math.round(zoom * 100) + "%";
+      if (keepCenter !== false) {
+        viewport.scrollLeft = centerX * zoom - viewport.clientWidth / 2;
+        viewport.scrollTop = centerY * zoom - viewport.clientHeight / 2;
+      }
     }
 
-    var map = document.createElement("section");
-    map.className = "aikb-study-map";
-    var html = "<strong>" + escapeHtml(title) + "</strong><ul>";
-    topicHeadings.forEach(function (heading) {
-      html += "<li>" + escapeHtml(heading.text);
-      var body = sectionText(root, heading.text);
-      var related = keywordsFromText(body).slice(0, 3);
-      if (related.length) {
-        html += "<ul>" + related.map(function (term) {
-          return "<li>" + escapeHtml(term) + "</li>";
-        }).join("") + "</ul>";
+    function visibleLayout() {
+      var positions = [];
+      var edges = [];
+      var nextY = 32;
+      var maxDepth = 0;
+      function visit(node, depth, parent) {
+        maxDepth = Math.max(maxDepth, depth);
+        var position = { node: node, x: 48 + depth * 286, y: 0 };
+        positions.push(position);
+        if (parent) {
+          edges.push({ from: parent, to: position, depth: depth });
+        }
+        var showChildren = node.children && node.children.length && expanded[node.id];
+        if (showChildren) {
+          var childPositions = node.children.map(function (child) {
+            return visit(child, depth + 1, position);
+          });
+          position.y =
+            (childPositions[0].y + childPositions[childPositions.length - 1].y) / 2;
+        } else {
+          position.y = nextY;
+          nextY += 58;
+        }
+        return position;
       }
-      html += "</li>";
+      visit(map.root, 0, null);
+      return {
+        positions: positions,
+        edges: edges,
+        width: Math.max(760, 48 + (maxDepth + 1) * 286 + 260),
+        height: Math.max(480, nextY + 40),
+      };
+    }
+
+    function renderGraph(focusId) {
+      var layout = visibleLayout();
+      sceneWidth = layout.width;
+      sceneHeight = layout.height;
+      scene.style.width = sceneWidth + "px";
+      scene.style.height = sceneHeight + "px";
+      connectors.setAttribute("viewBox", "0 0 " + sceneWidth + " " + sceneHeight);
+      connectors.setAttribute("width", sceneWidth);
+      connectors.setAttribute("height", sceneHeight);
+      connectors.innerHTML = layout.edges
+        .map(function (edge) {
+          var startX = edge.from.x + 226;
+          var startY = edge.from.y + 20;
+          var endX = edge.to.x;
+          var endY = edge.to.y + 20;
+          var curve = Math.max(55, (endX - startX) * 0.52);
+          return (
+            "<path class=\"aikb-map-connector aikb-map-connector--" +
+            ((edge.depth - 1) % 5) +
+            "\" d=\"M " +
+            startX +
+            " " +
+            startY +
+            " C " +
+            (startX + curve) +
+            " " +
+            startY +
+            ", " +
+            (endX - curve) +
+            " " +
+            endY +
+            ", " +
+            endX +
+            " " +
+            endY +
+            "\"></path>"
+          );
+        })
+        .join("");
+      nodesLayer.innerHTML = layout.positions
+        .map(function (position) {
+          var node = position.node;
+          var hasChildren = node.children && node.children.length;
+          var isExpanded = Boolean(expanded[node.id]);
+          return (
+            "<button class=\"aikb-map-node aikb-map-node--" +
+            node.type +
+            "\" type=\"button\" data-map-node data-node-id=\"" +
+            escapeHtml(node.id) +
+            "\" data-target-id=\"" +
+            escapeHtml(node.targetId || "") +
+            "\" data-source-href=\"" +
+            escapeHtml(node.href || "") +
+            "\" data-has-children=\"" +
+            (hasChildren ? "true" : "false") +
+            "\" aria-expanded=\"" +
+            (hasChildren ? String(isExpanded) : "false") +
+            "\" title=\"" +
+            escapeHtml(node.summary || node.label) +
+            "\" style=\"left:" +
+            position.x +
+            "px;top:" +
+            position.y +
+            "px\"><span>" +
+            escapeHtml(node.label) +
+            "</span>" +
+            (hasChildren
+              ? "<small aria-hidden=\"true\">" + (isExpanded ? "‹" : "›") + "</small>"
+              : "") +
+            "</button>"
+          );
+        })
+        .join("");
+      setZoom(zoom, false);
+      if (focusId) {
+        var focusNode = nodesLayer.querySelector("[data-node-id='" + focusId + "']");
+        if (focusNode) {
+          focusNode.focus({ preventScroll: true });
+        }
+      }
+    }
+
+    renderGraph();
+    window.requestAnimationFrame(function () {
+      var rootNode = nodesLayer.querySelector("[data-node-id='root']");
+      if (rootNode) {
+        viewport.scrollLeft = Math.max(0, rootNode.offsetLeft - viewport.clientWidth * 0.22);
+        viewport.scrollTop = Math.max(
+          0,
+          rootNode.offsetTop * zoom - viewport.clientHeight / 2 + 20
+        );
+      }
     });
-    html += "</ul>";
-    map.innerHTML = html;
-    output.appendChild(map);
+    artifact.querySelector("[data-map-zoom-out]").addEventListener("click", function () {
+      setZoom(zoom - 0.1);
+    });
+    artifact.querySelector("[data-map-zoom-in]").addEventListener("click", function () {
+      setZoom(zoom + 0.1);
+    });
+    artifact.querySelector("[data-map-fit]").addEventListener("click", function () {
+      var fitZoom = Math.min(
+        1,
+        (viewport.clientWidth - 40) / sceneWidth,
+        (viewport.clientHeight - 40) / sceneHeight
+      );
+      setZoom(fitZoom, false);
+      viewport.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+    });
+    artifact.querySelector("[data-map-regenerate]").addEventListener("click", function () {
+      var regenerated = generateMindMap(root, sources);
+      saveMindMap(regenerated);
+      drawMindMap(regenerated, output, root, sources, topicHtml);
+    });
+    artifact.addEventListener("click", function (event) {
+      var node = event.target.closest("[data-map-node]");
+      if (!node) {
+        return;
+      }
+      if (node.dataset.hasChildren === "true") {
+        if (expanded[node.dataset.nodeId]) {
+          delete expanded[node.dataset.nodeId];
+        } else {
+          expanded[node.dataset.nodeId] = true;
+        }
+        renderGraph(node.dataset.nodeId);
+        return;
+      }
+      var sourceHref = node.dataset.sourceHref;
+      if (sourceHref) {
+        var source = sources.find(function (item) {
+          return item.href === sourceHref;
+        });
+        if (source) {
+          output.dataset.open = "false";
+          output.classList.remove("aikb-study-panel__output--map");
+          renderSourcePreview(root, topicHtml, source);
+        }
+        return;
+      }
+      var target = root.querySelector("[data-knowledge-id='" + node.dataset.targetId + "']");
+      if (target) {
+        output.dataset.open = "false";
+        output.classList.remove("aikb-study-panel__output--map");
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        target.classList.add("aikb-knowledge-focus");
+        window.setTimeout(function () {
+          target.classList.remove("aikb-knowledge-focus");
+        }, 2200);
+      }
+    });
+
+    var dragging = false;
+    var dragStartX = 0;
+    var dragStartY = 0;
+    var scrollStartX = 0;
+    var scrollStartY = 0;
+    viewport.addEventListener("pointerdown", function (event) {
+      if (event.target.closest("[data-map-node]")) {
+        return;
+      }
+      dragging = true;
+      dragStartX = event.clientX;
+      dragStartY = event.clientY;
+      scrollStartX = viewport.scrollLeft;
+      scrollStartY = viewport.scrollTop;
+      viewport.dataset.dragging = "true";
+      viewport.setPointerCapture(event.pointerId);
+    });
+    viewport.addEventListener("pointermove", function (event) {
+      if (!dragging) {
+        return;
+      }
+      viewport.scrollLeft = scrollStartX - (event.clientX - dragStartX);
+      viewport.scrollTop = scrollStartY - (event.clientY - dragStartY);
+    });
+    function stopDragging(event) {
+      if (!dragging) {
+        return;
+      }
+      dragging = false;
+      viewport.dataset.dragging = "false";
+      if (viewport.hasPointerCapture(event.pointerId)) {
+        viewport.releasePointerCapture(event.pointerId);
+      }
+    }
+    viewport.addEventListener("pointerup", stopDragging);
+    viewport.addEventListener("pointercancel", stopDragging);
+    viewport.addEventListener("keydown", function (event) {
+      if (event.target !== viewport) {
+        return;
+      }
+      var distance = event.shiftKey ? 180 : 70;
+      if (event.key === "ArrowLeft") {
+        viewport.scrollLeft -= distance;
+      } else if (event.key === "ArrowRight") {
+        viewport.scrollLeft += distance;
+      } else if (event.key === "ArrowUp") {
+        viewport.scrollTop -= distance;
+      } else if (event.key === "ArrowDown") {
+        viewport.scrollTop += distance;
+      } else if (event.key === "+" || event.key === "=") {
+        setZoom(zoom + 0.1);
+      } else if (event.key === "-" || event.key === "_") {
+        setZoom(zoom - 0.1);
+      } else if (event.key === "Home") {
+        viewport.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+      } else {
+        return;
+      }
+      event.preventDefault();
+    });
+    viewport.addEventListener(
+      "wheel",
+      function (event) {
+        if (!event.ctrlKey && !event.metaKey) {
+          return;
+        }
+        event.preventDefault();
+        setZoom(zoom + (event.deltaY < 0 ? 0.1 : -0.1));
+      },
+      { passive: false }
+    );
+  }
+
+  function renderMindMap(root, output, sources, topicHtml) {
+    clear(output);
+    header(output, "Mind Map");
+    output.classList.add("aikb-study-panel__output--map");
+    var maps = mindMapStorage();
+    var cached = maps[location.pathname];
+    var fingerprint = mindMapFingerprint(root);
+    if (cached && cached.version === 1 && cached.fingerprint === fingerprint) {
+      drawMindMap(cached, output, root, sources, topicHtml);
+      return;
+    }
+    var loading = document.createElement("div");
+    loading.className = "aikb-map-generating";
+    loading.innerHTML =
+      "<span class=\"aikb-map-generating__orbit\" aria-hidden=\"true\"></span><strong>Organizing this page into knowledge nodes…</strong><small>Reading headings, details, list items, and cited sources</small>";
+    output.appendChild(loading);
+    window.setTimeout(function () {
+      var generated = generateMindMap(root, sources);
+      saveMindMap(generated);
+      drawMindMap(generated, output, root, sources, topicHtml);
+    }, 240);
   }
 
   function renderGuide(root, output) {
@@ -376,6 +958,179 @@
     }
   }
 
+  function loadNotes() {
+    try {
+      var parsed = JSON.parse(window.localStorage.getItem(NOTES_KEY) || "[]");
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (_error) {
+      return [];
+    }
+  }
+
+  function saveNotes(notes) {
+    window.localStorage.setItem(NOTES_KEY, JSON.stringify(notes));
+  }
+
+  function addNote(note) {
+    var notes = loadNotes();
+    var category = note.category || note.source || "General";
+    var duplicate = notes.some(function (existing) {
+      return (
+        existing.category === category &&
+        existing.title === note.title &&
+        existing.content === note.content
+      );
+    });
+    if (duplicate) {
+      renderNotesPanel();
+      return false;
+    }
+    notes.unshift({
+      id: "note-" + Date.now(),
+      title: note.title,
+      content: note.content,
+      category: category,
+      source: note.source,
+      createdAt: new Date().toISOString(),
+    });
+    saveNotes(notes);
+    renderNotesPanel();
+    return true;
+  }
+
+  function renderNotesPanel() {
+    var panel = document.querySelector(".aikb-notes-panel");
+    if (!panel) {
+      return;
+    }
+    var notes = loadNotes();
+    var groups = notes.reduce(function (accumulator, note) {
+      var category = note.category || note.source || "General";
+      if (!accumulator[category]) {
+        accumulator[category] = [];
+      }
+      accumulator[category].push(note);
+      return accumulator;
+    }, {});
+    panel.dataset.open = "true";
+    panel.innerHTML =
+      "<div class=\"aikb-notes-panel__header\"><div><span>Notes</span><strong>" +
+      notes.length +
+      " saved</strong></div><button type=\"button\" data-notes-close aria-label=\"Close notes\">Close</button></div>" +
+      "<div class=\"aikb-notes-actions\"><button type=\"button\" data-note-new>New note</button><button type=\"button\" data-google-docs-export>Save to Google Docs</button></div>" +
+      (notes.length
+        ? "<div class=\"aikb-notes-list\">" +
+          Object.keys(groups)
+            .map(function (category) {
+              return (
+                "<section class=\"aikb-note-category\"><h3>" +
+                escapeHtml(category) +
+                "</h3>" +
+                groups[category]
+                  .map(function (note) {
+                    return (
+                      "<article class=\"aikb-note-item\"><strong>" +
+                      escapeHtml(note.title) +
+                      "</strong><p>" +
+                      escapeHtml(truncate(note.content, 180)) +
+                      "</p><small>" +
+                      escapeHtml(note.source || category) +
+                      "</small></article>"
+                    );
+                  })
+                  .join("") +
+                "</section>"
+              );
+            })
+            .join("") +
+          "</div>"
+        : "<div class=\"aikb-source-empty\"><strong>No notes yet</strong><span>Add flashcards or create a manual note while studying.</span></div>");
+  }
+
+  function closeCardMenus(root) {
+    Array.prototype.slice.call(root.querySelectorAll(".aikb-card-menu__items")).forEach(function (menu) {
+      menu.hidden = true;
+    });
+  }
+
+  function markCardSaved(card) {
+    var button = card.querySelector("[data-card-add-note]");
+    if (!button) {
+      return;
+    }
+    button.textContent = "Added";
+    button.disabled = true;
+  }
+
+  function syncSavedCards(root, category) {
+    var notes = loadNotes();
+    Array.prototype.slice.call(root.querySelectorAll(".aikb-study-card")).forEach(function (card) {
+      var saved = notes.some(function (note) {
+        return (
+          note.category === category &&
+          note.title === card.dataset.title &&
+          note.content === card.dataset.content
+        );
+      });
+      if (saved) {
+        markCardSaved(card);
+      }
+    });
+  }
+
+  function createManualNote(pageTitleText) {
+    var title = window.prompt("Note title", pageTitleText || "Study note");
+    if (!title) {
+      return;
+    }
+    var content = window.prompt("Note content");
+    if (!content) {
+      return;
+    }
+    addNote({
+      title: title,
+      content: content,
+      category: pageTitleText || "General",
+      source: "Manual note",
+    });
+  }
+
+  function exportNotesToGoogleDocs() {
+    var notes = loadNotes();
+    if (!notes.length) {
+      window.alert("Add at least one note before saving to Google Docs.");
+      return;
+    }
+    var config = window.AIKB_GOOGLE_DOCS || {};
+    if (!config.exportEndpoint) {
+      showGoogleDocsSetup();
+      return;
+    }
+    fetch(config.exportEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ notes: notes }),
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Google Docs export failed.");
+        }
+        return response.json();
+      })
+      .then(function (result) {
+        window.alert(result.url ? "Saved to Google Docs: " + result.url : "Saved to Google Docs.");
+      })
+      .catch(function (error) {
+        window.alert(error.message);
+      });
+  }
+
+  function showGoogleDocsSetup() {
+    window.alert(
+      "Google Docs saving needs a backend OAuth endpoint. Use Google Identity Services authorization code flow, exchange the code server-side, then call the Google Docs API with the documents or drive.file scope."
+    );
+  }
+
   function truncate(text, limit) {
     if (text.length <= limit) {
       return text;
@@ -401,6 +1156,7 @@
       grid: "<rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect>",
       map: "<circle cx=\"6\" cy=\"6\" r=\"2\"></circle><circle cx=\"18\" cy=\"6\" r=\"2\"></circle><circle cx=\"12\" cy=\"18\" r=\"2\"></circle><path d=\"m8 7 3 8\"></path><path d=\"m16 7-3 8\"></path><path d=\"M8 6h8\"></path>",
       menu: "<path d=\"M4 6h16\"></path><path d=\"M4 12h16\"></path><path d=\"M4 18h16\"></path>",
+      note: "<path d=\"M4 4h16v16H4z\"></path><path d=\"M8 8h8\"></path><path d=\"M8 12h8\"></path><path d=\"M8 16h5\"></path>",
       quiz: "<circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M9.1 9a3 3 0 1 1 4.8 2.4c-.9.7-1.4 1.1-1.4 2.1\"></path><path d=\"M12 17h.01\"></path>",
       search: "<circle cx=\"11\" cy=\"11\" r=\"8\"></circle><path d=\"m21 21-4.3-4.3\"></path>",
       sliders: "<path d=\"M4 21v-7\"></path><path d=\"M4 10V3\"></path><path d=\"M12 21v-9\"></path><path d=\"M12 8V3\"></path><path d=\"M20 21v-5\"></path><path d=\"M20 12V3\"></path><path d=\"M2 14h4\"></path><path d=\"M10 8h4\"></path><path d=\"M18 16h4\"></path>",
@@ -448,6 +1204,22 @@
         summary: "State, tools, structured output, streaming",
       },
       {
+        title: "Framework Comparison",
+        href: "/agents/framework-comparison/",
+        meta: "Agent Engineering - 9 sections",
+        accent: "amber",
+        mark: "FW",
+        summary: "Choosing Responses API, Agents SDK, or LangGraph",
+      },
+      {
+        title: "LangGraph",
+        href: "/agents/langgraph/",
+        meta: "Agent Engineering - 9 sections",
+        accent: "cyan",
+        mark: "LG",
+        summary: "State graphs, checkpoints, interrupts, durability",
+      },
+      {
         title: "Model Context Protocol",
         href: "/mcp/",
         meta: "Integration - 11 sections",
@@ -488,12 +1260,60 @@
         summary: "Threat models, injection, tools, data protection",
       },
       {
+        title: "Codex",
+        href: "/coding/codex/",
+        meta: "AI Coding - 8 sections",
+        accent: "blue",
+        mark: "CX",
+        summary: "Cloud and local coding-agent workflows",
+      },
+      {
+        title: "Cursor",
+        href: "/coding/cursor/",
+        meta: "AI Coding - 9 sections",
+        accent: "green",
+        mark: "CU",
+        summary: "Editor-native agents, rules, tools, and MCP",
+      },
+      {
+        title: "Claude Code",
+        href: "/coding/claude-code/",
+        meta: "AI Coding - 9 sections",
+        accent: "violet",
+        mark: "CC",
+        summary: "Terminal agent loops, skills, sessions, and verification",
+      },
+      {
         title: "AI Skills",
         href: "/coding/ai-skills/",
         meta: "AI Coding - 10 sections",
         accent: "lime",
         mark: "SK",
         summary: "Reusable workflows and agent capability packages",
+      },
+      {
+        title: "Learning Tools",
+        href: "/learning-tools/",
+        meta: "Learning - 6 sections",
+        accent: "rose",
+        mark: "LT",
+        summary: "Audio reviews, quizzes, mind maps, flashcards",
+      },
+      {
+        title: "Tutorials",
+        href: "/tutorials/",
+        meta: "Practice - 8 sections",
+        accent: "slate",
+        mark: "T",
+        summary: "Runnable paths for agents, RAG, and coding workflows",
+      },
+      {
+        title: "Weekly Updates",
+        href: "/weekly/",
+        meta: "Refresh - 8 sections",
+        accent: "lime",
+        mark: "WU",
+        summary: "Daily source refresh, pruning, digest review",
       },
     ];
   }
@@ -595,19 +1415,182 @@
   }
 
   function sourceItems(reader) {
-    var links = Array.prototype.slice.call(reader.querySelectorAll("a[href^='http']")).slice(0, 18);
-    if (!links.length) {
-      return [
-        { label: pageTitle(reader), type: "Current page" },
-        { label: "Source-backed handbook content", type: "Local document" },
-      ];
+    var seen = {};
+    return Array.prototype.slice
+      .call(reader.querySelectorAll("a[href]"))
+      .map(function (link) {
+        try {
+          return {
+            label: truncate(clean(link.textContent) || link.href, 46),
+            url: new URL(link.href, location.href),
+          };
+        } catch (_error) {
+          return null;
+        }
+      })
+      .filter(function (source) {
+        if (!source || !/^https?:$/.test(source.url.protocol)) {
+          return false;
+        }
+        if (source.url.hostname === location.hostname) {
+          return false;
+        }
+        if (seen[source.url.href]) {
+          return false;
+        }
+        seen[source.url.href] = true;
+        return true;
+      })
+      .slice(0, 18)
+      .map(function (source) {
+        return {
+          label: source.label,
+          href: source.url.href,
+          type: source.url.hostname.replace(/^www\./, ""),
+          description: "Open source page",
+        };
+      });
+  }
+
+  function sourceDescription(entry, fallback) {
+    if (!entry || !Array.isArray(entry.items)) {
+      return fallback;
     }
-    return links.map(function (link) {
-      return {
-        label: truncate(clean(link.textContent) || link.href, 46),
-        type: new URL(link.href).hostname.replace(/^www\./, ""),
-      };
+    var summary = entry.items.find(function (item) {
+      return item.tag === "p" && clean(item.text || "").length >= 24;
     });
+    return summary ? truncate(clean(summary.text), 100) : fallback;
+  }
+
+  function populateSourceDescriptions(sourceList, sources) {
+    fetchSourcePreviewCache().then(function (cache) {
+      sources.forEach(function (source, index) {
+        var description = sourceDescription(cache[source.href], source.description);
+        source.description = description;
+        var item = sourceList.querySelectorAll(".aikb-source-item")[index];
+        var subtitle = item && item.querySelector("small");
+        if (subtitle) {
+          subtitle.textContent = description;
+          subtitle.title = description;
+        }
+      });
+    });
+  }
+
+  function renderSourcePreview(reader, topicHtml, source) {
+    reader.innerHTML =
+      "<section class=\"aikb-source-preview\" data-loading=\"true\">" +
+      "<div class=\"aikb-source-preview__bar\"><button type=\"button\" data-source-back>Back to topic</button><a href=\"" +
+      escapeHtml(source.href) +
+      "\" target=\"_blank\" rel=\"noreferrer\">Open source page</a></div>" +
+      "<p class=\"aikb-study-route\">Source preview / " +
+      escapeHtml(source.type) +
+      "</p>" +
+      "<h1>" +
+      escapeHtml(source.label) +
+      "</h1>" +
+      "<p class=\"aikb-source-preview__status\">Loading readable source content...</p>" +
+      "<div class=\"aikb-source-preview__content\"></div>" +
+      "</section>";
+
+    var preview = reader.querySelector(".aikb-source-preview");
+    var content = reader.querySelector(".aikb-source-preview__content");
+    var status = reader.querySelector(".aikb-source-preview__status");
+    reader.querySelector("[data-source-back]").addEventListener("click", function () {
+      reader.innerHTML = topicHtml;
+    });
+
+    fetchCachedSource(source.href)
+      .catch(function () {
+        return fetchReadableSource(source.href);
+      })
+      .then(function (items) {
+        preview.dataset.loading = "false";
+        if (!items.length) {
+          throw new Error("No readable content found.");
+        }
+        status.textContent = "Showing a readable preview extracted from the destination page.";
+        items.forEach(function (item) {
+          var node = document.createElement(item.tag);
+          node.textContent = item.text;
+          content.appendChild(node);
+        });
+      })
+      .catch(function () {
+        preview.dataset.loading = "false";
+        status.textContent =
+          "This destination does not expose readable content to the browser preview. Use the source link for the full page.";
+        content.innerHTML =
+          "<div class=\"aikb-source-preview__blocked\"><strong>Preview unavailable</strong><p>Some documentation sites block browser-side reading or embedding. The source is still linked above so you can open the original page when you need the full content.</p><a href=\"" +
+          escapeHtml(source.href) +
+          "\" target=\"_blank\" rel=\"noreferrer\">Open original source</a></div>";
+      });
+  }
+
+  function fetchSourcePreviewCache() {
+    if (!sourcePreviewCache) {
+      sourcePreviewCache = fetch("/assets/source-previews.json", { cache: "no-store" })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("No source preview cache.");
+          }
+          return response.json();
+        })
+        .catch(function () {
+          return {};
+        });
+    }
+    return sourcePreviewCache;
+  }
+
+  function fetchCachedSource(href) {
+    return fetchSourcePreviewCache().then(function (cache) {
+      var entry = cache[href];
+      if (!entry || !Array.isArray(entry.items)) {
+        throw new Error("Source is not cached.");
+      }
+      return entry.items;
+    });
+  }
+
+  function fetchReadableSource(href) {
+    var controller = new AbortController();
+    var timer = window.setTimeout(function () {
+      controller.abort();
+    }, 6000);
+    return fetch(href, { signal: controller.signal })
+      .then(function (response) {
+        window.clearTimeout(timer);
+        if (!response.ok) {
+          throw new Error("Source returned " + response.status);
+        }
+        return response.text();
+      })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, "text/html");
+        Array.prototype.slice
+          .call(doc.querySelectorAll("script, style, nav, header, footer, form, svg"))
+          .forEach(function (node) {
+            node.remove();
+          });
+        var container =
+          doc.querySelector("main") ||
+          doc.querySelector("article") ||
+          doc.querySelector("[role='main']") ||
+          doc.body;
+        return Array.prototype.slice
+          .call(container.querySelectorAll("h1, h2, h3, p, li"))
+          .map(function (node) {
+            return {
+              tag: /^H[1-3]$/.test(node.tagName) ? node.tagName.toLowerCase() : "p",
+              text: clean(node.textContent),
+            };
+          })
+          .filter(function (item) {
+            return item.text.length > 40;
+          })
+          .slice(0, 24);
+      });
   }
 
   function buildWorkspace() {
@@ -632,6 +1615,7 @@
       "<div class=\"aikb-app-actions\">" +
       "<a href=\"/\">Notebook library</a>" +
       "<a href=\"/learning-tools/\">Learning tools</a>" +
+      "<button class=\"aikb-notes-top\" type=\"button\" data-notes-open>Notes</button>" +
       "</div>";
 
     var workspace = document.createElement("section");
@@ -647,7 +1631,7 @@
       toolButton("mindmap", "map", "Mind Map") +
       toolButton("flashcards", "cards", "Flashcards") +
       toolButton("quiz", "quiz", "Quiz") +
-      "</div><div class=\"aikb-study-panel__output\" aria-live=\"polite\"></div><button class=\"aikb-add-note\" type=\"button\">Add note</button></aside>";
+      "</div><div class=\"aikb-study-panel__output\" aria-live=\"polite\"></div><div class=\"aikb-notes-panel\" aria-live=\"polite\"></div></aside>";
 
     root.innerHTML = "";
     root.appendChild(appHeader);
@@ -659,23 +1643,115 @@
     });
 
     var sourceList = workspace.querySelector(".aikb-source-list");
-    sourceList.innerHTML = sourceItems(reader)
-      .map(function (source) {
-        return (
-          "<div class=\"aikb-source-item\"><span>" +
-          icon("doc") +
-          "</span><div><strong>" +
-          escapeHtml(source.label) +
-          "</strong><small>" +
-          escapeHtml(source.type) +
-          "</small></div><input type=\"checkbox\" checked aria-label=\"Use source\"></div>"
-        );
-      })
-      .join("");
+    var sources = sourceItems(reader);
+    if (sources.length) {
+      sourceList.innerHTML = sources
+        .map(function (source) {
+          return (
+            "<a class=\"aikb-source-item\" href=\"" +
+            escapeHtml(source.href) +
+            "\" data-source-href=\"" +
+            escapeHtml(source.href) +
+            "\" data-source-label=\"" +
+            escapeHtml(source.label) +
+            "\" data-source-type=\"" +
+            escapeHtml(source.type) +
+            "\" rel=\"noreferrer\">" +
+            "<span>" +
+            icon("doc") +
+            "</span><div><strong>" +
+            escapeHtml(source.label) +
+            "</strong><small>" +
+            escapeHtml(source.description) +
+            "</small></div><span class=\"aikb-source-action\">View</span></a>"
+          );
+        })
+        .join("");
+      populateSourceDescriptions(sourceList, sources);
+    } else {
+      sourceList.innerHTML =
+        "<div class=\"aikb-source-empty\"><strong>No external sources cited yet</strong><span>This page is local handbook content. Add primary links in the article to populate this panel.</span></div>";
+    }
 
     var output = workspace.querySelector(".aikb-study-panel__output");
+    var topicHtml = reader.innerHTML;
 
     workspace.addEventListener("click", function (event) {
+      var sourceLink = event.target.closest(".aikb-source-item");
+      if (sourceLink) {
+        event.preventDefault();
+        renderSourcePreview(reader, topicHtml, {
+          href: sourceLink.dataset.sourceHref,
+          label: sourceLink.dataset.sourceLabel,
+          type: sourceLink.dataset.sourceType,
+        });
+        return;
+      }
+
+      var cardMenu = event.target.closest("[data-card-menu]");
+      if (cardMenu) {
+        event.preventDefault();
+        event.stopPropagation();
+        var menu = cardMenu.parentElement.querySelector(".aikb-card-menu__items");
+        var wasHidden = menu.hidden;
+        closeCardMenus(workspace);
+        menu.hidden = !wasHidden;
+        return;
+      }
+
+      if (!event.target.closest(".aikb-card-menu")) {
+        closeCardMenus(workspace);
+      }
+
+      if (event.target.closest("[data-notes-open]")) {
+        renderNotesPanel();
+        return;
+      }
+
+      if (event.target.closest("[data-note-new]")) {
+        createManualNote(pageTitle(reader));
+        return;
+      }
+
+      if (event.target.closest("[data-google-docs-export]")) {
+        exportNotesToGoogleDocs();
+        return;
+      }
+
+      var notesClose = event.target.closest("[data-notes-close]");
+      if (notesClose) {
+        workspace.querySelector(".aikb-notes-panel").dataset.open = "false";
+        return;
+      }
+
+      var addCardNote = event.target.closest("[data-card-add-note]");
+      if (addCardNote) {
+        event.preventDefault();
+        event.stopPropagation();
+        var noteRoot = addCardNote.closest(".aikb-study-card");
+        var saved = addNote({
+          title: noteRoot.dataset.title,
+          content: noteRoot.dataset.content,
+          category: pageTitle(reader),
+          source: pageTitle(reader),
+        });
+        if (saved) {
+          markCardSaved(noteRoot);
+        }
+        closeCardMenus(workspace);
+        return;
+      }
+
+      var listenCard = event.target.closest("[data-card-listen]");
+      if (listenCard) {
+        event.preventDefault();
+        event.stopPropagation();
+        var listenRoot = listenCard.closest(".aikb-study-card");
+        speak(listenRoot.dataset.content || "");
+        closeCardMenus(workspace);
+        return;
+      }
+
       var backButton = event.target.closest("[data-study-back]");
       if (backButton) {
         output.dataset.open = "false";
@@ -692,10 +1768,11 @@
         renderQuiz(reader, output);
       } else if (tool === "flashcards") {
         renderFlashcards(reader, output);
+        syncSavedCards(output, pageTitle(reader));
       } else if (tool === "audio") {
         renderAudio(reader, output);
       } else if (tool === "mindmap") {
-        renderMindMap(reader, output);
+        renderMindMap(reader, output, sources, topicHtml);
       } else if (tool === "guide") {
         renderGuide(reader, output);
       }

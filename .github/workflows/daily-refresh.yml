@@ -1,0 +1,49 @@
+name: Daily Content Refresh
+
+on:
+  schedule:
+    - cron: "17 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install Poetry
+        run: pipx install "poetry>=2.0,<3.0"
+
+      - name: Configure Poetry
+        run: poetry config virtualenvs.in-project true
+
+      - name: Install dependencies
+        run: poetry install --with dev --no-interaction --no-ansi
+
+      - name: Refresh content
+        run: poetry run aikb refresh
+
+      - name: Run quality gate
+        run: poetry run aikb check
+
+      - name: Commit refreshed content
+        run: |
+          if [ -z "$(git status --porcelain data/items docs/weekly)" ]; then
+            echo "No content changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/items docs/weekly
+          git commit -m "Refresh AI engineering content"
+          git push

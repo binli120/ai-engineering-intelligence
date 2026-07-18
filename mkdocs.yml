@@ -2,6 +2,18 @@ site_name: AI Engineering Intelligence
 site_description: Curated AI coding, agents, MCP, tutorials, and production engineering
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+  features:
+    - navigation.instant
+    - navigation.top
+    - search.suggest
+    - content.code.copy
 extra_css:
   - assets/learning-tools.css
 extra_javascript:
@@ -18,6 +30,9 @@ nav:
   - MCP: mcp/index.md
   - AI Coding:
       - Overview: coding/index.md
+      - Codex: coding/codex.md
+      - Cursor: coding/cursor.md
+      - Claude Code: coding/claude-code.md
       - AI Skills: coding/ai-skills.md
   - Learning Tools: learning-tools/index.md
   - Production AI:
@@ -25,7 +40,11 @@ nav:
       - Evaluation: production/evaluation.md
       - Observability: production/observability.md
       - Security: production/security.md
-  - Tutorials: tutorials/index.md
+  - Tutorials:
+      - Overview: tutorials/index.md
+      - Agent Tool Calling: tutorials/agent-tool-calling.md
+      - RAG Evaluation: tutorials/rag-evaluation.md
+      - Coding Agent Workflow: tutorials/coding-agent-workflow.md
   - Weekly Updates: weekly/index.md
 markdown_extensions:
   - admonition

@@ -1,0 +1,4906 @@
+{
+  "https://agentskills.io/": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Agent Skills Overview"
+      },
+      {
+        "tag": "p",
+        "text": "A standardized way to give AI agents new capabilities and expertise."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b What are Agent Skills?"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Why Agent Skills?"
+      },
+      {
+        "tag": "p",
+        "text": "Domain expertise : Capture specialized knowledge \u2014 from legal review processes to data analysis pipelines to presentation formatting \u2014 as reusable instructions and resources."
+      },
+      {
+        "tag": "p",
+        "text": "Repeatable workflows : Turn multi-step tasks into consistent, auditable procedures."
+      },
+      {
+        "tag": "p",
+        "text": "Cross-product reuse : Build a skill once and use it across any skills-compatible agent."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b How do Agent Skills work?"
+      },
+      {
+        "tag": "p",
+        "text": "Discovery : At startup, agents load only the name and description of each available skill, just enough to know when it might be relevant."
+      },
+      {
+        "tag": "p",
+        "text": "Activation : When a task matches a skill\u2019s description, the agent reads the full SKILL.md instructions into context."
+      },
+      {
+        "tag": "p",
+        "text": "Execution : The agent follows the instructions, optionally executing bundled code or loading referenced files as needed."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Where can I use Agent Skills?"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Open development"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Get started with Agent Skills"
+      },
+      {
+        "tag": "h2",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "h2",
+        "text": "Specification"
+      }
+    ],
+    "label": "Agent Skills overview",
+    "title": "Agent Skills Overview - Agent Skills",
+    "url": "https://agentskills.io/home"
+  },
+  "https://agentskills.io/specification": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Specification"
+      },
+      {
+        "tag": "p",
+        "text": "The complete format specification for Agent Skills."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Directory structure"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b SKILL.md format"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Frontmatter"
+      },
+      {
+        "tag": "p",
+        "text": "May only contain unicode lowercase alphanumeric characters ( a-z , 0-9 ) and hyphens ( - )"
+      },
+      {
+        "tag": "p",
+        "text": "Should describe both what the skill does and when to use it"
+      },
+      {
+        "tag": "p",
+        "text": "Should include specific keywords that help agents identify relevant tasks"
+      },
+      {
+        "tag": "p",
+        "text": "We recommend keeping it short (either the name of a license or the name of a bundled license file)"
+      },
+      {
+        "tag": "p",
+        "text": "Should only be included if your skill has specific environment requirements"
+      },
+      {
+        "tag": "p",
+        "text": "Can indicate intended product, required system packages, network access needs, etc."
+      },
+      {
+        "tag": "p",
+        "text": "Clients can use this to store additional properties not defined by the Agent Skills spec"
+      },
+      {
+        "tag": "p",
+        "text": "We recommend making your key names reasonably unique to avoid accidental conflicts"
+      },
+      {
+        "tag": "p",
+        "text": "A space-separated string of tools that are pre-approved to run"
+      },
+      {
+        "tag": "p",
+        "text": "Experimental. Support for this field may vary between agent implementations"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Body content"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Optional directories"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b scripts/"
+      },
+      {
+        "tag": "p",
+        "text": "Be self-contained or clearly document dependencies"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b references/"
+      },
+      {
+        "tag": "p",
+        "text": "FORMS.md - Form templates or structured data formats"
+      },
+      {
+        "tag": "p",
+        "text": "Domain-specific files ( finance.md , legal.md , etc.)"
+      },
+      {
+        "tag": "p",
+        "text": "Templates (document templates, configuration templates)"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Progressive disclosure"
+      },
+      {
+        "tag": "p",
+        "text": "Metadata (~100 tokens): The name and description fields are loaded at startup for all skills"
+      },
+      {
+        "tag": "p",
+        "text": "Instructions (< 5000 tokens recommended): The full SKILL.md body is loaded when the skill is activated"
+      },
+      {
+        "tag": "p",
+        "text": "Resources (as needed): Files (e.g. those in scripts/ , references/ , or assets/ ) are loaded only when required"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b File references"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Validation"
+      }
+    ],
+    "label": "Agent Skills specification",
+    "title": "Specification - Agent Skills",
+    "url": "https://agentskills.io/specification"
+  },
+  "https://code.claude.com/docs/": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "\u200b Use Claude Code everywhere"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Next steps"
+      },
+      {
+        "tag": "p",
+        "text": "Quickstart : walk through your first real task, from exploring a codebase to committing a fix"
+      },
+      {
+        "tag": "p",
+        "text": "Store instructions and memories : give Claude persistent instructions with CLAUDE.md files and auto memory"
+      },
+      {
+        "tag": "p",
+        "text": "Common workflows and best practices : patterns for getting the most out of Claude Code"
+      },
+      {
+        "tag": "p",
+        "text": "A harness for every task : how the Claude Code team uses dynamic workflows to orchestrate subagents at scale"
+      },
+      {
+        "tag": "p",
+        "text": "Settings : customize Claude Code for your workflow"
+      },
+      {
+        "tag": "p",
+        "text": "Troubleshooting : solutions for common issues"
+      },
+      {
+        "tag": "p",
+        "text": "code.claude.com : demos, pricing, and product details"
+      }
+    ],
+    "label": "Claude Code Documentation",
+    "title": "Overview - Claude Code Docs",
+    "url": "https://code.claude.com/docs/"
+  },
+  "https://code.claude.com/docs/en/how-claude-code-works": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "How Claude Code works"
+      },
+      {
+        "tag": "p",
+        "text": "Understand the agentic loop, built-in tools, and how Claude Code interacts with your project."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b The agentic loop"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b What Claude can access"
+      },
+      {
+        "tag": "p",
+        "text": "Your project. Files in your directory and subdirectories, plus files elsewhere with your permission."
+      },
+      {
+        "tag": "p",
+        "text": "Your terminal. Any command you could run: build tools, git, package managers, system utilities, scripts. If you can do it from the command line, Claude can too."
+      },
+      {
+        "tag": "p",
+        "text": "Your git state. Current branch, uncommitted changes, and recent commit history."
+      },
+      {
+        "tag": "p",
+        "text": "Your CLAUDE.md . A markdown file where you store project-specific instructions, conventions, and context that Claude should know every session."
+      },
+      {
+        "tag": "p",
+        "text": "Auto memory . Learnings Claude saves automatically as you work, like project patterns and your preferences. The first 200 lines or 25KB of MEMORY.md, whichever comes first, load at the start of each session."
+      },
+      {
+        "tag": "p",
+        "text": "Extensions you configure. MCP servers for external services, skills for workflows, subagents for delegated work, and Claude in Chrome for browser interaction."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Environments and interfaces"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Execution environments"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Interfaces"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Work with sessions"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Work across branches"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Resume or fork sessions"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b The context window"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Stay safe with checkpoints and permissions"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Undo changes with checkpoints"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Control what Claude can do"
+      },
+      {
+        "tag": "p",
+        "text": "Manual : Claude asks before file edits and shell commands"
+      },
+      {
+        "tag": "p",
+        "text": "Accept edits : Claude edits files and runs common filesystem commands like mkdir and mv without asking, still asks for other commands"
+      },
+      {
+        "tag": "p",
+        "text": "Plan : Claude explores and proposes a plan without editing your source files"
+      },
+      {
+        "tag": "p",
+        "text": "Auto : Claude evaluates all actions with background safety checks"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Work effectively with Claude Code"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Ask Claude Code for help"
+      },
+      {
+        "tag": "p",
+        "text": "/init walks you through creating a CLAUDE.md for your project"
+      },
+      {
+        "tag": "p",
+        "text": "/doctor runs a setup checkup that diagnoses installation and configuration issues and can fix them"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b It\u2019s a conversation"
+      },
+      {
+        "tag": "p",
+        "text": "Press Esc to stop Claude immediately. The running tool call is canceled and Claude waits for your next instruction."
+      },
+      {
+        "tag": "p",
+        "text": "Type a correction and press Enter to send it without stopping the running tool. Claude reads it as soon as the current action completes and adjusts before deciding its next step."
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Be specific upfront"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Give Claude something to verify against"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Explore before implementing"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Delegate, don\u2019t dictate"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b What\u2019s next"
+      },
+      {
+        "tag": "h2",
+        "text": "Extend with features"
+      },
+      {
+        "tag": "h2",
+        "text": "Common workflows"
+      }
+    ],
+    "label": "How Claude Code Works",
+    "title": "How Claude Code works - Claude Code Docs",
+    "url": "https://code.claude.com/docs/en/how-claude-code-works"
+  },
+  "https://code.claude.com/docs/en/skills": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Extend Claude with skills"
+      },
+      {
+        "tag": "p",
+        "text": "Create, manage, and share skills to extend Claude\u2019s capabilities in Claude Code. Includes custom commands and bundled skills."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Bundled skills"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Run and verify your app"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Getting started"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Create your first skill"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Where skills live"
+      },
+      {
+        "tag": "p",
+        "text": "The nested one appears under a directory-qualified name, apps/web:deploy ."
+      },
+      {
+        "tag": "p",
+        "text": "Its description says which directory it applies to."
+      },
+      {
+        "tag": "p",
+        "text": "Claude picks the variant that matches the files it is working on."
+      },
+      {
+        "tag": "p",
+        "text": "For Cowork and cloud sessions, enable the skill for your claude.ai account."
+      },
+      {
+        "tag": "p",
+        "text": "For cloud sessions, you can instead commit the skill to the repository\u2019s .claude/skills/ , or ship it in a plugin declared in the repository\u2019s .claude/settings.json . Repo-declared plugins install at session start ; plugins enabled only in your user settings don\u2019t transfer."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Configure skills"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Types of skill content"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Frontmatter reference"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Add supporting files"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Control who invokes a skill"
+      },
+      {
+        "tag": "p",
+        "text": "disable-model-invocation: true : Only you can invoke the skill. Use this for workflows with side effects or that you want to control timing, like /commit , /deploy , or /send-slack-message . You don\u2019t want Claude deciding to deploy because your code looks ready."
+      },
+      {
+        "tag": "p",
+        "text": "user-invocable: false : Only Claude can invoke the skill. Use this for background knowledge that isn\u2019t actionable as a command. A legacy-system-context skill explains how an old system works. Claude should know this when relevant, but /legacy-system-context isn\u2019t a meaningful action for users to take."
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Skill content lifecycle"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Pre-approve tools for a skill"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Pass arguments to skills"
+      }
+    ],
+    "label": "Claude Code skills documentation",
+    "title": "Extend Claude with skills - Claude Code Docs",
+    "url": "https://code.claude.com/docs/en/skills"
+  },
+  "https://developers.openai.com/api/docs/guides/conversation-state": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Conversation state"
+      },
+      {
+        "tag": "p",
+        "text": "Learn how to manage conversation state during a model interaction."
+      },
+      {
+        "tag": "p",
+        "text": "OpenAI provides a few ways to manage conversation state, which is important for preserving information across multiple messages or turns in a conversation."
+      },
+      {
+        "tag": "p",
+        "text": "When troubleshooting cases where GPT-5.5 treats an intermediate update as the final answer, verify your integration preserves the assistant message phase field correctly. See Phase parameter for details."
+      },
+      {
+        "tag": "h2",
+        "text": "Manually manage conversation state"
+      },
+      {
+        "tag": "p",
+        "text": "While each text generation request is independent and stateless, you can still implement multi-turn conversations by providing additional messages as parameters to your text generation request. Consider a knock-knock joke:"
+      }
+    ],
+    "label": "Conversation state",
+    "title": "Conversation state | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/conversation-state"
+  },
+  "https://developers.openai.com/api/docs/guides/embeddings": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Vector embeddings"
+      },
+      {
+        "tag": "p",
+        "text": "Learn how to turn text into numbers, unlocking use cases like search."
+      },
+      {
+        "tag": "h2",
+        "text": "What are embeddings?"
+      },
+      {
+        "tag": "p",
+        "text": "OpenAI\u2019s text embeddings measure the relatedness of text strings. Embeddings are commonly used for:"
+      },
+      {
+        "tag": "p",
+        "text": "Search (where results are ranked by relevance to a query string)"
+      },
+      {
+        "tag": "p",
+        "text": "Clustering (where text strings are grouped by similarity)"
+      },
+      {
+        "tag": "p",
+        "text": "Recommendations (where items with related text strings are recommended)"
+      },
+      {
+        "tag": "p",
+        "text": "Anomaly detection (where outliers with little relatedness are identified)"
+      },
+      {
+        "tag": "p",
+        "text": "Diversity measurement (where similarity distributions are analyzed)"
+      },
+      {
+        "tag": "p",
+        "text": "Classification (where text strings are classified by their most similar label)"
+      },
+      {
+        "tag": "p",
+        "text": "An embedding is a vector (list) of floating point numbers. The distance between two vectors measures their relatedness. Small distances suggest high relatedness and large distances suggest low relatedness."
+      },
+      {
+        "tag": "p",
+        "text": "Visit our pricing page to learn about embeddings pricing. Requests are billed based on the number of tokens in the input ."
+      },
+      {
+        "tag": "h2",
+        "text": "How to get embeddings"
+      },
+      {
+        "tag": "p",
+        "text": "To get an embedding, send your text string to the embeddings API endpoint along with the embedding model name (e.g., text-embedding-3-small ):"
+      },
+      {
+        "tag": "p",
+        "text": "The response contains the embedding vector (list of floating point numbers) along with some additional metadata. You can extract the embedding vector, save it in a vector database, and use for many different use cases."
+      },
+      {
+        "tag": "p",
+        "text": "By default, the length of the embedding vector is 1536 for text-embedding-3-small or 3072 for text-embedding-3-large . To reduce the embedding\u2019s dimensions without losing its concept-representing properties, pass in the dimensions parameter . Find more detail on embedding dimensions in the embedding use case section ."
+      },
+      {
+        "tag": "h2",
+        "text": "Embedding models"
+      },
+      {
+        "tag": "p",
+        "text": "OpenAI offers two powerful third-generation embedding model (denoted by -3 in the model ID). Read the embedding v3 announcement blog post for more details."
+      },
+      {
+        "tag": "p",
+        "text": "Usage is priced per input token. Below is an example of pricing pages of text per US dollar (assuming ~800 tokens per page):"
+      },
+      {
+        "tag": "p",
+        "text": "Here we show some representative use cases, using the Amazon fine-food reviews dataset ."
+      },
+      {
+        "tag": "h3",
+        "text": "Obtaining the embeddings"
+      },
+      {
+        "tag": "p",
+        "text": "The dataset contains a total of 568,454 food reviews left by Amazon users up to October 2012. We use a subset of the 1000 most recent reviews for illustration purposes. The reviews are in English and tend to be positive or negative. Each review has a ProductId , UserId , Score , review title ( Summary ) and review body ( Text ). For example:"
+      },
+      {
+        "tag": "p",
+        "text": "Below, we combine the review summary and review text into a single combined text. The model encodes this combined text and output a single vector embedding."
+      },
+      {
+        "tag": "p",
+        "text": "To load the data from a saved file, you can run the following:"
+      }
+    ],
+    "label": "OpenAI embeddings",
+    "title": "Vector embeddings | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/embeddings"
+  },
+  "https://developers.openai.com/api/docs/guides/evals": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Working with evals"
+      },
+      {
+        "tag": "p",
+        "text": "Test and improve model outputs through evaluations."
+      },
+      {
+        "tag": "p",
+        "text": "Evaluations (often called evals ) test model outputs to ensure they meet style and content criteria that you specify. Writing evals to understand how your LLM applications are performing against your expectations, especially when upgrading or trying new models, is an essential component to building reliable applications."
+      },
+      {
+        "tag": "p",
+        "text": "In this guide, we will focus on configuring evals programmatically using the Evals API . If you prefer, you can also configure evals in the OpenAI dashboard ."
+      },
+      {
+        "tag": "p",
+        "text": "OpenAI is deprecating the Evals platform. Existing evals content remains available during the transition window. Evals will become read-only for existing users on October 31, 2026, and the platform is scheduled to shut down on November 30, 2026. See the deprecations page for the current timeline."
+      },
+      {
+        "tag": "p",
+        "text": "If you\u2019re new to evaluations, or want a more iterative environment to experiment in as you build your eval, consider trying Datasets instead."
+      },
+      {
+        "tag": "p",
+        "text": "Broadly, there are three steps to build and run evals for your LLM application."
+      },
+      {
+        "tag": "p",
+        "text": "Run your eval with test inputs (a prompt and input data)"
+      },
+      {
+        "tag": "p",
+        "text": "Analyze the results, then iterate and improve on your prompt"
+      },
+      {
+        "tag": "p",
+        "text": "This process is somewhat similar to behavior-driven development (BDD), where you begin by specifying how the system should behave before implementing and testing the system. Let\u2019s see how we would complete each of the steps above using the Evals API ."
+      },
+      {
+        "tag": "h2",
+        "text": "Create an eval for a task"
+      },
+      {
+        "tag": "p",
+        "text": "Creating an eval begins by describing a task to be done by a model. Let\u2019s say that we would like to use a model to classify the contents of IT support tickets into one of three categories: Hardware , Software , or Other ."
+      },
+      {
+        "tag": "p",
+        "text": "To implement this use case, you can use either the Chat Completions API or the Responses API . Both examples below combine a developer message with a user message containing the text of a support ticket."
+      }
+    ],
+    "label": "OpenAI evals guide",
+    "title": "Working with evals | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/evals"
+  },
+  "https://developers.openai.com/api/docs/guides/graders": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "Search the API docs"
+      },
+      {
+        "tag": "h3",
+        "text": "Get started"
+      },
+      {
+        "tag": "h3",
+        "text": "Core concepts"
+      },
+      {
+        "tag": "h3",
+        "text": "SDKs and CLI"
+      },
+      {
+        "tag": "h3",
+        "text": "Legacy APIs"
+      },
+      {
+        "tag": "h3",
+        "text": "Choose a model"
+      },
+      {
+        "tag": "h3",
+        "text": "Text and code"
+      },
+      {
+        "tag": "h3",
+        "text": "Images and video"
+      },
+      {
+        "tag": "h3",
+        "text": "Realtime and audio"
+      },
+      {
+        "tag": "h3",
+        "text": "Specialized models"
+      },
+      {
+        "tag": "h3",
+        "text": "Agents SDK"
+      },
+      {
+        "tag": "h3",
+        "text": "Search and retrieval"
+      },
+      {
+        "tag": "h3",
+        "text": "Connect tools and data"
+      },
+      {
+        "tag": "h3",
+        "text": "Build tool workflows"
+      },
+      {
+        "tag": "h3",
+        "text": "Computer and code"
+      },
+      {
+        "tag": "h3",
+        "text": "Connection methods"
+      },
+      {
+        "tag": "h3",
+        "text": "Sessions and operations"
+      },
+      {
+        "tag": "h3",
+        "text": "Performance and quality"
+      },
+      {
+        "tag": "h3",
+        "text": "Cost and throughput"
+      },
+      {
+        "tag": "h3",
+        "text": "Safety and governance"
+      },
+      {
+        "tag": "h3",
+        "text": "Infrastructure and access"
+      },
+      {
+        "tag": "h3",
+        "text": "Operations"
+      },
+      {
+        "tag": "h3",
+        "text": "Conversion apps"
+      },
+      {
+        "tag": "p",
+        "text": "Authenticate with Workspace Agent access tokens"
+      },
+      {
+        "tag": "h3",
+        "text": "File Upload"
+      },
+      {
+        "tag": "h3",
+        "text": "Measurement"
+      },
+      {
+        "tag": "h3",
+        "text": "Advertiser API"
+      },
+      {
+        "tag": "h3",
+        "text": "API Reference"
+      },
+      {
+        "tag": "h3",
+        "text": "Foundations"
+      },
+      {
+        "tag": "h3",
+        "text": "Available on"
+      },
+      {
+        "tag": "h3",
+        "text": "Capabilities"
+      },
+      {
+        "tag": "h3",
+        "text": "Customization"
+      },
+      {
+        "tag": "h3",
+        "text": "Config file"
+      },
+      {
+        "tag": "h3",
+        "text": "Agent configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Extend ChatGPT and Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Development workflows"
+      },
+      {
+        "tag": "h3",
+        "text": "Extend and automate"
+      },
+      {
+        "tag": "h3",
+        "text": "Environments"
+      },
+      {
+        "tag": "h3",
+        "text": "Build with Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Third-party integrations"
+      }
+    ],
+    "label": "OpenAI graders guide",
+    "title": "Graders | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/graders"
+  },
+  "https://developers.openai.com/api/docs/guides/migrate-to-responses": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Migrate to the Responses API"
+      },
+      {
+        "tag": "p",
+        "text": "The Responses API is our new API primitive, an evolution of Chat Completions which brings added simplicity and powerful agentic primitives to your integrations."
+      },
+      {
+        "tag": "p",
+        "text": "While Chat Completions remains supported, Responses is recommended for all new projects."
+      },
+      {
+        "tag": "h2",
+        "text": "About the Responses API"
+      },
+      {
+        "tag": "p",
+        "text": "The Responses API is a unified interface for building powerful, agent-like applications. It contains:"
+      },
+      {
+        "tag": "p",
+        "text": "Built-in tools like web search , file search , computer use , code interpreter , and remote MCPs ."
+      },
+      {
+        "tag": "p",
+        "text": "Seamless multi-turn interactions that allow you to pass previous responses for higher accuracy reasoning results."
+      },
+      {
+        "tag": "p",
+        "text": "Native multimodal support for text and images."
+      },
+      {
+        "tag": "h2",
+        "text": "Responses benefits"
+      },
+      {
+        "tag": "p",
+        "text": "The Responses API contains several benefits over Chat Completions:"
+      },
+      {
+        "tag": "p",
+        "text": "Better performance : Using reasoning models, like GPT-5, with Responses will result in better model intelligence when compared to Chat Completions. Our internal evals reveal a 3% improvement in SWE-bench with same prompt and setup."
+      },
+      {
+        "tag": "p",
+        "text": "Agentic by default : The Responses API is an agentic loop, allowing the model to call multiple tools, like web_search , image_generation , file_search , code_interpreter , remote MCP servers, as well as your own custom functions, within the span of one API request."
+      },
+      {
+        "tag": "p",
+        "text": "Lower costs : Results in lower costs due to improved cache utilization (40% to 80% improvement when compared to Chat Completions in internal tests)."
+      },
+      {
+        "tag": "p",
+        "text": "Stateful context : Use store: true to maintain state from turn to turn, preserving reasoning and tool context from turn-to-turn."
+      },
+      {
+        "tag": "p",
+        "text": "Flexible inputs : Pass a string with input or a list of messages; use instructions for system-level guidance."
+      },
+      {
+        "tag": "p",
+        "text": "Encrypted reasoning : Opt-out of statefulness while still benefiting from advanced reasoning."
+      },
+      {
+        "tag": "p",
+        "text": "Future-proof : Future-proofed for upcoming models."
+      },
+      {
+        "tag": "p",
+        "text": "See how the Responses API compares to the Chat Completions API in specific scenarios."
+      },
+      {
+        "tag": "p",
+        "text": "Both APIs make it easy to generate output from our models. The input to, and result of, a call to Chat completions is an array of Messages , while the Responses API uses Items . An Item is a union of many types, representing the range of possibilities of model actions. A message is a type of Item, as is a function_call or function_call_output . Unlike a Chat Completions Message, where many concerns are glued together into one object, Items are distinct from one another and better represent the basic unit of model context."
+      },
+      {
+        "tag": "p",
+        "text": "Additionally, Chat Completions can return multiple parallel generations as choices , using the n param. In Responses, we\u2019ve removed this param, leaving only one generation."
+      },
+      {
+        "tag": "p",
+        "text": "When you get a response back from the Responses API, the fields differ slightly. Instead of a message , you receive a typed response object with its own id . Responses are stored by default. Chat completions are stored by default for new accounts. To disable storage when using either API, set store: false ."
+      }
+    ],
+    "label": "Migrate to the Responses API",
+    "title": "Migrate to the Responses API | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/migrate-to-responses"
+  },
+  "https://developers.openai.com/api/docs/guides/tools": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Using tools"
+      },
+      {
+        "tag": "p",
+        "text": "Use tools like remote MCP servers or web search to extend the model's capabilities."
+      },
+      {
+        "tag": "p",
+        "text": "When generating model responses or building agents, you can extend capabilities using built\u2011in tools, function calling, Programmatic Tool Calling, tool search, and remote MCP servers. These enable the model to search the web, retrieve from your files, load deferred tool definitions at runtime, call your own functions, compose tool calls in JavaScript, or access third\u2011party services. Only gpt-5.4 and later models support tool_search ."
+      }
+    ],
+    "label": "Using tools",
+    "title": "Using tools | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/tools"
+  },
+  "https://developers.openai.com/api/docs/guides/tools-file-search": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "Search the API docs"
+      },
+      {
+        "tag": "h3",
+        "text": "Get started"
+      },
+      {
+        "tag": "h3",
+        "text": "Core concepts"
+      },
+      {
+        "tag": "h3",
+        "text": "SDKs and CLI"
+      },
+      {
+        "tag": "h3",
+        "text": "Legacy APIs"
+      },
+      {
+        "tag": "h3",
+        "text": "Choose a model"
+      },
+      {
+        "tag": "h3",
+        "text": "Text and code"
+      },
+      {
+        "tag": "h3",
+        "text": "Images and video"
+      },
+      {
+        "tag": "h3",
+        "text": "Realtime and audio"
+      },
+      {
+        "tag": "h3",
+        "text": "Specialized models"
+      },
+      {
+        "tag": "h3",
+        "text": "Agents SDK"
+      },
+      {
+        "tag": "h3",
+        "text": "Search and retrieval"
+      },
+      {
+        "tag": "h3",
+        "text": "Connect tools and data"
+      },
+      {
+        "tag": "h3",
+        "text": "Build tool workflows"
+      },
+      {
+        "tag": "h3",
+        "text": "Computer and code"
+      },
+      {
+        "tag": "h3",
+        "text": "Connection methods"
+      },
+      {
+        "tag": "h3",
+        "text": "Sessions and operations"
+      },
+      {
+        "tag": "h3",
+        "text": "Performance and quality"
+      },
+      {
+        "tag": "h3",
+        "text": "Cost and throughput"
+      },
+      {
+        "tag": "h3",
+        "text": "Safety and governance"
+      },
+      {
+        "tag": "h3",
+        "text": "Infrastructure and access"
+      },
+      {
+        "tag": "h3",
+        "text": "Operations"
+      },
+      {
+        "tag": "h3",
+        "text": "Conversion apps"
+      },
+      {
+        "tag": "p",
+        "text": "Authenticate with Workspace Agent access tokens"
+      },
+      {
+        "tag": "h3",
+        "text": "File Upload"
+      },
+      {
+        "tag": "h3",
+        "text": "Measurement"
+      },
+      {
+        "tag": "h3",
+        "text": "Advertiser API"
+      },
+      {
+        "tag": "h3",
+        "text": "API Reference"
+      },
+      {
+        "tag": "h3",
+        "text": "Foundations"
+      },
+      {
+        "tag": "h3",
+        "text": "Available on"
+      },
+      {
+        "tag": "h3",
+        "text": "Capabilities"
+      },
+      {
+        "tag": "h3",
+        "text": "Customization"
+      },
+      {
+        "tag": "h3",
+        "text": "Config file"
+      },
+      {
+        "tag": "h3",
+        "text": "Agent configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Extend ChatGPT and Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Development workflows"
+      },
+      {
+        "tag": "h3",
+        "text": "Extend and automate"
+      },
+      {
+        "tag": "h3",
+        "text": "Environments"
+      },
+      {
+        "tag": "h3",
+        "text": "Build with Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Third-party integrations"
+      }
+    ],
+    "label": "OpenAI file search",
+    "title": "File search | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/tools-file-search"
+  },
+  "https://developers.openai.com/codex": {
+    "items": [
+      {
+        "tag": "h3",
+        "text": "Extend ChatGPT and Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Development workflows"
+      },
+      {
+        "tag": "h3",
+        "text": "Extend and automate"
+      },
+      {
+        "tag": "h3",
+        "text": "Environments"
+      },
+      {
+        "tag": "h3",
+        "text": "Build with Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Third-party integrations"
+      },
+      {
+        "tag": "h3",
+        "text": "Permissions"
+      },
+      {
+        "tag": "h3",
+        "text": "Codex Security"
+      },
+      {
+        "tag": "h3",
+        "text": "Getting started"
+      },
+      {
+        "tag": "h3",
+        "text": "Identity and authentication"
+      },
+      {
+        "tag": "h3",
+        "text": "Workspace access, policy, and models"
+      },
+      {
+        "tag": "h3",
+        "text": "Plugin and connector controls"
+      },
+      {
+        "tag": "h3",
+        "text": "Usage, governance, and compliance"
+      },
+      {
+        "tag": "h3",
+        "text": "Deployment and model providers"
+      },
+      {
+        "tag": "p",
+        "text": "Mastering remote engineering work from your phone"
+      },
+      {
+        "tag": "p",
+        "text": "Making private MCP servers reachable without making them public"
+      },
+      {
+        "tag": "p",
+        "text": "How Perplexity Brought Voice Search to Millions Using the Realtime API"
+      },
+      {
+        "tag": "p",
+        "text": "From prompts to products: One year of Responses"
+      },
+      {
+        "tag": "h3",
+        "text": "Contribute"
+      },
+      {
+        "tag": "h3",
+        "text": "Categories"
+      },
+      {
+        "tag": "p",
+        "text": "Start with a goal, idea, or task. ChatGPT can gather context, take action, and produce something useful."
+      },
+      {
+        "tag": "h2",
+        "text": "What should we build?"
+      },
+      {
+        "tag": "h2",
+        "text": "What\u2019s new"
+      },
+      {
+        "tag": "h3",
+        "text": "Take on ambitious work in ChatGPT"
+      },
+      {
+        "tag": "p",
+        "text": "In Work mode, ChatGPT can gather context across files and plugins, take action, and produce reviewable deliverables."
+      },
+      {
+        "tag": "h3",
+        "text": "Choose the right GPT-5.6 model"
+      },
+      {
+        "tag": "p",
+        "text": "Compare Sol for flagship capability, Terra for balanced everyday work, and Luna for speed and lower cost."
+      },
+      {
+        "tag": "h3",
+        "text": "Turn demonstrated workflows into reusable skills"
+      },
+      {
+        "tag": "p",
+        "text": "Record & Replay lets you show Codex a workflow on macOS and turn the demonstration into a reusable skill."
+      },
+      {
+        "tag": "h3",
+        "text": "Continue a chat on another host"
+      },
+      {
+        "tag": "p",
+        "text": "Chat handoff moves a chat and its Git state between your local computer and a connected remote host."
+      },
+      {
+        "tag": "h2",
+        "text": "Docs agent"
+      }
+    ],
+    "label": "Codex documentation",
+    "title": "ChatGPT | ChatGPT Learn",
+    "url": "https://learn.chatgpt.com/docs"
+  },
+  "https://docs.langchain.com/oss/javascript/langgraph/persistence": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Persistence"
+      },
+      {
+        "tag": "p",
+        "text": "LangGraph\u2019s persistence layer gives agents short-term memory through checkpointers and long-term memory through stores."
+      },
+      {
+        "tag": "p",
+        "text": "Checkpointers persist a thread\u2019s graph state as checkpoints. Use them for short-term, thread-scoped memory, including conversation continuity, human-in-the-loop workflows, time travel, and fault tolerance."
+      },
+      {
+        "tag": "p",
+        "text": "Stores persist application-defined data outside the graph state. Use them for long-term, cross-thread memory, including user preferences, facts, and shared knowledge."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Quickstart"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Checkpointer vs. store"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Troubleshooting common issues"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b PostgresSaver: thread_id too long"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b MemorySaver does not persist between restarts"
+      },
+      {
+        "tag": "p",
+        "text": "PostgresSaver : PostgreSQL with async support"
+      },
+      {
+        "tag": "p",
+        "text": "SqliteSaver : Local file-based storage for development"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Checkpoints growing unboundedly"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b State access from parent graph to subgraph"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Next steps"
+      },
+      {
+        "tag": "p",
+        "text": "Use checkpointers to persist and inspect thread state."
+      },
+      {
+        "tag": "p",
+        "text": "Use stores to persist durable data across threads."
+      }
+    ],
+    "label": "LangGraph Persistence",
+    "title": "Persistence - Docs by LangChain",
+    "url": "https://docs.langchain.com/oss/javascript/langgraph/persistence"
+  },
+  "https://docs.langchain.com/oss/javascript/releases/langgraph-v1": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "What's new in LangGraph v1"
+      },
+      {
+        "tag": "h2",
+        "text": "Stable core APIs"
+      },
+      {
+        "tag": "h2",
+        "text": "Reliability, by default"
+      },
+      {
+        "tag": "h2",
+        "text": "Seamless with LangChain v1"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Deprecation of createReactAgent"
+      },
+      {
+        "tag": "p",
+        "text": "For information on the new createAgent API, see the LangChain v1 release notes ."
+      },
+      {
+        "tag": "p",
+        "text": "For information on migrating from createReactAgent to createAgent , see the LangChain v1 migration guide ."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Typed interrupts"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Frontend SDK enhancements"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Event stream encoding"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Custom transports in useStream"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Reporting issues"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Additional resources"
+      },
+      {
+        "tag": "h2",
+        "text": "LangGraph 1.0"
+      },
+      {
+        "tag": "h2",
+        "text": "LangChain Agents"
+      },
+      {
+        "tag": "h2",
+        "text": "Migration guide"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b See also"
+      }
+    ],
+    "label": "LangGraph v1 Notes",
+    "title": "What's new in LangGraph v1 - Docs by LangChain",
+    "url": "https://docs.langchain.com/oss/javascript/releases/langgraph-v1"
+  },
+  "https://docs.langchain.com/oss/python/langgraph/graph-api": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Graph API overview"
+      },
+      {
+        "tag": "p",
+        "text": "State : A shared data structure that represents the current snapshot of your application. It can be any data type, but is typically defined using a shared state schema."
+      },
+      {
+        "tag": "p",
+        "text": "Nodes : Functions that encode the logic of your agents. They receive the current state as input, perform some computation or side-effect, and return an updated state."
+      },
+      {
+        "tag": "p",
+        "text": "Edges : Functions that determine which Node to execute next based on the current state. They can be conditional branches or fixed transitions."
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b StateGraph"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Compiling your graph"
+      },
+      {
+        "tag": "p",
+        "text": "Internal nodes can pass information that is not required in the graph\u2019s input / output."
+      },
+      {
+        "tag": "p",
+        "text": "We may also want to use different input / output schemas for the graph. The output might, for example, only contain a single relevant output key."
+      },
+      {
+        "tag": "p",
+        "text": "We pass state: InputState as the input schema to node_1 . But, we write out to foo , a channel in OverallState . How can we write out to a state channel that is not included in the input schema? This is because a node can write to any state channel in the graph state. The graph state is the union of the state channels defined at initialization, which includes OverallState and the filters InputState and OutputState ."
+      },
+      {
+        "tag": "p",
+        "text": "We initialize the graph with: StateGraph ( OverallState , input_schema = InputState , output_schema = OutputState ) How can we write to PrivateState in node_2 ? How does the graph gain access to this schema if it was not passed in the StateGraph initialization? We can do this because _nodes can also declare additional state channels_ as long as the state schema definition exists. In this case, the PrivateState schema is defined, so we can add bar as a new state channel in the graph and write to it."
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Reducers"
+      },
+      {
+        "tag": "p",
+        "text": "Left argument : The current value already stored in state for that key."
+      },
+      {
+        "tag": "p",
+        "text": "Right argument : The update for that key returned by a node."
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Working with messages in graph state"
+      },
+      {
+        "tag": "p",
+        "text": "config \u2014A RunnableConfig object that contains configuration information like thread_id and tracing information like tags"
+      },
+      {
+        "tag": "p",
+        "text": "runtime \u2014A Runtime object that contains runtime context and other information like store , stream_writer , execution_info , server_info , heartbeat (for idle timeout refresh), and control (for graceful shutdown )"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Re-execution and idempotency"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Using tasks in nodes"
+      }
+    ],
+    "label": "LangGraph Graph API",
+    "title": "Graph API overview - Docs by LangChain",
+    "url": "https://docs.langchain.com/oss/python/langgraph/graph-api"
+  },
+  "https://docs.langchain.com/oss/python/langgraph/overview": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "LangGraph overview"
+      },
+      {
+        "tag": "p",
+        "text": "Gain control with LangGraph to design agents that reliably handle complex tasks"
+      },
+      {
+        "tag": "p",
+        "text": "Deep Agents is an agent harness : planning, subagents, filesystem tools, and context management on top of LangGraph."
+      },
+      {
+        "tag": "p",
+        "text": "LangChain is the agent framework: abstractions and integrations for models, tools, and agent loops."
+      },
+      {
+        "tag": "p",
+        "text": "LangGraph is the orchestration runtime: durable execution, streaming, human-in-the-loop, and persistence."
+      },
+      {
+        "tag": "p",
+        "text": "LangSmith is the platform for tracing, evaluation, prompts, and deployment across frameworks."
+      },
+      {
+        "tag": "p",
+        "text": "LangSmith Engine detects issues in your LangGraph agent traces and proposes fixes. You can open a pull request with the proposed fix directly from the Engine tab."
+      },
+      {
+        "tag": "p",
+        "text": "LangSmith Fleet is the no-code agent builder for templates, integrations, and routine automation."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Core benefits"
+      },
+      {
+        "tag": "p",
+        "text": "Persistence : Build agents that persist through failures and can run for extended periods, resuming from where they left off."
+      },
+      {
+        "tag": "p",
+        "text": "Human-in-the-loop : Incorporate human oversight by inspecting and modifying agent state at any point."
+      },
+      {
+        "tag": "p",
+        "text": "Comprehensive memory : Create stateful agents with both short-term working memory for ongoing reasoning and long-term memory across sessions."
+      },
+      {
+        "tag": "p",
+        "text": "Debugging with LangSmith : Gain deep visibility into complex agent behavior with visualization tools that trace execution paths, capture state transitions, and provide detailed runtime metrics."
+      },
+      {
+        "tag": "p",
+        "text": "Production-ready deployment : Deploy sophisticated agent systems confidently with scalable infrastructure designed to handle the unique challenges of stateful, long-running workflows."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b LangGraph ecosystem"
+      },
+      {
+        "tag": "h2",
+        "text": "LangSmith Observability"
+      },
+      {
+        "tag": "h2",
+        "text": "LangSmith Deployment"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Acknowledgements"
+      }
+    ],
+    "label": "LangGraph Overview",
+    "title": "LangGraph overview - Docs by LangChain",
+    "url": "https://docs.langchain.com/oss/python/langgraph/overview"
+  },
+  "https://docs.langchain.com/oss/python/langgraph/quickstart": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "p",
+        "text": "Install the LangChain Docs MCP server to give your agent access to up-to-date LangChain documentation and examples."
+      },
+      {
+        "tag": "p",
+        "text": "Install LangChain Skills to improve your agent\u2019s performance on LangChain ecosystem tasks."
+      },
+      {
+        "tag": "p",
+        "text": "Use the Graph API if you prefer to define your agent as a graph of nodes and edges."
+      },
+      {
+        "tag": "p",
+        "text": "Use the Functional API if you prefer to define your agent as a single function."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 1. Define tools and model"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 2. Define state"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 3. Define model node"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 4. Define tool node"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 5. Define end logic"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 6. Build and compile the agent"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 2. Define model node"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 3. Define tool node"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b 4. Define agent"
+      }
+    ],
+    "label": "LangGraph Quickstart",
+    "title": "Quickstart - Docs by LangChain",
+    "url": "https://docs.langchain.com/oss/python/langgraph/quickstart"
+  },
+  "https://github.com/langchain-ai/langgraph": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "langchain-ai/langgraph"
+      },
+      {
+        "tag": "h2",
+        "text": "Folders and files"
+      },
+      {
+        "tag": "h2",
+        "text": "Latest commit"
+      },
+      {
+        "tag": "h3",
+        "text": "Low-level orchestration framework for building stateful agents."
+      },
+      {
+        "tag": "p",
+        "text": "Trusted by companies shaping the future of agents \u2013 including Klarna, Replit, Elastic, and more \u2013 LangGraph is a low-level orchestration framework for building, managing, and deploying long-running, stateful agents."
+      },
+      {
+        "tag": "p",
+        "text": "If you're looking to quickly build agents, check out Deep Agents \u2014 a higher-level package built on LangGraph for agents that can plan, use subagents, and leverage file systems for complex tasks."
+      },
+      {
+        "tag": "p",
+        "text": "For an equivalent JS/TS library, check out LangGraph.js and the JS docs ."
+      },
+      {
+        "tag": "h2",
+        "text": "Why use LangGraph?"
+      },
+      {
+        "tag": "p",
+        "text": "LangGraph provides low-level supporting infrastructure for any long-running, stateful workflow or agent:"
+      },
+      {
+        "tag": "p",
+        "text": "Durable execution \u2014 Build agents that persist through failures and can run for extended periods, automatically resuming from exactly where they left off."
+      },
+      {
+        "tag": "p",
+        "text": "Human-in-the-loop \u2014 Seamlessly incorporate human oversight by inspecting and modifying agent state at any point during execution."
+      },
+      {
+        "tag": "p",
+        "text": "Comprehensive memory \u2014 Create truly stateful agents with both short-term working memory for ongoing reasoning and long-term persistent memory across sessions."
+      },
+      {
+        "tag": "p",
+        "text": "Debugging with LangSmith \u2014 Gain deep visibility into complex agent behavior with visualization tools that trace execution paths, capture state transitions, and provide detailed runtime metrics."
+      },
+      {
+        "tag": "p",
+        "text": "Production-ready deployment \u2014 Deploy sophisticated agent systems confidently with scalable infrastructure designed to handle the unique challenges of stateful, long-running workflows."
+      },
+      {
+        "tag": "p",
+        "text": "For developing, debugging, and deploying AI agents and LLM applications, see LangSmith ."
+      },
+      {
+        "tag": "h2",
+        "text": "LangGraph ecosystem"
+      },
+      {
+        "tag": "p",
+        "text": "While LangGraph can be used standalone, it also integrates seamlessly with any LangChain product, giving developers a full suite of tools for building agents."
+      },
+      {
+        "tag": "p",
+        "text": "To improve your LLM application development, pair LangGraph with:"
+      },
+      {
+        "tag": "p",
+        "text": "Deep Agents \u2013 Build agents that can plan, use subagents, and leverage file systems for complex tasks."
+      },
+      {
+        "tag": "p",
+        "text": "LangChain \u2013 Provides integrations and composable components to streamline LLM application development."
+      },
+      {
+        "tag": "p",
+        "text": "LangSmith \u2013 Helpful for agent evals and observability. Debug poor-performing LLM app runs, evaluate agent trajectories, gain visibility in production, and improve performance over time."
+      },
+      {
+        "tag": "p",
+        "text": "LangSmith Deployment \u2013 Deploy and scale agents effortlessly with a purpose-built deployment platform for long-running, stateful workflows. Discover, reuse, configure, and share agents across teams \u2013 and iterate quickly with visual prototyping in LangSmith Studio ."
+      },
+      {
+        "tag": "h2",
+        "text": "Documentation"
+      },
+      {
+        "tag": "p",
+        "text": "docs.langchain.com \u2013 Comprehensive documentation, including conceptual overviews and guides"
+      },
+      {
+        "tag": "p",
+        "text": "reference.langchain.com/python/langgraph \u2013 API reference docs for LangGraph packages"
+      },
+      {
+        "tag": "p",
+        "text": "LangGraph Quickstart \u2013 Get started building with LangGraph"
+      },
+      {
+        "tag": "p",
+        "text": "Chat LangChain \u2013 Chat with the LangChain documentation and get answers to your questions"
+      },
+      {
+        "tag": "p",
+        "text": "Discussions : Visit the LangChain Forum to connect with the community and share all of your technical questions, ideas, and feedback."
+      },
+      {
+        "tag": "h2",
+        "text": "Additional resources"
+      },
+      {
+        "tag": "p",
+        "text": "Guides \u2013 Quick, actionable code snippets for topics such as streaming, adding memory & persistence, and design patterns (e.g. branching, subgraphs, etc.)."
+      },
+      {
+        "tag": "p",
+        "text": "LangChain Academy \u2013 Learn the basics of LangGraph in our free, structured course."
+      },
+      {
+        "tag": "p",
+        "text": "Case studies \u2013 Hear how industry leaders use LangGraph to ship AI applications at scale."
+      },
+      {
+        "tag": "p",
+        "text": "Contributing Guide \u2013 Learn how to contribute to LangChain projects and find good first issues."
+      },
+      {
+        "tag": "p",
+        "text": "Code of Conduct \u2013 Our community guidelines and standards for participation."
+      },
+      {
+        "tag": "h2",
+        "text": "Acknowledgements"
+      },
+      {
+        "tag": "p",
+        "text": "LangGraph is inspired by Pregel and Apache Beam . The public interface draws inspiration from NetworkX . LangGraph is built by LangChain Inc, the creators of LangChain, but can be used without LangChain."
+      },
+      {
+        "tag": "h3",
+        "text": "Code of conduct"
+      },
+      {
+        "tag": "h3",
+        "text": "Contributing"
+      },
+      {
+        "tag": "h3",
+        "text": "Security policy"
+      },
+      {
+        "tag": "h2",
+        "text": "Releases 553"
+      }
+    ],
+    "label": "LangGraph GitHub",
+    "title": "GitHub - langchain-ai/langgraph: Build resilient agents. \u00b7 GitHub",
+    "url": "https://github.com/langchain-ai/langgraph"
+  },
+  "https://github.com/openai/codex": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "openai/codex"
+      },
+      {
+        "tag": "h2",
+        "text": "Folders and files"
+      },
+      {
+        "tag": "h2",
+        "text": "Latest commit"
+      }
+    ],
+    "label": "OpenAI Codex GitHub repository",
+    "title": "GitHub - openai/codex: Lightweight coding agent that runs in your terminal \u00b7 GitHub",
+    "url": "https://github.com/openai/codex"
+  },
+  "https://help.openai.com/en/articles/11096431": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "Get started with Codex CLI"
+      },
+      {
+        "tag": "p",
+        "text": "Install Codex, sign in, and run your first task from a project directory."
+      },
+      {
+        "tag": "h3",
+        "text": "Install Codex"
+      },
+      {
+        "tag": "p",
+        "text": "Install the Codex CLI with the standalone installer for macOS and Linux."
+      },
+      {
+        "tag": "h3",
+        "text": "Run Codex and sign in"
+      },
+      {
+        "tag": "p",
+        "text": "Open a project directory and run codex . The first time you run Codex, choose Sign in with ChatGPT or another available sign-in method."
+      },
+      {
+        "tag": "h3",
+        "text": "Start your first task"
+      },
+      {
+        "tag": "p",
+        "text": "Describe what you want to accomplish. For example, ask Codex to explain the project, make a focused change, or help debug an issue."
+      },
+      {
+        "tag": "p",
+        "text": "Create Git checkpoints before and after a task so you can revert changes. See the best practices ."
+      },
+      {
+        "tag": "h2",
+        "text": "See what Codex CLI can do"
+      },
+      {
+        "tag": "p",
+        "text": "Use one focused terminal loop for interactive work, automation, review, and delegation."
+      },
+      {
+        "tag": "h3",
+        "text": "Keep the coding loop in your terminal"
+      },
+      {
+        "tag": "p",
+        "text": "Start Codex in a repository to explore unfamiliar code, plan a change, edit files, and run your local development tools. Steer the active turn, inspect commands and diffs as they appear, and keep follow-up work in the same session."
+      },
+      {
+        "tag": "h3",
+        "text": "Use skills and plugins"
+      },
+      {
+        "tag": "p",
+        "text": "Package repeatable instructions as skills, then add plugins to connect Codex to your team's tools and data without leaving the CLI."
+      },
+      {
+        "tag": "h3",
+        "text": "Review changes before they ship"
+      },
+      {
+        "tag": "p",
+        "text": "Run a dedicated review against uncommitted changes, a commit, or a base branch. Codex reports prioritized findings without modifying your working tree, so you can address risks before you commit or open a pull request."
+      },
+      {
+        "tag": "h2",
+        "text": "Build a terminal workflow around Codex"
+      },
+      {
+        "tag": "p",
+        "text": "Learn about the CLI features you can use to resume sessions, add visual and web context, split up complex work, and connect Codex to your development tools."
+      },
+      {
+        "tag": "h3",
+        "text": "Return to a saved chat"
+      },
+      {
+        "tag": "p",
+        "text": "Reopen a recent chat from the current repository, or search across local chats when you need to return to older work."
+      },
+      {
+        "tag": "h3",
+        "text": "Bring visual context into the prompt"
+      },
+      {
+        "tag": "p",
+        "text": "Pass an error screenshot, architecture diagram, or design reference with the first prompt, or paste an image into the interactive composer."
+      },
+      {
+        "tag": "h3",
+        "text": "Split up a larger investigation"
+      },
+      {
+        "tag": "p",
+        "text": "Ask Codex to delegate focused work to specialized agents, then bring their findings back into the main terminal session."
+      },
+      {
+        "tag": "h3",
+        "text": "Search for current context"
+      },
+      {
+        "tag": "p",
+        "text": "Switch a run to live web search when a task depends on current releases, documentation, or external behavior. Search activity stays visible in the transcript."
+      },
+      {
+        "tag": "h3",
+        "text": "Move work to Codex cloud"
+      },
+      {
+        "tag": "p",
+        "text": "Browse active and completed chats, submit work to a configured environment, and apply the result to your local repository from the terminal."
+      },
+      {
+        "tag": "h3",
+        "text": "Connect external tools with MCP"
+      },
+      {
+        "tag": "p",
+        "text": "Add local or remote MCP servers, authenticate when needed, and inspect the tools available to the current session before Codex uses them."
+      },
+      {
+        "tag": "h3",
+        "text": "Set the boundaries for each run"
+      },
+      {
+        "tag": "p",
+        "text": "Choose when Codex can edit files or run commands without asking, and inspect the active sandbox and writable roots before you continue."
+      },
+      {
+        "tag": "h3",
+        "text": "Fit Codex to your terminal"
+      },
+      {
+        "tag": "p",
+        "text": "Generate completions for your shell, choose a syntax theme, and open longer prompts in the editor configured by VISUAL or EDITOR."
+      },
+      {
+        "tag": "h2",
+        "text": "Use Codex CLI when\u2026"
+      },
+      {
+        "tag": "h3",
+        "text": "You work from the terminal"
+      },
+      {
+        "tag": "p",
+        "text": "Explore, edit, and run a repository in one focused loop."
+      },
+      {
+        "tag": "h3",
+        "text": "You need scripting or CI"
+      },
+      {
+        "tag": "p",
+        "text": "Run a non-interactive command in a repeatable workflow."
+      }
+    ],
+    "label": "Codex CLI getting started",
+    "title": "Codex CLI | ChatGPT Learn",
+    "url": "https://learn.chatgpt.com/docs/codex/cli"
+  },
+  "https://modelcontextprotocol.io/docs/getting-started/intro": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "What is the Model Context Protocol (MCP)?"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b What can MCP enable?"
+      },
+      {
+        "tag": "p",
+        "text": "Agents can access your Google Calendar and Notion, acting as a more personalized AI assistant."
+      },
+      {
+        "tag": "p",
+        "text": "Claude Code can generate an entire web app using a Figma design."
+      },
+      {
+        "tag": "p",
+        "text": "Enterprise chatbots can connect to multiple databases across an organization, empowering users to analyze data using chat."
+      },
+      {
+        "tag": "p",
+        "text": "AI models can create 3D designs on Blender and print them out using a 3D printer."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Why does MCP matter?"
+      },
+      {
+        "tag": "p",
+        "text": "Developers : MCP reduces development time and complexity when building, or integrating with, an AI application or agent."
+      },
+      {
+        "tag": "p",
+        "text": "AI applications or agents : MCP provides access to an ecosystem of data sources, tools and apps which will enhance capabilities and improve the end-user experience."
+      },
+      {
+        "tag": "p",
+        "text": "End-users : MCP results in more capable AI applications or agents which can access your data and take actions on your behalf when necessary."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Broad ecosystem support"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Start Building"
+      },
+      {
+        "tag": "h2",
+        "text": "Build servers"
+      },
+      {
+        "tag": "h2",
+        "text": "Build clients"
+      },
+      {
+        "tag": "h2",
+        "text": "Build MCP Apps"
+      },
+      {
+        "tag": "h2",
+        "text": "Understand concepts"
+      }
+    ],
+    "label": "MCP introduction",
+    "title": "What is the Model Context Protocol (MCP)? - Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/docs/getting-started/intro"
+  },
+  "https://modelcontextprotocol.io/docs/learn/architecture": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Architecture overview"
+      },
+      {
+        "tag": "p",
+        "text": "MCP Specification : A specification of MCP that outlines the implementation requirements for clients and servers."
+      },
+      {
+        "tag": "p",
+        "text": "MCP SDKs : SDKs for different programming languages that implement MCP."
+      },
+      {
+        "tag": "p",
+        "text": "MCP Development Tools : Tools for developing MCP servers and clients, including the MCP Inspector"
+      },
+      {
+        "tag": "p",
+        "text": "MCP Reference Server Implementations : Reference implementations of MCP servers."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Concepts of MCP"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Participants"
+      },
+      {
+        "tag": "p",
+        "text": "MCP Host : The AI application that coordinates and manages one or multiple MCP clients"
+      },
+      {
+        "tag": "p",
+        "text": "MCP Client : A component that maintains a connection to an MCP server and obtains context from an MCP server for the MCP host to use"
+      },
+      {
+        "tag": "p",
+        "text": "MCP Server : A program that provides context to MCP clients"
+      },
+      {
+        "tag": "p",
+        "text": "Data layer : Defines the JSON-RPC based protocol for client-server communication, including lifecycle management, and core primitives, such as tools, resources, prompts and notifications."
+      },
+      {
+        "tag": "p",
+        "text": "Transport layer : Defines the communication mechanisms and channels that enable data exchange between clients and servers, including transport-specific connection establishment, message framing, and authorization."
+      },
+      {
+        "tag": "p",
+        "text": "Lifecycle management : Handles connection initialization, capability negotiation, and connection termination between clients and servers"
+      },
+      {
+        "tag": "p",
+        "text": "Server features : Enables servers to provide core functionality including tools for AI actions, resources for context data, and prompts for interaction templates from and to the client"
+      },
+      {
+        "tag": "p",
+        "text": "Client features : Enables servers to ask the client to sample from the host LLM, elicit input from the user, and log messages to the client"
+      },
+      {
+        "tag": "p",
+        "text": "Utility features : Supports additional capabilities like notifications for real-time updates and progress tracking for long-running operations"
+      },
+      {
+        "tag": "p",
+        "text": "Stdio transport : Uses standard input/output streams for direct process communication between local processes on the same machine, providing optimal performance with no network overhead."
+      },
+      {
+        "tag": "p",
+        "text": "Streamable HTTP transport : Uses HTTP POST for client-to-server messages with optional Server-Sent Events for streaming capabilities. This transport enables remote server communication and supports standard HTTP authentication methods including bearer tokens, API keys, and custom headers. MCP recommends using OAuth to obtain authentication tokens."
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Data Layer Protocol"
+      },
+      {
+        "tag": "p",
+        "text": "Tools : Executable functions that AI applications can invoke to perform actions (e.g., file operations, API calls, database queries)"
+      },
+      {
+        "tag": "p",
+        "text": "Resources : Data sources that provide contextual information to AI applications (e.g., file contents, database records, API responses)"
+      },
+      {
+        "tag": "p",
+        "text": "Prompts : Reusable templates that help structure interactions with language models (e.g., system prompts, few-shot examples)"
+      },
+      {
+        "tag": "p",
+        "text": "Sampling : Allows servers to request language model completions from the client\u2019s AI application. This is useful when server authors want access to a language model, but want to stay model-independent and not include a language model SDK in their MCP server. They can use the sampling/createMessage method to request a language model completion from the client\u2019s AI application."
+      },
+      {
+        "tag": "p",
+        "text": "Elicitation : Allows servers to request additional information from users. This is useful when server authors want to get more information from the user, or ask for confirmation of an action. They can use the elicitation/create method to request additional information from the user."
+      },
+      {
+        "tag": "p",
+        "text": "Logging : Enables servers to send log messages to clients for debugging and monitoring purposes."
+      },
+      {
+        "tag": "p",
+        "text": "Tasks (Experimental) : Durable execution wrappers that enable deferred result retrieval and status tracking for MCP requests (e.g., expensive computations, workflow automation, batch processing, multi-step operations)"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Data Layer"
+      },
+      {
+        "tag": "p",
+        "text": "Protocol Version Negotiation : The protocolVersion field (e.g., \u201c2025-06-18\u201d) ensures both client and server are using compatible protocol versions. This prevents communication errors that could occur when different versions attempt to interact. If a mutually compatible version is not negotiated, the connection should be terminated."
+      },
+      {
+        "tag": "p",
+        "text": "Capability Discovery : The capabilities object allows each party to declare what features they support, including which primitives they can handle (tools, resources, prompts) and whether they support features like notifications . This enables efficient communication by avoiding unsupported operations."
+      },
+      {
+        "tag": "p",
+        "text": "Identity Exchange : The clientInfo and serverInfo objects provide identification and versioning information for debugging and compatibility purposes."
+      },
+      {
+        "tag": "p",
+        "text": "\"elicitation\": {} - The client declares it can work with user interaction requests (can receive elicitation/create method calls)"
+      },
+      {
+        "tag": "p",
+        "text": "\"tools\": {\"listChanged\": true} - The server supports the tools primitive AND can send tools/list_changed notifications when its tool list changes"
+      },
+      {
+        "tag": "p",
+        "text": "\"resources\": {} - The server also supports the resources primitive (can handle resources/list and resources/read methods)"
+      },
+      {
+        "tag": "p",
+        "text": "name : A unique identifier for the tool within the server\u2019s namespace. This serves as the primary key for tool execution and should follow a clear naming pattern (e.g., calculator_arithmetic rather than just calculate )"
+      },
+      {
+        "tag": "p",
+        "text": "title : A human-readable display name for the tool that clients can show to users"
+      },
+      {
+        "tag": "p",
+        "text": "description : Detailed explanation of what the tool does and when to use it"
+      },
+      {
+        "tag": "p",
+        "text": "inputSchema : A JSON Schema that defines the expected input parameters, enabling type validation and providing clear documentation about required and optional parameters"
+      },
+      {
+        "tag": "p",
+        "text": "name : Must match exactly the tool name from the discovery response ( weather_current ). This ensures the server can correctly identify which tool to execute."
+      },
+      {
+        "tag": "p",
+        "text": "arguments : Contains the input parameters as defined by the tool\u2019s inputSchema . In this example:"
+      },
+      {
+        "tag": "p",
+        "text": "location : \u201cSan Francisco\u201d (required parameter)"
+      }
+    ],
+    "label": "MCP architecture",
+    "title": "Architecture overview - Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/docs/learn/architecture"
+  },
+  "https://modelcontextprotocol.io/specification/2025-06-18": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Specification"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Overview"
+      },
+      {
+        "tag": "p",
+        "text": "Share contextual information with language models"
+      },
+      {
+        "tag": "p",
+        "text": "Hosts : LLM applications that initiate connections"
+      },
+      {
+        "tag": "p",
+        "text": "Clients : Connectors within the host application"
+      },
+      {
+        "tag": "p",
+        "text": "Servers : Services that provide context and capabilities"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Key Details"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Base Protocol"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Features"
+      },
+      {
+        "tag": "p",
+        "text": "Resources : Context and data, for the user or the AI model to use"
+      },
+      {
+        "tag": "p",
+        "text": "Prompts : Templated messages and workflows for users"
+      },
+      {
+        "tag": "p",
+        "text": "Tools : Functions for the AI model to execute"
+      },
+      {
+        "tag": "p",
+        "text": "Sampling : Server-initiated agentic behaviors and recursive LLM interactions"
+      },
+      {
+        "tag": "p",
+        "text": "Roots : Server-initiated inquiries into uri or filesystem boundaries to operate in"
+      },
+      {
+        "tag": "p",
+        "text": "Elicitation : Server-initiated requests for additional information from users"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Additional Utilities"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Security and Trust & Safety"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Key Principles"
+      },
+      {
+        "tag": "p",
+        "text": "Users must explicitly consent to and understand all data access and operations"
+      },
+      {
+        "tag": "p",
+        "text": "Users must retain control over what data is shared and what actions are taken"
+      },
+      {
+        "tag": "p",
+        "text": "Implementors should provide clear UIs for reviewing and authorizing activities"
+      },
+      {
+        "tag": "p",
+        "text": "Hosts must obtain explicit user consent before exposing user data to servers"
+      },
+      {
+        "tag": "p",
+        "text": "Hosts must not transmit resource data elsewhere without user consent"
+      },
+      {
+        "tag": "p",
+        "text": "User data should be protected with appropriate access controls"
+      },
+      {
+        "tag": "p",
+        "text": "Tools represent arbitrary code execution and must be treated with appropriate caution."
+      },
+      {
+        "tag": "p",
+        "text": "In particular, descriptions of tool behavior such as annotations should be considered untrusted, unless obtained from a trusted server."
+      },
+      {
+        "tag": "p",
+        "text": "Hosts must obtain explicit user consent before invoking any tool"
+      },
+      {
+        "tag": "p",
+        "text": "Users should understand what each tool does before authorizing its use"
+      },
+      {
+        "tag": "p",
+        "text": "Users must explicitly approve any LLM sampling requests"
+      },
+      {
+        "tag": "p",
+        "text": "The protocol intentionally limits server visibility into prompts"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Implementation Guidelines"
+      },
+      {
+        "tag": "p",
+        "text": "Build robust consent and authorization flows into their applications"
+      },
+      {
+        "tag": "p",
+        "text": "Provide clear documentation of security implications"
+      },
+      {
+        "tag": "p",
+        "text": "Implement appropriate access controls and data protections"
+      },
+      {
+        "tag": "p",
+        "text": "Follow security best practices in their integrations"
+      },
+      {
+        "tag": "p",
+        "text": "Consider privacy implications in their feature designs"
+      },
+      {
+        "tag": "h2",
+        "text": "Architecture"
+      },
+      {
+        "tag": "h2",
+        "text": "Base Protocol"
+      },
+      {
+        "tag": "h2",
+        "text": "Server Features"
+      },
+      {
+        "tag": "h2",
+        "text": "Client Features"
+      }
+    ],
+    "label": "MCP specification 2025-06-18",
+    "title": "Specification - Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/specification/2025-06-18"
+  },
+  "https://modelcontextprotocol.io/specification/2025-06-18/index": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "Documentation Index"
+      },
+      {
+        "tag": "h1",
+        "text": "Specification"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Overview"
+      },
+      {
+        "tag": "p",
+        "text": "Share contextual information with language models"
+      },
+      {
+        "tag": "p",
+        "text": "Hosts : LLM applications that initiate connections"
+      },
+      {
+        "tag": "p",
+        "text": "Clients : Connectors within the host application"
+      },
+      {
+        "tag": "p",
+        "text": "Servers : Services that provide context and capabilities"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Key Details"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Base Protocol"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Features"
+      },
+      {
+        "tag": "p",
+        "text": "Resources : Context and data, for the user or the AI model to use"
+      },
+      {
+        "tag": "p",
+        "text": "Prompts : Templated messages and workflows for users"
+      },
+      {
+        "tag": "p",
+        "text": "Tools : Functions for the AI model to execute"
+      },
+      {
+        "tag": "p",
+        "text": "Sampling : Server-initiated agentic behaviors and recursive LLM interactions"
+      },
+      {
+        "tag": "p",
+        "text": "Roots : Server-initiated inquiries into uri or filesystem boundaries to operate in"
+      },
+      {
+        "tag": "p",
+        "text": "Elicitation : Server-initiated requests for additional information from users"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Additional Utilities"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Security and Trust & Safety"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Key Principles"
+      },
+      {
+        "tag": "p",
+        "text": "Users must explicitly consent to and understand all data access and operations"
+      },
+      {
+        "tag": "p",
+        "text": "Users must retain control over what data is shared and what actions are taken"
+      },
+      {
+        "tag": "p",
+        "text": "Implementors should provide clear UIs for reviewing and authorizing activities"
+      },
+      {
+        "tag": "p",
+        "text": "Hosts must obtain explicit user consent before exposing user data to servers"
+      },
+      {
+        "tag": "p",
+        "text": "Hosts must not transmit resource data elsewhere without user consent"
+      },
+      {
+        "tag": "p",
+        "text": "User data should be protected with appropriate access controls"
+      },
+      {
+        "tag": "p",
+        "text": "Tools represent arbitrary code execution and must be treated with appropriate caution."
+      },
+      {
+        "tag": "p",
+        "text": "In particular, descriptions of tool behavior such as annotations should be considered untrusted, unless obtained from a trusted server."
+      },
+      {
+        "tag": "p",
+        "text": "Hosts must obtain explicit user consent before invoking any tool"
+      },
+      {
+        "tag": "p",
+        "text": "Users should understand what each tool does before authorizing its use"
+      },
+      {
+        "tag": "p",
+        "text": "Users must explicitly approve any LLM sampling requests"
+      },
+      {
+        "tag": "p",
+        "text": "The protocol intentionally limits server visibility into prompts"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Implementation Guidelines"
+      },
+      {
+        "tag": "p",
+        "text": "Build robust consent and authorization flows into their applications"
+      },
+      {
+        "tag": "p",
+        "text": "Provide clear documentation of security implications"
+      },
+      {
+        "tag": "p",
+        "text": "Implement appropriate access controls and data protections"
+      },
+      {
+        "tag": "p",
+        "text": "Follow security best practices in their integrations"
+      },
+      {
+        "tag": "p",
+        "text": "Consider privacy implications in their feature designs"
+      },
+      {
+        "tag": "h2",
+        "text": "Architecture"
+      },
+      {
+        "tag": "h2",
+        "text": "Base Protocol"
+      },
+      {
+        "tag": "h2",
+        "text": "Server Features"
+      }
+    ],
+    "label": "Model Context Protocol Specification",
+    "title": "Specification - Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/specification/2025-06-18/index"
+  },
+  "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "\u200b User Interaction Model"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Capabilities"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Protocol Messages"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Listing Prompts"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Getting a Prompt"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b List Changed Notification"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Message Flow"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Data Types"
+      },
+      {
+        "tag": "p",
+        "text": "title : Optional human-readable name of the prompt for display purposes."
+      },
+      {
+        "tag": "p",
+        "text": "description : Optional human-readable description"
+      },
+      {
+        "tag": "p",
+        "text": "arguments : Optional list of arguments for customization"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b PromptMessage"
+      },
+      {
+        "tag": "p",
+        "text": "role : Either \u201cuser\u201d or \u201cassistant\u201d to indicate the speaker"
+      },
+      {
+        "tag": "p",
+        "text": "content : One of the following content types:"
+      },
+      {
+        "tag": "p",
+        "text": "Either text content or base64-encoded blob data"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Error Handling"
+      },
+      {
+        "tag": "p",
+        "text": "Missing required arguments: -32602 (Invalid params)"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Implementation Considerations"
+      },
+      {
+        "tag": "p",
+        "text": "Servers SHOULD validate prompt arguments before processing"
+      },
+      {
+        "tag": "p",
+        "text": "Clients SHOULD handle pagination for large prompt lists"
+      },
+      {
+        "tag": "p",
+        "text": "Both parties SHOULD respect capability negotiation"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Security"
+      }
+    ],
+    "label": "MCP prompts",
+    "title": "Prompts - Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts"
+  },
+  "https://modelcontextprotocol.io/specification/2025-06-18/server/resources": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "\u200b User Interaction Model"
+      },
+      {
+        "tag": "p",
+        "text": "Expose resources through UI elements for explicit selection, in a tree or list view"
+      },
+      {
+        "tag": "p",
+        "text": "Allow the user to search through and filter available resources"
+      },
+      {
+        "tag": "p",
+        "text": "Implement automatic context inclusion, based on heuristics or the AI model\u2019s selection"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Capabilities"
+      },
+      {
+        "tag": "p",
+        "text": "subscribe : whether the client can subscribe to be notified of changes to individual resources."
+      },
+      {
+        "tag": "p",
+        "text": "listChanged : whether the server will emit notifications when the list of available resources changes."
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Protocol Messages"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Listing Resources"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Reading Resources"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Resource Templates"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b List Changed Notification"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Subscriptions"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Message Flow"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Data Types"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Resource"
+      },
+      {
+        "tag": "p",
+        "text": "title : Optional human-readable name of the resource for display purposes."
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Resource Contents"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Annotations"
+      },
+      {
+        "tag": "p",
+        "text": "audience : An array indicating the intended audience(s) for this resource. Valid values are \"user\" and \"assistant\" . For example, [\"user\", \"assistant\"] indicates content useful for both."
+      },
+      {
+        "tag": "p",
+        "text": "priority : A number from 0.0 to 1.0 indicating the importance of this resource. A value of 1 means \u201cmost important\u201d (effectively required), while 0 means \u201cleast important\u201d (entirely optional)."
+      },
+      {
+        "tag": "p",
+        "text": "lastModified : An ISO 8601 formatted timestamp indicating when the resource was last modified (e.g., \"2025-01-12T15:00:58Z\" )."
+      },
+      {
+        "tag": "p",
+        "text": "Filter resources based on their intended audience"
+      },
+      {
+        "tag": "p",
+        "text": "Prioritize which resources to include in context"
+      },
+      {
+        "tag": "p",
+        "text": "Display modification times or sort by recency"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Common URI Schemes"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b https://"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Custom URI Schemes"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Error Handling"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Security Considerations"
+      },
+      {
+        "tag": "p",
+        "text": "Access controls SHOULD be implemented for sensitive resources"
+      },
+      {
+        "tag": "p",
+        "text": "Resource permissions SHOULD be checked before operations"
+      }
+    ],
+    "label": "MCP resources",
+    "title": "Resources - Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources"
+  },
+  "https://modelcontextprotocol.io/specification/2025-06-18/server/tools": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "\u200b User Interaction Model"
+      },
+      {
+        "tag": "p",
+        "text": "Provide UI that makes clear which tools are being exposed to the AI model"
+      },
+      {
+        "tag": "p",
+        "text": "Insert clear visual indicators when tools are invoked"
+      },
+      {
+        "tag": "p",
+        "text": "Present confirmation prompts to the user for operations, to ensure a human is in the loop"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Capabilities"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Protocol Messages"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Listing Tools"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Calling Tools"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b List Changed Notification"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Message Flow"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Data Types"
+      },
+      {
+        "tag": "p",
+        "text": "title : Optional human-readable name of the tool for display purposes."
+      },
+      {
+        "tag": "p",
+        "text": "description : Human-readable description of functionality"
+      },
+      {
+        "tag": "p",
+        "text": "inputSchema : JSON Schema defining expected parameters"
+      },
+      {
+        "tag": "p",
+        "text": "outputSchema : Optional JSON Schema defining expected output structure"
+      },
+      {
+        "tag": "p",
+        "text": "annotations : optional properties describing tool behavior"
+      },
+      {
+        "tag": "h3",
+        "text": "\u200b Tool Result"
+      },
+      {
+        "tag": "p",
+        "text": "Servers MUST provide structured results that conform to this schema."
+      },
+      {
+        "tag": "p",
+        "text": "Clients SHOULD validate structured results against this schema."
+      },
+      {
+        "tag": "p",
+        "text": "Enabling strict schema validation of responses"
+      },
+      {
+        "tag": "p",
+        "text": "Providing type information for better integration with programming languages"
+      },
+      {
+        "tag": "p",
+        "text": "Guiding clients and LLMs to properly parse and utilize the returned data"
+      },
+      {
+        "tag": "p",
+        "text": "Supporting better documentation and developer experience"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Error Handling"
+      },
+      {
+        "tag": "p",
+        "text": "Protocol Errors : Standard JSON-RPC errors for issues like:"
+      },
+      {
+        "tag": "p",
+        "text": "Tool Execution Errors : Reported in tool results with isError: true :"
+      },
+      {
+        "tag": "h2",
+        "text": "\u200b Security Considerations"
+      },
+      {
+        "tag": "p",
+        "text": "Prompt for user confirmation on sensitive operations"
+      },
+      {
+        "tag": "p",
+        "text": "Show tool inputs to the user before calling the server, to avoid malicious or accidental data exfiltration"
+      }
+    ],
+    "label": "MCP tools",
+    "title": "Tools - Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools"
+  },
+  "https://openai.github.io/openai-agents-js/guides/guardrails/": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "Guardrails can run alongside your agents or block execution until they complete, allowing you to perform checks and validations on user input or agent output. For example, you may run a lightweight model as a guardrail before invoking an expensive model. If the guardrail detects malicious usage, it can trigger an error and stop the costly model from running."
+      },
+      {
+        "tag": "p",
+        "text": "Input guardrails run on the initial user input."
+      },
+      {
+        "tag": "p",
+        "text": "Output guardrails run on the final agent output."
+      },
+      {
+        "tag": "h2",
+        "text": "Workflow boundaries"
+      },
+      {
+        "tag": "p",
+        "text": "Guardrails are attached to agents, but they do not necessarily run on every agent in a workflow:"
+      },
+      {
+        "tag": "p",
+        "text": "Input guardrails run only for the first agent in the chain."
+      },
+      {
+        "tag": "p",
+        "text": "Output guardrails run only for the agent that produces the final output."
+      },
+      {
+        "tag": "p",
+        "text": "Tool guardrails run on every function-tool invocation, with input guardrails before execution and output guardrails after execution."
+      },
+      {
+        "tag": "p",
+        "text": "If you need checks around each custom function-tool call in a workflow that includes managers or handoffs, use tool guardrails instead of agent-level input/output guardrails."
+      },
+      {
+        "tag": "h2",
+        "text": "Input guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "The guardrail receives the same input passed to the agent."
+      },
+      {
+        "tag": "p",
+        "text": "The guardrail function executes and returns a GuardrailFunctionOutput wrapped inside an InputGuardrailResult ."
+      },
+      {
+        "tag": "p",
+        "text": "If tripwireTriggered is true , an InputGuardrailTripwireTriggered error is thrown."
+      },
+      {
+        "tag": "p",
+        "text": "Note Input guardrails are intended for user input, so they only run if the agent is the first agent in the workflow. Guardrails are configured on the agent itself because different agents often require different guardrails."
+      },
+      {
+        "tag": "h3",
+        "text": "Execution modes"
+      },
+      {
+        "tag": "p",
+        "text": "runInParallel: true (default) starts guardrails alongside the LLM/tool calls. This minimizes latency but the model may already have consumed tokens or run tools if the guardrail later triggers."
+      },
+      {
+        "tag": "p",
+        "text": "runInParallel: false runs the guardrail before calling the model, preventing token spend and tool execution when the guardrail blocks the request. Use this when you prefer safety and cost over latency."
+      },
+      {
+        "tag": "h2",
+        "text": "Output guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "The guardrail receives the output produced by the agent."
+      },
+      {
+        "tag": "p",
+        "text": "The guardrail function executes and returns a GuardrailFunctionOutput wrapped inside an OutputGuardrailResult ."
+      },
+      {
+        "tag": "p",
+        "text": "If tripwireTriggered is true , an OutputGuardrailTripwireTriggered error is thrown."
+      },
+      {
+        "tag": "p",
+        "text": "Note Output guardrails only run if the agent is the last agent in the workflow. For realtime voice interactions see the voice agents guide ."
+      },
+      {
+        "tag": "p",
+        "text": "Output guardrail functions also receive an optional details object with the underlying modelResponse and the generated output items for the turn. Use this when the final output alone is not enough to decide whether the response should pass, for example when you want to inspect the full generated item list or provider response metadata before tripping the guardrail."
+      },
+      {
+        "tag": "h2",
+        "text": "Tool guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "Tool guardrails wrap function tools and let you validate or block tool calls before and after execution. They are configured on the tool itself (via tool() options) and run for every invocation of that tool."
+      },
+      {
+        "tag": "p",
+        "text": "In practice, this means custom function tools where you set inputGuardrails and/or outputGuardrails on tool({...}) ."
+      },
+      {
+        "tag": "p",
+        "text": "Input tool guardrails run before the tool executes and can reject the call with a message or throw a tripwire."
+      },
+      {
+        "tag": "p",
+        "text": "Output tool guardrails run after the tool executes and can replace the output with a rejection message or throw a tripwire."
+      },
+      {
+        "tag": "p",
+        "text": "If a local function tool also requires human approval, input tool guardrails normally run after approval and immediately before execution. To run those input guardrails before the pending approval request as well, set toolExecution: { preApprovalInputGuardrails: true } on run() or Runner . The guardrails still run again after approval before the tool executes."
+      },
+      {
+        "tag": "p",
+        "text": "allow \u2014 continue to the next guardrail or tool execution."
+      },
+      {
+        "tag": "p",
+        "text": "rejectContent \u2014 short\u2011circuit with a message (tool call is skipped or output is replaced)."
+      },
+      {
+        "tag": "p",
+        "text": "throwException \u2014 throw a tripwire error immediately."
+      },
+      {
+        "tag": "p",
+        "text": "Tool guardrails apply to function tools you define with tool() . Handoffs are presented to the model as function-like tools, but they run through the SDK\u2019s handoff path rather than the normal function-tool pipeline, so tool guardrails do not apply to the handoff call itself. Hosted tools and built-in execution tools ( computerTool , shellTool , applyPatchTool ) also do not use this guardrail pipeline, and agent.asTool() does not currently expose tool-guardrail options directly."
+      },
+      {
+        "tag": "p",
+        "text": "When a guardrail fails, it signals this via a tripwire. As soon as a tripwire is triggered, the runner throws the corresponding error and halts execution."
+      },
+      {
+        "tag": "h2",
+        "text": "Implementing a guardrail"
+      },
+      {
+        "tag": "p",
+        "text": "A guardrail is simply a function that returns a GuardrailFunctionOutput . Below is a minimal example that checks whether the user is asking for math homework help by running another agent under the hood."
+      }
+    ],
+    "label": "OpenAI Agents SDK: Guardrails",
+    "title": "Guardrails | OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-js/guides/guardrails/"
+  },
+  "https://openai.github.io/openai-agents-python/": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "OpenAI Agents SDK"
+      },
+      {
+        "tag": "p",
+        "text": "The OpenAI Agents SDK enables you to build agentic AI apps in a lightweight, easy-to-use package with very few abstractions. It's a production-ready upgrade of our previous experimentation for agents, Swarm . The Agents SDK has a very small set of primitives:"
+      },
+      {
+        "tag": "p",
+        "text": "Agents , which are LLMs equipped with instructions and tools"
+      },
+      {
+        "tag": "p",
+        "text": "Agents as tools / Handoffs , which allow agents to delegate to other agents for specific tasks"
+      },
+      {
+        "tag": "p",
+        "text": "Guardrails , which enable validation of agent inputs and outputs"
+      },
+      {
+        "tag": "p",
+        "text": "In combination with Python, these primitives are powerful enough to express complex relationships between tools and agents, and allow you to build real-world applications without a steep learning curve. In addition, the SDK comes with built-in tracing that lets you visualize and debug your agentic flows, as well as evaluate them and even fine-tune models for your application."
+      },
+      {
+        "tag": "h2",
+        "text": "Why use the Agents SDK"
+      },
+      {
+        "tag": "p",
+        "text": "Enough features to be worth using, but few enough primitives to make it quick to learn."
+      },
+      {
+        "tag": "p",
+        "text": "Works great out of the box, but you can customize exactly what happens."
+      },
+      {
+        "tag": "p",
+        "text": "Agent loop : A built-in agent loop that handles tool invocation, sends results back to the LLM, and continues until the task is complete."
+      },
+      {
+        "tag": "p",
+        "text": "Python-first : Use built-in language features to orchestrate and chain agents, rather than needing to learn new abstractions."
+      },
+      {
+        "tag": "p",
+        "text": "Agents as tools / Handoffs : A powerful mechanism for coordinating and delegating work across multiple agents."
+      },
+      {
+        "tag": "p",
+        "text": "Sandbox agents : Run specialists inside real isolated workspaces with manifest-defined files, sandbox client choice, and resumable sandbox sessions."
+      },
+      {
+        "tag": "p",
+        "text": "Guardrails : Run input validation and safety checks in parallel with agent execution, and fail fast when checks do not pass."
+      },
+      {
+        "tag": "p",
+        "text": "Function tools : Turn any Python function into a tool with automatic schema generation and Pydantic-powered validation."
+      },
+      {
+        "tag": "p",
+        "text": "MCP server tool calling : Built-in MCP server tool integration that works the same way as function tools."
+      },
+      {
+        "tag": "p",
+        "text": "Sessions : A persistent memory layer for maintaining working context within an agent loop."
+      },
+      {
+        "tag": "p",
+        "text": "Human in the loop : Built-in mechanisms for involving humans across agent runs."
+      },
+      {
+        "tag": "p",
+        "text": "Tracing : Built-in tracing for visualizing, debugging, and monitoring workflows, with support for the OpenAI suite of evaluation, fine-tuning, and distillation tools."
+      },
+      {
+        "tag": "p",
+        "text": "Realtime Agents : Build powerful voice agents with gpt-realtime-2.1 , automatic interruption detection, context management, guardrails, and more."
+      },
+      {
+        "tag": "h2",
+        "text": "Agents SDK or Responses API?"
+      },
+      {
+        "tag": "p",
+        "text": "The SDK uses the Responses API by default for OpenAI models, but it adds a higher-level runtime around model calls."
+      },
+      {
+        "tag": "p",
+        "text": "you want to own the loop, tool dispatch, and state handling yourself"
+      },
+      {
+        "tag": "p",
+        "text": "your workflow is short-lived and mainly about returning the model's response"
+      },
+      {
+        "tag": "p",
+        "text": "you want the runtime to manage turns, tool execution, guardrails, handoffs, or sessions"
+      },
+      {
+        "tag": "p",
+        "text": "your agent should produce artifacts or operate across multiple coordinated steps"
+      },
+      {
+        "tag": "p",
+        "text": "you need a real workspace or resumable execution through Sandbox agents"
+      },
+      {
+        "tag": "p",
+        "text": "You do not need to choose one globally. Many applications use the SDK for managed workflows and call the Responses API directly for lower-level paths."
+      },
+      {
+        "tag": "h2",
+        "text": "Installation"
+      },
+      {
+        "tag": "h2",
+        "text": "Hello world example"
+      },
+      {
+        "tag": "p",
+        "text": "( If running this, ensure you set the OPENAI_API_KEY environment variable )"
+      },
+      {
+        "tag": "h2",
+        "text": "Start here"
+      },
+      {
+        "tag": "p",
+        "text": "Build your first text-based agent with the Quickstart ."
+      },
+      {
+        "tag": "p",
+        "text": "Then decide how you want to carry state across turns in Running agents ."
+      },
+      {
+        "tag": "p",
+        "text": "If the task depends on real files, repos, or isolated per-agent workspace state, read the Sandbox agents quickstart ."
+      },
+      {
+        "tag": "p",
+        "text": "If you are deciding between handoffs and manager-style orchestration, read Agent orchestration ."
+      },
+      {
+        "tag": "h2",
+        "text": "Choose your path"
+      },
+      {
+        "tag": "p",
+        "text": "Use this table when you know the job you want to do, but not which page explains it."
+      }
+    ],
+    "label": "Official SDK documentation",
+    "title": "OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/"
+  },
+  "https://openai.github.io/openai-agents-python/agents/": {
+    "items": [
+      {
+        "tag": "h3",
+        "text": "Manager (agents as tools)"
+      },
+      {
+        "tag": "p",
+        "text": "The customer_facing_agent handles all user interaction and invokes specialized sub\u2011agents exposed as tools. Read more in the tools documentation."
+      },
+      {
+        "tag": "p",
+        "text": "Handoffs are sub\u2011agents the agent can delegate to. When a handoff occurs, the delegated agent receives the conversation history and takes over the conversation. This pattern enables modular, specialized agents that excel at a single task. Read more in the handoffs documentation."
+      },
+      {
+        "tag": "h2",
+        "text": "Dynamic instructions"
+      },
+      {
+        "tag": "p",
+        "text": "In most cases, you can provide instructions when you create the agent. However, you can also provide dynamic instructions via a function. The function will receive the agent and context, and must return the prompt. Both regular and async functions are accepted."
+      },
+      {
+        "tag": "h2",
+        "text": "Lifecycle events (hooks)"
+      },
+      {
+        "tag": "p",
+        "text": "Sometimes, you want to observe the lifecycle of an agent. For example, you may want to log events, pre-fetch data, or record usage when certain events occur."
+      },
+      {
+        "tag": "p",
+        "text": "RunHooks observe the entire Runner.run(...) invocation, including handoffs to other agents."
+      },
+      {
+        "tag": "p",
+        "text": "AgentHooks are attached to a specific agent instance via agent.hooks ."
+      },
+      {
+        "tag": "p",
+        "text": "The callback context also changes depending on the event:"
+      },
+      {
+        "tag": "p",
+        "text": "Agent start/end hooks receive AgentHookContext , which wraps your original context and carries the shared run usage state."
+      },
+      {
+        "tag": "p",
+        "text": "LLM, tool, and handoff hooks receive RunContextWrapper ."
+      },
+      {
+        "tag": "p",
+        "text": "on_agent_start / on_agent_end : when a specific agent begins or finishes producing a final output."
+      },
+      {
+        "tag": "p",
+        "text": "on_llm_start / on_llm_end : immediately around each model call."
+      },
+      {
+        "tag": "p",
+        "text": "on_tool_start / on_tool_end : around each local tool invocation. For function tools, the hook context is typically a ToolContext , so you can inspect tool-call metadata such as tool_call_id ."
+      },
+      {
+        "tag": "p",
+        "text": "on_handoff : when control moves from one agent to another."
+      },
+      {
+        "tag": "p",
+        "text": "Use RunHooks when you want a single observer for the whole workflow, and AgentHooks when one agent needs custom side effects."
+      },
+      {
+        "tag": "p",
+        "text": "For the full callback surface, see the Lifecycle API reference ."
+      },
+      {
+        "tag": "h2",
+        "text": "Guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "Guardrails allow you to run checks/validations on user input in parallel to the agent running, and on the agent's output once it is produced. For example, you could screen the user's input and agent's output for relevance. Read more in the guardrails documentation."
+      },
+      {
+        "tag": "h2",
+        "text": "Cloning/copying agents"
+      },
+      {
+        "tag": "p",
+        "text": "By using the clone() method on an agent, you can duplicate an Agent, and optionally change any properties you like."
+      },
+      {
+        "tag": "h2",
+        "text": "Forcing tool use"
+      },
+      {
+        "tag": "p",
+        "text": "Supplying a list of tools doesn't always mean the LLM will use a tool. You can force tool use by setting ModelSettings.tool_choice . Valid values are:"
+      },
+      {
+        "tag": "p",
+        "text": "auto , which allows the LLM to decide whether or not to use a tool."
+      },
+      {
+        "tag": "p",
+        "text": "required , which requires the LLM to use a tool (but it can intelligently decide which tool)."
+      },
+      {
+        "tag": "p",
+        "text": "none , which requires the LLM to not use a tool."
+      },
+      {
+        "tag": "p",
+        "text": "Setting a specific string e.g. my_tool , which requires the LLM to use that specific tool."
+      },
+      {
+        "tag": "p",
+        "text": "When you are using OpenAI Responses tool search, named tool choices are more limited: you cannot target bare namespace names or deferred-only tools with tool_choice , and tool_choice=\"tool_search\" does not target ToolSearchTool . In those cases, prefer auto or required . See Hosted tool search for the Responses-specific constraints."
+      },
+      {
+        "tag": "h2",
+        "text": "Tool use behavior"
+      },
+      {
+        "tag": "p",
+        "text": "The tool_use_behavior parameter in the Agent configuration controls how tool outputs are handled:"
+      },
+      {
+        "tag": "p",
+        "text": "\"run_llm_again\" : The default. Tools are run, and the LLM processes the results to produce a final response."
+      },
+      {
+        "tag": "p",
+        "text": "\"stop_on_first_tool\" : The output of the first tool call is used as the final response, without further LLM processing."
+      },
+      {
+        "tag": "p",
+        "text": "StopAtTools(stop_at_tool_names=[...]) : Stops if any specified tool is called, using its output as the final response."
+      },
+      {
+        "tag": "p",
+        "text": "ToolsToFinalOutputFunction : A custom function that processes tool results and decides whether to stop or continue with the LLM."
+      },
+      {
+        "tag": "p",
+        "text": "To prevent infinite loops, the framework automatically resets tool_choice to \"auto\" after a tool call. This behavior is configurable via agent.reset_tool_choice . The infinite loop is because tool results are sent to the LLM, which then generates another tool call because of tool_choice , ad infinitum."
+      }
+    ],
+    "label": "OpenAI Agents SDK: Agents",
+    "title": "Agents - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/agents/"
+  },
+  "https://openai.github.io/openai-agents-python/guardrails/": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "Guardrails enable you to do checks and validations of user input and agent output. For example, imagine you have an agent that uses a very smart (and hence slow/expensive) model to help with customer requests. You wouldn't want malicious users to ask the model to help them with their math homework. So, you can run a guardrail with a fast/cheap model. If the guardrail detects malicious usage, it can immediately raise an error and prevent the expensive model from running, saving you time and money ( when using blocking guardrails; for parallel guardrails, the expensive model may have already started running before the guardrail completes. See \"Execution modes\" below for details )."
+      },
+      {
+        "tag": "p",
+        "text": "Input guardrails run on the initial user input"
+      },
+      {
+        "tag": "p",
+        "text": "Output guardrails run on the final agent output"
+      },
+      {
+        "tag": "h2",
+        "text": "Workflow boundaries"
+      },
+      {
+        "tag": "p",
+        "text": "Guardrails are attached to agents and tools, but they do not all run at the same points in a workflow:"
+      },
+      {
+        "tag": "p",
+        "text": "Input guardrails run only for the first agent in the chain."
+      },
+      {
+        "tag": "p",
+        "text": "Output guardrails run only for the agent that produces the final output."
+      },
+      {
+        "tag": "p",
+        "text": "Tool guardrails run on every custom function-tool invocation, with input guardrails before execution and output guardrails after execution."
+      },
+      {
+        "tag": "p",
+        "text": "If you need checks around each custom function-tool call in a workflow that includes managers, handoffs, or delegated specialists, use tool guardrails instead of relying only on agent-level input/output guardrails."
+      },
+      {
+        "tag": "h2",
+        "text": "Input guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "First, the guardrail receives the same input passed to the agent."
+      },
+      {
+        "tag": "p",
+        "text": "Next, the guardrail function runs to produce a GuardrailFunctionOutput , which is then wrapped in an InputGuardrailResult"
+      },
+      {
+        "tag": "p",
+        "text": "Finally, we check if .tripwire_triggered is true. If true, an InputGuardrailTripwireTriggered exception is raised, so you can appropriately respond to the user or handle the exception."
+      },
+      {
+        "tag": "p",
+        "text": "Input guardrails are intended to run on user input, so an agent's guardrails only run if the agent is the first agent. You might wonder, why is the guardrails property on the agent instead of passed to Runner.run ? It's because guardrails tend to be related to the actual Agent - you'd run different guardrails for different agents, so colocating the code is useful for readability."
+      },
+      {
+        "tag": "h3",
+        "text": "Execution modes"
+      },
+      {
+        "tag": "p",
+        "text": "Input guardrails support two execution modes:"
+      },
+      {
+        "tag": "p",
+        "text": "Parallel execution (default, run_in_parallel=True ): The guardrail runs concurrently with the agent's execution. This provides the best latency since both start at the same time. However, if the guardrail fails, the agent may have already consumed tokens and executed tools before being cancelled."
+      },
+      {
+        "tag": "p",
+        "text": "Blocking execution ( run_in_parallel=False ): The guardrail runs and completes before the agent starts. If the guardrail tripwire is triggered, the agent never executes, preventing token consumption and tool execution. This is ideal for cost optimization and when you want to avoid potential side effects from tool calls."
+      },
+      {
+        "tag": "h2",
+        "text": "Output guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "First, the guardrail receives the output produced by the agent."
+      },
+      {
+        "tag": "p",
+        "text": "Next, the guardrail function runs to produce a GuardrailFunctionOutput , which is then wrapped in an OutputGuardrailResult"
+      },
+      {
+        "tag": "p",
+        "text": "Finally, we check if .tripwire_triggered is true. If true, an OutputGuardrailTripwireTriggered exception is raised, so you can appropriately respond to the user or handle the exception."
+      },
+      {
+        "tag": "p",
+        "text": "Output guardrails are intended to run on the final agent output, so an agent's guardrails only run if the agent is the last agent. Similar to the input guardrails, we do this because guardrails tend to be related to the actual Agent - you'd run different guardrails for different agents, so colocating the code is useful for readability."
+      },
+      {
+        "tag": "p",
+        "text": "Output guardrails always run after the agent completes, so they don't support the run_in_parallel parameter."
+      },
+      {
+        "tag": "h2",
+        "text": "Tool guardrails"
+      },
+      {
+        "tag": "p",
+        "text": "Tool guardrails wrap function tools and let you validate or block tool calls before and after execution. They are configured on the tool itself and run every time that tool is invoked."
+      },
+      {
+        "tag": "p",
+        "text": "Input tool guardrails run before the tool executes and can skip the call, replace the output with a message, or raise a tripwire."
+      },
+      {
+        "tag": "p",
+        "text": "Output tool guardrails run after the tool executes and can replace the output or raise a tripwire."
+      },
+      {
+        "tag": "p",
+        "text": "If a function tool requires approval, input tool guardrails normally run after approval and immediately before execution. Set RunConfig.tool_execution to ToolExecutionConfig(pre_approval_tool_input_guardrails=True) when you want those input checks to run before the pending approval interruption is emitted. Calls that pass this pre-approval check are still checked again after approval before the tool executes."
+      },
+      {
+        "tag": "p",
+        "text": "Tool guardrails apply only to function tools created with function_tool . Handoffs run through the SDK's handoff pipeline rather than the normal function-tool pipeline, so tool guardrails do not apply to the handoff call itself. Hosted tools ( WebSearchTool , FileSearchTool , HostedMCPTool , CodeInterpreterTool , ImageGenerationTool ) and built-in execution tools ( ComputerTool , ShellTool , ApplyPatchTool , LocalShellTool ) also do not use this guardrail pipeline, and Agent.as_tool() does not currently expose tool-guardrail options directly."
+      },
+      {
+        "tag": "p",
+        "text": "If the input or output fails the guardrail, the Guardrail can signal this with a tripwire. As soon as we see a guardrail that has triggered the tripwires, we immediately raise a {Input,Output}GuardrailTripwireTriggered exception and halt the Agent execution."
+      },
+      {
+        "tag": "h2",
+        "text": "Implementing a guardrail"
+      },
+      {
+        "tag": "p",
+        "text": "You need to provide a function that receives input, and returns a GuardrailFunctionOutput . In this example, we'll do this by running an Agent under the hood."
+      },
+      {
+        "tag": "p",
+        "text": "We'll use this agent in our guardrail function."
+      },
+      {
+        "tag": "p",
+        "text": "This is the guardrail function that receives the agent's input/context, and returns the result."
+      },
+      {
+        "tag": "p",
+        "text": "We can include extra information in the guardrail result."
+      },
+      {
+        "tag": "p",
+        "text": "This is the actual agent that defines the workflow."
+      },
+      {
+        "tag": "p",
+        "text": "This is the guardrail function that receives the agent's output, and returns the result."
+      },
+      {
+        "tag": "p",
+        "text": "Lastly, here are examples of tool guardrails."
+      }
+    ],
+    "label": "Guardrails",
+    "title": "Guardrails - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/guardrails/"
+  },
+  "https://openai.github.io/openai-agents-python/handoffs/": {
+    "items": [
+      {
+        "tag": "h3",
+        "text": "Customizing handoffs via the handoff() function"
+      },
+      {
+        "tag": "p",
+        "text": "The handoff() function lets you customize things."
+      },
+      {
+        "tag": "p",
+        "text": "agent : This is the agent to which things will be handed off."
+      },
+      {
+        "tag": "p",
+        "text": "tool_name_override : By default, the Handoff.default_tool_name() function is used, which resolves to transfer_to_<agent_name> . You can override this."
+      },
+      {
+        "tag": "p",
+        "text": "tool_description_override : Override the default tool description from Handoff.default_tool_description()"
+      },
+      {
+        "tag": "p",
+        "text": "on_handoff : A callback function executed when the handoff is invoked. This is useful for things like kicking off some data fetching as soon as you know a handoff is being invoked. This function receives the agent context, and can optionally also receive LLM generated input. The input data is controlled by the input_type param."
+      },
+      {
+        "tag": "p",
+        "text": "input_type : The schema for the handoff tool-call arguments. When set, the parsed payload is passed to on_handoff ."
+      },
+      {
+        "tag": "p",
+        "text": "input_filter : This lets you filter the input received by the next agent. See below for more."
+      },
+      {
+        "tag": "p",
+        "text": "is_enabled : Whether the handoff is enabled. This can be a boolean or a function that returns a boolean, allowing you to dynamically enable or disable the handoff at runtime."
+      },
+      {
+        "tag": "p",
+        "text": "nest_handoff_history : Optional per-call override for the RunConfig-level nest_handoff_history setting. If None , the value defined in the active run configuration is used instead."
+      },
+      {
+        "tag": "p",
+        "text": "The handoff() helper always transfers control to the specific agent you passed in. If you have multiple possible destinations, register one handoff per destination and let the model choose among them. Use a custom Handoff only when your own handoff code must decide which agent to return at invocation time."
+      },
+      {
+        "tag": "h2",
+        "text": "Handoff inputs"
+      },
+      {
+        "tag": "p",
+        "text": "In certain situations, you want the LLM to provide some data when it calls a handoff. For example, imagine a handoff to an \"Escalation agent\". You might want the model to provide a reason so you can log it."
+      },
+      {
+        "tag": "p",
+        "text": "input_type describes the arguments for the handoff tool call itself. The SDK exposes that schema to the model as the handoff tool's parameters , validates the returned JSON locally, and passes the parsed value to on_handoff ."
+      },
+      {
+        "tag": "p",
+        "text": "It does not replace the next agent's main input, and it does not choose a different destination. The handoff() helper still transfers to the specific agent you wrapped, and the receiving agent still sees the conversation history unless you change it with an input_filter or nested handoff history settings."
+      },
+      {
+        "tag": "p",
+        "text": "input_type is also separate from RunContextWrapper.context . Use input_type for metadata the model decides at handoff time, not for application state or dependencies you already have locally."
+      },
+      {
+        "tag": "h3",
+        "text": "When to use input_type"
+      },
+      {
+        "tag": "p",
+        "text": "Use input_type when the handoff needs a small piece of model-generated metadata such as reason , language , priority , or summary . For example, a triage agent can hand off to a refund agent with { \"reason\": \"duplicate_charge\", \"priority\": \"high\" } , and on_handoff can log or persist that metadata before the refund agent takes over."
+      },
+      {
+        "tag": "p",
+        "text": "Choose a different mechanism when the goal is different:"
+      },
+      {
+        "tag": "p",
+        "text": "Put existing application state and dependencies in RunContextWrapper.context . See the context guide ."
+      },
+      {
+        "tag": "p",
+        "text": "Use input_filter , RunConfig.nest_handoff_history , or RunConfig.handoff_history_mapper if you want to change what history the receiving agent sees."
+      },
+      {
+        "tag": "p",
+        "text": "Register one handoff per destination if there are multiple possible specialists. input_type can add metadata to the chosen handoff, but it does not dispatch between destinations."
+      },
+      {
+        "tag": "p",
+        "text": "If you want structured input for a nested specialist without transferring the conversation, prefer Agent.as_tool(parameters=...) . See tools ."
+      },
+      {
+        "tag": "h2",
+        "text": "Input filters"
+      },
+      {
+        "tag": "p",
+        "text": "When a handoff occurs, it's as though the new agent takes over the conversation, and gets to see the entire previous conversation history. If you want to change this, you can set an input_filter . An input filter is a function that receives the existing input via a HandoffInputData , and must return a new HandoffInputData ."
+      },
+      {
+        "tag": "p",
+        "text": "input_history : the input history before Runner.run(...) started."
+      },
+      {
+        "tag": "p",
+        "text": "pre_handoff_items : items generated before the agent turn where the handoff was invoked."
+      },
+      {
+        "tag": "p",
+        "text": "new_items : items generated during the current turn, including the handoff call and handoff output items."
+      },
+      {
+        "tag": "p",
+        "text": "input_items : optional items to forward to the next agent instead of new_items , allowing you to filter model input while keeping new_items intact for session history."
+      },
+      {
+        "tag": "p",
+        "text": "run_context : the active RunContextWrapper at the time the handoff was invoked."
+      },
+      {
+        "tag": "p",
+        "text": "Nested handoffs are available as an opt-in beta and are disabled by default while we stabilize them. When you enable RunConfig.nest_handoff_history , the runner collapses the prior transcript into a single assistant summary message and wraps it in a <CONVERSATION HISTORY> block that keeps appending new turns when multiple handoffs happen during the same run. You can provide your own mapping function via RunConfig.handoff_history_mapper to replace the generated message without writing a full input_filter . The opt-in only applies when neither the handoff nor the run supplies an explicit input_filter , so existing code that already customizes the payload (including the examples in this repository) keeps its current behavior without changes. You can override the nesting behaviour for a single handoff by passing nest_handoff_history=True or False to handoff(...) , which sets Handoff.nest_handoff_history . If you just need to change the wrapper text for the generated summary, call set_conversation_history_wrappers (and optionally reset_conversation_history_wrappers ) before running your agents."
+      },
+      {
+        "tag": "p",
+        "text": "If both the handoff and the active RunConfig.handoff_input_filter define a filter, the per-handoff input_filter takes precedence for that specific handoff."
+      },
+      {
+        "tag": "p",
+        "text": "Handoffs stay within a single run. Input guardrails still apply only to the first agent in the chain, and output guardrails only to the agent that produces the final output. Use tool guardrails when you need checks around each custom function-tool call inside the workflow."
+      },
+      {
+        "tag": "p",
+        "text": "There are some common patterns (for example removing all tool calls from the history), which are implemented for you in agents.extensions.handoff_filters"
+      },
+      {
+        "tag": "p",
+        "text": "This will automatically remove all tools from the history when FAQ agent is called."
+      },
+      {
+        "tag": "h2",
+        "text": "Recommended prompts"
+      },
+      {
+        "tag": "p",
+        "text": "To make sure that LLMs understand handoffs properly, we recommend including information about handoffs in your agents. We have a suggested prefix in agents.extensions.handoff_prompt.RECOMMENDED_PROMPT_PREFIX , or you can call agents.extensions.handoff_prompt.prompt_with_handoff_instructions to automatically add recommended data to your prompts."
+      }
+    ],
+    "label": "Handoffs",
+    "title": "Handoffs - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/handoffs/"
+  },
+  "https://openai.github.io/openai-agents-python/quickstart/": {
+    "items": [
+      {
+        "tag": "h3",
+        "text": "Install the Agents SDK"
+      },
+      {
+        "tag": "h3",
+        "text": "Set an OpenAI API key"
+      },
+      {
+        "tag": "p",
+        "text": "If you don't have one, follow these instructions to create an OpenAI API key."
+      },
+      {
+        "tag": "p",
+        "text": "These commands set the key for your current terminal session."
+      },
+      {
+        "tag": "h2",
+        "text": "Create your first agent"
+      },
+      {
+        "tag": "p",
+        "text": "Agents are defined with instructions, a name, and optional configuration such as a specific model."
+      },
+      {
+        "tag": "h2",
+        "text": "Run your first agent"
+      },
+      {
+        "tag": "p",
+        "text": "Use Runner to execute the agent and get a RunResult back."
+      },
+      {
+        "tag": "p",
+        "text": "For a second turn, you can either pass result.to_input_list() back into Runner.run(...) , attach a session , or reuse OpenAI server-managed state with conversation_id / previous_response_id . The running agents guide compares these approaches."
+      },
+      {
+        "tag": "p",
+        "text": "For the tradeoffs and exact behaviors, see Running agents ."
+      },
+      {
+        "tag": "p",
+        "text": "Use a plain Agent plus Runner when the task mainly lives in prompts, tools, and conversation state. If the agent should inspect or modify real files in an isolated workspace, jump to the Sandbox agents quickstart ."
+      },
+      {
+        "tag": "h2",
+        "text": "Give your agent tools"
+      },
+      {
+        "tag": "p",
+        "text": "You can give an agent tools to look up information or perform actions."
+      },
+      {
+        "tag": "h2",
+        "text": "Add a few more agents"
+      },
+      {
+        "tag": "p",
+        "text": "Before you choose a multi-agent pattern, decide who should own the final answer:"
+      },
+      {
+        "tag": "p",
+        "text": "Handoffs : a specialist takes over the conversation for that part of the turn."
+      },
+      {
+        "tag": "p",
+        "text": "Agents as tools : an orchestrator stays in control and calls specialists as tools."
+      },
+      {
+        "tag": "p",
+        "text": "This quickstart continues with handoffs because it is the shortest first example. For the manager-style pattern, see Agent orchestration and Tools: agents as tools ."
+      },
+      {
+        "tag": "p",
+        "text": "Additional agents can be defined in the same way. handoff_description gives the routing agent extra context about when to delegate."
+      },
+      {
+        "tag": "h2",
+        "text": "Define your handoffs"
+      },
+      {
+        "tag": "p",
+        "text": "On an agent, you can define an inventory of outgoing handoff options that it can choose from while solving the task."
+      },
+      {
+        "tag": "h2",
+        "text": "Run the agent orchestration"
+      },
+      {
+        "tag": "p",
+        "text": "The runner handles executing individual agents, any handoffs, and any tool calls."
+      },
+      {
+        "tag": "h2",
+        "text": "Reference examples"
+      },
+      {
+        "tag": "p",
+        "text": "The repository includes full scripts for the same core patterns:"
+      },
+      {
+        "tag": "p",
+        "text": "examples/basic/hello_world.py for the first run."
+      },
+      {
+        "tag": "p",
+        "text": "examples/agent_patterns/routing.py for multi-agent routing."
+      },
+      {
+        "tag": "h2",
+        "text": "View your traces"
+      },
+      {
+        "tag": "p",
+        "text": "To review what happened during your agent run, navigate to the Trace viewer in the OpenAI Dashboard to view traces of your agent runs."
+      },
+      {
+        "tag": "h2",
+        "text": "Next steps"
+      },
+      {
+        "tag": "p",
+        "text": "Learn how to build more complex agentic flows:"
+      },
+      {
+        "tag": "p",
+        "text": "Learn about Sandbox agents if the work should happen inside a real workspace."
+      }
+    ],
+    "label": "Quickstart",
+    "title": "Quickstart - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/quickstart/"
+  },
+  "https://openai.github.io/openai-agents-python/release/": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Release process/changelog"
+      },
+      {
+        "tag": "p",
+        "text": "The project follows a slightly modified version of semantic versioning using the form 0.Y.Z . The leading 0 indicates the SDK is still evolving rapidly. Increment the components as follows:"
+      },
+      {
+        "tag": "h2",
+        "text": "Minor ( Y ) versions"
+      },
+      {
+        "tag": "p",
+        "text": "We will increase minor versions Y for breaking changes to any public interfaces that are not marked as beta. For example, going from 0.0.x to 0.1.x might include breaking changes."
+      },
+      {
+        "tag": "p",
+        "text": "If you don't want breaking changes, we recommend pinning to 0.0.x versions in your project."
+      },
+      {
+        "tag": "h2",
+        "text": "Patch ( Z ) versions"
+      },
+      {
+        "tag": "p",
+        "text": "We will increment Z for non-breaking changes:"
+      },
+      {
+        "tag": "h2",
+        "text": "Breaking change changelog"
+      },
+      {
+        "tag": "p",
+        "text": "This minor release does not introduce a breaking change. The minor version bump is for the Realtime agents default model update only."
+      },
+      {
+        "tag": "p",
+        "text": "Realtime agents now use gpt-realtime-2.1 as the default model, so new Realtime setups use the latest recommended model without extra configuration."
+      },
+      {
+        "tag": "p",
+        "text": "In this version, sandbox local source materialization keeps LocalFile.src and LocalDir.src within the materialization base_dir unless the source path is covered by Manifest.extra_path_grants . The base_dir is the SDK process current working directory when the manifest is applied; relative local sources are resolved from that directory, while absolute local sources must already be inside it or under an explicit grant. This closes a local artifact boundary issue, but it can affect applications that intentionally copy trusted host files or directories from outside that base directory into a sandbox workspace."
+      },
+      {
+        "tag": "p",
+        "text": "To migrate, grant trusted host roots at the manifest level with SandboxPathGrant , preferably as read-only when the sandbox only needs to read those files:"
+      },
+      {
+        "tag": "p",
+        "text": "Treat extra_path_grants as trusted application configuration. Do not populate grants from model output or other untrusted manifest input unless your application has already approved those host paths."
+      },
+      {
+        "tag": "p",
+        "text": "In this version, the SDK default model is now gpt-5.4-mini instead of gpt-4.1 . This affects agents and runs that do not explicitly set a model. Because the new default is a GPT-5 model, implicit default model settings now include GPT-5 defaults such as reasoning.effort=\"none\" and verbosity=\"low\" ."
+      },
+      {
+        "tag": "p",
+        "text": "If you need to keep the previous default model behavior, set a model explicitly on the agent or run config, or set the OPENAI_DEFAULT_MODEL environment variable:"
+      },
+      {
+        "tag": "p",
+        "text": "Runner.run , Runner.run_sync , and Runner.run_streamed now accept max_turns=None to disable the turn limit."
+      },
+      {
+        "tag": "p",
+        "text": "Sandbox workspace hydration now rejects tar archives with symlinks that point outside the archive root, including absolute symlink targets, across local, Docker, and provider-backed sandbox implementations."
+      },
+      {
+        "tag": "p",
+        "text": "In this version, model refusals are now surfaced explicitly as ModelRefusalError instead of being treated as empty text output or, for structured outputs, causing the run loop to retry until MaxTurnsExceeded ."
+      },
+      {
+        "tag": "p",
+        "text": "This affects code that previously expected a refusal-only model response to complete with final_output == \"\" . To handle refusals without raising, provide a model_refusal run error handler:"
+      },
+      {
+        "tag": "p",
+        "text": "For structured-output agents, the handler can return a value matching the agent's output schema, and the SDK will validate it like other run error handler final outputs."
+      },
+      {
+        "tag": "p",
+        "text": "This minor release does not introduce a breaking change, but it adds a major new beta feature area: Sandbox Agents, plus the runtime, backend, and documentation support needed to use them across local, containerized, and hosted environments."
+      },
+      {
+        "tag": "p",
+        "text": "Added a new beta sandbox runtime surface centered on SandboxAgent , Manifest , and SandboxRunConfig , letting agents work inside persistent isolated workspaces with files, directories, Git repos, mounts, snapshots, and resume support."
+      },
+      {
+        "tag": "p",
+        "text": "Added sandbox execution backends for local and containerized development via UnixLocalSandboxClient and DockerSandboxClient , plus hosted provider integrations for Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, and Vercel through optional extras."
+      },
+      {
+        "tag": "p",
+        "text": "Added sandbox memory support so future runs can reuse lessons from prior runs, with progressive disclosure, multi-turn grouping, configurable isolation boundaries, and persisted-memory examples including S3-backed workflows."
+      },
+      {
+        "tag": "p",
+        "text": "Added a broader workspace and resume model, including local and synthetic workspace entries, remote storage mounts for S3/R2/GCS/Azure Blob Storage/S3 Files, portable snapshots, and resume flows via RunState , SandboxSessionState , or saved snapshots."
+      },
+      {
+        "tag": "p",
+        "text": "Added substantial sandbox examples and tutorials under examples/sandbox/ , covering coding tasks with skills, handoffs, memory, provider-specific setups, and end-to-end workflows such as code review, dataroom QA, and website cloning."
+      },
+      {
+        "tag": "p",
+        "text": "Extended the core runtime and tracing stack with sandbox-aware session preparation, capability binding, state serialization, unified tracing, prompt cache key defaults, and safer sensitive MCP output redaction."
+      },
+      {
+        "tag": "p",
+        "text": "This minor release does not introduce a breaking change, but it includes a notable Realtime default update plus new MCP capabilities and runtime stability fixes."
+      },
+      {
+        "tag": "p",
+        "text": "The default websocket Realtime model is now gpt-realtime-1.5 , so new Realtime agent setups use the newer model without extra configuration."
+      },
+      {
+        "tag": "p",
+        "text": "MCPServer now exposes list_resources() , list_resource_templates() , and read_resource() , and MCPServerStreamableHttp now exposes session_id so streamable HTTP sessions can be resumed across reconnects or stateless workers."
+      },
+      {
+        "tag": "p",
+        "text": "Chat Completions integrations can now opt into reasoning-content replay via should_replay_reasoning_content , improving provider-specific reasoning/tool-call continuity for adapters such as LiteLLM/DeepSeek."
+      },
+      {
+        "tag": "p",
+        "text": "Fixed several runtime and session edge cases, including concurrent first writes in SQLAlchemySession , compaction requests with orphaned assistant message IDs after reasoning stripping, remove_all_tools() leaving MCP/reasoning items behind, and a race in the function-tool batch executor."
+      },
+      {
+        "tag": "p",
+        "text": "This minor release does not introduce a breaking change. Check the release notes for major feature additions."
+      },
+      {
+        "tag": "p",
+        "text": "This minor release does not introduce a breaking change, but it includes a significant new feature area for OpenAI Responses users: websocket transport support for the Responses API."
+      },
+      {
+        "tag": "p",
+        "text": "Added websocket transport support for OpenAI Responses models (opt-in; HTTP remains the default transport)."
+      },
+      {
+        "tag": "p",
+        "text": "Added a responses_websocket_session() helper / ResponsesWebSocketSession for reusing a shared websocket-capable provider and RunConfig across multi-turn runs."
+      },
+      {
+        "tag": "p",
+        "text": "Added a new websocket streaming example ( examples/basic/stream_ws.py ) covering streaming, tools, approvals, and follow-up turns."
+      },
+      {
+        "tag": "p",
+        "text": "In this version, Python 3.9 is no longer supported, as this major version reached EOL three months ago. Please upgrade to a newer runtime version."
+      },
+      {
+        "tag": "p",
+        "text": "Additionally, the type hint for the value returned from the Agent#as_tool() method has been narrowed from Tool to FunctionTool . This change should not usually cause breaking issues, but if your code relies on the broader union type, you may need to make some adjustments on your side."
+      },
+      {
+        "tag": "p",
+        "text": "In this version, two runtime behavior changes may require migration work:"
+      }
+    ],
+    "label": "Release notes",
+    "title": "Release process/changelog - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/release/"
+  },
+  "https://openai.github.io/openai-agents-python/running_agents/": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Running agents"
+      },
+      {
+        "tag": "p",
+        "text": "You can run agents via the Runner class. You have 3 options:"
+      },
+      {
+        "tag": "p",
+        "text": "Runner.run() , which runs async and returns a RunResult ."
+      },
+      {
+        "tag": "p",
+        "text": "Runner.run_sync() , which is a sync method and just runs .run() under the hood."
+      },
+      {
+        "tag": "p",
+        "text": "Runner.run_streamed() , which runs async and returns a RunResultStreaming . It calls the LLM in streaming mode, and streams those events to you as they are received."
+      },
+      {
+        "tag": "h2",
+        "text": "Runner lifecycle and configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "The agent loop"
+      },
+      {
+        "tag": "p",
+        "text": "When you use the run method in Runner , you pass in a starting agent and input. The input can be:"
+      },
+      {
+        "tag": "p",
+        "text": "a list of input items in the OpenAI Responses API format, or"
+      },
+      {
+        "tag": "p",
+        "text": "We call the LLM for the current agent, with the current input."
+      },
+      {
+        "tag": "p",
+        "text": "If the LLM returns a final_output , the loop ends and we return the result."
+      },
+      {
+        "tag": "p",
+        "text": "If the LLM does a handoff, we update the current agent and input, and re-run the loop."
+      },
+      {
+        "tag": "p",
+        "text": "If the LLM produces tool calls, we run those tool calls, append the results, and re-run the loop."
+      },
+      {
+        "tag": "p",
+        "text": "If we exceed the max_turns passed, we raise a MaxTurnsExceeded exception. Pass max_turns=None to disable this turn limit."
+      },
+      {
+        "tag": "p",
+        "text": "The rule for whether the LLM output is considered as a \"final output\" is that it produces text output with the desired type, and there are no tool calls."
+      },
+      {
+        "tag": "p",
+        "text": "Streaming allows you to additionally receive streaming events as the LLM runs. Once the stream is done, the RunResultStreaming will contain the complete information about the run, including all the new outputs produced. You can call .stream_events() for the streaming events. Read more in the streaming guide ."
+      },
+      {
+        "tag": "p",
+        "text": "If you enable the OpenAI Responses websocket transport, you can keep using the normal Runner APIs. The websocket session helper is recommended for connection reuse, but it is not required."
+      },
+      {
+        "tag": "p",
+        "text": "This is the Responses API over websocket transport, not the Realtime API ."
+      },
+      {
+        "tag": "p",
+        "text": "For transport-selection rules and caveats around concrete model objects or custom providers, see Models ."
+      },
+      {
+        "tag": "p",
+        "text": "Use this when you just want websocket transport and do not need the SDK to manage a shared provider/session for you."
+      },
+      {
+        "tag": "p",
+        "text": "This pattern is fine for single runs. If you call Runner.run() / Runner.run_streamed() repeatedly, each run may reconnect unless you manually reuse the same RunConfig / provider instance."
+      },
+      {
+        "tag": "p",
+        "text": "Use responses_websocket_session() when you want a shared websocket-capable provider and RunConfig across multiple runs (including nested agent-as-tool calls that inherit the same run_config )."
+      },
+      {
+        "tag": "p",
+        "text": "Finish consuming streamed results before the context exits. Exiting the context while a websocket request is still in flight may force-close the shared connection."
+      },
+      {
+        "tag": "p",
+        "text": "If long reasoning turns hit websocket keepalive timeouts, increase ping_timeout or set ping_timeout=None to disable heartbeat timeouts. Use HTTP/SSE transport for runs where reliability matters more than websocket latency."
+      },
+      {
+        "tag": "h3",
+        "text": "Run config"
+      },
+      {
+        "tag": "p",
+        "text": "The run_config parameter lets you configure some global settings for the agent run:"
+      },
+      {
+        "tag": "p",
+        "text": "Use RunConfig to override behavior for a single run without changing each agent definition."
+      },
+      {
+        "tag": "p",
+        "text": "model : Allows setting a global LLM model to use, irrespective of what model each Agent has."
+      },
+      {
+        "tag": "p",
+        "text": "model_provider : A model provider for looking up model names, which defaults to OpenAI."
+      },
+      {
+        "tag": "p",
+        "text": "model_settings : Overrides agent-specific settings. For example, you can set a global temperature or top_p ."
+      },
+      {
+        "tag": "p",
+        "text": "session_settings : Overrides session-level defaults (for example, SessionSettings(limit=...) ) when retrieving history during a run."
+      },
+      {
+        "tag": "p",
+        "text": "session_input_callback : Customize how new user input is merged with session history before each turn when using Sessions. The callback can be sync or async."
+      },
+      {
+        "tag": "p",
+        "text": "input_guardrails , output_guardrails : A list of input or output guardrails to include on all runs."
+      },
+      {
+        "tag": "p",
+        "text": "handoff_input_filter : A global input filter to apply to all handoffs, if the handoff doesn't already have one. The input filter allows you to edit the inputs that are sent to the new agent. See the documentation in Handoff.input_filter for more details."
+      },
+      {
+        "tag": "p",
+        "text": "nest_handoff_history : Opt-in beta that collapses the prior transcript into a single assistant message before invoking the next agent. This is disabled by default while we stabilize nested handoffs; set to True to enable or leave False to pass through the raw transcript. All Runner methods automatically create a RunConfig when you do not pass one, so the quickstarts and examples keep the default off, and any explicit Handoff.input_filter callbacks continue to override it. Individual handoffs can override this setting via Handoff.nest_handoff_history ."
+      },
+      {
+        "tag": "p",
+        "text": "handoff_history_mapper : Optional callable that receives the normalized transcript (history + handoff items) whenever you opt in to nest_handoff_history . It must return the exact list of input items to forward to the next agent, allowing you to replace the built-in summary without writing a full handoff filter."
+      },
+      {
+        "tag": "p",
+        "text": "call_model_input_filter : Hook to edit the fully prepared model input (instructions and input items) immediately before the model call, e.g., to trim history or inject a system prompt."
+      },
+      {
+        "tag": "p",
+        "text": "reasoning_item_id_policy : Control whether reasoning item IDs are preserved or omitted when the runner converts prior outputs into next-turn model input."
+      },
+      {
+        "tag": "p",
+        "text": "tracing_disabled : Allows you to disable tracing for the entire run."
+      },
+      {
+        "tag": "p",
+        "text": "tracing : Pass a TracingConfig to override trace export settings such as the per-run tracing API key."
+      }
+    ],
+    "label": "Running agents",
+    "title": "Running agents - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/running_agents/"
+  },
+  "https://openai.github.io/openai-agents-python/sessions/": {
+    "items": [
+      {
+        "tag": "h3",
+        "text": "OpenAI Conversations API sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Use OpenAI's Conversations API through OpenAIConversationsSession ."
+      },
+      {
+        "tag": "h3",
+        "text": "OpenAI Responses compaction sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Use OpenAIResponsesCompactionSession to compact stored conversation history with the Responses API ( responses.compact ). It wraps an underlying session and can automatically compact after each turn based on should_trigger_compaction . Do not wrap OpenAIConversationsSession with it; those two features manage history in different ways."
+      },
+      {
+        "tag": "p",
+        "text": "By default, compaction runs after each turn once the candidate threshold is reached."
+      },
+      {
+        "tag": "p",
+        "text": "compaction_mode=\"previous_response_id\" works best when you are already chaining turns with Responses API response IDs. compaction_mode=\"input\" rebuilds the compaction request from the current session items instead, which is useful when the response chain is unavailable or you want the session contents to be the source of truth. The default \"auto\" chooses the safest available option."
+      },
+      {
+        "tag": "p",
+        "text": "If your agent runs with ModelSettings(store=False) , the Responses API does not retain the last response for later lookup. In that stateless setup, the default \"auto\" mode falls back to input-based compaction instead of relying on previous_response_id . See examples/memory/compaction_session_stateless_example.py for a complete example."
+      },
+      {
+        "tag": "p",
+        "text": "Compaction clears and rewrites the session history, so the SDK waits for compaction to finish before considering the run complete. In streaming mode, this means run.stream_events() can stay open for a few seconds after the last output token if compaction is heavy."
+      },
+      {
+        "tag": "p",
+        "text": "If you want low-latency streaming or fast turn-taking, disable auto-compaction and call run_compaction() yourself between turns (or during idle time). You can decide when to force compaction based on your own criteria."
+      },
+      {
+        "tag": "h3",
+        "text": "SQLite sessions"
+      },
+      {
+        "tag": "p",
+        "text": "The default, lightweight session implementation using SQLite:"
+      },
+      {
+        "tag": "h3",
+        "text": "Async SQLite sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Use AsyncSQLiteSession when you want SQLite persistence backed by aiosqlite ."
+      },
+      {
+        "tag": "h3",
+        "text": "Redis sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Use RedisSession for shared session memory across multiple workers or services."
+      },
+      {
+        "tag": "h3",
+        "text": "SQLAlchemy sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Production-ready Agents SDK session persistence using any SQLAlchemy-supported database:"
+      },
+      {
+        "tag": "p",
+        "text": "See SQLAlchemy Sessions for detailed documentation."
+      },
+      {
+        "tag": "h3",
+        "text": "Dapr sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Use DaprSession when you already run Dapr sidecars or want session storage that can move across different state-store backends without changing your agent code."
+      },
+      {
+        "tag": "p",
+        "text": "from_address(...) creates and owns the Dapr client for you. If your app already manages one, construct DaprSession(...) directly with dapr_client=... ."
+      },
+      {
+        "tag": "p",
+        "text": "Pass ttl=... to let the backing state store expire old session data automatically when the store supports TTL."
+      },
+      {
+        "tag": "p",
+        "text": "Pass consistency=DAPR_CONSISTENCY_STRONG when you need stronger read-after-write guarantees."
+      },
+      {
+        "tag": "p",
+        "text": "The Dapr Python SDK also checks the HTTP sidecar endpoint. In local development, start Dapr with --dapr-http-port 3500 as well as the gRPC port used in dapr_address ."
+      },
+      {
+        "tag": "p",
+        "text": "See examples/memory/dapr_session_example.py for a full setup walkthrough, including local components and troubleshooting."
+      },
+      {
+        "tag": "h3",
+        "text": "MongoDB sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Use MongoDBSession for applications that already use MongoDB or need horizontally-scalable, multi-process session storage."
+      },
+      {
+        "tag": "p",
+        "text": "from_uri(...) creates and owns the AsyncMongoClient and closes it on session.close() . If your application already manages a client, construct MongoDBSession(...) directly with client=... ; in that case session.close() is a no-op and lifecycle stays with the caller."
+      },
+      {
+        "tag": "p",
+        "text": "Connect to MongoDB Atlas by passing an mongodb+srv://user:password@cluster.example.mongodb.net URI to from_uri(...) with no other changes."
+      },
+      {
+        "tag": "p",
+        "text": "Two collections are used and both names are configurable via sessions_collection= (default agent_sessions ) and messages_collection= (default agent_messages ). Indexes are created automatically on first use. Each message document carries a monotonically increasing seq counter that preserves ordering across concurrent writers and processes."
+      },
+      {
+        "tag": "p",
+        "text": "Use await session.ping() to verify connectivity before your first run."
+      },
+      {
+        "tag": "h3",
+        "text": "Advanced SQLite sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Enhanced SQLite sessions with conversation branching, usage analytics, and structured queries:"
+      },
+      {
+        "tag": "p",
+        "text": "See Advanced SQLite Sessions for detailed documentation."
+      },
+      {
+        "tag": "h3",
+        "text": "Encrypted sessions"
+      },
+      {
+        "tag": "p",
+        "text": "Transparent encryption wrapper for any session implementation:"
+      },
+      {
+        "tag": "p",
+        "text": "See Encrypted Sessions for detailed documentation."
+      },
+      {
+        "tag": "h3",
+        "text": "Other session types"
+      },
+      {
+        "tag": "p",
+        "text": "There are a few more built-in options. Please refer to examples/memory/ and source code under extensions/memory/ ."
+      },
+      {
+        "tag": "h2",
+        "text": "Operational patterns"
+      }
+    ],
+    "label": "Sessions",
+    "title": "Overview - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/sessions/"
+  },
+  "https://openai.github.io/openai-agents-python/tools/": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "Agents as tools"
+      },
+      {
+        "tag": "p",
+        "text": "In some workflows, you may want a central agent to orchestrate a network of specialized agents, instead of handing off control. You can do this by modeling agents as tools."
+      },
+      {
+        "tag": "h3",
+        "text": "Customizing tool-agents"
+      },
+      {
+        "tag": "p",
+        "text": "The agent.as_tool function is a convenience method to make it easy to turn an agent into a tool. It supports common runtime options such as max_turns , run_config , hooks , previous_response_id , conversation_id , session , and needs_approval . It also supports structured input with parameters , input_builder , and include_input_schema ."
+      },
+      {
+        "tag": "p",
+        "text": "The state options configure the nested agent run started by the tool call; the parent run's conversation state is not inherited automatically. To share client-managed history between the parent and nested runs, explicitly pass the same session to both. As with Runner.run , choose one state strategy for the nested run: a client-managed session , or server-managed continuation through previous_response_id or conversation_id ."
+      },
+      {
+        "tag": "h3",
+        "text": "Structured input for tool-agents"
+      },
+      {
+        "tag": "p",
+        "text": "By default, Agent.as_tool() expects a single string input ( {\"input\": \"...\"} ), but you can expose a structured schema by passing parameters (a Pydantic model or dataclass type)."
+      },
+      {
+        "tag": "p",
+        "text": "include_input_schema=True includes the full JSON Schema in the generated nested input."
+      },
+      {
+        "tag": "p",
+        "text": "input_builder=... lets you fully customize how structured tool arguments become nested agent input."
+      },
+      {
+        "tag": "p",
+        "text": "RunContextWrapper.tool_input contains the parsed structured payload inside the nested run context."
+      },
+      {
+        "tag": "p",
+        "text": "See examples/agent_patterns/agents_as_tools_structured.py for a complete runnable example."
+      },
+      {
+        "tag": "h3",
+        "text": "Approval gates for tool-agents"
+      },
+      {
+        "tag": "p",
+        "text": "Agent.as_tool(..., needs_approval=...) uses the same approval flow as function_tool . If approval is required, the run pauses and pending items appear in result.interruptions ; then use result.to_state() and resume after calling state.approve(...) or state.reject(...) . See the Human-in-the-loop guide for the full pause/resume pattern."
+      },
+      {
+        "tag": "h3",
+        "text": "Custom output extraction"
+      },
+      {
+        "tag": "p",
+        "text": "In certain cases, you might want to modify the output of the tool-agents before returning it to the central agent. This may be useful if you want to:"
+      },
+      {
+        "tag": "p",
+        "text": "Extract a specific piece of information (e.g., a JSON payload) from the sub-agent's chat history."
+      },
+      {
+        "tag": "p",
+        "text": "Convert or reformat the agent\u2019s final answer (e.g., transform Markdown into plain text or CSV)."
+      },
+      {
+        "tag": "p",
+        "text": "Validate the output or provide a fallback value when the agent\u2019s response is missing or malformed."
+      },
+      {
+        "tag": "p",
+        "text": "You can do this by supplying the custom_output_extractor argument to the as_tool method:"
+      },
+      {
+        "tag": "p",
+        "text": "Inside a custom extractor, the nested RunResult also exposes agent_tool_invocation , which is useful when you need the outer tool name, call ID, or raw arguments while post-processing the nested result. See the Results guide ."
+      },
+      {
+        "tag": "h3",
+        "text": "Streaming nested agent runs"
+      },
+      {
+        "tag": "p",
+        "text": "Pass an on_stream callback to as_tool to listen to streaming events emitted by the nested agent while still returning its final output once the stream completes."
+      },
+      {
+        "tag": "p",
+        "text": "Event types mirror StreamEvent[\"type\"] : raw_response_event , run_item_stream_event , agent_updated_stream_event ."
+      },
+      {
+        "tag": "p",
+        "text": "Providing on_stream automatically runs the nested agent in streaming mode and drains the stream before returning the final output."
+      },
+      {
+        "tag": "p",
+        "text": "The handler may be synchronous or asynchronous; each event is delivered in order as it arrives."
+      },
+      {
+        "tag": "p",
+        "text": "tool_call is present when the tool is invoked via a model tool call; direct calls may leave it None ."
+      },
+      {
+        "tag": "p",
+        "text": "See examples/agent_patterns/agents_as_tools_streaming.py for a complete runnable sample."
+      },
+      {
+        "tag": "h3",
+        "text": "Conditional tool enabling"
+      },
+      {
+        "tag": "p",
+        "text": "You can conditionally enable or disable agent tools at runtime using the is_enabled parameter. This allows you to dynamically filter which tools are available to the LLM based on context, user preferences, or runtime conditions."
+      },
+      {
+        "tag": "p",
+        "text": "Boolean values : True (always enabled) or False (always disabled)"
+      },
+      {
+        "tag": "p",
+        "text": "Callable functions : Functions that take (context, agent) and return a boolean"
+      },
+      {
+        "tag": "p",
+        "text": "Async functions : Async functions for complex conditional logic"
+      },
+      {
+        "tag": "p",
+        "text": "Disabled tools are completely hidden from the LLM at runtime, making this useful for:"
+      },
+      {
+        "tag": "p",
+        "text": "Environment-specific tool availability (dev vs prod)"
+      },
+      {
+        "tag": "p",
+        "text": "Dynamic tool filtering based on runtime state"
+      },
+      {
+        "tag": "h2",
+        "text": "Experimental: Codex tool"
+      },
+      {
+        "tag": "p",
+        "text": "The codex_tool wraps the Codex CLI so an agent can run workspace-scoped tasks (shell, file edits, MCP tools) during a tool call. This surface is experimental and may change."
+      },
+      {
+        "tag": "p",
+        "text": "Use it when you want the main agent to delegate a bounded workspace task to Codex without leaving the current run. By default, the tool name is codex . If you set a custom name, it must be codex or start with codex_ . When an agent includes multiple Codex tools, each must use a unique name."
+      },
+      {
+        "tag": "p",
+        "text": "Execution surface: sandbox_mode and working_directory define where Codex can operate. Pair them together, and set skip_git_repo_check=True when the working directory is not inside a Git repository."
+      },
+      {
+        "tag": "p",
+        "text": "Thread defaults: default_thread_options=ThreadOptions(...) configures the model, reasoning effort, approval policy, additional directories, network access, and web search mode. Prefer web_search_mode over the legacy web_search_enabled ."
+      }
+    ],
+    "label": "Tools",
+    "title": "Tools - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/tools/"
+  },
+  "https://openai.github.io/openai-agents-python/tracing/": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "Tracing with non-OpenAI models"
+      },
+      {
+        "tag": "p",
+        "text": "You can use an OpenAI API key with non-OpenAI models to enable free tracing in the OpenAI Traces dashboard without needing to disable tracing. See the Third-party adapters section in the Models guide for adapter selection and setup caveats."
+      },
+      {
+        "tag": "p",
+        "text": "If you only need a different tracing key for a single run, pass it via RunConfig instead of changing the global exporter."
+      },
+      {
+        "tag": "h2",
+        "text": "Additional notes"
+      },
+      {
+        "tag": "h2",
+        "text": "Ecosystem integrations"
+      },
+      {
+        "tag": "p",
+        "text": "The following community and vendor integrations support the OpenAI Agents SDK tracing surface."
+      },
+      {
+        "tag": "h3",
+        "text": "External tracing processors list"
+      }
+    ],
+    "label": "OpenAI Agents SDK: Tracing",
+    "title": "Tracing - OpenAI Agents SDK",
+    "url": "https://openai.github.io/openai-agents-python/tracing/"
+  },
+  "https://owasp.org/www-project-top-10-for-large-language-model-applications/": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "OWASP Top 10 for Large Language Model Applications"
+      },
+      {
+        "tag": "h2",
+        "text": "About This Repository"
+      },
+      {
+        "tag": "p",
+        "text": "This is the repository for the OWASP Top 10 for Large Language Model Applications . However, this project has now grown into the comprehensive OWASP GenAI Security Project - a global initiative that encompasses multiple security initiatives beyond just the Top 10 list."
+      },
+      {
+        "tag": "h2",
+        "text": "OWASP GenAI Security Project"
+      },
+      {
+        "tag": "p",
+        "text": "The OWASP GenAI Security Project is a global, open-source initiative dedicated to identifying, mitigating, and documenting security and safety risks associated with generative AI technologies, including large language models (LLMs), agentic AI systems, and AI-driven applications. Our mission is to empower organizations, security professionals, AI practitioners, and policymakers with comprehensive, actionable guidance and tools to ensure the secure development, deployment, and governance of generative AI systems."
+      },
+      {
+        "tag": "h2",
+        "text": "Latest Top 10 for LLM Applications"
+      },
+      {
+        "tag": "p",
+        "text": "The OWASP Top 10 for Large Language Model Applications continues to be a core component of our work, identifying the most critical security vulnerabilities in LLM applications."
+      },
+      {
+        "tag": "p",
+        "text": "Access the latest Top 10 for LLM: https://genai.owasp.org/llm-top-10/"
+      },
+      {
+        "tag": "h2",
+        "text": "Project Background and Growth"
+      },
+      {
+        "tag": "p",
+        "text": "The project has evolved significantly since its inception. From a small group of security professionals addressing an urgent security gap in 2023, it has grown into a global community with over 600 contributing experts from more than 18 countries and nearly 8,000 active community members."
+      },
+      {
+        "tag": "p",
+        "text": "Read our full project background: Introduction and Background"
+      },
+      {
+        "tag": "h2",
+        "text": "Get Involved"
+      },
+      {
+        "tag": "h3",
+        "text": "Contribute to the Project"
+      },
+      {
+        "tag": "p",
+        "text": "We welcome all expert ideas, contributions, suggestions, and remarks from security professionals, researchers, developers, and anyone passionate about AI security."
+      },
+      {
+        "tag": "p",
+        "text": "Learn how to contribute: https://genai.owasp.org/contribute/"
+      },
+      {
+        "tag": "h3",
+        "text": "Join Our Meetings"
+      },
+      {
+        "tag": "p",
+        "text": "Participate in our bi-weekly sync meetings and stay connected with the community."
+      },
+      {
+        "tag": "p",
+        "text": "Meeting information: https://genai.owasp.org/meetings/"
+      },
+      {
+        "tag": "h3",
+        "text": "Connect with the Community"
+      },
+      {
+        "tag": "p",
+        "text": "Join our working group channel on the OWASP Slack - sign up and join us on the #project-top10-for-llm channel"
+      },
+      {
+        "tag": "p",
+        "text": "Subscribe to our newsletter for periodic updates"
+      },
+      {
+        "tag": "h2",
+        "text": "Project Support"
+      },
+      {
+        "tag": "p",
+        "text": "We are a not-for-profit, open-source, community-driven project. If you are interested in supporting the project with resources or becoming a sponsor to help us sustain community efforts and offset operational and outreach costs, visit the Sponsor Section on our website."
+      },
+      {
+        "tag": "p",
+        "text": "Thank you to our current Sponsors and Supporters"
+      },
+      {
+        "tag": "h2",
+        "text": "Educational Resources"
+      },
+      {
+        "tag": "h1",
+        "text": "OWASP Top 10 for Large Language Model Applications version 1.1"
+      },
+      {
+        "tag": "h2",
+        "text": "LLM01: Prompt Injection"
+      },
+      {
+        "tag": "p",
+        "text": "Manipulating LLMs via crafted inputs can lead to unauthorized access, data breaches, and compromised decision-making."
+      },
+      {
+        "tag": "h2",
+        "text": "LLM02: Insecure Output Handling"
+      },
+      {
+        "tag": "p",
+        "text": "Neglecting to validate LLM outputs may lead to downstream security exploits, including code execution that compromises systems and exposes data."
+      },
+      {
+        "tag": "h2",
+        "text": "LLM03: Training Data Poisoning"
+      },
+      {
+        "tag": "p",
+        "text": "Tampered training data can impair LLM models leading to responses that may compromise security, accuracy, or ethical behavior."
+      },
+      {
+        "tag": "h2",
+        "text": "LLM04: Model Denial of Service"
+      },
+      {
+        "tag": "p",
+        "text": "Overloading LLMs with resource-heavy operations can cause service disruptions and increased costs."
+      },
+      {
+        "tag": "h2",
+        "text": "LLM05: Supply Chain Vulnerabilities"
+      },
+      {
+        "tag": "p",
+        "text": "Depending upon compromised components, services or datasets undermine system integrity, causing data breaches and system failures."
+      },
+      {
+        "tag": "h2",
+        "text": "LLM06: Sensitive Information Disclosure"
+      },
+      {
+        "tag": "p",
+        "text": "Failure to protect against disclosure of sensitive information in LLM outputs can result in legal consequences or a loss of competitive advantage."
+      },
+      {
+        "tag": "h2",
+        "text": "LLM07: Insecure Plugin Design"
+      },
+      {
+        "tag": "p",
+        "text": "LLM plugins processing untrusted inputs and having insufficient access control risk severe exploits like remote code execution."
+      }
+    ],
+    "label": "OWASP Top 10 for LLM Applications",
+    "title": "OWASP Top 10 for Large Language Model Applications | OWASP Foundation",
+    "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+  },
+  "https://platform.openai.com/docs/api-reference/responses": {
+    "items": [
+      {
+        "tag": "h2",
+        "text": "Search the API docs"
+      },
+      {
+        "tag": "p",
+        "text": "The unique identifier for the compacted response."
+      },
+      {
+        "tag": "p",
+        "text": "Unix timestamp (in seconds) when the compacted conversation was created."
+      }
+    ],
+    "label": "Responses API reference",
+    "title": "Responses | OpenAI API Reference",
+    "url": "https://developers.openai.com/api/reference/resources/responses"
+  },
+  "https://platform.openai.com/docs/guides/function-calling": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Function calling"
+      },
+      {
+        "tag": "p",
+        "text": "Give models access to new functionality and data they can use to follow instructions and respond to prompts."
+      },
+      {
+        "tag": "p",
+        "text": "Function calling (also known as tool calling ) provides a powerful and flexible way for OpenAI models to interface with external systems and access data outside their training data. This guide shows how you can connect a model to data and actions provided by your application. We\u2019ll show how to use function tools (defined by a JSON schema) and custom tools which work with free form text inputs and outputs."
+      },
+      {
+        "tag": "p",
+        "text": "If your application has many functions or large schemas, you can pair function calling with tool search to defer rarely used tools and load them only when the model needs them. Only gpt-5.4 and later models support tool_search ."
+      },
+      {
+        "tag": "h2",
+        "text": "How it works"
+      },
+      {
+        "tag": "p",
+        "text": "Let\u2019s begin by understanding a few key terms about tool calling. After we have a shared vocabulary for tool calling, we\u2019ll show you how it\u2019s done with some practical examples."
+      },
+      {
+        "tag": "p",
+        "text": "A function or tool refers in the abstract to a piece of functionality that we tell the model it has access to. As a model generates a response to a prompt, it may decide that it needs data or functionality provided by a tool to follow the prompt\u2019s instructions."
+      },
+      {
+        "tag": "p",
+        "text": "You could give the model access to tools that:"
+      },
+      {
+        "tag": "p",
+        "text": "Or anything else you\u2019d like the model to be able to know or do as it responds to a prompt."
+      },
+      {
+        "tag": "p",
+        "text": "When we make an API request to the model with a prompt, we can include a list of tools the model could consider using. For example, if we wanted the model to be able to answer questions about the current weather somewhere in the world, we might give it access to a get_weather tool that takes location as an argument."
+      },
+      {
+        "tag": "p",
+        "text": "A function call or tool call refers to a special kind of response we can get from the model if it examines a prompt, and then determines that in order to follow the instructions in the prompt, it needs to call one of the tools we made available to it."
+      },
+      {
+        "tag": "p",
+        "text": "If the model receives a prompt like \u201cwhat is the weather in Paris?\u201d in an API request, it could respond to that prompt with a tool call for the get_weather tool, with Paris as the location argument."
+      },
+      {
+        "tag": "p",
+        "text": "A function call output or tool call output refers to the response a tool generates using the input from a model\u2019s tool call. The tool call output can either be structured JSON or plain text, and it should contain a reference to a specific model tool call (referenced by call_id in the examples to come). To complete our weather example:"
+      },
+      {
+        "tag": "p",
+        "text": "The model has access to a get_weather tool that takes location as an argument."
+      },
+      {
+        "tag": "p",
+        "text": "In response to a prompt like \u201cwhat\u2019s the weather in Paris?\u201d the model returns a tool call that contains a location argument with a value of Paris"
+      },
+      {
+        "tag": "p",
+        "text": "The tool call output might return a JSON object (e.g., {\"temperature\": \"25\", \"unit\": \"C\"} , indicating a current temperature of 25 degrees), Image contents , or File contents ."
+      },
+      {
+        "tag": "p",
+        "text": "We then send all of the tool definition, the original prompt, the model\u2019s tool call, and the tool call output back to the model to finally receive a text response like:"
+      },
+      {
+        "tag": "p",
+        "text": "A function is a specific kind of tool, defined by a JSON schema. A function definition allows the model to pass data to your application, where your code can access data or take actions suggested by the model."
+      },
+      {
+        "tag": "p",
+        "text": "In addition to function tools, there are custom tools (described in this guide) that work with free text inputs and outputs."
+      },
+      {
+        "tag": "p",
+        "text": "There are also built-in tools that are part of the OpenAI platform. These tools enable the model to search the web , execute code , access the functionality of an MCP server , and more."
+      },
+      {
+        "tag": "h3",
+        "text": "The tool calling flow"
+      },
+      {
+        "tag": "p",
+        "text": "Tool calling is a multi-step conversation between your application and a model via the OpenAI API. The tool calling flow has five high level steps:"
+      },
+      {
+        "tag": "p",
+        "text": "Make a request to the model with tools it could call"
+      },
+      {
+        "tag": "p",
+        "text": "Execute code on the application side with input from the tool call"
+      },
+      {
+        "tag": "p",
+        "text": "Make a second request to the model with the tool output"
+      },
+      {
+        "tag": "p",
+        "text": "Receive a final response from the model (or more tool calls)"
+      },
+      {
+        "tag": "p",
+        "text": "With Responses, your application can continue this flow for as many tool calls as the task requires. If you want a framework that packages recurring orchestration around that loop, see how the Responses API compares with the Agents SDK ."
+      },
+      {
+        "tag": "h2",
+        "text": "Function tool example"
+      },
+      {
+        "tag": "p",
+        "text": "Let\u2019s look at an end-to-end tool calling flow for a get_horoscope function that gets a daily horoscope for an astrological sign."
+      }
+    ],
+    "label": "Function calling",
+    "title": "Function calling | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/function-calling"
+  },
+  "https://platform.openai.com/docs/guides/structured-outputs": {
+    "items": [
+      {
+        "tag": "h1",
+        "text": "Structured model outputs"
+      },
+      {
+        "tag": "p",
+        "text": "Ensure text responses from the model adhere to a JSON schema you define."
+      },
+      {
+        "tag": "p",
+        "text": "JSON is one of the most widely used formats in the world for applications to exchange data."
+      },
+      {
+        "tag": "p",
+        "text": "Structured Outputs is a feature that ensures the model will always generate responses that adhere to your supplied JSON Schema , so you don\u2019t need to worry about the model omitting a required key, or hallucinating an invalid enum value."
+      },
+      {
+        "tag": "p",
+        "text": "Reliable type-safety: No need to validate or retry incorrectly formatted responses"
+      },
+      {
+        "tag": "p",
+        "text": "Explicit refusals: Safety-based model refusals are now programmatically detectable"
+      },
+      {
+        "tag": "p",
+        "text": "Simpler prompting: No need for strongly worded prompts to achieve consistent formatting"
+      },
+      {
+        "tag": "p",
+        "text": "In addition to supporting JSON Schema in the REST API, the OpenAI SDKs for Python and JavaScript also make it easy to define object schemas using Pydantic and Zod respectively. Below, you can see how to extract information from unstructured text that conforms to a schema defined in code."
+      }
+    ],
+    "label": "Structured output",
+    "title": "Structured model outputs | OpenAI API",
+    "url": "https://developers.openai.com/api/docs/guides/structured-outputs"
+  },
+  "https://www.nist.gov/itl/ai-risk-management-framework": {
+    "items": [
+      {
+        "tag": "h3",
+        "text": "NIST Risk Management Framework Aims to Improve Trustworthiness of Artificial Intelligence"
+      },
+      {
+        "tag": "h3",
+        "text": "NIST Seeks Comments on AI Risk Management Framework Guidance, Workshop Date Set"
+      },
+      {
+        "tag": "h3",
+        "text": "Symposium Focuses on AI and the Economy and the Path for Responsible and Inclusive AI"
+      },
+      {
+        "tag": "h3",
+        "text": "NIST Seeks Comments on Draft AI Risk Management Framework, Offers Guidance on AI Bias"
+      }
+    ],
+    "label": "NIST AI Risk Management Framework",
+    "title": "AI Risk Management Framework | NIST",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+  }
+}

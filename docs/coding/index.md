@@ -18,4 +18,7 @@ Coverage will include:
 
 ## Topics
 
+- [Codex](codex.md)
+- [Cursor](cursor.md)
+- [Claude Code](claude-code.md)
 - [AI Skills](ai-skills.md)

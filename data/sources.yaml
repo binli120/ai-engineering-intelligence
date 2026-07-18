@@ -8,6 +8,9 @@ sources:
     release_url: https://openai.github.io/openai-agents-python/release/
     priority: 100
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: openai_platform_docs
     name: OpenAI Platform Documentation
@@ -17,6 +20,9 @@ sources:
     url: https://platform.openai.com/docs/
     priority: 100
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: openai_responses_api_docs
     name: OpenAI Responses API Documentation
@@ -26,6 +32,9 @@ sources:
     url: https://platform.openai.com/docs/api-reference/responses
     priority: 100
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: mcp_docs
     name: Model Context Protocol Documentation
@@ -35,6 +44,9 @@ sources:
     url: https://modelcontextprotocol.io/
     priority: 100
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: mcp_spec
     name: Model Context Protocol Specification
@@ -44,6 +56,9 @@ sources:
     url: https://modelcontextprotocol.io/specification/2025-06-18
     priority: 100
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: openai_file_search_docs
     name: OpenAI File Search Documentation
@@ -53,6 +68,9 @@ sources:
     url: https://developers.openai.com/api/docs/guides/tools-file-search
     priority: 95
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: openai_embeddings_docs
     name: OpenAI Embeddings Documentation
@@ -62,6 +80,9 @@ sources:
     url: https://developers.openai.com/api/docs/guides/embeddings
     priority: 95
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: openai_evals_docs
     name: OpenAI Evals Documentation
@@ -71,6 +92,9 @@ sources:
     url: https://developers.openai.com/api/docs/guides/evals
     priority: 95
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: opentelemetry_docs
     name: OpenTelemetry Documentation
@@ -80,6 +104,9 @@ sources:
     url: https://opentelemetry.io/docs/
     priority: 90
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: owasp_llm_top_10
     name: OWASP Top 10 for LLM Applications
@@ -89,6 +116,9 @@ sources:
     url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
     priority: 95
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: nist_ai_rmf
     name: NIST AI Risk Management Framework
@@ -98,6 +128,9 @@ sources:
     url: https://www.nist.gov/itl/ai-risk-management-framework
     priority: 90
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 730
+    max_items: 20
 
   - id: agent_skills_standard
     name: Agent Skills Standard
@@ -107,6 +140,9 @@ sources:
     url: https://agentskills.io/
     priority: 95
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: claude_code_skills_docs
     name: Claude Code Skills Documentation
@@ -116,6 +152,58 @@ sources:
     url: https://code.claude.com/docs/en/skills
     priority: 90
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
+
+  - id: openai_codex_docs
+    name: OpenAI Codex Documentation
+    category: ai_coding
+    authority: primary
+    type: documentation
+    url: https://developers.openai.com/codex
+    priority: 100
+    enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
+
+  - id: openai_codex_github
+    name: OpenAI Codex GitHub
+    category: ai_coding
+    authority: primary
+    type: github
+    url: https://github.com/openai/codex
+    release_url: https://github.com/openai/codex/releases
+    priority: 95
+    enabled: true
+    refresh_interval_days: 1
+    retention_days: 180
+    max_items: 20
+
+  - id: cursor_docs
+    name: Cursor Documentation
+    category: ai_coding
+    authority: primary
+    type: documentation
+    url: https://docs.cursor.com/
+    priority: 95
+    enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
+
+  - id: claude_code_docs
+    name: Claude Code Documentation
+    category: ai_coding
+    authority: primary
+    type: documentation
+    url: https://code.claude.com/docs/
+    priority: 95
+    enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: google_notebooklm
     name: Google NotebookLM
@@ -125,6 +213,9 @@ sources:
     url: https://notebooklm.google/
     priority: 90
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: arxiv_notebooklm_active_learning
     name: NotebookLM Active Learning Study
@@ -134,6 +225,9 @@ sources:
     url: https://arxiv.org/abs/2504.09720
     priority: 70
     enabled: true
+    refresh_interval_days: 7
+    retention_days: 730
+    max_items: 20
 
   - id: langgraph_docs
     name: LangGraph Documentation
@@ -144,6 +238,9 @@ sources:
     release_url: https://docs.langchain.com/oss/python/releases/changelog
     priority: 100
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 365
+    max_items: 20
 
   - id: langgraph_github
     name: LangGraph GitHub
@@ -154,6 +251,9 @@ sources:
     release_url: https://github.com/langchain-ai/langgraph/releases
     priority: 95
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 180
+    max_items: 20
 
   - id: arxiv_cs_ai
     name: arXiv Artificial Intelligence
@@ -163,6 +263,9 @@ sources:
     url: https://export.arxiv.org/rss/cs.AI
     priority: 60
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 90
+    max_items: 20
 
   - id: arxiv_cs_se
     name: arXiv Software Engineering
@@ -172,3 +275,6 @@ sources:
     url: https://export.arxiv.org/rss/cs.SE
     priority: 60
     enabled: true
+    refresh_interval_days: 1
+    retention_days: 90
+    max_items: 20

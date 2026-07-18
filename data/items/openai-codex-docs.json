@@ -1,0 +1,11 @@
+{
+  "id": "openai-codex-docs",
+  "title": "OpenAI Codex Documentation",
+  "url": "https://developers.openai.com/codex",
+  "source_id": "openai_codex_docs",
+  "category": "ai_coding",
+  "summary": "Official documentation for OpenAI Codex, covering coding-agent workflows, local development, review practices, and integration paths for software engineering tasks.",
+  "tags": ["codex", "ai-coding", "coding-agent", "openai"],
+  "maturity": "stable",
+  "collected_at": "2026-07-17T00:00:00Z"
+}

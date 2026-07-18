@@ -1,0 +1,195 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT_DIR"
+
+PORT="${PORT:-8001}"
+HOST="${HOST:-127.0.0.1}"
+E2E_PORT="${E2E_PORT:-8011}"
+POETRY="${POETRY:-}"
+NODE="${NODE:-}"
+
+if [[ -z "$POETRY" ]]; then
+  if command -v poetry >/dev/null 2>&1; then
+    POETRY="$(command -v poetry)"
+  elif [[ -x "$HOME/.local/bin/poetry" ]]; then
+    POETRY="$HOME/.local/bin/poetry"
+  else
+    printf 'Poetry is required. Install it with: pipx install "poetry>=2.0,<3.0"\n' >&2
+    exit 127
+  fi
+fi
+
+if [[ -z "$NODE" ]]; then
+  if command -v node >/dev/null 2>&1; then
+    NODE="$(command -v node)"
+  elif [[ -x "/Users/blee/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node" ]]; then
+    NODE="/Users/blee/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  else
+    NODE="node"
+  fi
+fi
+
+run() {
+  printf '\n\033[1;36m%s\033[0m\n' "$*"
+  "$@"
+}
+
+port_in_use() {
+  local port="${1:-$PORT}"
+  if command -v lsof >/dev/null 2>&1; then
+    lsof -iTCP:"$port" -sTCP:LISTEN -n -P >/dev/null 2>&1
+    return
+  fi
+  return 1
+}
+
+wait_for_url() {
+  local url="$1"
+  local attempts=60
+  local attempt=1
+  while [[ "$attempt" -le "$attempts" ]]; do
+    if curl -fsS "$url" >/dev/null 2>&1; then
+      return 0
+    fi
+    sleep 0.5
+    attempt=$((attempt + 1))
+  done
+  return 1
+}
+
+run_e2e() {
+  local url="http://$HOST:$E2E_PORT"
+  if port_in_use "$E2E_PORT"; then
+    printf 'Port %s is already in use. Set E2E_PORT to another port.\n' "$E2E_PORT" >&2
+    exit 1
+  fi
+
+  mkdir -p output/playwright
+  printf '\n\033[1;36m%s\033[0m\n' "$POETRY run mkdocs serve -a $HOST:$E2E_PORT"
+  "$POETRY" run mkdocs serve -a "$HOST:$E2E_PORT" >output/playwright/mkdocs-e2e.log 2>&1 &
+  local server_pid=$!
+  trap 'kill "$server_pid" >/dev/null 2>&1 || true' EXIT
+
+  if ! wait_for_url "$url/"; then
+    printf 'Timed out waiting for %s. See output/playwright/mkdocs-e2e.log\n' "$url" >&2
+    exit 1
+  fi
+
+  E2E_BASE_URL="$url" PLAYWRIGHT_NODE_MODULES="${PLAYWRIGHT_NODE_MODULES:-/Users/blee/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules}" run "$NODE" tests/e2e/app.e2e.mjs
+  kill "$server_pid" >/dev/null 2>&1 || true
+  trap - EXIT
+}
+
+usage() {
+  cat <<EOF
+Usage: scripts/aikb <command>
+
+Commands:
+  install       Install project dependencies with dev tools
+  lint          Run Ruff lint and format checks
+  lint:fix      Apply Ruff fixes and formatting
+  test          Run the test suite
+  typecheck     Run mypy
+  validate      Validate the source registry
+  docs:build    Build MkDocs documentation strictly
+  e2e           Run browser e2e tests against a temporary MkDocs server
+  package       Build the Python package
+  build         Build docs and Python package
+  check         Run the full local quality gate
+  refresh       Fetch due content and prune stale documents
+  refresh:dry   Preview refresh/prune work without writing
+  sources       Build cached source previews for in-app reading
+  run           Start the app on http://\$HOST:\$PORT
+  all           Run lint, test, build, and validate
+
+Environment:
+  HOST          Server host for run command. Default: 127.0.0.1
+  PORT          Server port for run command. Default: 8001
+  E2E_PORT      Temporary server port for e2e. Default: 8011
+  POETRY        Poetry executable path. Auto-detected when unset.
+  NODE          Node.js executable path. Auto-detected when unset.
+
+Examples:
+  scripts/aikb lint
+  scripts/aikb test
+  scripts/aikb build
+  scripts/aikb e2e
+  scripts/aikb sources
+  scripts/aikb run
+  PORT=8002 scripts/aikb run
+EOF
+}
+
+command="${1:-}"
+
+case "$command" in
+  install)
+    run "$POETRY" install --with dev
+    ;;
+  lint)
+    run "$POETRY" run aikb lint
+    ;;
+  lint:fix)
+    run "$POETRY" run aikb lint --fix
+    ;;
+  test)
+    run "$POETRY" run pytest
+    ;;
+  typecheck)
+    run "$POETRY" run mypy
+    ;;
+  validate)
+    run "$POETRY" run aikb validate
+    ;;
+  docs:build)
+    run "$POETRY" run mkdocs build --strict
+    ;;
+  e2e)
+    run_e2e
+    ;;
+  package)
+    run "$POETRY" build
+    ;;
+  build)
+    run "$POETRY" run mkdocs build --strict
+    run "$POETRY" build
+    ;;
+  check)
+    run "$POETRY" run aikb check
+    ;;
+  refresh)
+    run "$POETRY" run aikb refresh
+    ;;
+  refresh:dry)
+    run "$POETRY" run aikb refresh --dry-run
+    ;;
+  sources)
+    run "$POETRY" run aikb source-previews
+    ;;
+  run)
+    if port_in_use "$PORT"; then
+      printf 'Port %s is already in use. The app may already be running at http://%s:%s\n' "$PORT" "$HOST" "$PORT" >&2
+      printf 'Use a different port with: PORT=8002 scripts/aikb run\n' >&2
+      exit 1
+    fi
+    run "$POETRY" run mkdocs serve -a "$HOST:$PORT"
+    ;;
+  all)
+    run "$POETRY" run aikb lint
+    run "$POETRY" run pytest
+    run "$POETRY" run mypy
+    run "$POETRY" run aikb validate
+    run "$POETRY" run mkdocs build --strict
+    run "$POETRY" build
+    ;;
+  ""|help|--help|-h)
+    usage
+    ;;
+  *)
+    printf 'Unknown command: %s\n\n' "$command" >&2
+    usage >&2
+    exit 2
+    ;;
+esac
