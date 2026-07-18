@@ -1,0 +1,17 @@
+{
+  "category": "agent_framework",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 100,
+  "evidence_quality": 90,
+  "id": "openai-agents-sdk-410fd04b0e",
+  "maturity": "stable",
+  "published_at": "2026-07-17T22:13:52Z",
+  "source_id": "openai_agents_docs",
+  "summary": "Current snapshot of OpenAI Agents SDK Documentation.",
+  "tags": [
+    "agent-framework",
+    "documentation"
+  ],
+  "title": "OpenAI Agents SDK",
+  "url": "https://openai.github.io/openai-agents-python/"
+}

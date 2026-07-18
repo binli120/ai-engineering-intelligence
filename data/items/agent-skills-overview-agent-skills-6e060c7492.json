@@ -1,0 +1,17 @@
+{
+  "category": "ai_coding",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 95,
+  "evidence_quality": 90,
+  "id": "agent-skills-overview-agent-skills-6e060c7492",
+  "maturity": "stable",
+  "published_at": "2026-07-18T02:52:37Z",
+  "source_id": "agent_skills_standard",
+  "summary": "A standardized way to give AI agents new capabilities and expertise.",
+  "tags": [
+    "ai-coding",
+    "documentation"
+  ],
+  "title": "Agent Skills Overview - Agent Skills",
+  "url": "https://agentskills.io/home"
+}

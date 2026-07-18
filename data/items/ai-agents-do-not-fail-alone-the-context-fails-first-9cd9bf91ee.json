@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "ai-agents-do-not-fail-alone-the-context-fails-first-9cd9bf91ee",
+  "maturity": "unknown",
+  "published_at": "2026-07-18T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2607.14275v1 Announce Type: new Abstract: Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured. Agents do not fail in isolation: their behavior is shaped by the instructions, tools, memory, retrieved knowledge, guardrails, and untrusted inputs accumulated in their context. When this context is weak, agents drift, hallucinate, misuse tools, ignore constraints, become vulnerable to injection, and waste tokens. This paper validates context-engineering quality as an independent leading indicator of agent reliability. We implement the measurement in ProofAgent-Harness, an open-source infrastructure for AI agent evaluation that uses multi-juror, consensus-based scoring. The harness assesses context across seven criteria: role clarity, guardrail coverage, instruction consistency, tool schema quality, grounding sufficiency, injection hardening, and token efficiency. Crucially, the context score is isolated from behavioral metrics and release decisions, enabling a non-circular validation. Through a controlled context-quality study across regulated agent domains, holding frontier LLM agents fixed and varying only their operating context, we show that context-quality criteria consistently predict their corresponding behavioral outcomes. Grounding sufficiency predicts hallucination resistance, guardrail coverage predicts manipulation resistance, instruction consistency predicts instruction following, and tool-schema quality predicts tool use. These findings establish context measurement as a validated preflight signal for agent reliability and position context engineering as an auditable layer of agent evaluation and governance.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AI Agents Do Not Fail Alone:The Context Fails First",
+  "url": "https://arxiv.org/abs/2607.14275"
+}

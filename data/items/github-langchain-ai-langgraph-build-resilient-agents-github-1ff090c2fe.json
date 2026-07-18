@@ -1,0 +1,17 @@
+{
+  "category": "agent_framework",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 95,
+  "evidence_quality": 90,
+  "id": "github-langchain-ai-langgraph-build-resilient-agents-github-1ff090c2fe",
+  "maturity": "stable",
+  "published_at": null,
+  "source_id": "langgraph_github",
+  "summary": "Build resilient agents. Contribute to langchain-ai/langgraph development by creating an account on GitHub.",
+  "tags": [
+    "agent-framework",
+    "github"
+  ],
+  "title": "GitHub - langchain-ai/langgraph: Build resilient agents. \u00b7 GitHub",
+  "url": "https://github.com/langchain-ai/langgraph"
+}

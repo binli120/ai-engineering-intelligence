@@ -1,0 +1,17 @@
+{
+  "category": "observability",
+  "collected_at": "2026-07-18T09:44:43.066061Z",
+  "engineering_impact": 90,
+  "evidence_quality": 90,
+  "id": "documentation-opentelemetry-ee7fd9da40",
+  "maturity": "stable",
+  "published_at": null,
+  "source_id": "opentelemetry_docs",
+  "summary": "OpenTelemetry, also known as OTel, is a vendor-neutral open source Observability framework for instrumenting, generating, collecting, and exporting telemetry data such as traces, metrics, and logs. As an industry-standard, OpenTelemetry is supported by more than 90 observability vendors, integrated by many libraries, services, and apps, and adopted by numerous end users.",
+  "tags": [
+    "observability",
+    "documentation"
+  ],
+  "title": "Documentation | OpenTelemetry",
+  "url": "https://opentelemetry.io/docs/"
+}
