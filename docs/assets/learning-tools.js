@@ -1274,7 +1274,7 @@
       {
         title: "Cursor",
         href: "/coding/cursor/",
-        meta: "AI Coding - 9 sections",
+        meta: "AI Coding - 10 sections",
         accent: "green",
         mark: "CU",
         summary: "Editor-native agents, rules, tools, and MCP",
@@ -1294,6 +1294,14 @@
         accent: "lime",
         mark: "SK",
         summary: "Reusable workflows and agent capability packages",
+      },
+      {
+        title: "AI Development Environments",
+        href: "/coding/ai-development-environments/",
+        meta: "AI Coding - 9 sections",
+        accent: "cyan",
+        mark: "IDE",
+        summary: "AI-native IDEs, agent runtimes, context, permissions, and evaluation",
       },
       {
         title: "Learning Tools",

@@ -43,7 +43,13 @@ async function dashboardTest(page) {
   const titles = await page
     .locator(".aikb-notebook-card strong")
     .evaluateAll((nodes) => nodes.map((node) => node.textContent.trim()));
-  for (const title of ["OpenAI Agents SDK", "LangGraph", "Tutorials", "Weekly Updates"]) {
+  for (const title of [
+    "OpenAI Agents SDK",
+    "LangGraph",
+    "AI Development Environments",
+    "Tutorials",
+    "Weekly Updates",
+  ]) {
     assert(titles.includes(title), `Missing dashboard card: ${title}`);
   }
 

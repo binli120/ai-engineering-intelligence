@@ -34,6 +34,7 @@ nav:
       - Cursor: coding/cursor.md
       - Claude Code: coding/claude-code.md
       - AI Skills: coding/ai-skills.md
+      - AI Development Environments and IDEs: coding/ai-development-environments.md
   - Learning Tools: learning-tools/index.md
   - Production AI:
       - RAG: production/rag.md
