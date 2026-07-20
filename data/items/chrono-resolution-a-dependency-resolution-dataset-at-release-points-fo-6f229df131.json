@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-20T11:12:52.332293Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "chrono-resolution-a-dependency-resolution-dataset-at-release-points-fo-6f229df131",
+  "maturity": "unknown",
+  "published_at": "2026-07-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.15315v1 Announce Type: new Abstract: Dependency resolution at a specified point in time in the past can provide insight into software evolution in software ecosystems and facilitate the design of dynamic metrics (e.g., dependency freshness, dependency update rhythm). However, dependency resolution at specified points in time is not possible in major software ecosystems due to a lack of support from package management tools. The goal of this paper is to aid practitioners and researchers in analyzing the state of the ecosystem dependency graph at release points using an enriched dataset with dependency resolution at release points for npm, PyPI, and crates.io packages. In this paper, we present a methodology to construct dependency resolution at release points of packages in software ecosystems, which we enrich with vulnerability data from OSV. We apply our methodology to construct CHRONO-RESOLUTION, a dataset of dependency resolution at release points for npm, PyPI, and crates.io packages, and release it for future research.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "CHRONO-RESOLUTION: A Dependency Resolution Dataset at Release Points for npm, PyPI, and crates.io Packages",
+  "url": "https://arxiv.org/abs/2607.15315"
+}

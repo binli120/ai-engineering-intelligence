@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-20T11:12:52.332293Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "two-path-status-verification-for-outbound-enterprise-messaging-pipelin-7321138937",
+  "maturity": "unknown",
+  "published_at": "2026-07-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.15529v1 Announce Type: new Abstract: Outbound enterprise messaging pipelines face a fundamental reliability challenge: delivery status callbacks (webhooks) from messaging providers are subject to network failures, endpoint unavailability, and provider-side retry exhaustion, resulting in stale status records in the CRM system of record. A naive single-path architecture that relies exclusively on webhooks leaves a population of messages permanently in an intermediate state when callbacks fail. This paper presents a two-path status verification architecture, generalized from patterns observed in production CRM-native messaging systems built on multi-tenant platform-as-a-service infrastructure. The primary path uses a real-time webhook received by a REST endpoint, which publishes an internal event for asynchronous record update. The fallback path uses a configurable scheduled polling job that detects records still in transitional status after a configurable interval and queries the provider's status API directly to reconcile state. We describe the event-driven primary path, the scheduler-based fallback, deduplication via idempotent upsert, the sync failure detection mechanism, and the platform resource-limit considerations that shape each design decision.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Two-Path Status Verification for Outbound Enterprise Messaging Pipelines: Webhook and Scheduled Polling Fallback Architecture",
+  "url": "https://arxiv.org/abs/2607.15529"
+}

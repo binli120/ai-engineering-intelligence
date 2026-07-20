@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-20T11:12:52.332293Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "tars-a-theory-of-mind-agent-for-personalized-in-ide-code-comprehension-d06a5bfed4",
+  "maturity": "unknown",
+  "published_at": "2026-07-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.15948v1 Announce Type: new Abstract: Code comprehension is one of the most time-consuming tasks in software engineering, yet most LLM-based assistants produce explanations that ignore who is asking and force developers into a disruptive copy-paste workflow. We present TARS, an LLM-powered agent integrated into Visual Studio Code that supports program comprehension through autonomous explanations anchored directly to the code under analysis. Built around a lightweight Theory of Mind paradigm, TARS profiles a developer's expertise, role, and stylistic preferences, then adapts the depth and tone of its explanations accordingly, grounding them in project documentation via Retrieval-Augmented Generation. To evaluate TARS, we conducted a controlled experiment with 18 participants on non-trivial Java snippets. Participants using TARS completed tasks 26\\% faster, reported lower cognitive load, and found the explanations meaningfully adapted to their profiles.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "TARS: A Theory-of-Mind Agent for Personalized In-IDE Code Comprehension",
+  "url": "https://arxiv.org/abs/2607.15948"
+}

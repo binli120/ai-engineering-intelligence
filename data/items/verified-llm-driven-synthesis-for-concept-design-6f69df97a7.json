@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-20T11:12:52.332293Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "verified-llm-driven-synthesis-for-concept-design-6f69df97a7",
+  "maturity": "unknown",
+  "published_at": "2026-07-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.15718v1 Announce Type: new Abstract: Concept Design structures software systems around concepts: user-facing, self-contained units of functionality with a focused purpose. Concepts are composed into applications using synchronization rules called reactions, which specify how actions in one concept trigger actions in others. This paper first gives a formal semantics for concepts and reactions, enabling automatic verification of safety invariants in applications developed with this methodology. It then presents a CEGIS-style, LLM-driven synthesis procedure for generating reaction designs that satisfy such invariants. Because many different designs can satisfy the same invariant, we study two ways of steering synthesis toward the user's intended design: natural-language prompts and positive/negative scenarios. We also propose an LLM-driven scenario elicitation technique to support early design exploration. In an evaluation on three applications and twelve design variants using one LLM configuration, invariant-only synthesis reached verified designs quickly but often produced inconsistent designs across runs, some of which were implausible, showing that invariants alone underconstrain the design task. Scenario-guided synthesis recovered intended designs more consistently than natural-language prompting, although minimal scenarios can lead to overfitting. LLM-driven scenario elicitation, where the user classifies proposed scenarios rather than authoring them from scratch, recovered the intended designs in most variants when enough scenarios were elicited, but missed behaviors and non-determinism prevented reliable coverage in all cases.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Verified LLM-Driven Synthesis for Concept Design",
+  "url": "https://arxiv.org/abs/2607.15718"
+}

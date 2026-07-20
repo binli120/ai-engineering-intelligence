@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-20T11:12:52.332293Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "ciphertext-and-polynomial-level-optimization-for-fully-homomorphic-enc-6a00d62332",
+  "maturity": "unknown",
+  "published_at": "2026-07-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.15750v1 Announce Type: cross Abstract: Fully homomorphic encryption (FHE) schemes such as RNS-CKKS enable privacy-preserving services by allowing direct computation on encrypted data. While recent FHE compilers optimize FHE programs, they operate at the coarse-grained ciphertext level, where each ciphertext operation comprises a sequence of polynomial operations. At this granularity, the compilers miss optimization opportunities across ciphertext operations. This work presents Recifhe, a new multi-level compiler that supports not only ciphertext-level but also polynomial-level optimization. At the ciphertext level, Recifhe transforms a non-FHE input program into an FHE program by inserting ciphertext management operations and applies global optimizations. At the polynomial level, Recifhe eliminates redundant polynomial computations across ciphertext operations. Recifhe achieves a 1.25x speedup over ciphertext-level-only optimization.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Ciphertext- and Polynomial-Level Optimization for Fully Homomorphic Encryption",
+  "url": "https://arxiv.org/abs/2607.15750"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-20T11:12:52.332293Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "comparison-of-energy-system-optimization-software-and-evaluation-of-se-9eab07d768",
+  "maturity": "unknown",
+  "published_at": "2026-07-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.16121v1 Announce Type: new Abstract: Optimizing energy systems is a crucial step toward achieving a carbon-neutral future, with software tools playing a major role in the process. However, selecting the most suitable tool for specific optimization challenges can be complex, given the diverse objectives and requirements of various energy systems. In this study, we aim to address this issue by evaluating five preselected software tools-REMix, MTRESS, COMANDO, OEMOF, and HOMER PRO-to identify the scenarios for which they are most suitable. To achieve this, we conducted an extensive review of literature, documentation, tutorials, and example models, and developed a set of comparison criteria that were subsequently used to evaluate these tools. Our analysis suggests that REMix is particularly effective for scenarios where investment path optimization is required. COMANDO excels in systems with atypical components. OEMOF is the best-suited open-source tool for standard optimization problems. HOMER PRO is recommended for users seeking rapid synthesis optimization, especially those with limited programming experience. Due to difficulties in obtaining sufficient information on MTRESS, we were unable to complete the analysis for this tool.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Comparison of Energy System Optimization Software and Evaluation of Selected Frameworks",
+  "url": "https://arxiv.org/abs/2607.16121"
+}

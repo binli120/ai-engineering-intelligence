@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-20T11:12:52.332293Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-modular-framework-for-stack-heap-and-value-abstractions-extended-ver-5b1246f9c7",
+  "maturity": "unknown",
+  "published_at": "2026-07-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.15932v1 Announce Type: cross Abstract: Advanced static program analysis requires reasoning on the semantics of non-trivial program behaviors (e.g., pointers and complex data structures such as lists and sets, functions, and objects) and how they affect the memory. In most programming languages, static and dynamic allocations are typically managed by the stack and the heap, respectively. However, how allocations behave and how the memory is managed at runtime can vary significantly depending on the programming language being analyzed. Proper handling of these aspects is essential, as an accurate memory model enables the detection of critical issues such as buffer overflows and underflows, use-after-free errors, and null pointer exceptions prior to execution, that is, before such erroneous behaviors occur. In this paper, we propose and formalize a generic memory framework to handle stack and heap memory during the analysis, that is able to support various behaviors from different programming languages (e.g., C, C++, Java, and Python), while remaining parametric, allowing different memory and value analyses to be independently chosen and combined. It relies on the Abstract Interpretation theory and enables sound approximation of different memory models and program behaviors. We introduce a split state abstraction that separates value and memory analyses into two modular abstract domains. These domains interact through a set of memory identifiers, along with a set of operations defined by the domains to manipulate them, allowing the framework to capture both value information and structural memory relationships.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Modular Framework for Stack-Heap and Value Abstractions (Extended Version)",
+  "url": "https://arxiv.org/abs/2607.15932"
+}
