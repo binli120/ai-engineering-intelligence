@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-22T10:34:23.052670Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "traphunter-exposing-covert-pathways-in-trap-token-contracts-d10893e44b",
+  "maturity": "unknown",
+  "published_at": "2026-07-22T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.18753v1 Announce Type: new Abstract: Standardized token contracts (e.g., ERC-20) form the foundation of digital assets. However, attackers increasingly abuse this standardization to disguise malicious trap tokens. Unlike obvious violations, these contracts employ a strategy of \"deceptive adherence\": they strictly adhere to standard protocols to evade detection while embedding covert logic to defraud users. To address this, we first systematize the trap landscape by proposing a novel taxonomy derived from the intrinsic functional lifecycle of tokens (Generation, Circulation, Persistence, and Observation). We then propose TrapHunter, a framework designed to identify these traps and expose covert pathways within these deceptive contracts via intent deviation analysis. Specifically, TrapHunter introduces a unified semantic representation combining Abstract Behavior Trees (ABTs) and Augmented Path Graphs (APGs) to normalize intra-procedural syntax and reveal hidden execution paths driven by inter-procedural state dependencies. Crucially, it bridges the semantic gap by leveraging LLMs to reason about the behavioral intent of deviations from reference implementations, followed by fork-based dynamic validation to confirm exploitability. Experimental evaluation on 269 real-world contracts with three LLMs (DeepSeek, GPT, and Gemini) demonstrates that TrapHunter effectively detects all six categories of traps, achieving an average precision of 81.8% and recall of 85.4%, significantly outperforming state-of-the-art tools.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "TrapHunter: Exposing Covert Pathways in Trap Token Contracts",
+  "url": "https://arxiv.org/abs/2607.18753"
+}

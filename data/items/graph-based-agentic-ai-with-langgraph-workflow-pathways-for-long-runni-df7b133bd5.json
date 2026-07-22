@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-22T10:34:23.052670Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "graph-based-agentic-ai-with-langgraph-workflow-pathways-for-long-runni-df7b133bd5",
+  "maturity": "unknown",
+  "published_at": "2026-07-22T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.19297v1 Announce Type: cross Abstract: This paper is a practitioner guide to graph-based workflow pathways for long-running, stateful, multi-step generative AI systems in business processes. Rather than treating LangGraph, a low-level orchestration framework for stateful agents, as a model-quality benchmark target, we present three executable recipes -- SQL analytics with repair loops, agentic retrieval-augmented generation with evidence gating, and human-in-the-loop policy review with interrupt and checkpoint recovery -- to show how typed state, conditional routing, deterministic tools, retries, interrupts, checkpoints, and traces fit together. LangGraph is positioned by workflow-complexity fit, not as a universal default: simpler ReAct-style or plain SDK loops may be better for basic tool use, schema-first tools for structured extraction and validation, and DSPy when prompt or program optimization is the main goal. Each recipe explains when LangGraph is worth the extra structure and which implementation patterns make routes, pauses, and audit trails explicit product behavior rather than hidden prompt logic.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Graph-Based Agentic AI with LangGraph: Workflow Pathways for Long-Running Stateful Business Processes",
+  "url": "https://arxiv.org/abs/2607.19297"
+}

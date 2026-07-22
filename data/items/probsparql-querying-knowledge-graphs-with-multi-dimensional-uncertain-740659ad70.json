@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-22T10:34:23.052670Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "probsparql-querying-knowledge-graphs-with-multi-dimensional-uncertain-740659ad70",
+  "maturity": "unknown",
+  "published_at": "2026-07-22T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2607.18262v1 Announce Type: new Abstract: The SFB 1574 Circular Factory is building a shared knowledge graph infrastructure for integrating data about returned products. A central challenge is that circular-factory data include numeric measurements that (i) originate from sensors or are derived from sensor-based measurements, (ii) are frequently multi-dimensional, and (iii) are inherently uncertain, while downstream triage, validation, reliability-modeling, and reassembly-planning modules require queryable uncertainty representations. Current RDF and SPARQL technologies lack native support for harmonized querying and analysis of such uncertain numeric measurement data. To address this gap, we present ProbSPARQL, an upward-compatible SPARQL extension developed as an early-stage query-layer pilot for this infrastructure. ProbSPARQL models uncertain numeric values as random variables whose distributions are encoded by probabilistic RDF literal datatypes, and supports distribution-aware expressions, probabilistic filters, and divergence-based joins. We implement ProbSPARQL on Apache Jena ARQ and expose it through a Fuseki-compatible execution layer. We assess real-data applicability using project-derived measurement fragments covering GMM-encoded uncertainty and histogram-based empirical roughness distributions, and evaluate scalability separately on controlled ontology-conformant benchmarks with up to 5,000 angle-grinder instances and 1.5M triples. The results show feasible in-engine execution, filter-pushdown speedups over application-layer post-processing, and latency-accuracy trade-offs among divergence-join decision strategies.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "ProbSPARQL: Querying Knowledge Graphs with Multi-dimensional, Uncertain Numeric Data",
+  "url": "https://arxiv.org/abs/2607.18262"
+}

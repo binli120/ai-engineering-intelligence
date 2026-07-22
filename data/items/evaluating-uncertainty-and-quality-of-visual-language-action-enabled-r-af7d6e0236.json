@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-22T10:34:23.052670Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "evaluating-uncertainty-and-quality-of-visual-language-action-enabled-r-af7d6e0236",
+  "maturity": "unknown",
+  "published_at": "2026-07-22T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2507.17049v3 Announce Type: replace Abstract: Vision-Language-Action (VLA)-enabled robots integrate visual perception, natural language understanding, and action planning to interpret their environment, comprehend instructions, and perform embodied tasks autonomously. Such robots are typically evaluated through task success rates, i.e., whether a robot performs its intended task, which are commonly used as test oracles for evaluating such robots. Such an evaluation fails to capture the quality of task execution and the robot's confidence in its decisions. In this paper, we adapt eight uncertainty metrics and five quality metrics specifically designed for VLA-enabled robotic manipulation tasks. We assess their effectiveness through a large-scale empirical study involving 908 successful task executions from three state-of-the-art VLA models across four representative robotic manipulation tasks and two robot embodiments. Human domain experts manually labeled task quality, enabling us to analyze the correlation between our proposed metrics and expert judgments, serving as a human oracle for testing such robots. The results reveal that several metrics show moderate to strong correlation with human assessments, highlighting their utility for evaluating task quality and model confidence. Furthermore, we found that some metrics can discriminate between high-, medium-, and low-quality executions from unsuccessful tasks, which is useful when test oracles are absent. Our findings challenge the adequacy of current evaluation practices that rely solely on binary success rates and pave the way for improved real-time monitoring and adaptive enhancement of VLA-enabled robots.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Evaluating Uncertainty and Quality of Visual Language Action-enabled Robots",
+  "url": "https://arxiv.org/abs/2507.17049"
+}

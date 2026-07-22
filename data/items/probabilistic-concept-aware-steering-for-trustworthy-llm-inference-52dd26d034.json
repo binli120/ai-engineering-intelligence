@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-22T10:34:23.052670Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "probabilistic-concept-aware-steering-for-trustworthy-llm-inference-52dd26d034",
+  "maturity": "unknown",
+  "published_at": "2026-07-22T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2607.18259v1 Announce Type: new Abstract: Steering vectors (SVs), an inference-time intervention technique for large language models (LLMs), guide the generation process by adding a concept-specific direction vector to intermediate activations during inference. However, existing SV methods frequently yield representation-incoherent behaviors that undermine interpretability and fine-grained control, largely because prior work has focused on binary positive-negative steering evaluation while employing discrete clustering metrics that fail to capture the continuous spectrum of semantic alignment. In this work, we present the Probabilistic Concept-Aware Steering (PCS) framework for LLM inference. PCS preserves original task competence while providing controllable, safety-oriented semantic bias through concept-driven steering-vector retrieval and probabilistic strength calibration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Probabilistic Concept-Aware Steering for Trustworthy LLM Inference",
+  "url": "https://arxiv.org/abs/2607.18259"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-22T10:34:23.052670Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "beyond-text-editing-algebraic-manipulation-of-source-code-8cb0758be4",
+  "maturity": "unknown",
+  "published_at": "2026-07-22T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.18742v1 Announce Type: new Abstract: Source code is almost universally edited as plain text. However, the mismatch between the syntactic and semantic requirements of valid and correct code, and the unconstrained text editing process trying to produce it, introduces friction that degrades the programming task. It is also increasingly costly in the era of LLM-based coding agents, which must materialize their high-level plan of intended changes as low-level text edits dispersed throughout the codebase, often requiring them to re-read large portions of code. We propose the novel alternative approach of source code algebra, where the codebase is modified by applying to it a sequence of logical algebraic operations. Each operation makes the full set of changes necessary for a single semantic change, analogous to mathematical equation rewriting. We sketch initial properties of such operations - including composition, nullipotency, and commutativity - that distinguish this approach from text editing, and make it well-suited as a substrate for agentic code editing. A feasibility probe with our proof-of-concept implementation (SCAS) suggests that LLM agents can use source code algebra to complete a non-local, cross-file code change with both higher success rates and one to two orders of magnitude fewer tokens, relative to text-based baselines. While preliminary, this is consistent with the hypothesis that having LLMs emit algebraic operations, rather than rewritten code, is a promising direction for code editing - and motivates broader future research into source code algebra, such as comprehensive operator libraries, formal properties, and human-facing tooling.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Beyond Text Editing: Algebraic Manipulation of Source Code",
+  "url": "https://arxiv.org/abs/2607.18742"
+}
