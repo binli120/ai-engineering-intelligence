@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-23T10:35:02.385976Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "multiparty-session-types-for-gdpr-purpose-compliance-602747120c",
+  "maturity": "unknown",
+  "published_at": "2026-07-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.20190v1 Announce Type: cross Abstract: The General Data Protection Regulation (GDPR) establishes purpose limitation as a fundamental constraint on personal data processing: personal data must be collected, stored, and processed strictly in accordance with explicitly specified purposes. Therefore, systems are required not only to declare the purposes under which personal data are processed, but also to ensure that their runtime behaviour remains aligned with the declared purposes. Yet, in mainstream software engineering practice, purposes are often treated as informal declarations, largely disconnected from system behaviour and, therefore, not amenable to rigorous reasoning about purpose compliance. This gap becomes particularly problematic in distributed systems, where personal data may flow across multiple entities and evolve through complex communication patterns. To address this challenge, recent works propose a more elaborate treatment of purposes based on structured, action-oriented representations of the data-processing interactions involved in their fulfilment. Building on these insights, we introduce a formal, purpose-aware framework grounded in multiparty session types in which purposes are modelled as structured interaction protocols among system entities. Within our framework, system implementations are specified using a process calculus that captures the semantics of distributed interactions and features private data as a first-class entity. Furthermore, we define a type system that verifies compliance between declared purposes and system models, and we establish subject reduction and purpose fidelity results, thereby ensuring that well-typed systems do not deviate from their specified purposes during execution. We demonstrate our approach through a case study involving a healthcare system. Ultimately, our objective is to evolve this formal framework into a software-engineering-oriented approach that unifies purpose modelling and compliance verification within a lifecycle-driven methodology, thus enabling a practically applicable privacy-by-design process.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Multiparty Session Types for GDPR Purpose Compliance",
+  "url": "https://arxiv.org/abs/2607.20190"
+}

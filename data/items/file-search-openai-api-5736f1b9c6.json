@@ -1,11 +1,11 @@
 {
   "category": "rag",
-  "collected_at": "2026-07-22T10:34:23.052670Z",
+  "collected_at": "2026-07-23T10:35:02.385976Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "file-search-openai-api-5736f1b9c6",
   "maturity": "stable",
-  "published_at": "2026-07-22T09:54:55Z",
+  "published_at": "2026-07-23T10:35:03Z",
   "source_id": "openai_file_search_docs",
   "summary": "Allow models to search your files for relevant information before generating a response.",
   "tags": [

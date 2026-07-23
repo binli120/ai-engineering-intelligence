@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-23T10:35:02.385976Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-icse-2026-shadow-pc-training-the-next-generation-of-reviewers-thro-cc5b6db954",
+  "maturity": "unknown",
+  "published_at": "2026-07-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.20396v1 Announce Type: new Abstract: Peer review is essential to software engineering research, yet reviewer training remains largely implicit. We describe the ICSE 2026 Shadow PC, a redesigned program emphasizing deliberate practice at scale. Key innovations include multi-phase structure with calibration and peer feedback, strict separation from the main PC, and a pathway toward leadership development. With 102 participants completing the program and reviewing 117 papers, 97% recommending the experience, and positive reception from authors (67% finding reviews helpful), the program demonstrates that rigorous reviewer training is achievable at scale. We share lessons learned and propose shadow PC area chairs as a mechanism for sustainable scaling and leadership development.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The ICSE 2026 Shadow PC: Training the Next Generation of Reviewers Through Deliberate Practice",
+  "url": "https://arxiv.org/abs/2607.20396"
+}

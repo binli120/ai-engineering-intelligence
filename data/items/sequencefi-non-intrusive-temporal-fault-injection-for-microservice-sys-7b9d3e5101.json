@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-23T10:35:02.385976Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "sequencefi-non-intrusive-temporal-fault-injection-for-microservice-sys-7b9d3e5101",
+  "maturity": "unknown",
+  "published_at": "2026-07-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.20050v1 Announce Type: new Abstract: Fault injection is widely used to evaluate the resilience of microservice systems, where client requests often span multiple services and execution stages. Existing request-level techniques usually control where and what faults are injected, but not when they are activated within a distributed execution. This limitation makes it difficult to reproduce timing-dependent failures, such as failures after state-changing side effects, order-sensitive concurrent responses, and partial failures among repeated downstream calls. This paper presents SequenceFI, a non-intrusive framework for temporal fault injection in microservice systems. SequenceFI observes message-level send and receive events, propagates compact temporal evidence along request executions, and triggers faults only when occurrence-sensitive temporal guards are satisfied. It further synthesizes temporal guards from traces, reducing the need for exhaustive enumeration of temporal fault-injection configurations, while requiring no modifications to application code or serialization libraries. We implement SequenceFI on Kubernetes and evaluate it on four widely used microservice benchmarks. Across nine temporal-fault scenarios and 450 valid trials, SequenceFI achieves 100.0\\% temporal success without premature or multiple injections, finds effective configurations in one attempt on average, and reduces aggregate end-to-end search time by 95.91\\% compared with H-Random.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SequenceFI: Non-intrusive Temporal Fault Injection for Microservice Systems",
+  "url": "https://arxiv.org/abs/2607.20050"
+}

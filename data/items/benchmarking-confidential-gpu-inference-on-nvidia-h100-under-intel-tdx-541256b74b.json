@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-23T10:35:02.385976Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "benchmarking-confidential-gpu-inference-on-nvidia-h100-under-intel-tdx-541256b74b",
+  "maturity": "unknown",
+  "published_at": "2026-07-23T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2607.19353v1 Announce Type: new Abstract: Confidential computing is becoming a practical deployment requirement for AI inference workloads that process sensitive inputs or protect proprietary model assets. However, the performance cost of enabling confidential execution for GPU-accelerated large language model serving remains workload dependent and operationally important. This paper presents a benchmark study comparing standard non-confidential execution with confidential computing mode on a single NVIDIA H100 80GB GPU hosted in an Intel TDX confidential instance. The evaluation uses two representative language models, Mistral-7B v0.1 and Qwen3-30B-A3B, and measures time to first token, end-to-end request latency, per-request token generation throughput, global token throughput, and closed-loop request throughput under increasing concurrency. In fixed request-rate experiments, confidential mode increases average TTFT by 21.8% for Mistral-7B and 27.8% for Qwen3-30B-A3B, while global token throughput drops by 17.7% and 21.1%, respectively. In closed-loop concurrency experiments, throughput gaps remain in the 11.5-20.2% range, but the larger model reaches its saturation knee earlier under confidential mode. The results suggest that confidential GPU inference can retain usable throughput under load, but capacity planning must account for both the steady throughput penalty and the earlier saturation behavior observed for larger models.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Benchmarking Confidential GPU Inference on NVIDIA H100 under Intel TDX",
+  "url": "https://arxiv.org/abs/2607.19353"
+}

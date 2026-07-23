@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-23T10:35:02.385976Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "geometry-guided-constraint-learning-for-llm-safety-classification-a92c6ca9c3",
+  "maturity": "unknown",
+  "published_at": "2026-07-23T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2607.19366v1 Announce Type: new Abstract: Safety as Polytope (SaP) learns linear half-space constraints in LLM hidden space but requires per-category tuning of the constraint count K. We show that sparse autoencoder (SAE) feature extraction resolves this: K=2 becomes optimal for 12/14 categories on Qwen3.5-9B, achieving 96-99% accuracy per category on our BeaverTails classification benchmark, largely eliminating the need for exhaustive sweeps (K=4-25 with random initialization). This convergence to two planes is consistent with the Linear Representation Hypothesis, providing suggestive evidence that safety boundaries in this setting admit a low-dimensional linear description in the SAE feature space. Building on this geometric perspective, we introduce a cone constraint whose learnable aperture adapts to each category's cluster concentration, stabilized by a three-phase training",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Geometry-Guided Constraint Learning for LLM Safety Classification",
+  "url": "https://arxiv.org/abs/2607.19366"
+}
