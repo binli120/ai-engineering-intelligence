@@ -1,11 +1,11 @@
 {
   "category": "ai_coding",
-  "collected_at": "2026-07-23T10:35:02.385976Z",
+  "collected_at": "2026-07-25T09:59:55.167130Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "agent-skills-overview-agent-skills-6e060c7492",
   "maturity": "stable",
-  "published_at": "2026-07-22T19:41:29Z",
+  "published_at": "2026-07-24T18:14:58Z",
   "source_id": "agent_skills_standard",
   "summary": "A standardized way to give AI agents new capabilities and expertise.",
   "tags": [
