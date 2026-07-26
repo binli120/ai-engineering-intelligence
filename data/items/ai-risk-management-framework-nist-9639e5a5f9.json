@@ -1,11 +1,11 @@
 {
   "category": "security",
-  "collected_at": "2026-07-25T09:59:55.167130Z",
+  "collected_at": "2026-07-26T10:13:18.851679Z",
   "engineering_impact": 90,
   "evidence_quality": 90,
   "id": "ai-risk-management-framework-nist-9639e5a5f9",
   "maturity": "stable",
-  "published_at": "2026-07-25T09:50:29Z",
+  "published_at": "2026-07-26T09:17:13Z",
   "source_id": "nist_ai_rmf",
   "summary": "Current snapshot of NIST AI Risk Management Framework.",
   "tags": [
