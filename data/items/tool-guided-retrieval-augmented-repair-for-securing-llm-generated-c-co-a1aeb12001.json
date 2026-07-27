@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-27T11:38:09.410721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "tool-guided-retrieval-augmented-repair-for-securing-llm-generated-c-co-a1aeb12001",
+  "maturity": "unknown",
+  "published_at": "2026-07-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.21641v1 Announce Type: new Abstract: Large language models can generate C code from natural-language descriptions, but resulting programs often contain security vulnerabilities and compilation errors, posing risks for embedded and resource-constrained systems. This work investigates how feedback and retrieval improve reliability of LLM-generated C code. We present an analysis-and-repair workflow that combines compilation diagnostics, CodeQL static analysis, and KLEE symbolic execution with retrieval of prior repair patterns for iterative refinement. Evaluated on 5,000 C programming tasks exercising embedded relevant vulnerabilities, baseline models show substantial reliability gaps, with compilation failure rates up to 46% and security defect rates up to 49%. Our approach improves both metrics. For CodeLlama 7B, security defect rates decrease from 49% to 19% and total CodeQL errors drop from 15,088 to 2,463 (83.7%). For DeepSeek Coder 1.3B, compilation failures are reduced from 42% to 22% and security defects from 35% to 15%. These results show that integrating lightweight analysis tools can improve the safety of LLM-generated code for embedded development.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Tool-Guided Retrieval-Augmented Repair for Securing LLM-Generated C Code",
+  "url": "https://arxiv.org/abs/2607.21641"
+}

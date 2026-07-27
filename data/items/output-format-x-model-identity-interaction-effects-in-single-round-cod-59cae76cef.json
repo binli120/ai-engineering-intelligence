@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-27T11:38:09.410721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "output-format-x-model-identity-interaction-effects-in-single-round-cod-59cae76cef",
+  "maturity": "unknown",
+  "published_at": "2026-07-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.21674v1 Announce Type: new Abstract: Output format is not a neutral implementation detail -- it can reorder model rankings, amplify or suppress individual model differences, and determine whether a coding agent succeeds or fails. We conducted a controlled single-round experiment with 3 models (DeepSeek V4, Doubao 2.0 Pro, Qwen 3.7 Max) x 3 output formats (full file, JSON Patch, unified diff) x 6 tasks x 20 repetitions, totaling 4,013 runs across 4 open-source projects. Only one project (tqdm) yielded non-zero success rates: dotenv, requests, and jsoup yielded zero successes in 2,551 runs. Our central finding is a format x model interaction with no universally optimal format. Doubao achieves 94% success with JSON Patch (Cohen's h = 1.57, p < 0.001), DeepSeek excels at unified diff (66%, h = 0.63), and Qwen shows a small but significant full-file preference (50%, h = 0.29, p < 0.05). Beyond these headline results, we identify a distinct failure mechanism -- format misuse -- where agents correctly diagnose a problem but execute it with excessive scope, most vividly when a one-line fix is applied as a full-file replacement. We propose a model-specific output strategy, a tool-design principle that constrains format semantics to the agent's own localization step, and release all data and templates for reproducibility. All experimental data are available at https://doi.org/10.5281/zenodo.21505157.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Output Format x Model Identity: Interaction Effects in Single-Round Coding Agent Performance",
+  "url": "https://arxiv.org/abs/2607.21674"
+}

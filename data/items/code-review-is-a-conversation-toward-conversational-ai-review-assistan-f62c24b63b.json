@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-27T11:38:09.410721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "code-review-is-a-conversation-toward-conversational-ai-review-assistan-f62c24b63b",
+  "maturity": "unknown",
+  "published_at": "2026-07-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.22095v1 Announce Type: new Abstract: AI-based code review tools increasingly promise to help developers inspect pull requests, identify defects, and improve code quality. Yet most current approaches frame code review as a one-shot commenting task: given a diff, the system produces warnings or suggestions. This framing overlooks a central property of modern code review: review is a conversation. Human reviewers do not merely comment on code; they ask questions, explain expectations, negotiate design trade-offs, request evidence, transfer project knowledge, document rationale, and collectively decide whether a change is good enough to integrate. In this vision paper, we argue for conversational AI review assistants: systems that participate in code review as interactive partners rather than static comment generators. Such assistants should identify when conversation is needed, ask grounded questions, respond to developer explanations, summarize unresolved issues, help capture rationale, and know when to abstain or escalate to human reviewers. Such a paradigm shift requires novel evaluation methodologies as well. We outline a research agenda for studying review conversations, designing conversational AI review capabilities, and evaluating their impact on software evolution and maintenance. Our vision reframes AI code review from automated commenting to human-AI sensemaking before integration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Code Review is a Conversation: Toward Conversational AI Review Assistants",
+  "url": "https://arxiv.org/abs/2607.22095"
+}

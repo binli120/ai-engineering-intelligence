@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-27T11:38:09.410721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-obligation-to-specification-a-survey-on-validating-eu-ai-act-requ-16b6d40384",
+  "maturity": "unknown",
+  "published_at": "2026-07-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.21608v1 Announce Type: new Abstract: With the EU AI Act entering into force, organizations developing or operating AI systems face new obligations on transparency, risk management, and traceability. For Requirements Engineering (RE), these obligations must be translated into testable, auditable requirements and verifiable evidence. However, many organizations currently lack systematic processes to achieve this. We hypothesize that LLM-based agentic validation tools can support this translation, thereby helping to close this gap. We present a mixed-method exploratory study with expert interviews (N=10) and an online survey (N=15) to assess organizational preparedness for EU AI Act-oriented RE and perceptions of LLM-based, agentic closed-loop validation tools, with participants spanning RE, data science, development, and compliance roles. Our results show that, although the EU AI Act is viewed as highly relevant, structured mechanisms to capture regulatory obligations, propagate updates into projects, and maintain lifecycle-wide traceability and evidence are often missing. Participants see LLM-based tools as promising for mapping obligations to requirements, assessing coverage, and organizing evidence, but express strong concerns about full automation and stress the need for safeguards. Based on these findings, we outline minimum requirements for an EU AI Act-ready closed-loop approach.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From Obligation to Specification: A Survey on Validating EU AI Act Requirements in RE",
+  "url": "https://arxiv.org/abs/2607.21608"
+}

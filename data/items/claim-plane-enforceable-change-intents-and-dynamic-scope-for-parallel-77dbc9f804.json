@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-27T11:38:09.410721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "claim-plane-enforceable-change-intents-and-dynamic-scope-for-parallel-77dbc9f804",
+  "maturity": "unknown",
+  "published_at": "2026-07-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.21909v1 Announce Type: new Abstract: Parallel coding agents can independently produce locally valid changes while still interfering at integration time, expanding beyond planned scope, or relying on premises invalidated by concurrent work. Existing responses emphasize communication, isolated workspaces, late merge-time repair, continuous supervision, or post-hoc runtime recovery. This paper presents Claim Plane, a model-agnostic coordination architecture that treats concurrent software change as a pre-write admission problem. Before implementation, each worker declares a versioned ChangeIntent containing an exact base commit, typed resources, dependencies, and operations marked as committed or contingent. A deterministic control plane atomically admits compatible intents, constrains same-file parallelism to declared regions, serializes unresolved overlap, tracks dependency invalidation, and fails closed on ambiguous authority. During execution, a contingent mutation does not reserve write ownership initially; the first attempted mutation triggers atomic scope promotion and re-admission against the current active set. Brokered execution binds capabilities to intent versions, leases, OS-level worktree locks, monotonic fencing tokens, and Git-tree provenance, while integration verifies immutable patches and evidence. A preliminary six-pair CooperBench mechanism check is reported only as feasibility evidence: static Claim Plane achieved 6/6 pair passes with full serialization, while dynamic scope retained parallel admission on half of the pairs, performed seven successful scope promotions, and failed closed on two undeclared mutations. The sample is intentionally too small for comparative claims. We argue that separating probabilistic planning from deterministic authority provides a foundation for a future learned semantic-dependency model and frontier-model escalation only on unresolved cases.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Claim Plane: Enforceable Change Intents and Dynamic Scope for Parallel Coding Agents",
+  "url": "https://arxiv.org/abs/2607.21909"
+}

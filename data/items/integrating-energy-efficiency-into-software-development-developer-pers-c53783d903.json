@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-27T11:38:09.410721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "integrating-energy-efficiency-into-software-development-developer-pers-c53783d903",
+  "maturity": "unknown",
+  "published_at": "2026-07-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.22168v1 Announce Type: new Abstract: In the context of the growing energy footprint of information and communication technology, industry optimization efforts have primarily focused on hardware, while the impact of software on energy consumption is often overlooked. Although technical approaches for optimizing software energy consumption have been developed in research, their adoption in everyday development practice remains limited. This study investigates how software developers perceive energy efficiency in their daily work and which requirements and barriers they formulate for AI-assisted tools supporting energy-aware development. As part of the European GreenCode project, ten semi-structured interviews with professional software developers were conducted and analyzed using qualitative content analysis following Mayrings methodology. The identified requirements were subsequently partly interpreted through the lens of the Technology Acceptance Model. The results indicate that energy efficiency rarely plays an explicit role in daily development activities. Instead, energy savings are typically achieved indirectly through performance optimization. Identified barriers to the explicit consideration of energy efficiency include limited awareness and a strong focus on timely delivery. The interviews further revealed requirements for practical tool support, such as actionable optimization suggestions and seamless integration into common development environments. Furthermore, the acceptance of AI-assisted optimization tools strongly depends on transparency regarding the use of data, the actual energy savings compared to the energy consumption of the tool itself, and the disclosure of the training data used. This study contributes a developer-centered perspective on requirements for energy-aware software development tools and provides insights for designing AI-assisted solutions that align with real-world development practices.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Integrating Energy Efficiency into Software Development: Developer Perspectives and Requirements",
+  "url": "https://arxiv.org/abs/2607.22168"
+}

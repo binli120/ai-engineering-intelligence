@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-27T11:38:09.410721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "no-edges-no-verdict-a-large-scale-empirical-study-of-declared-dependen-69b0295a2d",
+  "maturity": "unknown",
+  "published_at": "2026-07-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.22140v1 Announce Type: new Abstract: Software Bills of Materials (SBOMs) are consumed not only as component inventories but as dependency graphs: vulnerability triage, reachability filtering, and impact analysis all traverse the edges an SBOM declares. We present the first large-scale characterization of the declared dependency graph across 78,612 real-world SBOM files from the Wild SBOMs dataset (77,092 parseable). We find that the population splits into three regimes: 52.9% of SBOMs declare no edges at all (failing the NTIA minimum-elements requirement of dependency relationships), 8.8% declare a dependency block yet leave the majority of components isolated (degenerate regime; among such SBOMs with at least 50 components the median orphan share is 93%, and our 11 Syft-generated container-image SBOMs fall in this regime at 95-98% orphans), and 38.3% form well-connected graphs. Edge emission is determined by the generator, not the described software (0%-100% no-edge rates across tools), and the specification-level mechanism for declaring graph incompleteness (CycloneDX compositions) is used by 0.10% of the population. We argue that in the first two regimes, the common consumer inference \"no path implies unreachable\" is an unsound closed-world conclusion drawn from a demonstrably incomplete artifact; in a production vulnerability-prioritization system, replacing the resulting veto with an explicit \"unknown\" level guarded by a degeneracy detector recovered KEV recall from 0.600 to 0.950 (controlled re-scoring; 0.957 in a live end-to-end run) without alert flooding. We release our streaming scanner and the full per-SBOM topology dataset.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "No Edges, No Verdict: A Large-Scale Empirical Study of Declared Dependency Graphs in 78K SBOMs in the Wild",
+  "url": "https://arxiv.org/abs/2607.22140"
+}
