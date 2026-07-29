@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "delta-debugging-for-cyber-physical-systems-with-flaky-test-executions-147de168e9",
+  "maturity": "unknown",
+  "published_at": "2026-07-29T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.25695v1 Announce Type: new Abstract: Simulation-based testing is widely used to validate Cyber-Physical Systems (CPSs), yet modern CPS simulators frequently exhibit non-deterministic (flaky) behavior, making failures difficult to reproduce and debug. Although delta debugging has proven effective for deterministic systems, its underlying assumptions do not hold in stochastic environments. This paper presents three delta debugging algorithms that combine statistical failure analysis, repeated executions, and environment-aware reduction to isolate minimal failure-inducing test inputs for stochastic CPSs. We evaluate the proposed techniques on two complementary case study systems: an industrial elevator dispatching system employing stochastic optimization and an autonomous mobile robot exhibiting simulator-induced non-determinism. The results show that the proposed approaches substantially reduce debugging time while preserving the original failure behavior. More importantly, we observe that minimizing failure-inducing test inputs frequently increases failure reproducibility compared with the original executions. By eliminating execution segments that introduce incidental stochastic effects, the reduced test inputs isolate the causal conditions of the failure and consistently reproduce it with higher probability. These findings suggest that delta debugging not only simplifies failure analysis but also mitigates execution flakiness, providing a practical foundation for debugging CPSs.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Delta Debugging for Cyber-Physical Systems with Flaky Test Executions",
+  "url": "https://arxiv.org/abs/2607.25695"
+}

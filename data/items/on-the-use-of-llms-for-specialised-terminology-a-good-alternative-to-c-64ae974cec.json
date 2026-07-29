@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "on-the-use-of-llms-for-specialised-terminology-a-good-alternative-to-c-64ae974cec",
+  "maturity": "unknown",
+  "published_at": "2026-07-29T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2607.24784v1 Announce Type: new Abstract: Specialised translation relies on the use of documentary and terminological resources, including corpora. These resources are particularly useful for terminology. However, their compilation and exploitation have several limitations: they require time, technical skills and access to data that can be difficult to collect. This study examines the extent to which LLMs can assist specialised translators in finding equivalents from English to French. We evaluate four proprietary models, GPT-4o, GPT-5.2, Claude Sonnet 4.5 and DeepSeek, in two specialised domains, Earth, Environmental and Planetary Sciences (EEPS) and Natural Language Processing (NLP). The experiment is based on 80 terms per domain and compares two prompting strategies: a terminology and a translation mode. The results highlight clear differences between models, prompting strategies and, to a lesser extent, domains. Claude Sonnet 4.5 achieves the best results in the most favourable configuration, while DeepSeek stands out for its greater stability. Analysis of confidence estimates also shows that they are only a partial indicator of terminological accuracy. Overall, the findings suggest that LLMs can be useful tools for specialised translators, but cannot, at this stage, replace specialised corpora. This research therefore paves the way for future work on the real practical usefulness of LLMs for specialised translators in work and educational contexts.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "On the Use of LLMs for Specialised Terminology: A Good Alternative to Corpora?",
+  "url": "https://arxiv.org/abs/2607.24784"
+}

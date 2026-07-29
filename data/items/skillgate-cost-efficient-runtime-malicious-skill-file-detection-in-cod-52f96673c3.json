@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "skillgate-cost-efficient-runtime-malicious-skill-file-detection-in-cod-52f96673c3",
+  "maturity": "unknown",
+  "published_at": "2026-07-29T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.25619v1 Announce Type: new Abstract: Software engineering teams now deploy AI coding agents (Cursor, Claude Code, GitHub Copilot) as first-class productivity tools, installing domain-specific skill files to tailor agent behavior to project APIs, framework conventions, and organizational workflows. These complex Markdown files are easily downloaded from public registries with a single npx skills add command and no real security screening, representing a novel supply-chain attack surface: a malicious skill file can silently reprogram agent behavior, exfiltrating credentials, injecting backdoors into generated code, or redirecting agent actions to attacker-controlled endpoints. The threat is not hypothetical: recent reports document hundreds of malicious skill packages in public registries, including organized campaigns that distributed credential-stealing infostealers via fake productivity skills. No systematic toolchain defense exists for this attack surface. We present SkillGate, a deployable security gateway that screens AI skill packages before coding agent installation. SkillGate uses a hybrid regex-prefilter + LLM-judge pipeline: safe-signal files bypass the LLM entirely (skip savings); flagged files have only their matched snippet windows sent to the judge, not the full content (snippet savings). We answer four research questions covering detection effectiveness, screening cost, runtime overhead, and false positive behavior on the SkillsBench benchmark against two existing tools. On SkillsBench (n=1,650, 9.1% malicious), SkillGate achieves F1=0.817, FPR=1.13% while reducing LLM input tokens by 77% vs. full-file screening, and outperforming existing tools by 5-6x on threshold-independent AUPRC (0.830 vs. 0.144/0.162).",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SkillGate: Cost Efficient Runtime Malicious Skill File Detection in Coding Agents",
+  "url": "https://arxiv.org/abs/2607.25619"
+}

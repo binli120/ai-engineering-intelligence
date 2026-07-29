@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "repositories-contributors-and-continuity-an-empirical-study-of-foundat-f5ca0b5cb5",
+  "maturity": "unknown",
+  "published_at": "2026-07-29T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.25437v1 Announce Type: new Abstract: Driven by contributions from academia, industry, and open-source communities, the quantum software ecosystem is rapidly growing. Across this ecosystem, new concepts often emerge through software artefacts accompanying scientific publications as well as through sustained development in larger communities. However, many repositories receive development efforts only over a limited period of time, raising the question whether their concepts persist beyond individual repositories. In this paper, we apply established empirical software engineering techniques to analyse a set of foundational quantum software repositories. We combine cross-repository activity with contributor relationships to study the evolution of communities. Our analysis provides empirical evidence of contributor migration patterns and indications of cross-project knowledge transfer. We observe multiple development paths: projects may evolve into sustained communities, contributors may integrate concepts into established ecosystems, or activity may continue through new and follow-up software artefacts. Our observations provide an initial empirical perspective on how concepts and influence persist across repository boundaries in quantum software ecosystems.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Repositories, Contributors, and Continuity: An Empirical Study of Foundational Quantum Software",
+  "url": "https://arxiv.org/abs/2607.25437"
+}

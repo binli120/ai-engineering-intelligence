@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "nfr-to-code-traceability-in-a-blockchain-iot-system-an-empirical-study-bc5497fc89",
+  "maturity": "unknown",
+  "published_at": "2026-07-29T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.25325v1 Announce Type: new Abstract: Requirement-to-Code traceability has been widely studied, yet existing research and public benchmarks remain largely centered on functional requirements (FRs). In contrast, traceability for non-functional requirements (NFRs) remains more difficult and underexplored, which hinders the verification of critical quality concerns such as security and reliability.This paper studies NFR-to-Code traceability based on a real-world blockchain-IoT project. We design an annotation protocol for constructing trace links across heterogeneous artifacts and build a manually curated subset containing both FR and NFR links. Using this subset, we examine the characteristics of NFR traceability and further evaluate four representative retrieval baselines: TF-IDF, BM25, LSI, and WMD. The results show that FR-to-Code tracing is consistently easier than NFR-to-Code tracing, while security-related NFRs are the most difficult subset. They further indicate that the main challenge of NFR traceability lies not in requirement availability, but in implementation evidence that is distributed and not clearly localized in code.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "NFR-to-Code Traceability in a Blockchain-IoT System: An Empirical Study",
+  "url": "https://arxiv.org/abs/2607.25325"
+}

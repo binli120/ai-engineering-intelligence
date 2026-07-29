@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "rethinking-training-data-for-generating-code-review-comments-0db9a199c9",
+  "maturity": "unknown",
+  "published_at": "2026-07-29T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.25851v1 Announce Type: new Abstract: Generating code review comments has become a prominent research direction in automated code review, commonly formulated as a text generation task over diff-comment pairs. Despite advances in learning-based approaches, generated review comments are often generic, weakly grounded, or non-actionable. Recent studies have also shown that review comment datasets contain noisy or unsuitable training instances, motivating LLM-based dataset cleaning approaches. In this paper, we argue that problematic training instances are not homogeneous and that some limitations stem from deeper issues in the task formulation itself. Through an empirical inspection of a widely used review comment dataset, we identify misaligned training pairs: instances where the relationship between the code change and the review comment does not provide a reliable learning signal for generating actionable review feedback from localized inputs. We derive a taxonomy of misalignment capturing three recurring sources: semantic ambiguity, lack of actionability, and context dependence. We further explore whether incorporating this taxonomy into LLM-based filtering improves the identification of problematic training instances, observing that detecting misaligned training pairs remains challenging. Based on these observations, we argue that improving review comment generation requires more than dataset cleaning alone, motivating explicit validity criteria, richer contextual inputs, and evaluation practices aligned with review intent and actionability.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Rethinking Training Data for Generating Code Review Comments",
+  "url": "https://arxiv.org/abs/2607.25851"
+}

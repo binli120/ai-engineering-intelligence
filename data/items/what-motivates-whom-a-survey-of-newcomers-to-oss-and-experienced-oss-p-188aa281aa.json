@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "what-motivates-whom-a-survey-of-newcomers-to-oss-and-experienced-oss-p-188aa281aa",
+  "maturity": "unknown",
+  "published_at": "2026-07-29T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.25126v1 Announce Type: new Abstract: Open source software (OSS) development continues to expand, yet software practitioners often struggle to select suitable projects, leading to inefficient onboarding and disengagement. Understanding how contributors select OSS projects is important for supporting contributors onboarding, engagement, and long-term participation within OSS communities. This study investigates contributors' project-selection preferences in OSS projects and examines how these preferences correlate with contributors' motivations and demographic backgrounds. Through an online survey of 208 practitioners, we found that demographic factors, such as age, gender, and the OSS role they held, significantly correlate with their motivations. Additionally, preferences for project characteristics such as project age, development stage, and documentation quality vary based on specific motivations. Importantly, our findings are presented through a comparative lens, analyzing the responses of newcomers to OSS and experienced OSS practitioners separately to uncover their distinct preferences. Lastly, we explore software practitioners' perspectives on how existing recommendation systems could better support project selection and align with their motivations. By disentangling the unique needs of newcomers to OSS and OSS practitioners, our findings provide insights for researchers, OSS project owners, and software practitioners to improve contributor onboarding, engagement, and retention, while also informing future project recommendation systems and improving the OSS ecosystem.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "What Motivates Whom? A Survey of Newcomers to OSS and Experienced OSS Practitioners",
+  "url": "https://arxiv.org/abs/2607.25126"
+}
