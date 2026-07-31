@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-taxonomy-of-human-robot-teamwork-requirements-9899d90eee",
+  "maturity": "unknown",
+  "published_at": "2026-07-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.27302v1 Announce Type: new Abstract: Autonomous systems are increasingly deployed in safety- and mission-critical domains where humans and robots must operate as a team to complete complex tasks. Existing requirements for Human-Robot teamwork remain fragmented across disparate sources, with no unified framework that addresses complexities of collaborative Human-Robot tasks. We address this gap by presenting a taxonomy of Human-Robot Teamwork (HRT) requirements derived from analysis of (academic and industrial) literature, standards and regulatory guidance. We extracted a construction corpus of 361 requirements from 14 cross-domain sources. Through iterative classification and refinement, we develop a two-level hierarchical taxonomy comprising 6 high-level categories and 21 low-level subcategories that distinguish information provision, relational control, decision support, safety mechanisms, performance monitoring, and foundational system capabilities. We validate the taxonomy through expert evaluation with 5 domain specialists and a utility demonstration on an independently assembled corpus of 448 requirements drawn from 19 sources spanning six HRT domains.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Taxonomy of Human-Robot Teamwork Requirements",
+  "url": "https://arxiv.org/abs/2607.27302"
+}

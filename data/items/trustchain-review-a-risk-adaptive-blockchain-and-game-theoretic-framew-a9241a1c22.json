@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "trustchain-review-a-risk-adaptive-blockchain-and-game-theoretic-framew-a9241a1c22",
+  "maturity": "unknown",
+  "published_at": "2026-07-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.27310v1 Announce Type: new Abstract: Context: AI-assisted software development can speed up coding and review, but it also makes accountability harder to establish. Developers may submit insufficiently verified code, reviewers may approve changes with limited inspection, and centralized reputation records may be difficult to audit. Objectives: This study introduces TrustChain-Review, a framework that combines verifiable evidence, strategic incentives, and risk-sensitive governance to support more trustworthy code review. Methods: The framework includes a blockchain-based evidence layer, a three-player game-theoretic model for developers, reviewers, and the platform, and a rule that applies stronger governance when the expected benefit justifies its cost. The evaluation uses a controlled simulation calibrated with the Diff Quality Estimation dataset. Six governance configurations are compared over 30 independent runs using reputation accuracy, trust convergence, malicious-review detection, superficial-review detection, net platform utility, governance cost, and cost-efficiency. Results: The full-evidence configuration produces the strongest reputation, trust, and detection results, but it also has the highest governance cost. The risk-adaptive configuration lowers this cost and improves cost-efficiency by applying stronger controls selectively, although its trust and detection results are lower than those of the full-evidence setting. Conclusion: Strong evidence-based governance is most appropriate for high-risk or audit-sensitive changes. For routine or lower-risk contributions, selective governance offers a more practical balance between trustworthiness and operational cost.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "TrustChain-Review: A Risk-Adaptive Blockchain and Game-Theoretic Framework for Trustworthy AI-Assisted Code Review",
+  "url": "https://arxiv.org/abs/2607.27310"
+}

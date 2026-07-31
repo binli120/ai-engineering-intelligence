@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "advancing-awkward-arrays-for-high-performance-cpu-and-gpu-processing-df544c5cb1",
+  "maturity": "unknown",
+  "published_at": "2026-07-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.28145v1 Announce Type: new Abstract: Awkward Array is a Python library for representing and processing nested, variable-length data that is widely used in high-energy physics. As HL-LHC analyses increasingly rely on accelerator hardware, efficient execution of irregular workloads has become essential. While dense numerical arrays map naturally to GPUs, nested and variable-length data structures remain significantly more difficult to accelerate because they require indirect indexing, segmented operations, and irregular memory access patterns. We present recent developments in the Awkward Array GPU backend, including CUDA implementations built on NVIDIA CUDA Core Compute Libraries (CCCL), optimized memory management, and segmented reduction algorithms for ragged arrays. These developments preserve the existing Python programming model while substantially improving GPU throughput on irregular workloads. We describe the backend architecture, automated validation framework, and benchmark results comparing CPU, CuPy, and CUDA implementations.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Advancing Awkward Arrays for High-Performance CPU and GPU Processing",
+  "url": "https://arxiv.org/abs/2607.28145"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "integrating-ai-into-requirements-quality-learning-in-software-engineer-9fd51cf06e",
+  "maturity": "unknown",
+  "published_at": "2026-07-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.28176v1 Announce Type: new Abstract: The rapid adoption of generative Artificial Intelligence (AI) in software engineering (SE) practice creates a need for pedagogically grounded approaches to AI integration in SE education, especially in conceptually intensive subjects such as requirements engineering (RE). This study examines a TPACK-guided integration of a multi-agent AI tool into a master-level RE assignment on requirements quality analysis. Using a mixed-methods design (N=100; 72 submissions analysed), we examine how structured assignment design shaped students' AI use, affected their understanding of user story quality criteria, and influenced their perceptions of AI's benefits and limitations. Results show that students used the AI tool selectively, mainly as support for analysis and evaluation rather than automation. Alignment improvements were most evident for structurally concrete requirements quality dimensions, such as value articulation and testability, while negotiability showed mixed effects. Students reported conditional trust, active refinement, and increased awareness of quality criteria, alongside moderate usability challenges. The findings show that TPACK-guided scaffolding can align AI affordances with pedagogical goals and RE content, offering design guidance for responsible AI integration in RE education.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Integrating AI into Requirements Quality Learning in Software Engineering Education: A TPACK-Guided Empirical Study",
+  "url": "https://arxiv.org/abs/2607.28176"
+}

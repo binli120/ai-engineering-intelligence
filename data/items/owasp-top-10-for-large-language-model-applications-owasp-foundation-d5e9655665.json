@@ -1,6 +1,6 @@
 {
   "category": "security",
-  "collected_at": "2026-07-29T10:48:58.186168Z",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "owasp-top-10-for-large-language-model-applications-owasp-foundation-d5e9655665",

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "limice-integrating-llm-into-ice-framework-for-efficient-loop-invariant-3cde5c716c",
+  "maturity": "unknown",
+  "published_at": "2026-07-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.27606v1 Announce Type: new Abstract: Loop invariant synthesis is a fundamental problem in program verification, yet the inherent undecidability makes it highly challenging. Recent studies have increasingly employed various machine learning techniques to generate loop invariants. However, most of these methods adopt a monolithic approach. Due to the inability to strictly constrain the learning process, learning-based methods struggle to simultaneously consider all necessary conditions and generate complete invariants when tackling complex problems. In fact, a loop invariant is often an ordered sequence of lemmas, rather than a single invariant formula. This motivates us to propose Incremental ICE, a novel learning framework for incremental synthesis. Our framework integrates the incremental philosophy of IC3 into the general invariant learning framework ICE. By defining a lemma-specific learning objective and introducing a counterexample filtering mechanism, we can achieve sound incremental learning. Under this framework, we instantiate a loop invariant synthesis tool, LimICE, which leverages LLMs to generate the ordered sequence of lemmas and incorporates ICE-DT as a fallback mechanism to complement the lemma sequence. Experiments on 367 linear benchmarks and 50 nonlinear benchmarks demonstrate the effectiveness of the proposed approach. LimICE solves 349 (out of 367) linear problems on an average of 15.2 seconds and 47 (out of 50) nonlinear problems on an average of 8.8 seconds. Compared to the state-of-the-art LLM-based baseline, our approach solves 12-24% more instances while running 36-63% faster across linear and nonlinear benchmarks. LimICE also consistently outperforms strong non-LLM baselines and solves at least 86 and 27 additional instances on the linear and nonlinear benchmarks, respectively.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "LimICE: Integrating LLM into ICE Framework for Efficient Loop Invariant Inference",
+  "url": "https://arxiv.org/abs/2607.27606"
+}

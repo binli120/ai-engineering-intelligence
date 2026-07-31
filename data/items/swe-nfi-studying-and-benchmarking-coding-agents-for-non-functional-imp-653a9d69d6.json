@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "swe-nfi-studying-and-benchmarking-coding-agents-for-non-functional-imp-653a9d69d6",
+  "maturity": "unknown",
+  "published_at": "2026-07-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.27409v1 Announce Type: new Abstract: Although coding agents have achieved impressive performance on correctness-oriented benchmarks, their ability to make behavior-preserving non-functional improvements (NFIs) remains underexplored. In real-world software development, developers continuously improve software quality without changing observable behavior, yet existing benchmarks primarily evaluate functional correctness and provide limited support for assessing these non-functional improvements. In this paper, we present SWE-NFI, a benchmark for evaluating coding agents on NFIs beyond functional correctness. Our benchmark contains 188 tasks constructed from real merged pull requests in open-source Python projects. We operationalize developer-oriented NFIs into 92 executable rules and develop a comprehensive evaluation suite that combines functional correctness testing with rule-based NFI evaluation. We evaluate state-of-the-art commercial and open-source coding agents. Although the best-performing agent achieves a 70.0\\% functional correctness rate, all evaluated agents generally fall short of human developers in overall NFI capability. The gap is particularly evident for structural code improvements, where agents' NFI scores range from 0.0 to 1.3, compared with 1.5 for the human reference. Our benchmark and findings provide a reproducible foundation for evaluating and advancing coding agents beyond functional correctness.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements",
+  "url": "https://arxiv.org/abs/2607.27409"
+}

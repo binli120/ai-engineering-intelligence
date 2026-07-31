@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-07-31T10:50:47.543824Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-backlog-items-to-security-guidance-towards-continuous-security-co-0967cf608d",
+  "maturity": "unknown",
+  "published_at": "2026-07-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.27374v1 Announce Type: new Abstract: Continuous software engineering in regulated domains requires engineering teams to address security throughout the development lifecycle. Yet making security requirements explicit in backlog items is still problematic. Engineers must instead infer security relevance of backlog items from brief, free-form descriptions and often lack timely guidance on applicable requirements. We present an NLP-based backlog enrichment system that detects security-relevant backlog items and links them to relevant security requirements. The approach combines a security-relevance classifier with a retrieval-augmented generation (RAG) pipeline over security requirements documents. The approach was developed and evaluated in the context of a large enterprise in highly regulated domains. We present three contributions. First, we release a dataset of 288 backlog items labeled for security relevance by nine security practitioners, with substantial agreement (Fleiss' $\\kappa=0.787$). Second, a recall-oriented classifier achieving $F2=0.774$ in-distribution and mean zero-shot G-measure $\\approx 0.65$ across five established benchmarks, matching or outperforming most published classical-ML and open-source GPT baselines. Third, we preliminarily evaluated a four-stage security requirements document-grounded RAG pipeline with two practitioners on industrial backlogs using company-internal security policies and CIS Benchmarks. Of the retrieved 24 clauses, 12 were rated at least 4/5 for relevance. Our findings provide first indicators that NLP-based product backlog enrichment can support engineers in identifying security requirements early in the development process. With this work we aim to facilitate continuous security compliance through proactive introduction of security requirements in continuous software engineering.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From Backlog Items to Security Guidance: Towards Continuous Security Compliance",
+  "url": "https://arxiv.org/abs/2607.27374"
+}
