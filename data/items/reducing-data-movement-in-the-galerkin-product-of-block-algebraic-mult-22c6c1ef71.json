@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-03T11:43:16.268904Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "reducing-data-movement-in-the-galerkin-product-of-block-algebraic-mult-22c6c1ef71",
+  "maturity": "unknown",
+  "published_at": "2026-08-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.28891v1 Announce Type: new Abstract: The Galerkin triple product $A_c = P^T A P$ dominates the recurring per-solve setup cost of algebraic multigrid (AMG). For AMG on systems of PDEs the product is a rectangular-block sparse matrix triple product: for 3D elasticity the fine operator has $3\\times3$ blocks, the prolongator $3\\times6$, and the coarse operator $6\\times6$, a shape no vendor sparse library supports. We map its algorithm space -- classical two-pass, fused-recompute, schedule-reordered, shared-memory-tiled, and inspector-executor variants -- under an explicit DRAM/L2 traffic model, and implement the leading variants in portable Kokkos (CUDA) and native CUDA backends using new PETSc blocked matrix types. Validated on an NVIDIA A100, the model predicts per level which variant moves the fewest bytes. Guided by it, a shared-memory-tiled kernel with a sorted, search-free schedule moves fewer bytes in less than half the time of the portable Kokkos team kernels on the fine-level product (10.5 vs 17.4 GB of DRAM, 45 vs 82 ms), within $2.5\\times$ of the model's streaming floor for the full product and $1.9\\times$ on its $A\\cdot P$ stage. We further present prolongator filtering, a new PETSc GAMG algorithm that drops small blocks from the coarse space under a Frobenius criterion with a kernel-preserving projection; it reduces $P^TAP$ traffic, coarse-operator fill, and memory, and cuts the hot $P^TAP$ time $2.9\\times$ on the fine grid with iteration counts unchanged. The driving application is a fully GPU-resident blocked pipeline in PETSc: finite-element assembly writes directly into the blocked device matrix, and the AMG setup, Galerkin products, and solve all operate on primary blocked data with no scalar expansion and no operator-sized device-host transfers in the recurring phases.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Reducing Data Movement in the Galerkin Product of Block Algebraic Multigrid on GPUs",
+  "url": "https://arxiv.org/abs/2607.28891"
+}

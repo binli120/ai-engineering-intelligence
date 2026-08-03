@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-03T11:43:16.268904Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "brhc-backend-driven-reactive-hypermedia-controls-with-a-statically-typ-03fddb387f",
+  "maturity": "unknown",
+  "published_at": "2026-08-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.29338v1 Announce Type: new Abstract: AI-assisted coding tools (e.g., Copilot, Cursor, Claude) are increasingly ubiquitous and enable rapid generation of web applications. However, this raises concerns regarding complexity, longevity and the long-term maintainability of generated systems. A key source of complexity is the heterogeneity between backend and frontend programming models, where multiple languages and paradigms are combined within a single application, often leading to duplicated logic and fragmented state management. To address this issue, recent approaches (e.g., HTMX, Turbo Hotwire, Datastar, etc.) follow the Hypermedia-Driven Application (HDA) model, positioning HTML as the primary communication medium between client and server. Unlike SPA-centric architectures, HDA systems shift the application state and interaction logic to the server, where backend-driven reactive signals synchronize with the client user interface. However, these approaches still introduce complexity through custom attributes and do not fully eliminate JavaScript, particularly in computed expressions. In this work, we propose a statically typed approach using a Kotlin-based HTML DSL (Domain-Specific Language) for backend-driven reactive web applications. We extend the HtmlFlow Kotlin DSL with typed custom HTML attributes (i.e., Datastar data-* attributes) and signal-based bindings using statically typed builders. We demonstrate the approach through a catalog of reactive interaction patterns and a Petclinic Spring MVC case study. The results indicate that the proposed approach can nearly eliminate the need for JavaScript while improving type safety and preserving a homogeneous programming model across frontend and backend, bridged through a backend-driven reactive, signal-centric architecture.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "BRHC: Backend-driven Reactive Hypermedia Controls with a Statically Typed Kotlin DSL",
+  "url": "https://arxiv.org/abs/2607.29338"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-03T11:43:16.268904Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "students-practices-and-skills-in-the-llm-era-you-can-t-outsource-the-s-5bb0a12186",
+  "maturity": "unknown",
+  "published_at": "2026-08-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.29519v1 Announce Type: new Abstract: Generative AI tools have been rapidly learned in the daily workflow of graduate students in Software Engineering, but little is known about what AI-related skills they actually need for effective use in empirical research. Without this understanding, graduate programs cannot prepare students to conduct rig-orous research in the LLM era, risking creating a generation of researchers who delegate tasks without the necessary expertise. By analyzing 1,383 posts from five research-focused subreddits, we found that students systematically outsource the cognitive effort required to develop research skills and end up with neither the expected results nor the necessary competence. Naming these missing skills is the first step toward curricula that teach graduate students to work \\emph{with} LLMs without being replaced by them.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Students' Practices and Skills in the LLM-Era: \"You Can't Outsource the Struggle and Still Get the Skill\"",
+  "url": "https://arxiv.org/abs/2607.29519"
+}

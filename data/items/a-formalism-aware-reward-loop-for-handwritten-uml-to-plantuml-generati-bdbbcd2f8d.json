@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-03T11:43:16.268904Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-formalism-aware-reward-loop-for-handwritten-uml-to-plantuml-generati-bdbbcd2f8d",
+  "maturity": "unknown",
+  "published_at": "2026-08-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.28987v1 Announce Type: new Abstract: Handwritten UML sketches are common in early software design, but turning them into structured, analysable modelling artefacts still requires manual reconstruction. Vision-language models can generate PlantUML from diagram images, but prompt-based use treats this as image-to-text generation rather than structured model generation. We investigate formalism-aware rewards: feedback signals derived from analysable model representations rather than surface text. In a worked example, we adapt a vision-language model for handwritten UML-to-PlantUML generation using super-vised fine-tuning followed by Group Relative Policy Optimisation. Generated PlantUML is compared against target representations, using XMI for class diagrams and control-flow graphs for activity diagrams. Emerging results show that the adapted model improves compilability and conversion quality over the untuned open model and one proprietary baseline, while remaining competitive with a stronger proprietary baseline on class diagrams. The added benefit of the reward-guided stage remains open on the current held-out set. Error analysis and metric-validity results show that modelling acceptability is only partially captured, motivating rewards and evaluations that combine model analysis with human judgement.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Formalism-Aware Reward Loop for Handwritten UML-to-PlantUML Generation",
+  "url": "https://arxiv.org/abs/2607.28987"
+}

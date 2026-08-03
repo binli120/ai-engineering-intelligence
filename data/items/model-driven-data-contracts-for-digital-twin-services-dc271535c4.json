@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-03T11:43:16.268904Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "model-driven-data-contracts-for-digital-twin-services-dc271535c4",
+  "maturity": "unknown",
+  "published_at": "2026-08-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.28803v1 Announce Type: new Abstract: Digital Twins (DT) integrate data from multiple sources. Models consume data and enable DT services such as simulations, what-if analyses, and ML-driven predictions. To ensure proper DT operation, data-driven services require data to exhibit traits such as reliability and high quality (including, e.g., accuracy, completeness, and timeliness). Yet, there is no systematic way to specify data requirements at the model level, and subsequently enact those specifications at runtime. To address this shortcoming, we propose an approach to contract-based quality management in DTs. We formally define a theory of such contracts, situate them architectually within DTs, and propose a domain-specific language to specify contracts. Our approach enables continuous data quality monitoring, thereby improving the reliability and quality of DT services.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Model-Driven Data Contracts for Digital Twin Services",
+  "url": "https://arxiv.org/abs/2607.28803"
+}

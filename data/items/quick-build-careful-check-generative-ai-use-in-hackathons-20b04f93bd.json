@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-03T11:43:16.268904Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "quick-build-careful-check-generative-ai-use-in-hackathons-20b04f93bd",
+  "maturity": "unknown",
+  "published_at": "2026-08-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.29178v1 Announce Type: new Abstract: Hackathons are time-bounded events where participants form teams to rapidly build software projects. Their short-term nature makes them a natural setting for Generative AI (GenAI) use, given its promise of speed and efficiency. Yet despite GenAI being increasingly adopted in these events, we still know little about what participants use GenAI for and, crucially, what they do not use it for and why. We report an exploratory interview study with participants from different teams at a two-day AI-themed hackathon in central Europe. We found that participants used GenAI for purposes beyond coding, including learning unfamiliar topics, brainstorming, and preparing documentation. At the same time, they combined multiple GenAI and non-GenAI tools depending on task fit. We also found that, despite the absence of team rules, all participants we studied converged on an unwritten practice of checking GenAI output before using it, yet their ability to actually verify was constrained by time pressure and limited domain knowledge. This work aims to identify avenues for further investigation by outlining a follow-up study combining observation, surveys, and prompt-and-response logs.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Quick Build, Careful Check? Generative AI Use in Hackathons",
+  "url": "https://arxiv.org/abs/2607.29178"
+}
