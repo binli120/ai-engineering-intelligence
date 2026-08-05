@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-unified-feature-model-for-microservice-identification-and-refactorin-797ecc7b24",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.02644v1 Announce Type: new Abstract: Several approaches have been proposed for the automatic identification of microservices within monolithic systems. These methodologies differ in their data collection and analysis techniques, the decomposition algorithms applied, and the mechanisms used to visualize and refine candidate microservices. Despite this diversity, systematic experimentation and comparison across approaches remain limited by the absence of a common conceptual framework. Furthermore, current research indicates that no single optimal method exists; rather, integrating multiple approaches is necessary to fully explore the trade-offs inherent in any design solution. To address this gap, this paper proposes a feature model for variant-rich microservice identification tools, grounded in an extensive analysis of the state of the art. We evaluate this feature model through a systematic mapping of representative literature and by analyzing its instantiation within the architecture of an existing microservice identification tool. Our findings are two-fold. First, the proposed feature model successfully captures the primary variation points of existing methodologies, providing a unifying foundation for analyzing, comparing, and designing microservice identification tools. Second, while no individual tool covers more than a fraction of the model, the analyzed tools jointly span almost all of its variation points. This complementarity is the central result: the design space is already populated, but it is fragmented across standalone tools, none of which can compare or integrate the alternatives that the others implement.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Unified Feature Model for Microservice Identification and Refactoring",
+  "url": "https://arxiv.org/abs/2608.02644"
+}

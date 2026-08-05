@@ -1,11 +1,11 @@
 {
   "category": "platform",
-  "collected_at": "2026-08-03T11:43:16.268904Z",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
   "engineering_impact": 100,
   "evidence_quality": 90,
   "id": "openai-api-platform-documentation-a9a5562e8c",
   "maturity": "stable",
-  "published_at": "2026-08-03T07:19:03Z",
+  "published_at": "2026-08-05T06:09:35Z",
   "source_id": "openai_platform_docs",
   "summary": "Explore guides, API docs, and examples for the OpenAI API.",
   "tags": [

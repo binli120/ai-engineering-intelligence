@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "on-the-missing-data-layer-and-a-potential-solution-71cf541f50",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.02949v1 Announce Type: new Abstract: Latin America is missing two foundational layers of AI infrastructure: the dataset layer and the benchmark layer. This paper targets the dataset layer. The dataset layer faces two compounding problems: discovery and supply. Latin American AI datasets exist but are scattered across platforms with no shared index. Even with perfect indexing, the total volume would remain far below what frontier AI development requires. We propose DataHub: a task-first data infrastructure organized through the ontology ///, with mechanisms for dataset discovery, metadata, contribution, licensing, and reuse.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "On the missing data layer and a potential solution",
+  "url": "https://arxiv.org/abs/2608.02949"
+}

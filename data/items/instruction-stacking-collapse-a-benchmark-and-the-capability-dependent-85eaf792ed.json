@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "instruction-stacking-collapse-a-benchmark-and-the-capability-dependent-85eaf792ed",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.02639v1 Announce Type: new Abstract: Production prompts rarely carry a single instruction. One system message may require valid JSON, a word limit, three citations, and a fixed tone at the same time. We study how instruction-following degrades as such constraints accumulate. We introduce a benchmark that stacks 24 verifier-checked instructions, one to twenty at a time, and evaluate three production-tier LLMs (Claude Sonnet 4.6, GPT-5-mini, Gemini 2.5 Flash). Instruction-following degrades non-linearly: the follow rate falls from ~96% to as low as 20%, driven by a structured and reproducible set of pairwise conflicts. A single \"output JSON\" constraint, for example, is jointly unsatisfiable with nine others. We then evaluate a training-free remedy: an instruction compiler that rewrites the stacked prompt in a single LLM call and is reused across queries. Its benefit is capability-graded. It recovers up to +11 points of follow rate for weaker models, which are also the models most often deployed at scale, while leaving stronger models, which already internalise the same structure, essentially unchanged. Cluster-robust tests, same-baseline controls, and a within-family scaling ladder attribute the gain to the rewrite itself rather than to additional tokens, reordering, or measurement headroom. We release the benchmark, verifiers, and cached runs for full reproduction.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Instruction Stacking Collapse: A Benchmark and the Capability-Dependent Value of Prompt Compilation",
+  "url": "https://arxiv.org/abs/2608.02639"
+}

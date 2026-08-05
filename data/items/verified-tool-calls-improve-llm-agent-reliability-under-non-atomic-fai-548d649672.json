@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "verified-tool-calls-improve-llm-agent-reliability-under-non-atomic-fai-548d649672",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.02645v1 Announce Type: new Abstract: Large Language Model (LLM) agents rely on external tools to perform multistage tasks. Existing agent frameworks typically assume that tool calls are atomic and return binary success or failure signals. However, real-world systems exhibit non-atomic behaviors such as timeouts after dispatch, delayed visibility, and partial state updates. These mismatches lead to reliability issues including duplicate actions, task success, and unnecessary tool executions. A lightweight, verification-aware tool wrapper is introduced that augments tool calls with postcondition verification, verify-before-retry logic, and idempotency keys. The approach is evaluated in a controlled simulated environment with injected non-atomic failures across multiple task templates. The results demonstrate that the proposed method significantly reduces duplicate actions, while maintaining comparable task success rates. Overall, the findings suggest that strengthening tool interaction semantics is a promising direction for improving LLM agent reliability without requiring modifications to the underlying language model.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Verified Tool Calls Improve LLM Agent Reliability Under Non-Atomic Failures",
+  "url": "https://arxiv.org/abs/2608.02645"
+}

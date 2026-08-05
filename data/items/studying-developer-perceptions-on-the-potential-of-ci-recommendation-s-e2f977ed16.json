@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "studying-developer-perceptions-on-the-potential-of-ci-recommendation-s-e2f977ed16",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.02682v1 Announce Type: new Abstract: Continuous Integration (CI) is central to modern software development, yet developers often struggle to choose the most suitable CI service. Prior work has identified barriers to CI adoption but offers little empirical evidence on how developers select CI services or whether adoption decisions are driven by genuine project needs versus social influence. This paper presents an exploratory survey study addressing that gap. We aim to contact about 5,000 active GitHub developers, including both CI users and non-users. The study investigates: (1) what drives CI adoption and service selection, distinguishing need-driven from socially influenced motivations; (2) whether developers consider CI universally necessary or context-dependent and what barriers hinder adoption; and (3) developers' perceptions of automated CI recommendation systems. Our findings will inform researchers developing CI recommendation systems and practitioners aiming to streamline CI adoption in open-source projects.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Studying Developer Perceptions on the Potential of CI Recommendation Systems",
+  "url": "https://arxiv.org/abs/2608.02682"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "prweaver-evaluating-llm-based-code-auditors-against-long-horizon-malic-dc54af4675",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.02693v1 Announce Type: new Abstract: LLM-based code auditors are increasingly integrated into pull-request (PR) workflows, yet their reliability against adversarial changes distributed across repository evolution remains poorly understood. We introduce PRWeaver, a benchmark of 208 execution-validated attacks from ten real-world repositories, each instantiated under four matched review renderings (832 renderings in total). We evaluate three PR-auditing agents across six auditor-model systems. Across all systems, decomposing an attack changes detection by at most five percentage points, showing that commit boundaries alone do not explain evasion. In contrast, per-PR interleaving at $N=16$ and coherent carrier fusion reduce detection by 5-13 and 10-18 points, respectively. Under whole-window review at $N=24$, detection falls to 16-22%, compared with 50-60% under per-PR review. These results show that access to repository history is insufficient: concealment becomes most effective when benign and malicious changes jointly occupy the auditor's active review context or when the stated purpose plausibly accounts for the attack-bearing diff.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "PRWeaver: Evaluating LLM-Based Code Auditors against Long-Horizon Malicious Pull Requests",
+  "url": "https://arxiv.org/abs/2608.02693"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "tracecompiler-skill-guided-mining-and-compilation-of-llm-agent-traces-5b70106b3d",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.02680v1 Announce Type: new Abstract: Tool-using language-model agents repeatedly rediscover procedures they have already executed, producing traces that mix reusable structure with retries, exploration, accidental ordering, and repeated lookups. We present TraceCompiler, a skill-guided system that mines clusters of noisy agent traces and compiles them into executable, mostly deterministic workflows. It admits an inter-tool dependency only when a consumer argument contains a value attributable uniquely to an earlier producer; every hard edge carries an auditable evidence tuple, and ambiguous relations are marked suspected and impose no ordering constraint. Bindings are classified as constants, user inputs, copied outputs, transforms, or residual LLM decisions. On T1, a mechanized form of the rule recovers producer-consumer dependencies at 0.928 precision and 0.943 recall over 15,775 def-use edges of its training split, against 0.711 F1 for adjacency and 0.712 for a frequency-thresholded directly-follows measure on identical data; the compiler skill run blind reaches 0.992 on 250 of those edges. On AppWorld we replay released trajectories in the deterministic simulator to recover masked return values and measure the rule against 563 token edges at 0.993 precision - a self-consistency check, since replay injects tokens by a related heuristic. We compile two recurring intents: a Venmo money-request intent reduces 34 observed API calls to 11 runtime calls and, under leave-one-out execution against the benchmark's own state tests, passes 15 of 21, the failing fold escalating rather than acting because its required branch was never observed; and a Spotify/Todoist intent the compiler correctly refuses to compile, because an irreversible side effect is under-determined. We measure call reduction but not offline compilation cost, so we claim no net efficiency result.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "TraceCompiler: Skill-Guided Mining and Compilation of LLM Agent Traces into Mostly Deterministic Workflows",
+  "url": "https://arxiv.org/abs/2608.02680"
+}

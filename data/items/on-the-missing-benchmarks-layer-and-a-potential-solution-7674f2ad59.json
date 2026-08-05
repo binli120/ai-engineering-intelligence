@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "on-the-missing-benchmarks-layer-and-a-potential-solution-7674f2ad59",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.02996v1 Announce Type: new Abstract: Latin America is missing a foundational layer for native AI development: the benchmark layer. The benchmark layer does two things no other layer can - it audits AI systems against regional social requirements and it directs AI optimization in economically relevant environments. Without it, public institutions cannot independently evaluate foreign AI systems, and companies cannot optimize AI systems to solve local problems with SOTA performance. The cost of the missing layer is dual: a loss of auditability and a loss of optimization direction over a technology that is increasingly critical infrastructure. We propose an EvalsHub, with LatamBoard as its first regional instance - an open, task-first benchmark infrastructure where universities, public institutions, professional communities, and companies can publish, execute, compare, and maintain evaluations across models, workflows, and agents. Built once, measured forever - re-run by institutions as new AI systems ship and by industry teams after every system change. Open by design and incentive-driven by construction.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "On the missing benchmarks layer and a potential solution",
+  "url": "https://arxiv.org/abs/2608.02996"
+}

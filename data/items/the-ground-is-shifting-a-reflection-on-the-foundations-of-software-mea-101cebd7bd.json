@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-ground-is-shifting-a-reflection-on-the-foundations-of-software-mea-101cebd7bd",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.03007v1 Announce Type: new Abstract: For most of the past six decades, software measurement relied on labor-intensive manual collection of proprietary data, which hampered progress. The shift to repurposing traces from version control and related tools dramatically expanded data availability$\\unicode{x2014}$especially with the rise of open-source software$\\unicode{x2014}$but hinged on an often unstated assumption: that these tools are used by professional developers to build genuine software systems. However, as trace-generating tools, data types and scale, and empirical methods have all evolved, it has become clear that changes in data generation and analytical approaches affect many prior findings about software development, maintenance, and evolution. With AI agents now actively using these same tools, the resulting traces frequently violate the original assumption of human origin. To preserve the relevance of software measurement research, immediate action is needed: We must detect when foundational assumptions are violated in contemporary data and develop new methodologies that remain valid under changed circumstances. To this end, we propose a systematic AI-assisted replication program that revisits key findings using modern techniques, aiming for methods that yield consistent results on current data to keep software measurement meaningful.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Ground Is Shifting: A Reflection on the Foundations of Software Measurement",
+  "url": "https://arxiv.org/abs/2608.03007"
+}

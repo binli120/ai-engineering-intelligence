@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "proprl-property-aware-prerequisite-relation-learning-in-educational-kn-c829227e40",
+  "maturity": "unknown",
+  "published_at": "2026-08-05T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.03006v1 Announce Type: new Abstract: Prerequisite relation learning is central to adaptive instruction, yet existing methods often formulate it as conventional link prediction, limiting their ability to adaptively integrate complementary educational evidence for individual candidate pairs and to discourage contradictory reverse predictions. We propose ProPRL, a Property-aware Prerequisite Relation Learning framework. ProPRL first learns complementary concept representations from a concept-resource hypergraph and a directed learning-behavior graph, where direction-preserving personalized propagation aggregates multi-hop behavioral evidence. It then employs a Pair-conditioned Gate to adaptively weight and fuse the two views for each candidate ordered concept pair. Finally, an \\textit{Irreversibility Constraint} introduces an anti-symmetry regularizer that penalizes simultaneously high confidence in both directions of the same concept pair. Experiments on multiple real-world educational datasets show that ProPRL achieves state-of-the-art performance on prerequisite relation learning.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "ProPRL: Property-Aware Prerequisite Relation Learning in Educational Knowledge Graphs",
+  "url": "https://arxiv.org/abs/2608.03006"
+}
