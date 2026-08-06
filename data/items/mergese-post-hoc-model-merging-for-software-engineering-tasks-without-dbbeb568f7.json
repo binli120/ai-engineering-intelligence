@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "mergese-post-hoc-model-merging-for-software-engineering-tasks-without-dbbeb568f7",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.04181v1 Announce Type: new Abstract: Fine-tuned code models often behave as domain specialists and can degrade sharply under distribution shift: in our clone-detection setting, a model trained on same-language clones drops 71\\% F1 on cross-language clones, while multi-task training falls to 0.151 F1 on unseen AI-generated clones. Our companion study shows that post-hoc model merging can address this fragmentation, achieving 93\\% of multi-task performance without training data while generalizing 4$\\times$ better to unseen clone types. However, no practical tool exists that lets SE researchers diagnose checkpoint compatibility, merge specialists, validate results on SE benchmarks, and export models for deployment. We present \\textbf{MergeSE}, an open-source CLI and web tool for training-free model merging of HuggingFace encoder checkpoints. While motivated by OOD generalization in clone detection, MergeSE supports SE classification workflows more broadly through a built-in registry of nine task types, including vulnerability detection, defect prediction, and code-smell detection. MergeSE provides five operations: \\textit{tasks}, \\textit{inspect}, \\textit{merge}, \\textit{evaluate}, and \\textit{export}. It supports five merging algorithms, including TIES, DARE-TIES, Wudi, PCB, and averaging; detects cross-task classification-head mismatches; produces seedable deterministic outputs; and includes bundled benchmark samples for smoke-test reproduction. A full merge of two 124M-parameter checkpoints completes in under 5 seconds on CPU. End-to-end validation confirms that MergeSE-produced checkpoints match reference implementations and recover cross-domain performance from domain-specific specialists. The tool is available online at https://mergese.usask.ca, and the development repository is at https://github.com/srlabUsask/MergeSE.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "MergeSE: Post-Hoc Model Merging for Software Engineering Tasks Without Retraining",
+  "url": "https://arxiv.org/abs/2608.04181"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "energy-efficient-ai-enabled-wireless-sensor-networks-for-mission-criti-ab83710470",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.04499v1 Announce Type: new Abstract: Advanced wireless sensor networks powered by artificial intelligence are increasingly required for applications demanding continuous monitoring, autonomous operation, reliable communication, and fast decision support. This systematic review examines recent work from 2023 to 2026 on energy-efficient, AI-enabled wireless sensor networks (WSNs) in mission-critical environments, with particular focus on power electronics, and urban infrastructure systems. The authors synthesise a corpus of 50 DOI indexed studies satisfying inclusion criteria that received qualitative thematic coding and comparative analysis. Other references were only cited to provide historical, methodological, or technical context and were not included in the systematic review corpus. As such, our results show that AI can improve WSN energy behaviour through routing and clustering, edge AI, reinforcement learning, fuzzy logic, metaheuristic optimisation, and AI-based security. At the same time, energy efficiency cannot be treated as an isolated performance target. In mission-critical systems, security, latency, and reliability are closely interlinked requirements. The review concludes that future work should move away from optimising protocols in isolation, and instead focus on building lightweight, explainable, secure, and field-tested AI-driven WSN architectures suited to real operational environments.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Energy Efficient AI-Enabled Wireless Sensor Networks for Mission Critical Environments: A Systematic Review across Smart Grid, AI, and Urban Infrastructure Applications",
+  "url": "https://arxiv.org/abs/2608.04499"
+}

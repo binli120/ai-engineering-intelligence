@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "joint-uav-flight-and-opportunistic-routing-under-reinforcement-learnin-5c7182c9e8",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.04590v1 Announce Type: new Abstract: The growing deployment of delay-tolerant networks (DTNs) has made store-carry-forward (SCF) communication indispensable under sparse connectivity. However, intermittent contacts, finite buffers, and limited message time-to-live (TTL) often give rise to sparse delivery and congestion, leading to substantial end-to-end performance degradation. To address this challenge, this study explores the joint optimization of decentralized opportunistic routing and controllable unmanned aerial vehicle (UAV) flight, aiming to enlarge future contacts through discrete UAV headings while enabling per-node replication under contact-limited observations. Building upon this architecture, we study cooperative factored routing--UAV control under centralized training and decentralized execution (CTDE) and propose JUROR (Joint UAV flight and Opportunistic Routing, based on the proximal policy optimization (PPO) framework. In our design, we first cast the problem as a factored partially observable Markov decision process with sequential motion--routing coupling and a per-step team reward; subsequently, decentralized actors act on local observations while a training-time critic uses global statistics, and an optional multi-horizon hotspot predictor provides auxiliary supervision. Simulation results over four traffic modes demonstrate effective gains over PRoPHET and MaxProp, while retaining contact-limited decentralized execution.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Joint UAV Flight and Opportunistic Routing under Reinforcement Learning for Delay-Tolerant Networks",
+  "url": "https://arxiv.org/abs/2608.04590"
+}

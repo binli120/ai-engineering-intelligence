@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "safecommit-certifying-when-memory-grounded-agents-may-safely-act-7c23fc1a05",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.04289v1 Announce Type: new Abstract: Long-horizon agents increasingly use persistent memory and tools to take actions with external side effects. A central failure mode is premature commitment: an agent acts before resolving whether its memory grounding is stale, conflicting, incomplete, or corrupted. We formalize this problem as safe commitment under memory uncertainty and introduce SafeCommit, a risk controlled layer between agent reasoning and external execution. The layer constructs a calibrated set of plausible latent worlds from memory, observations, tool outputs, provenance, and policy constraints. It permits a side effectful action only when a conformal action certificate shows that the action is safe in every retained world. Otherwise, it selects a low-side-effect probe that targets the worlds blocking certification, or returns a conservative fallback. Under calibrated world coverage, the probability of an unsafe certified commit is at most the target level {\\alpha}; with imperfect world proposal, the bound separates calibration and representation error. A dependency-free controlled simulator illustrates the safety-utility tradeoff and reproduces all reported results with one command. The goal is to offer a concrete approach for deciding not only what an agent should do, but when the available evidence is sufficient to safely do it.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SafeCommit: Certifying When Memory-Grounded Agents May Safely Act",
+  "url": "https://arxiv.org/abs/2608.04289"
+}

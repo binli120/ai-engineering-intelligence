@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "an-exploratory-study-of-agent-plans-for-agentic-ai-coding-tools-in-ope-74d931a109",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.04661v1 Announce Type: new Abstract: Repository-level configuration artifacts allow developers to provide guidance for agentic AI coding tools, such as Claude Code, Gemini, etc. Although prior research has examined repository-shared context files that capture project-level instructions and conventions (e.g., AGENTS.md files), little is known about more task-oriented artifacts such as Agent Plans. We present an exploratory study of Agent Plans in open-source software repositories, examining how plan files are preserved, which development activities they support, and what information they provide to guide agent execution. We screened 36,710 GitHub repositories belonging to engineered software projects and identified 85 Markdown plan files from 10 repositories. Within this highly concentrated corpus, Agent Plans supported several kinds of software engineering work, including maintenance, design, construction, quality-related work, and process support. They also provided task-oriented execution guidance, most commonly through implementation steps, concrete files and locations, and testing and validation information. Overall, repository-preserved Agent Plans under these tool-specific directories appear to be a narrow but informative artifact for studying task intent and execution guidance in human-agent workflows.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "An Exploratory Study of Agent Plans for Agentic AI Coding Tools in Open-Source Software",
+  "url": "https://arxiv.org/abs/2608.04661"
+}

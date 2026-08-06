@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "adaptagent-a-multi-agent-domain-guided-reasoning-framework-for-code-ad-2b477942fd",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.04459v1 Announce Type: new Abstract: Developers often need to adapt into their projects the code generated from LLMs or code snippets from online forums. However, integrating them into an existing repository remains challenging in a manual process. A successful integration typically requires more than copying code as a user must produce correct adapting changes at a designated location in the target repository. We formalize this as the code adaptation problem: given a snippet, functional intent, a target repository, and an adaptation location, generate a patch that adapts the snippet into the repository. We present AdaptAgent, a multi-agent, domain-guided reasoning framework for code adaptation. Rather than relying on single-shot prompting, AdaptAgent decomposes adaptation into specialized agents that communicate via typed artifacts: an Intent Summarizer extracts adaptation goals from Q&amp;A text; a Policy Agent derives domain policies from six adaptation categories; a Domain Planner generates a self-ordered plan; a Context Miner distills sibling-method semantics from the target codebase; and a Code Adapter realizes the plan as a minimal unified diff, iteratively refined using a compiler-based Verifier. This division of labor enables robust, policy-aligned adaptations and supports adapting code snippets into a project. On a real-world dataset, AdaptAgent outperforms strong baselines in semantic correctness and produces patches that mirror developers' actual adaptation patterns. Our ablation study shows each agent's necessity, especially planning for code-hardening and exception-handling, and intent for logic customization.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AdaptAgent: A Multi-agent, Domain-Guided Reasoning Framework for Code Adaptation",
+  "url": "https://arxiv.org/abs/2608.04459"
+}

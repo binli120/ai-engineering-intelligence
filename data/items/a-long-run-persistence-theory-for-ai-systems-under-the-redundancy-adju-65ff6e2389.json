@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-long-run-persistence-theory-for-ai-systems-under-the-redundancy-adju-65ff6e2389",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.04012v1 Announce Type: new Abstract: Artificial intelligence systems are increasingly expected to operate over repeated cycles of interaction, adaptation, and update rather than through isolated one-shot outputs. This raises a fundamental theoretical question: can an AI system persist indefinitely without incurring unbounded structural aging? This paper develops a long-run persistence framework for AI systems based on the redundancy-adjusted Artificial Age Score (AAS). The model extends AAS from a static evaluative measure into a cycle-level functional that generates an age sequence across repeated operation. At each cycle, structural age is defined through a weighted, redundancy-aware logarithmic penalty over component consistency levels. Within this framework, cycle-level age is shown to be well defined and uniformly bounded, thereby excluding explosive pointwise aging. On this basis, the paper defines a hierarchy of asymptotic regimes, including burdened persistence, zero-burden persistence, oscillatory persistence, and cumulative terminal burden. It also establishes comparative ordering, sensitivity bounds, convergence under componentwise stabilization, persistence under finite total variation, geometric stabilization under damped inter-cycle perturbations, and a zero-burden characterization under nondegenerate redundancy conditions. The main result is that indefinite cyclic continuation does not require unbounded structural aging: an AI system may pass through infinitely many cycles while its structural age remains bounded, while under stronger regularity conditions its marginal aging vanishes and, in the strongest regime, its cycle-level burden converges to zero. The framework thus provides a formal basis for analyzing long-run artificial persistence as a problem of bounded structural burden rather than inevitable cumulative deterioration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Long-Run Persistence Theory for AI Systems under the Redundancy-Adjusted Artificial Age Score (AAS)",
+  "url": "https://arxiv.org/abs/2608.04012"
+}

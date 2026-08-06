@@ -1,13 +1,13 @@
 {
   "category": "security",
-  "collected_at": "2026-08-05T10:46:11.657045Z",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "owasp-top-10-for-large-language-model-applications-owasp-foundation-d5e9655665",
   "maturity": "stable",
-  "published_at": "2025-12-29T17:43:20Z",
+  "published_at": "2026-08-05T19:21:36Z",
   "source_id": "owasp_llm_top_10",
-  "summary": "Aims to educate developers, designers, architects, managers, and organizations about the potential security risks when deploying and managing Large Language Models (LLMs)",
+  "summary": "Legacy entry point for the OWASP Top 10 for Large Language Model Applications. Get the current 2026 release from the OWASP GenAI Security Project.",
   "tags": [
     "security",
     "documentation"

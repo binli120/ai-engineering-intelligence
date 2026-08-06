@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "sonar-task-aware-code-summary-evaluation-for-llm-consumers-without-ref-cfaf39735b",
+  "maturity": "unknown",
+  "published_at": "2026-08-06T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.04195v1 Announce Type: new Abstract: Source code summaries have traditionally been evaluated from a human developer's perspective, with quality determined by how closely they resemble developer-written references and how well they align with human preferences. But this overlooks a growing reality: LLM-based tools and agents increasingly consume code summaries as inputs for software engineering (SE) tasks, and what makes a summary useful for a consuming agent on a task remains largely unexplored. To bridge this gap, we propose SONAR, a reference-free framework that evaluates source code summaries along four dimensions: Correctness, Abstraction, Conciseness, and Fluency. Rather than optimizing for a pre-written \"gold standard\", SONAR introduces a novel code regeneration-based approach that uses a summary to regenerate code and leverages that reconstruction as a quality signal of the summary. This provides an empirical grounding that requires neither a reference summary nor the subjective judgment of humans or LLMs. We evaluate SONAR's dimensions on their ability to influence LLM performance across four downstream SE tasks. We find that Correctness, followed by Abstraction, significantly correlates with LLM performance, with correlations up to 14X higher than the best baseline. Conciseness and Fluency, though widely valued by human developers, remain mostly insignificant to an LLM consumer, suggesting that what makes a summary useful is task- and consumer-dependent. Through a large-scale evaluation of 11 popular LLMs using SONAR, we further identify the strengths and weaknesses of different models across each quality dimension, while offering insights to facilitate future research on task-aware summarization.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SONAR: Task-Aware Code Summary Evaluation for LLM Consumers Without References",
+  "url": "https://arxiv.org/abs/2608.04195"
+}
