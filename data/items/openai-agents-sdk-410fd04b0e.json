@@ -1,11 +1,11 @@
 {
   "category": "agent_framework",
-  "collected_at": "2026-08-06T10:48:51.010263Z",
+  "collected_at": "2026-08-08T08:59:10.162949Z",
   "engineering_impact": 100,
   "evidence_quality": 90,
   "id": "openai-agents-sdk-410fd04b0e",
   "maturity": "stable",
-  "published_at": "2026-08-06T05:54:16Z",
+  "published_at": "2026-08-07T00:36:22Z",
   "source_id": "openai_agents_docs",
   "summary": "Current snapshot of OpenAI Agents SDK Documentation.",
   "tags": [
