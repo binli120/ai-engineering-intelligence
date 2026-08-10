@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-10T09:47:55.930098Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "understanding-the-energy-impact-of-software-refactoring-a-workload-awa-5e4a28b8c4",
+  "maturity": "unknown",
+  "published_at": "2026-08-10T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.06620v1 Announce Type: new Abstract: Refactoring improves software maintainability while preserving functional behavior, yet behavior preservation does not imply energy neutrality. Existing studies primarily examine isolated refactorings under fixed or simple workloads, leaving the effects of workload variation, real-world refactoring practices, explanatory factors, and energy regression identification insufficiently understood. We present the first large-scale empirical study of the energy impact of refactoring across two complementary Java benchmarks: a Micro-benchmark, comprising 68 refactoring types evaluated under diverse workloads, and a Practical-benchmark, containing 481 real-world refactoring commits from 430 GitHub projects. Using repeated paired energy measurements, we analyze workload sensitivity, refactoring patterns, explanatory factors, and the effectiveness of metric- and LLM-based regression identification. In the Micro-benchmark, 199 of 384 refactoring-workload pairs (51.8%) exhibit statistically significant energy differences, and 45.3% of refactoring instances change energy-impact classification across workloads. In the Practical-benchmark, only 36 commits (7.5%) show significant energy changes, although two-thirds differ by at least 10%. Refactoring type alone is insufficient to predict energy outcomes, while certain recurring refactoring combinations are associated with energy reductions. Changes in execution time consistently explain energy variation in the controlled benchmark but correlate weakly with energy changes in real-world commits. Our findings highlight the need for workload-diverse evaluation of the energy impact of refactoring; neither existing metric-based approaches nor LLM-based predictors can reliably identify refactoring-induced energy regressions, motivating the development of more accurate techniques for predicting the energy impact of refactoring.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Understanding the Energy Impact of Software Refactoring: A Workload-Aware Study of Controlled Examples and Real-World Commits",
+  "url": "https://arxiv.org/abs/2608.06620"
+}

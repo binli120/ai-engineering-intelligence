@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-10T09:47:55.930098Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "beyond-routing-weights-faithful-response-level-interpretation-of-mixtu-23fa809c3b",
+  "maturity": "unknown",
+  "published_at": "2026-08-10T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.06400v1 Announce Type: new Abstract: Reward models are central to learning from human preferences, yet identifying what drives their predictions remains challenging. Recent sparse Mixture-of-Experts (MoE) reward models seek to improve interpretability by routing prompts to specialized experts and characterizing experts through examples with high routing weights. However, routing weights only reveal which prompts an expert $\\textit{receives}$, not how it $\\textit{judges}$ responses, providing only a partial account of expert behavior. We therefore propose $\\textbf{Co}$ntribution-$\\textbf{Co}$ntrast ($\\textbf{CoCo}$) response-level interpretation, which faithfully characterizes experts' roles using chosen-rejected response pairs with the largest contribution contrasts, jointly capturing routing and preference behavior. Across automatic and human evaluations, CoCo yields more coherent, faithful, and specialized interpretations than router-based, score-based, and sparse autoencoder-based alternatives while maintaining competitive reward modeling accuracy. To the best of our knowledge, this is the first systematic study of interpretation methods for MoE reward models.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast",
+  "url": "https://arxiv.org/abs/2608.06400"
+}

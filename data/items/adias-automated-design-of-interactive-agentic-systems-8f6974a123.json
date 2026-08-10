@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-10T09:47:55.930098Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "adias-automated-design-of-interactive-agentic-systems-8f6974a123",
+  "maturity": "unknown",
+  "published_at": "2026-08-10T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.06410v1 Announce Type: new Abstract: Automated agent design improves agent harnesses through iterative revision, evaluation, and feedback summarization. Existing methods are largely candidate-centric: cross-round experience is organized around candidate agents, which leaves the repair progress implicit. This causes inefficient repair targeting, slow consolidation of partial progress, and propagation of ineffective interventions across rounds. Therefore, we formulate issue-centric agent optimization, in which repair progress is carried forward as an explicit persistent issue state to guide optimization, rather than re-derived from candidate history in each round. We instantiate the formulation in ADIAS, a framework for automated full-code agent design with two mechanisms. A persistent issue state maintains stable issue identities, lifecycle status, supporting evidence, and intervention-outcome histories. Issue-guided optimization uses this state to jointly propose repair targets and revision directions for subsequent focused full-code modification. Across five interactive benchmarks, ADIAS outperforms the strongest baseline by 25.2% on average and achieves consistent gains across four backbone models. Controlled ablations further show that removing persistent issue state or replacing issue-centric revision with candidate-centric policies leads to performance drops of up to 40.7%.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "ADIAS: Automated Design of Interactive Agentic Systems",
+  "url": "https://arxiv.org/abs/2608.06410"
+}

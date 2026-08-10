@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-10T09:47:55.930098Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "agentchaos-chaos-engineering-for-agent-systems-via-programmatic-fault-62a7ce9a97",
+  "maturity": "unknown",
+  "published_at": "2026-08-10T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.06790v1 Announce Type: new Abstract: Agent systems rely on LLM APIs for every response, but these APIs can return server errors, truncated responses, or corrupted content that propagates through downstream agents and causes task failure. Evaluating robustness under these faults is crucial for reliable deployment. Existing fault injection methods are offline, require source code modification, or cannot modify specific response fields. A comprehensive evaluation also requires a systematic fault taxonomy because different fault types affect downstream agents differently. We propose AgentChaos, a chaos engineering framework for controlled, runtime, non-intrusive LLM API fault injection. Since all agent systems access LLMs through the same HTTP interface, we inject faults at this shared layer without modifying source code. We define crash, omission, and value faults on content and tool call fields, intercept and modify LLM API responses at runtime, and verify whether each fault is triggered to filter untriggered tasks and avoid underestimating fault impact. Evaluations across agent systems, benchmarks, and backbone LLMs under 65 fault configurations show that all systems degrade under fault injection, with pass@1 dropping by up to 50 percentage points. The ranking is consistent across models, suggesting that robustness depends on system implementation rather than model capability. Existing fault diagnosis methods achieve below 53% accuracy on fault type and below 56% on fault step, leaving room for improvement. We further reveal practical findings for agent system developers.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AgentChaos: Chaos Engineering for Agent Systems via Programmatic Fault Injection",
+  "url": "https://arxiv.org/abs/2608.06790"
+}
