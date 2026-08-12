@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-12T09:31:28.922774Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "one-recipe-many-harnesses-what-self-evolution-encodes-across-languages-38e1213527",
+  "maturity": "unknown",
+  "published_at": "2026-08-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.10178v1 Announce Type: new Abstract: Self-evolving harnesses are closed-loop systems in which an agent inspects its own rollouts and edits its prompts, tools, and memory. They reliably improve coding agents in evaluations, but prior work reports aggregate gains rather than analyzing what the evolved artifacts encode. It therefore remains unclear whether they encode benchmark-specific adaptations, language-specific engineering knowledge, or compensation for limitations of the underlying model. We disentangle these factors by holding an evolution recipe fixed across a grid of eight programming languages (Multi-SWE-Bench) and three base models, and analyzing the resulting harnesses. The recipe routes every edit through a typed failure signal and records it as a falsifiable contract, making each modification attributable after evolution. Four findings emerge. (1)The loop improves held-out solve rates over both a minimal seed and the manually designed mini-SWE-agent scaffold in most cells, but with two null regions. (2)Gains compensate recoverable execution defects, where defect mass is near zero, and gain is near zero; which defect dominates is cell-specific. A harness closes the gap between what a policy can do and what it does. (3)Evolved harnesses share an abstract playbook across languages but instantiate it with almost disjoint language ecosystem machinery. (4)The shared core transfers and can be distilled into one universal harness, while an ecosystem margin resists both and requires native re-evolution. Together, these results recast the evolved harness as a legible compensation layer, shaped jointly by the language's engineering demands and the model's behavioral gaps, rather than an opaque benchmark-tuned scaffold.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "One Recipe, Many Harnesses: What Self-Evolution Encodes Across Languages and Models",
+  "url": "https://arxiv.org/abs/2608.10178"
+}

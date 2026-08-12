@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-12T09:31:28.922774Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-study-of-cursorrules-files-in-github-open-source-projects-66e9ca28dd",
+  "maturity": "unknown",
+  "published_at": "2026-08-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.10622v1 Announce Type: new Abstract: Prompts are the primary mechanism for communicating with AI agents, and they directly influence the quality and reliability of AI-generated code. As AI-assisted programming becomes widely adopted, modern tools increasingly combine dynamic conversational prompts with static configuration-like prompt files. Despite the growing focus on prompt engineering, prior research has primarily focused on conversational prompts, while prompt files remain understudied. To address this gap, we conduct an empirical study of configuration prompt files in Cursor, a widely used AI-assisted code editor. We collect and analyze over 12,110 .cursorrules files from 11,427 GitHub repositories to characterize their distribution, evolution, and maintenance. Complementing this, we perform qualitative analysis on a random sample of 65 prompt files and develop a 65-code codebook capturing how developers express programming intent, project context, engineering practices, and security considerations. Our results show that .cursorrules files emerged rapidly from mid-2024. Their adoption is concentrated in small-scale, low-activity, single-maintainer repositories, suggesting toy projects rather than professional development. The content of prompt files is dominated by guidance on code quality and engineering practices, project structure and configuration, and maintainability, while security-related content appears less frequently. Our analysis shows that there is a continuity of themes and topics between the now-legacy .cursorrules files and the current standard .mdc files.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Study of Cursorrules Files in GitHub Open Source Projects",
+  "url": "https://arxiv.org/abs/2608.10622"
+}

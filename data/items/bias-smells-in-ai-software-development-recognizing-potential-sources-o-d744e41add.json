@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-12T09:31:28.922774Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "bias-smells-in-ai-software-development-recognizing-potential-sources-o-d744e41add",
+  "maturity": "unknown",
+  "published_at": "2026-08-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.10248v1 Announce Type: new Abstract: Context: Fairness debt arises from AI development shortcomings that may lead to societal harms. While technical and social debt concern software design decisions and team dynamics, respectively, fairness debt captures the long-term consequences of development decisions that may reinforce bias and inequities in AI-based software systems. Despite growing attention to AI fairness, limited evidence exists on how practitioners recognize potential sources of fairness debt during development. Aim: This study investigates the indicators practitioners recognize as signaling potential sources of fairness debt in AI-based software projects. Method: We conducted an exploratory case study of four AI projects within one organization. Data were collected from 25 professionals through semi-structured interviews and open-ended questionnaires, complemented by observation of internal communication channels and project documentation, and analyzed using iterative qualitative coding, memoing, and constant comparison. Results: We identified six recurring indicators, termed bias smells: Context Oversimplification, Dataset Imbalance, Metrics Inadequacies, Ad hoc Testing, Individual Diversity Unawareness, and Homogeneous Team Composition. These smells span technical and human aspects of software development and signal conditions that may introduce or reinforce bias and contribute to fairness debt. Conclusion: Bias smells extend the software smell paradigm to fairness and provide a foundation for incorporating fairness into software quality assurance through observable indicators.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Bias Smells in AI Software Development: Recognizing Potential Sources of Fairness Debt",
+  "url": "https://arxiv.org/abs/2608.10248"
+}

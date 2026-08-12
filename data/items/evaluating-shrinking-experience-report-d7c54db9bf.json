@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-12T09:31:28.922774Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "evaluating-shrinking-experience-report-d7c54db9bf",
+  "maturity": "unknown",
+  "published_at": "2026-08-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.09935v1 Announce Type: cross Abstract: Property-based testing frameworks rely on shrinking to turn noisy random failures into counterexamples that developers can debug. Although bug-finding performance is routinely measured, shrinking itself is rarely evaluated quantitatively. We present an experience report on evaluating shrinking across three Haskell frameworks: QuickCheck, Hedgehog, and Falsify. The comparison spans four ETNA workloads and several generator families, including type-based, API-based, and correct-by-construction generators. We measure both effectiveness, using tree edit distance to a ground-truth minimum found by exhaustive search, and cost, using shrink time and time per unit of shrinking progress. Across these workloads, QuickCheck's structural shrinking is usually faster and remains competitive on final counterexample quality; integrated shrinking does not by itself guarantee a performance or effectiveness advantage. We discuss what these results imply for future evaluations and designs of shrinking algorithms.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Evaluating Shrinking (Experience Report)",
+  "url": "https://arxiv.org/abs/2608.09935"
+}

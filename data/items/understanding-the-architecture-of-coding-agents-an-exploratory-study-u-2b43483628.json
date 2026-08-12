@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-12T09:31:28.922774Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "understanding-the-architecture-of-coding-agents-an-exploratory-study-u-2b43483628",
+  "maturity": "unknown",
+  "published_at": "2026-08-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.10934v1 Announce Type: new Abstract: Coding agents have rapidly emerged as the primary interface for AI-assisted software development. However, despite their growing adoption, relatively little is known about their internal architecture, and no systematic architectural description comparable to those available for compilers or operating systems currently exists. This paper addresses this gap by documenting the main architectural components of coding agents, explaining their responsibilities, interactions, and execution flow. To support this effort, we also present Ark (Agent Research Kit), a minimal open-source coding agent designed for research and education that preserves the essential architectural mechanisms of modern coding agents while emphasizing simplicity and clarity. We also introduce ArkBench, a lightweight benchmark comprising ten representative software maintenance and evolution tasks. Using gpt-5.4-mini, Ark successfully solved 8 of the 10 tasks while requiring modest token consumption. Finally, we compare the architecture of Ark with those of state-of-the-art coding agents using a recently proposed architectural taxonomy. We hope that both Ark and ArkBench provide a practical foundation for teaching, research, and experimentation on coding agents.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Understanding the Architecture of Coding Agents: An Exploratory Study Using a Research Prototype",
+  "url": "https://arxiv.org/abs/2608.10934"
+}
