@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-13T09:33:22.518011Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-monolithic-to-modular-segment-level-automatic-prompt-optimization-5852d6b2b3",
+  "maturity": "unknown",
+  "published_at": "2026-08-13T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.11219v1 Announce Type: new Abstract: Automatic Prompt Optimization (APO) often rewrites prompts monolithically, which can improve one behavior while degrading others. We present SAPO, a segment-level APO method that decomposes prompts into role, context, tasks, and output format, then applies targeted improvements based on top-5 and bottom-5 examples. The optimization loop uses one LLM with static meta-prompts and structured outputs for segmentation, weakness analysis, and candidate generation. We describe a train/validation protocol and a two-stage generation process: (1) segment-level diagnosis and recommendation extraction, (2) candidate synthesis constrained by weak/strong segment signals. Using the evaluation setup across SQuADv2, TweetEval, XSUM, CommonGen, and GSM8K on GPT-3.5-Turbo and GPT-4o-mini, SAPO achieves the best average score against Zero-shot and strong APO baselines including APE, OPRO, EvoPrompt, GEPA, and StraGO.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From Monolithic to Modular: Segment-level Automatic Prompt Optimization",
+  "url": "https://arxiv.org/abs/2608.11219"
+}

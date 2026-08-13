@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-13T09:33:22.518011Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "testing-deep-learning-library-apis-via-cross-framework-differential-fu-33871395bb",
+  "maturity": "unknown",
+  "published_at": "2026-08-13T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.11886v1 Announce Type: new Abstract: Deep learning libraries underpin many safety- and reliability-critical applications, yet existing API-level testing techniques often rely on intra-library properties or CPU--GPU differential oracles and may miss defects that behave consistently across hardware backends. We present Xamt, a cross-framework differential fuzzing approach for deep learning library APIs. Xamt constructs and tests execution-validated groups of APIs intended to implement equivalent operations across seven libraries. It uses explicit API aliases and parameter-role normalization to construct candidate correspondences and validates them through pairwise execution and a group-level behavioral check on canonical ordinary inputs. The resulting groups are explored using variance-guided differential fuzzing with ordinary, boundary, and non-finite inputs. Crash and inconsistency oracles flag executions exhibiting abnormal termination or inconsistent outputs for subsequent reproduction and analysis. Across the seven libraries, Xamt constructs 676 execution-validated groups containing 2,563 matched APIs. Among these, Xamt identifies 72 independently reproduced discrepancy cases, including 4 crash cases and 68 output inconsistencies. Among the 72 developer reports, 25 have been confirmed, including 23 that have been fixed.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Testing Deep Learning Library APIs via Cross-Framework Differential Fuzzing",
+  "url": "https://arxiv.org/abs/2608.11886"
+}

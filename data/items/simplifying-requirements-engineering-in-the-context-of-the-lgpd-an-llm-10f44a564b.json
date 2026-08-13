@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-13T09:33:22.518011Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "simplifying-requirements-engineering-in-the-context-of-the-lgpd-an-llm-10f44a564b",
+  "maturity": "unknown",
+  "published_at": "2026-08-13T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.11454v1 Announce Type: new Abstract: Compliance with privacy legislation poses a complex challenge to Requirements Engineering (RE): translating legal norms into software requirements. In this context, this study investigates whether Large Language Models (LLMs) can simplify RE within the framework of the Brazilian General Data Protection Law (LGPD). The proposed approach utilizes current legislation to automatically generate User Stories and Acceptance Test Scenarios. The evaluation results demonstrated high performance, confirming the potential of LLMs to ensure regulatory compliance from the software's inception.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Simplifying Requirements Engineering in the Context of the LGPD: An LLM-Based Investigation",
+  "url": "https://arxiv.org/abs/2608.11454"
+}

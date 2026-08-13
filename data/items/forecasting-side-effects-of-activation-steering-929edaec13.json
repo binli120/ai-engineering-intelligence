@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-13T09:33:22.518011Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "forecasting-side-effects-of-activation-steering-929edaec13",
+  "maturity": "unknown",
+  "published_at": "2026-08-13T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.11227v1 Announce Type: new Abstract: Activation steering modifies a language model by adding a learned direction to its hidden activations, enabling targeted behavioral changes without retraining. While effective, steering often produces unintended side effects on other behaviors, making it difficult to deploy safely. We therefore ask: can these side effects be forecasted before steering is applied? We answer this question by constructing a cross-effect matrix over a taxonomy of 67 behaviors across three open-weight language models. We find that side effects are common, structured, and often asymmetric, revealing interactions that cannot be explained by existing similarity-based heuristics. Despite this complexity, we show that side effects are largely predictable before steering is performed. Their magnitude depends primarily on the target behavior, while their direction can be forecasted from the model's unsteered representations with substantially higher accuracy than simple baselines. Our results demonstrate that activation steering has systematic and forecastable side effects, enabling proactive safety auditing and more informed deployment of steering interventions.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Forecasting Side Effects of Activation Steering",
+  "url": "https://arxiv.org/abs/2608.11227"
+}

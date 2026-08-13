@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-13T09:33:22.518011Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "harnessing-llms-for-document-guided-fuzzing-of-python-libraries-e5fc7a3a8a",
+  "maturity": "unknown",
+  "published_at": "2026-08-13T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.11744v1 Announce Type: new Abstract: Python libraries underpin deep learning, scientific computing, data analysis, and computer vision, making their reliability critical to downstream applications. Testing their APIs requires inputs that satisfy both per-parameter constraints and dependencies among parameters. Existing approaches either leave such constraints implicit in generated programs or rely on library-specific parsing rules. This paper introduces VistaFuzz, a document-guided fuzzing technique that uses a locally served open-sourced LLM to extract parameter specifications from API documents and generate inputs that satisfy both parameter constraints and inter-parameter dependencies. We evaluate VistaFuzz on 7,718 APIs across twelve Python libraries. Inter-parameter relationships occur in 40.1\\% of tested APIs, and disabling their resolution reduces the valid generation rate on those APIs from above 95\\% to 31.6\\%--52.8\\%. VistaFuzz reports 74 issues, of which 43 have been confirmed by developers and 29 have been fixed.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Harnessing LLMs for Document-Guided Fuzzing of Python Libraries",
+  "url": "https://arxiv.org/abs/2608.11744"
+}
