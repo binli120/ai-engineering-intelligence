@@ -1,0 +1,17 @@
+{
+  "category": "learning_tools",
+  "collected_at": "2026-08-15T08:44:56.794231Z",
+  "engineering_impact": 90,
+  "evidence_quality": 90,
+  "id": "gemini-notebook-ai-research-tool-thinking-partner-0fb19977ae",
+  "maturity": "stable",
+  "published_at": null,
+  "source_id": "google_notebooklm",
+  "summary": "Meet Gemini Notebook, the AI research tool and thinking partner that can analyze your sources, turn complexity into clarity and transform your content.",
+  "tags": [
+    "learning-tools",
+    "documentation"
+  ],
+  "title": "Gemini Notebook | AI Research Tool & Thinking Partner",
+  "url": "https://notebook.google/"
+}

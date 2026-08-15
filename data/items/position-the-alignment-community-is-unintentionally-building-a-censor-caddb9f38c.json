@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-15T08:44:56.794231Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "position-the-alignment-community-is-unintentionally-building-a-censor-caddb9f38c",
+  "maturity": "unknown",
+  "published_at": "2026-08-15T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.12346v1 Announce Type: new Abstract: This position paper argues that modern AI alignment methods - originally designed to prevent harmful output - are dual-use technologies that may easily be misused by malicious actors for censorship and manipulation. By mapping current alignment techniques to the possibility and actual cases of misuse, we show that the quest for a \"perfectly aligned\" model inadvertently also provides malicious actors with an ever-improving tool for informational dominance. We need to discuss this dual-use potential now, as its risk is exacerbated by rapid user adoption of AI as information provider, economic power asymmetries, and a political landscape that increasingly shifts towards authoritarianism. We conclude by urging the community to consider the intentional misuse of AI alignment mechanisms and propose mitigation strategies to safeguard against this dual-use potential.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Position: The Alignment Community is Unintentionally Building a Censor's Toolkit",
+  "url": "https://arxiv.org/abs/2608.12346"
+}
