@@ -1,11 +1,11 @@
 {
   "category": "learning_tools",
-  "collected_at": "2026-08-09T09:02:05.834863Z",
+  "collected_at": "2026-08-17T09:00:07.782461Z",
   "engineering_impact": 70,
   "evidence_quality": 70,
   "id": "2504-09720-notebooklm-as-a-socratic-physics-tutor-design-and-prelimina-806291c3dc",
   "maturity": "unknown",
-  "published_at": "2025-10-14T01:02:28Z",
+  "published_at": "2026-08-11T23:10:01Z",
   "source_id": "arxiv_notebooklm_active_learning",
   "summary": "Abstract page for arXiv paper 2504.09720: NotebookLM as a Socratic physics tutor: Design and preliminary observations of a RAG-based tool",
   "tags": [

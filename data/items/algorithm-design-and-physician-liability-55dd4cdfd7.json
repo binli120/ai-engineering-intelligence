@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-17T09:00:07.782461Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "algorithm-design-and-physician-liability-55dd4cdfd7",
+  "maturity": "unknown",
+  "published_at": "2026-08-17T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.13618v1 Announce Type: new Abstract: A single clinical algorithm can deliver unequal accuracy across patient groups, and concern about such disparity has grown as artificial intelligence (AI) spreads through clinical decision-making. In response, a liability rule introduced in the United States holds healthcare providers responsible when their reliance on disparate algorithms contributes to erroneous clinical decisions. We examine how such liability considerations reshape (i) an AI firm's algorithm design decisions that drive group-specific accuracy and (ii) a physician's decisions to use AI in healthcare delivery. The AI firm designs an algorithm for two patient groups, and improving accuracy for the disadvantaged group is more costly. The physician (who remains the accountable decision-maker) then decides whether to consult AI, weighing the reduction in clinical uncertainty against expected liability exposure when AI errors disproportionately affect the disadvantaged group. We find the liability rule can induce disparate use of AI: the physician may reduce AI use overall and, over an intermediate range of liability, rely on AI less for disadvantaged patients. The effect is non-monotone. As liability increases, the physician's use of AI for disadvantaged patients first declines, then rises as the firm reallocates investment toward reducing disparity or switches to an equal-accuracy design. Mandating equal algorithmic accuracy across patient groups can then inadvertently harm both groups, because a uniform accuracy requirement distorts the firm's investment incentives and the physician's equilibrium AI-use decisions.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Algorithm Design and Physician Liability",
+  "url": "https://arxiv.org/abs/2608.13618"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-17T09:00:07.782461Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "ai-evaluation-should-work-with-humans-44a14d249d",
+  "maturity": "unknown",
+  "published_at": "2026-08-17T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.13577v1 Announce Type: new Abstract: This position paper argues that the dominant paradigm of AI evaluation (which focuses on superhuman autonomous performance and so implicitly targets the goal of replacing humans) is guiding AI development in the wrong direction. Instead, the AI community should pivot to evaluating the performance of human--AI teams. We argue that this collaborative shift will foster AI systems that act as true complements to human capabilities and therefore lead to far better societal outcomes than will the current process.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AI Evaluation Should Work With Humans",
+  "url": "https://arxiv.org/abs/2608.13577"
+}

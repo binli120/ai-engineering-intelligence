@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-17T09:00:07.782461Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "arc-fair-relative-advantage-comparison-in-open-ended-real-world-intera-5a6f9b9f66",
+  "maturity": "unknown",
+  "published_at": "2026-08-17T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.13622v1 Announce Type: new Abstract: Open-ended real-world interaction admits multiple valid behaviors: an agent may answer directly, ask for clarification, provide progress updates, or confirm before acting. This flexibility breaks a core assumption behind group-based RL: rollouts compared within a group are no longer guaranteed to be behaviorally comparable. As a result, reward-model preferences over interaction style can distort relative advantages and steer optimization toward reward-preferred behaviors rather than context-appropriate ones. We formalize this as a \\textit{reward fairness problem} and propose \\textbf{ARC} (Advantage Regularization via Conditioning), a training recipe that restores fairer relative comparison through strategy-conditioned rollout grouping, together with hybrid rewards and entropy regularization. We study ARC in our proposed \\inter, a novel paradigm for responsive, steerable, and execution-aware user-agent interaction that decouples user-visible communication from latent reasoning and tool use. \\inter\\ also provides the annotation and distillation pipeline for constructing \\inter-86K, our strategy-annotated training corpus for supervised and RL training. Empirically, ARC substantially strengthens the core $\\tau/\\tau^2$ tool-use benchmarks, while \\inter\\ reduces time-to-first-token from 4.91s to 1.27s relative to a think-style baseline. Together, these results suggest that a central bottleneck in open-ended interactive learning is not only how agents are rewarded, but whether their behaviors are compared fairly in the first place. The ARC implementation and \\inter-86K training data will be released.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "ARC: Fair Relative Advantage Comparison in Open-Ended Real-World Interaction",
+  "url": "https://arxiv.org/abs/2608.13622"
+}
