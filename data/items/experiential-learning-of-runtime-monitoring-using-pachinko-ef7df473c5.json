@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-19T08:54:07.459252Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "experiential-learning-of-runtime-monitoring-using-pachinko-ef7df473c5",
+  "maturity": "unknown",
+  "published_at": "2026-08-19T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.16898v1 Announce Type: cross Abstract: We present documentation of a classroom assignment that teaches runtime monitoring through a creative embedded systems build: an interactive Pachinko game. The assignment centers on a dual-core ESP32 workflow in which students write RTLola specifications for monitors, compile these monitors to C, and deploy them alongside sensor and actuator control logic. Pachinko game events are logged in real time and used to trigger sound, animation, and motor behavior according to formal temporal logic specifications. This work showcases how formal methods can be taught in a hands-on, project-based setting for learners in a creative and classroom-scale setting. We also discuss portability: the assignment template, hardware stack, code base, and assessment approach are designed and documented to be replicated in other embedded systems, creative computing, or makerspace-style courses. This assignment was given to the students of Creative Embedded Systems (COMS3930) at Barnard College.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Experiential Learning of Runtime Monitoring Using Pachinko",
+  "url": "https://arxiv.org/abs/2608.16898"
+}

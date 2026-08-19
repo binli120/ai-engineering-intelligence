@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-19T08:54:07.459252Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "sniptest-fuzzing-multi-level-code-slices-for-validating-vulnerabilitie-ef841aaa26",
+  "maturity": "unknown",
+  "published_at": "2026-08-19T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.17396v1 Announce Type: new Abstract: Modern software systems are increasingly complex, and static analysis tools are commonly used to identify potentially vulnerable code by issuing warnings. However, these warnings often require manual inspection to confirm whether the reported issues are real, making the process time-consuming and error-prone. Directed fuzzing has emerged as a powerful automated technique to validate the warnings. However, applying it to the entire project in response to each warning is computationally infeasible, often requiring days of execution to achieve only incremental improvements in code coverage. We present SNIPTEST, an execution-based warning triage framework that generates and fuzzes compiled code slices centered around static-analysis warnings. Rather than proving exploitability in the full program, SNIPTEST provides evidence about how a warning behaves under progressively expanded sliced execution contexts. It employs a layer-by-layer slicing strategy, incrementally expanding context around the target location to validate potential vulnerabilities with increasing precision. We evaluate SNIPTEST on a benchmark of 97 true vulnerabilities and 97 false alarms across three real-world projects. SNIPTEST produces Possible True Positive evidence for 53 of 97 confirmed vulnerabilities (54.6%) by triggering the corresponding bug oracle consistently across all three analyzed slice levels, while the remaining cases are unreachable. Particularly, in 40.2% of these cases, it exploits the vulnerability along the observed execution path, matching the top three stack frames. On the 97 confirmed false alarms, SNIPTEST produces Possible False Positive evidence for 54 cases (55.6%) by reaching the warning without triggering the bug oracle, but misclassifies 28 cases (28.8%),and the remaining cases are unreached. Finally, we demonstrate the practical relevance of SNIPTEST by identifying CVE-2025-11964.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SNIPTEST: Fuzzing Multi-Level Code Slices for Validating Vulnerabilities",
+  "url": "https://arxiv.org/abs/2608.17396"
+}

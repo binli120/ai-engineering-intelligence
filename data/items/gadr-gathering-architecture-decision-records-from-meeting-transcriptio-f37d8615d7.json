@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-19T08:54:07.459252Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "gadr-gathering-architecture-decision-records-from-meeting-transcriptio-f37d8615d7",
+  "maturity": "unknown",
+  "published_at": "2026-08-19T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.17694v1 Announce Type: new Abstract: Existing LLM-based approaches to Architecture Decision Record (ADR) generation share a critical and largely unexamined assumption: that input is already reasonably structured. In practice, architectural decisions emerge from informal, noisy meetings where choices are implicit, fragmented, and entangled with off-topic dialogue, precisely the conditions under which single-pass prompting degrades. This paper presents GADR, a multi-agent, self-correcting workflow that extracts architectural decisions from raw meeting transcriptions and generates Nygard-formatted ADR drafts. A feasibility study comprising five real project meeting transcripts, expert review by four senior architects, and evaluation by fifteen students provides initial evidence that the agentic workflow captures most expert-identified decisions and produces drafts participants found clear and useful, outperforming zero-shot and few-shot baselines in stability and structural adherence. The study also addresses the underexplored trade-off of RAG-based enrichment improving ADR depth while simultaneously risking transcript-unfaithful content, raising open questions about traceability in automated architectural documentation that we believe is worth the community's attention.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "GADR: Gathering Architecture Decision Records from Meeting Transcriptions",
+  "url": "https://arxiv.org/abs/2608.17694"
+}

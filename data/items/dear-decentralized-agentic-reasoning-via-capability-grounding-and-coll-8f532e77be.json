@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-19T08:54:07.459252Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "dear-decentralized-agentic-reasoning-via-capability-grounding-and-coll-8f532e77be",
+  "maturity": "unknown",
+  "published_at": "2026-08-19T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.17282v1 Announce Type: new Abstract: Existing agentic reasoning systems typically rely on centralized protocols. This design introduces routing bottlenecks and static role allocations that often fail when handling complex multimodal queries. We propose DeAR (Decentralized Agentic Reasoning), a framework that shifts from central control to autonomous peer-to-peer collaboration. DeAR is built on three mechanisms: (1) decentralized capability grounding for query-dependent agent specialization, (2) thought map navigation for targeted peer interactions, and (3) topology update for adaptive error correction. Evaluations across 9 diverse multimodal reasoning and text-based QA benchmarks indicate that DeAR consistently outperforms recent baseline methods, validating that decentralized and adaptive collaboration among agents enhances accuracy in knowledge-intensive reasoning tasks. The source code will be available at https://open_upon_acceptance.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "DeAR: Decentralized Agentic Reasoning via Capability Grounding and Collaborative Thought Navigation",
+  "url": "https://arxiv.org/abs/2608.17282"
+}
