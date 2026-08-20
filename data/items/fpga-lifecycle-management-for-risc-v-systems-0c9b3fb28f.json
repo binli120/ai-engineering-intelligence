@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-20T08:56:37.884140Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "fpga-lifecycle-management-for-risc-v-systems-0c9b3fb28f",
+  "maturity": "unknown",
+  "published_at": "2026-08-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.18156v1 Announce Type: cross Abstract: FPGA lifecycle management remains tied to proprietary toolchains and host architectures, leaving RISC-V without a vendor-neutral model for scalable bitstream deployment. A host-agnostic control-plane architecture is presented that shifts lifecycle management to the operating-system layer by leveraging standard Linux capabilities, thereby decoupling deployment from specific ISAs and vendor stacks. This enables Linux-capable RISC-V processors to serve as control hosts in heterogeneous FPGA systems. Prototyped on a Zynq-7000 SoC and generalizable to RISC-V platforms, the architecture provides a portable foundation for fleet-scale FPGA management.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "FPGA Lifecycle Management for RISC-V Systems",
+  "url": "https://arxiv.org/abs/2608.18156"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-20T08:56:37.884140Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "contract-aware-rescue-of-a-drifted-isabelle-development-the-double-tan-881e33cf4f",
+  "maturity": "unknown",
+  "published_at": "2026-08-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.18822v1 Announce Type: new Abstract: Large language models can propose proofs for interactive theorem provers, but a successful build does not show the surrounding verification task was preserved. We study this problem in an Isabelle development of a sampled-data double-tank controller. The work began with nine theories and ten unfinished obligations, grew to a 16-theory build without sorry, oops, added axiomatisation, or oracle use, and accumulated 23 stable and 36 broken proof states. A retrospective audit found material changes in 16 of the 100 original declarations, including a weakened end-to-end assurance theorem that assumed three of the four requirements in its conclusion. We used CAPRI, a contract-aware proof-repair tool, to govern a reconstruction by combining Isabelle acceptance with an independent check of repository changes against machine-readable edit contracts. The reconstruction discharged all ten scoped obligations within the original nine-theory structure. A secondary replay by a co-author reproduced the R10 build, contract checks, control tests, and principal audit findings; independent replication remains future work. Operational end-to-end verification remains incomplete: we still need to connect operational executions to the reconstructed quantitative trace contract, a task requiring an extended contract.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Contract-Aware Rescue of a Drifted Isabelle Development: The Double-Tank Case Study",
+  "url": "https://arxiv.org/abs/2608.18822"
+}

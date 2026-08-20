@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-20T08:56:37.884140Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "position-multi-agent-systems-should-prioritize-concurrency-control-f2dcc9b2d2",
+  "maturity": "unknown",
+  "published_at": "2026-08-20T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.18092v1 Announce Type: new Abstract: LLM-based multi-agent systems (MAS) promise scalable collaboration, yet adding agents often reduces reliability. This position paper argues that many MAS failures are fundamentally concurrency control problems: agents concurrently read and write shared state, and long LLM inference windows amplify the risk of stale reads, lost updates, and inconsistent outcomes. Failure modes commonly attributed to coordination or communication breakdowns can be mapped directly onto classical concurrency anomalies. We contend that MAS frameworks should address these failures through explicit concurrency control mechanisms: conflict detection, isolation guarantees, and structured access to shared resources. Concurrency control should be a first-class design concern, not an afterthought.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+  "url": "https://arxiv.org/abs/2608.18092"
+}

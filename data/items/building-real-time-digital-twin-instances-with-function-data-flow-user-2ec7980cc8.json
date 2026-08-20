@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-20T08:56:37.884140Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "building-real-time-digital-twin-instances-with-function-data-flow-user-2ec7980cc8",
+  "maturity": "unknown",
+  "published_at": "2026-08-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.18480v1 Announce Type: new Abstract: Digital twins (DTs) increasingly leverage artificial intelligence (AI) and machine learning (ML) pipelines, both to build real-time DTs from high-fidelity simulations and to instantiate them with historical data. However, engineering these pipelines remains largely ad-hoc: pipelines are hard to specify, validate, and reuse, with scarce dedicated tooling. Function+Data Flow (FDF) addresses this by defining a visual domain-specific language (DSL) that represents functions (ML models) explicitly, enabling their composition and reuse. We implemented FDF in DesCartes Builder, an integrated modeling environment supporting FDF-based DT synthesis and validation. In this paper, we report on an empirical user study evaluating whether FDF and DesCartes Builder can make AI-based DT development more accessible and reliable. Participants implemented a representative real-time DT prototype within DesCartes Builder, and we measured perceived usability and feature adequacy through quantitative and qualitative measures. Our results indicate that DesCartes Builder and FDF achieve a good level of usability across a broad range of potential users, and particularly for the intended audience of domain experts. The study additionally surfaces concrete strengths and areas for improvement of both the tool and the underlying FDF framework. Informed by these findings, we propose H-FDF, a Hierarchical extension of FDF supporting iterative and modular pipelines, enabling the formal specification of more complex DT pipelines such as dual training. Our findings suggest that integrated, model-driven platforms are a promising direction to transform AI-based DT engineering into a disciplined modeling practice.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Building real-time digital twin instances with Function+Data Flow: user evaluation and extension for iterative pipelines",
+  "url": "https://arxiv.org/abs/2608.18480"
+}

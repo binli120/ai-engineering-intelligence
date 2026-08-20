@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-20T08:56:37.884140Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "odineval-a-reproducible-benchmark-for-llm-based-program-repair-in-the-1ed764dfdf",
+  "maturity": "unknown",
+  "published_at": "2026-08-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.18595v1 Announce Type: new Abstract: Repository-level repair benchmarks still center on a few mainstream languages, leaving systems languages such as Odin largely untested. We present OdinEval, a reproducible benchmark built from documented defects in public Odin repositories. Each instance binds an issue to base and fix commits, a gold patch, an issue-specific regression test, a historical toolchain, and execution records. Admission requires the test to fail on the base revision and pass after the gold fix. When no usable developer test exists, a black-box test is reviewed independently by three instances of the same model, executed in both historical states, and revised from recorded feedback under a versioned Test Writing Skill. We evaluate six language models on 168 filtered instances under one shared protocol. Kimi-K3 records the highest Resolved score at 66.7%, while Qwen3.8-Max has the highest Repro score at 96.4%. The release includes frozen data, source archives, containers, validators, model patches, and audit manifests.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "OdinEval: A Reproducible Benchmark for LLM-Based Program Repair in the Odin Programming Language",
+  "url": "https://arxiv.org/abs/2608.18595"
+}

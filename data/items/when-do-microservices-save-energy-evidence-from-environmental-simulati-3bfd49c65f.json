@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-20T08:56:37.884140Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "when-do-microservices-save-energy-evidence-from-environmental-simulati-3bfd49c65f",
+  "maturity": "unknown",
+  "published_at": "2026-08-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.18376v1 Announce Type: cross Abstract: Environmental simulation models support scenario analysis, calibration, and decision-making, but repeated execution can incur significant energy costs. Microservices offer modularity and scalability, yet their low-carbon impact remains unclear because decomposition introduces orchestration, communication, persistence, and idle-service overheads. This paper evaluates four environmental models as containerised microservice workflows, comparing monolithic execution with polling-based and event-driven orchestration. Results show that microservices increase energy consumption for smaller or tightly coupled models, where coordination overhead dominates. For a larger workflow, event-driven orchestration reduces energy use despite longer runtime, while selective downstream re-execution achieves a 41% reduction during repeated parameter exploration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "When Do Microservices Save Energy? Evidence from Environmental Simulation Workflows",
+  "url": "https://arxiv.org/abs/2608.18376"
+}

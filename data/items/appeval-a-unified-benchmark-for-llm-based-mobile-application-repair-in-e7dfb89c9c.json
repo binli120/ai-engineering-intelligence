@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-20T08:56:37.884140Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "appeval-a-unified-benchmark-for-llm-based-mobile-application-repair-in-e7dfb89c9c",
+  "maturity": "unknown",
+  "published_at": "2026-08-20T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.18588v1 Announce Type: new Abstract: Repository-level LLM agents are typically evaluated on projects whose tests run on the build host. It remains unclear whether their repairs survive the mobile build-install-launch-test boundary, where a missing SDK, offline device, or pre-assertion crash can be mistaken for a program failure. We present AppEval, a benchmark and native-toolchain evaluation framework for mobile application repair across HarmonyOS/ArkTS, iOS/Swift, and Android/Kotlin. Each task separates a hidden behavior test from the reference production fix and is accepted only when the same installed-app target reaches an assertion failure on the defective revision and passes after the fix; infrastructure failures remain a distinct outcome. A common schema maps this contract to each platform's build system, runtime, and test runner. The audited Android partition contains 200 accepted instrumentation tasks from 24 independently buildable repositories. On these tasks, five agents achieve Pass@1 between 22.00% and 90.50%, a 68.50-percentage-point spread under the same dynamic oracle. These results show that mobile repair performance depends strongly on the evaluated agent while demonstrating why runtime-aware acceptance is necessary for meaningful comparison. The quantitative findings in this paper are Android-specific; audited iOS and HarmonyOS results are required before drawing cross-platform generalization conclusions.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AppEval: A Unified Benchmark for LLM-Based Mobile Application Repair in ArkTS, Swift, and Kotlin",
+  "url": "https://arxiv.org/abs/2608.18588"
+}
