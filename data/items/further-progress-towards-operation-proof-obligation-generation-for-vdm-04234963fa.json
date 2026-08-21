@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-21T08:57:32.781862Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "further-progress-towards-operation-proof-obligation-generation-for-vdm-04234963fa",
+  "maturity": "unknown",
+  "published_at": "2026-08-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.19848v1 Announce Type: new Abstract: The VDM formalism can ensure that models are internally consistent. Potential inconsistencies are highlighted by assertions called proof obligations. This paper is an update to the work described in [1], regarding proof obligation generation for VDM operations. We present the latest work which improves the approach to loop invariants, adds loop variants, improves proof obligations for operation calls, including implicitly declared operations and specification statements, and adds recursive measures for operations. The new features are illustrated with examples.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Further Progress Towards Operation Proof Obligation Generation for VDM",
+  "url": "https://arxiv.org/abs/2608.19848"
+}

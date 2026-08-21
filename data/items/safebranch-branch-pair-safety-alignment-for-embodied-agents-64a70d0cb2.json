@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-21T08:57:32.781862Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "safebranch-branch-pair-safety-alignment-for-embodied-agents-64a70d0cb2",
+  "maturity": "unknown",
+  "published_at": "2026-08-21T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.19729v1 Announce Type: new Abstract: Vision-language-model-based embodied agents can complete instructed tasks but often violate safety constraints in the process, a problem recently framed as interactive safety. Training such agents to act safely is difficult, since safety and task success are distinct objectives, and safety arises only at a small number of safety-critical steps within a trajectory. Standard supervision is insufficient: imitating safe trajectories teaches behavior without explaining why it is safe, and contrasting arbitrary safe and unsafe trajectories mixes the safety signal with unrelated differences. We propose SafeBranch, a framework that aligns an embodied actor on safety through branch pairs constructed from the actor's own unsafe rollouts via environment rollback. SafeBranch rolls each unsafe rollout back to the safety-critical step that caused the violation, queries the actor for a safe alternative, and pairs the original action with the alternative so that the two branches differ only at that step. The trained actor acts safely at deployment with no critic in the loop. On IS-Bench, SafetyALFRED, and out-of-distribution variants with unseen tasks and objects, it handles safety reliably without sacrificing task success, achieving roughly ten times more safe successes than the untrained baseline on the unseen-object variant.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SafeBranch: Branch-Pair Safety Alignment for Embodied Agents",
+  "url": "https://arxiv.org/abs/2608.19729"
+}

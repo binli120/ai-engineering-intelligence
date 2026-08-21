@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-21T08:57:32.781862Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "trace-based-execution-level-observability-of-vdm-sl-specifications-93dbc0ed64",
+  "maturity": "unknown",
+  "published_at": "2026-08-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.19510v1 Announce Type: new Abstract: VDM has been pursuing rigorous verification through mathematical theorem proving and software testing via simulated execution. Animation through an interpreter enables validation of the specification to ensure it meets the required functionality. Step-by-step execution in a debugger also allows the user to follow the internal behavior of operations. In this paper, we propose the recording and utilization of execution traces of assignments, operation calls, and return statements to make the internal behavior of operations persistent and analyzable as state-based models. The data model of events in execution traces, its implementation in ViennaTalk, and its application to visualization will be introduced.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Trace-Based Execution-Level Observability of VDM-SL Specifications",
+  "url": "https://arxiv.org/abs/2608.19510"
+}

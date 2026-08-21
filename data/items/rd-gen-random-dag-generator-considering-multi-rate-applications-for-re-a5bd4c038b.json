@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-21T08:57:32.781862Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "rd-gen-random-dag-generator-considering-multi-rate-applications-for-re-a5bd4c038b",
+  "maturity": "unknown",
+  "published_at": "2026-08-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.19460v1 Announce Type: new Abstract: Real-time systems have various requirements such as the deadline and resource constraints. In addition, real-time systems are becoming larger and more complex, and studies on performance analysis and efficient scheduling algorithms are becoming increasingly important. Directed acyclic graph (DAG) models, which can express task dependencies and parallelism, are used for such studies. Random DAG sets are used to demonstrate the effectiveness and objectivity of methods proposed for real-time systems. However, there is no random DAG generation tool available that can generate a DAG set that considers the latest multi-rate applications. Therefore, researchers need to generate random DAG sets on their own, leading to additional effort and reduced reliability and reproducibility. To solve this problem, we propose a random DAG generator considering multi-rate applications for reproducible scheduling evaluation (RD-Gen). RD-Gen also enables batch generation of random DAG sets with different parameters. Case studies are used to demonstrate that RD-Gen can manage various problem settings and DAG study requirements.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "RD-Gen: Random DAG Generator Considering Multi-rate Applications for Reproducible Scheduling Evaluation",
+  "url": "https://arxiv.org/abs/2608.19460"
+}

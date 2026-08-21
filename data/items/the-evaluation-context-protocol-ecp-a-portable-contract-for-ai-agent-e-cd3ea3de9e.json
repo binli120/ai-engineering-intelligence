@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-21T08:57:32.781862Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-evaluation-context-protocol-ecp-a-portable-contract-for-ai-agent-e-cd3ea3de9e",
+  "maturity": "unknown",
+  "published_at": "2026-08-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.19263v1 Announce Type: new Abstract: The evolution of artificial intelligence has necessitated a fundamental shift from evaluating isolated Large Language Models (LLMs) to assessing autonomous agentic architectures. This paper explores the critical methodologies for evaluating AI agents and the essential role of advanced observability infrastructure. We analyze the architectural components of agents and identify the severe limitations of current evaluation paradigms, including benchmark exploitation, the \"confidently wrong\" phenomenon, and the discrepancy between theoretical capability and operational reliability. To begin addressing the fragmentation in current evaluation infrastructure, this paper proposes the Evaluation Context Protocol (ECP), an early-stage, vendor-neutral framework intended to act as a portable evaluation contract layer for agentic systems. In its current form ECP defines a small JSON-RPC interface over which an agent exposes its user-visible output, the tool calls it made, and evaluator-safe audit context, and against which programmatic checks can be run uniformly across frameworks and continuous integration systems. We describe an open-source reference implementation that includes adapters for LangChain, LlamaIndex, CrewAI, and PydanticAI, and we situate the design against failure modes documented in the recent literature. ECP is presented as work in progress rather than a finished standard: the evaluation surface, method set, and grader families are all expected to change as the protocol is exercised against more systems, and the empirical validation required to justify adoption is outlined as future work.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Evaluation Context Protocol (ECP): A Portable Contract for AI Agent Evaluation",
+  "url": "https://arxiv.org/abs/2608.19263"
+}
