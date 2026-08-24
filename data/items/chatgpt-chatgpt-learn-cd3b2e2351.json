@@ -1,11 +1,11 @@
 {
   "category": "ai_coding",
-  "collected_at": "2026-08-23T08:48:06.190441Z",
+  "collected_at": "2026-08-24T09:04:01.976792Z",
   "engineering_impact": 100,
   "evidence_quality": 90,
   "id": "chatgpt-chatgpt-learn-cd3b2e2351",
   "maturity": "stable",
-  "published_at": "2026-08-22T05:37:45Z",
+  "published_at": "2026-08-24T05:17:14Z",
   "source_id": "openai_codex_docs",
   "summary": "Use ChatGPT for ambitious work and software development",
   "tags": [

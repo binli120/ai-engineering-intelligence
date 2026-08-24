@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-24T09:04:01.976792Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "environmental-slow-ai-design-principles-for-generative-systems-b2e3c4f0f2",
+  "maturity": "unknown",
+  "published_at": "2026-08-24T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.20398v1 Announce Type: new Abstract: Generative AI (genAI) systems produce cultural artefacts at scale, but they also reflect embedded cultural values through their design. Once identified, these values become open to deliberate reshaping. This position paper examines the maximalist values of current generative AI through an environmental humanities tradition and proposes design principles in which environmental sustainability serves as the core value instead. The principles are developed under the umbrella of Slow AI, a term that already circulates across several distinct research and practice programs. Five design principles are articulated (restraint, sufficiency, selectivity over retention, material visibility, and friction as affordance), each of them illustrated against the current design of widely deployed systems. Each principle operates at two levels: a design implementation, and an interpretive layer at which users and developers are prompted toward reflective engagement with the system. Together these principles extend human agency by restoring decisions that frictionless defaults have silently removed and do so by building interpretive reflection into design.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Environmental Slow AI: Design Principles for Generative Systems",
+  "url": "https://arxiv.org/abs/2608.20398"
+}

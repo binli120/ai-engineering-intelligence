@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-24T09:04:01.976792Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-substitution-escrow-threshold-when-compatible-with-becomes-safe-en-8cf759091b",
+  "maturity": "unknown",
+  "published_at": "2026-08-24T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.21221v1 Announce Type: new Abstract: Enterprise infrastructure buyers routinely evaluate compatibility claims--\"S3-compatible,\" \"PostgreSQL-compatible,\" \"OpenAI compatible\"--as proxies for future substitution options. Yet most compatibility claims do not escrow the substitution path they imply. This paper introduces the Substitution Escrow Threshold, a five-condition framework that determines when a compatibility claim genuinely reduces institutional risk versus merely reducing first-integration cost. The five conditions--boundary closure, executable conformance, custody independence, state and operations reversibility, and extension quarantine--are applied to five infrastructure cases (OCI, Kubernetes, OpenTelemetry, S3, PostgreSQL) that populate five distinct outcome cells. The framework produces actionable diagnostics for enterprise architects, platform engineers, procurement teams, and investors evaluating compatibility-dependent infrastructure decisions, and identifies AI infrastructure as the framework's most urgent next application.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Substitution Escrow Threshold: When \"Compatible With\" Becomes Safe Enough to Buy",
+  "url": "https://arxiv.org/abs/2608.21221"
+}

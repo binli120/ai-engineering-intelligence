@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-24T09:04:01.976792Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "truth-lies-deep-countering-semantic-camouflage-via-latent-intent-verif-00016fc513",
+  "maturity": "unknown",
+  "published_at": "2026-08-24T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.20378v1 Announce Type: new Abstract: Safety alignment in Large Language Models (LLMs) is often superficial, relying on refusal mechanisms that trigger only at the final stages of generation without erasing the foundational knowledge of harmful concepts acquired during pretraining. This study demonstrates that this architectural disconnect leaves models vulnerable to Semantic Camouflage -- adversarial attacks that wrap harmful intent in benign narrative contexts (e.g., creative writing), effectively bypassing standard input and output guardrails. By analyzing the latent activation trajectories of three distinct Small Language Model (SLM) families (Phi-3, Qwen2.5, and Gemma-2b) under adversarial stress, this research identifies a universal ``Intent Horizon'' -- a critical depth (typically 15--20\\% of total layers) where the model's distinct, pre-trained representation of harmful intent collapses as it contextualizes the query into a ``safe'' narrative. Results indicate that while late-layer representations of camouflaged attacks are mathematically indistinguishable from safe queries (Detection Rate $< 20\\%$), early-layer representations retain a distinct, detectable ``harm signature.'' Leveraging this insight, this paper proposes Latent Intent Verification (LIV), a lightweight probing defense. Experiments on the PKU-SafeRLHF dataset demonstrate that LIV outperforms standard guardrails by a margin of 20--50\\% across all tested architectures, effectively neutralizing zero-day semantic attacks without requiring model retraining.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Truth Lies Deep: Countering Semantic Camouflage via Latent Intent Verification",
+  "url": "https://arxiv.org/abs/2608.20378"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-24T09:04:01.976792Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "on-the-time-and-frequency-domain-representations-of-signals-for-cps-sp-f61590eea4",
+  "maturity": "unknown",
+  "published_at": "2026-08-24T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.21167v1 Announce Type: new Abstract: Specification languages are instrumental to the Verification \\& Validation of Cyber-Physical Systems (CPSs). Most state-of-the-art specification languages use the time-domain representation of signals, which is not always suitable for describing signal shapes and dynamic behaviours. Instead, fields like control and robotics use the frequency-domain representation to characterise these behaviours. Time-frequency representations combine the capabilities of both domains. We investigate the use of time-frequency representations to specify CPS requirements. We analyse existing taxonomies of CPS requirements to identify which requirement classes can benefit from time-frequency representations. We derive the desiderata for a specification language that uses time-frequency representations and propose Signal-Spectrum Temporal Logic (S2TL), a language enabling assertions over frequency intervals and relations between frequency components. We operationalise the S2TL semantics for monitoring CPS traces, and implement a monitor. We define specification templates for the identified requirement classes and compare time- and time-frequency-domain formulations in terms of applicability, expression fidelity, and noise tolerance of monitoring. We observe that, while time-domain specifications are applicable only to input traces containing step-like changes or using constant interpolation, time-frequency specifications extend their evaluation to traces generated through linear interpolation, and improve tolerance to offset and high-frequency noise, while achieving comparable fidelity to the intended system properties.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "On the Time and Frequency Domain Representations of Signals for CPS Specification",
+  "url": "https://arxiv.org/abs/2608.21167"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-24T09:04:01.976792Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "spike-killer-evidence-gated-llm-assistance-for-safe-performance-diagno-699fd95a57",
+  "maturity": "unknown",
+  "published_at": "2026-08-24T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.21069v1 Announce Type: new Abstract: LLM-assisted agents can synthesize system evidence, propose configuration changes, and automate diagnostic tasks, but their flexibility makes an imprecise action or an intrusive collector an operational risk. We present Spike-Killer, a human-approved workflow for diagnosing frame-time complaints on one real Windows workstation. The workflow treats each action as an evidence-gated transaction: it records the exact target state, classifies risk, preserves a snapshot, verifies a postcondition, and retains failed measurements as first-class evidence. This experience paper reports a completed same-day study with Counter-Strike 2 as a demanding target application. The evidence bundle contains preserved state snapshots, exploratory microbenchmarks, a ten-run same-state repeatability probe, live telemetry, a repaired over-broad registry action, incompatible presentation-capture attempts, an invalid local replay, and a system-level tracing replacement. Windows Performance Recorder produced two CS2 local-Bot GPU traces of 90.69 and 85.85 seconds; both were attributed to cs2.exe, exposed DxgKrnl Present metadata, and had zero lost ETW buffers or events. These results qualify trace integrity, not performance: the study reports no frame intervals, P99 estimate, or intervention effect. The contribution is an auditable, human-in-the-loop pattern for trustworthy agent assistance on a real workstation, including explicit stop conditions when evidence is insufficient.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Spike-Killer: Evidence-Gated LLM Assistance for Safe Performance Diagnosis on a Real Windows Workstation",
+  "url": "https://arxiv.org/abs/2608.21069"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-24T09:04:01.976792Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "toward-understanding-operating-system-defects-a97fdbd518",
+  "maturity": "unknown",
+  "published_at": "2026-08-24T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.20643v1 Announce Type: new Abstract: Operating systems (OS) serve as the foundation for all other software systems, and thus defects in OSes can lead to severe conquences, such as system crashes and data corruption, affecting billions of users. This broad impact underscores the necessity and importance of ensuring OS quality. Understanding the characteristics of OS defects is a fundamental step in this quality assurance task, as it facilitates the design of effective defect detection and debugging approaches. In this work, we conduct a large-scale study of 1,500 defects from three distinct and representative operating systems (Android, Linux, and HarmonyOS) spanning both mobile and desktop environments. To the best of our knowledge, this is the largest study of its kind in this domain. By analyzing the distribution of OS defects across multiple classification dimensions, including the OS layer where defects occur, the functions they affect, how they are triggered, their severity, and the code elements involved in their repair, as well as performing joint analysis between dimensions and cross-OS similarity comparisons, we summarize several major findings that contribute to a comprehensive understanding of OS defects across systems. Based on these findings, we provide a series of actionable implications for better OS defect detection and debugging, offering guidelines for future research aimed at improving OS quality assurance.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Toward Understanding Operating System Defects",
+  "url": "https://arxiv.org/abs/2608.20643"
+}
