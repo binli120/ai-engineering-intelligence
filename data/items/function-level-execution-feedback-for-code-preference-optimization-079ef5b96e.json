@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "function-level-execution-feedback-for-code-preference-optimization-079ef5b96e",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.23632v1 Announce Type: new Abstract: Process supervision has improved mathematical reasoning, where intermediate steps are naturally expressed as chains of thought. In code generation, however, process supervision remains underexplored because there is no standard notion of a step. Supervision can target lines, reasoning traces, or program states, making it unclear what to label and optimize. We propose STEP-KTODER, a framework for code preference optimization that defines steps as module-level functions in decomposed multi-function programs and assigns binary correctness labels via automatically generated unit tests. Our method provides a code-specific instantiation of stepwise KTO, combining function-level process supervision with outcome-level feedback on the full program. We evaluate on HumanEval(+), MBPP(+), BigCodeBench, and LiveCodeBench, showing that STEP-KTODER improves over outcome-only KTO and DPO. Further analysis shows that execution-based labels are essential: LLM-as-a-judge annotations systematically over-predict function failures, corrupt positive step labels, and degrade downstream preference optimization. Code is available at: https://github.com/inechnech/STEP-KTODER.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Function-Level Execution Feedback for Code Preference Optimization",
+  "url": "https://arxiv.org/abs/2608.23632"
+}

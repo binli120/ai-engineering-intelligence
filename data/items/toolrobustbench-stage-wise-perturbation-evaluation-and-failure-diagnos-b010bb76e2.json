@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "toolrobustbench-stage-wise-perturbation-evaluation-and-failure-diagnos-b010bb76e2",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.23635v1 Announce Type: new Abstract: Large language models (LLMs) rely on tool calling as a fundamental agent capability, enabling them to invoke external systems and complete tasks beyond text generation. However, clean end-to-end (E2E) success cannot identify where a tool-use failure originates or how it propagates through a call. We introduce ToolRobustBench, a stage-wise diagnostic benchmark for tool-calling agents, where a tool-calling agent is an LLM system that selects a tool, supplies structured arguments, and interprets its returned feedback. ToolRobustBench aligns four perturbation families with the tool-use pipeline: tool-interface, user-intent, tool-output/observation, and runtime-environment perturbations. It attributes failures to tool selection, schema grounding, argument binding, tool-output/runtime-feedback handling, and E2E task success. Experiments on 15,456 single-family instances across 7 models, 16 sampled local tools, 4 perturbation families, and 14 subtypes show high but non-uniform clean performance and substantial robustness degradation, with tool-output/observation perturbation the dominant bottleneck. Mixed-family experiments reveal non-additive failure patterns that are not explained by isolated single-family results. Thus, ToolRobustBench provides a deterministic and cascade-aware benchmark for diagnosing robustness beyond clean tool-calling accuracy;",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents",
+  "url": "https://arxiv.org/abs/2608.23635"
+}

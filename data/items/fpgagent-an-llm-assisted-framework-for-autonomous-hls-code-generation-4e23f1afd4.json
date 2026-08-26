@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "fpgagent-an-llm-assisted-framework-for-autonomous-hls-code-generation-4e23f1afd4",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.23630v1 Announce Type: new Abstract: Large language models (LLMs) have shown substantial promise for high-level synthesis (HLS) code generation, but most existing approaches validate only simulation or synthesis results. Because of timing and place-and-route constraints, \\emph{HLS code that passes simulation and synthesis may still fail to produce deployable, runnable designs on real FPGA platforms}. Moreover, the lack of public benchmarks has limited many evaluations to small, self-curated test suites. We propose FPGAgent, a multi-agent framework tailored to real FPGA environments for autonomous HLS coding with end-to-end executability validation. To the best of our knowledge, FPGAgent is \\emph{the first task-specification-to-executable HLS generation framework experimentally validated on a well-established benchmark}. Given a natural-language task specification, FPGAgent injects HLS-specific knowledge and employs evolutionary search to iteratively derive reliable HLS kernel implementations. It then generates a C++ validation program to verify functional correctness, diagnoses potential defects, and guides targeted repairs. Finally, it synthesizes host code for compilation and board-level execution on FPGA hardware. We comprehensively evaluate FPGAgent with five established LLMs on HLS-Eval, a benchmark containing 78 tasks across multiple domains, and verify board-level executability on a real FPGA platform. Compared with existing baselines, FPGAgent improves the synthesizable rate by 16.9% on average, executability by 26.7%, and functional correctness by 30.6%. These results show that FPGAgent substantially improves the practical usability of LLM-based HLS generation and demonstrates the value of end-to-end validation.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "FPGAgent: An LLM-Assisted Framework for Autonomous HLS Code Generation and Verification in FPGA Environments",
+  "url": "https://arxiv.org/abs/2608.23630"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "sdr-driver-for-precise-timing-applications-1d96a1383c",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.23614v1 Announce Type: new Abstract: This paper describes the development of software drivers that enable precise timing applications with the low-cost HackRF One software-defined radio (SDR). The original firmware was extended with timing functions for synchronized sampling, time-scale control, and clock-frequency adjustment. An initial implementation based on a Python wrapper was later redesigned as a SoapySDR-compatible driver. Using an AI-assisted development workflow, the new driver was generated from the existing HackRF One and SoapySDR codebases and became operational after only limited debugging. The approach reduced development effort by more than an order of magnitude while improving software maintainability.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SDR Driver for Precise Timing Applications",
+  "url": "https://arxiv.org/abs/2608.23614"
+}

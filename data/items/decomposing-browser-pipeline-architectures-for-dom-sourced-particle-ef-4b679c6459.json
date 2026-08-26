@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "decomposing-browser-pipeline-architectures-for-dom-sourced-particle-ef-4b679c6459",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.23609v1 Announce Type: new Abstract: Local optimization does not necessarily yield end-to-end optimization in layered browser architectures. Teams often treat Web Workers, WebGL, and WebAssembly as interchangeable ways to \"make it faster,\" yet each lever targets a different layer. We present a controlled architectural decomposition--using DOM-sourced particle pipelines as a concrete workload--of five particle pipelines (P1-P5), with an additional non-particle CSS-layer baseline (P0), that isolates thread placement, renderer choice, and simulation backend. Using a reproducible harness we measure interactive pacing, high-load end-to-end stress, and a simulation-only microbenchmark, plus same-host cross-browser / dual-GPU-class replication (Firefox 153+Intel UHD; Chrome 138+NVIDIA NVK) and an independent second-host slice on Google Colab (Chrome 150, Tesla T4, n=5). Four results stand out. (1) Worker offload improves interactive pacing on paper-primary Chrome (approx. 144 vs approx. 52 FPS; Cliff's delta=1, n=10). (2) AssemblyScript speeds the Chrome update kernel by about 1.5-1.6x on the primary host and approx. 1.85x on Colab T4 (sim-only). (3) Under approx. 250k WebGL particles the Chrome sim-only WASM win need not raise product FPS (P5<=P4 on primary/Firefox; P5 approx. P4 on Colab T4); in-worker CPU phase timers show simulate still dominates the accounted budget, so the non-translation is not a simple \"draw dominates CPU\" story. (4) Renderer ranking and absolute margins vary across browser/GPU/host configurations. The contribution is bottleneck-aware architectural measurement: identify the dominant layer and test whether a layer win propagates to user-visible FPS.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Decomposing Browser Pipeline Architectures for DOM-Sourced Particle Effects: Worker Offload, WebGL, and WebAssembly",
+  "url": "https://arxiv.org/abs/2608.23609"
+}

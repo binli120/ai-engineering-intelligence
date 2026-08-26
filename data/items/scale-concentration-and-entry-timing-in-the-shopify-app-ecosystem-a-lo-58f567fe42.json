@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "scale-concentration-and-entry-timing-in-the-shopify-app-ecosystem-a-lo-58f567fe42",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.23771v1 Announce Type: new Abstract: The Shopify marketplace hosts more than 16,000 active third-party applications, serving 2.7 million active merchant stores generating an estimated \\$706 billion in annual sales, yet little empirical evidence exists on its structure and adoption drivers. We analyse it using a September 2025 snapshot of all 24,826 applications, a weekly panel of 7,708 applications over 366 weeks (February 2019 to March 2026), and listing histories reconstructed from the Internet Archive. Across 55 established functional categories, over half were low-concentration and 20\\% highly concentrated, with larger categories consistently less concentrated. Later entrants grew faster than early movers in 88\\% of the 50 analysed categories, persisting across seven years of quarterly re-estimations, with early movers on net losing detected installations whilst late movers gained them. Platform governance reshaped competition asymmetrically: Shopify's entry into chat reversed more than two years of de-concentration; the deprecation of its Product Reviews application, to our knowledge the first measured platform-owner exit from complementor category, released 191,000 installations of which at most a third reappeared as competitor adoption within a year; the 2021 reduction of the platform revenue share produced no detectable change in entry or retention. Failure is largely silent and predictable: the median exiting application peaked at 8 detected installations and disappeared from tracking within 68 weeks of launch, category leadership changed hands in 92\\% of categories over seven years, and publicly observable data from an application's first six months predict exit within two years with cross-validated AUC above 0.8. App markets on Shopify remain contestable; who benefits depends on platform governance and entry conditions more than on entry timing.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Scale, Concentration, and Entry Timing in the Shopify App Ecosystem: A Longitudinal Study of Platform Governance and Application Survival",
+  "url": "https://arxiv.org/abs/2608.23771"
+}

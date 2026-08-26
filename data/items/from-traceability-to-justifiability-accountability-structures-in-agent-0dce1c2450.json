@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-traceability-to-justifiability-accountability-structures-in-agent-0dce1c2450",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.23610v1 Announce Type: new Abstract: A pipeline promoting an AI system publishes records claiming the thing evaluated is the thing deployed and that the evidence licensed the transition. We measure, from public material only, whether those records can express that claim and whether it holds where declared. First, a two-class documentation survey of 47 delivery platforms (20 CI/CD, 27 model-serving/agent) under one fixed three-label protocol, graded twice (second pass blind), every consulted page pinned by content hash and date. Across 188 double-graded cells we found no platform whose default record emits a content-addressed identity of the behavioral tuple (model version, instructions, tool definitions, retrieval and runtime configuration); the blind pass grades that column default on zero of 47. Immutable nominal versioning is meanwhile arriving as the agent platforms' default answer (16 of 27): version integers behind mutable pointers, a layer the artifact supply chain already found insufficient. Second, an instrument computes realized assurance depth from a pipeline's published exhaust alone and compares it with the declared depth. Applied to a frozen two-stratum frame of 30 public repositories graded twice from a hashed archive (second pass blind; cell-level agreement 23 and 19 of 30, both passes independently finding the same five full realizations), the sharpest result is a verifiability hole: seven of the 15 repositories chosen for adopting attestation tooling publish source-only releases, so the binding their workflows declare cannot be checked where declared. Where checkable it mostly checks out: five of seven measurable adopters realize the binding end to end; both shortfalls fall at identity binding. Together the results locate the field's records structurally short of justifiability, the one rung that can refuse a transition. The survey carries an expiry clock; we state what would falsify each finding.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From Traceability to Justifiability: Accountability Structures in Agentic Software Engineering",
+  "url": "https://arxiv.org/abs/2608.23610"
+}

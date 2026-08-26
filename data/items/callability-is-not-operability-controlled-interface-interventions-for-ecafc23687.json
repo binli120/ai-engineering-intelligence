@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-26T09:01:59.637887Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "callability-is-not-operability-controlled-interface-interventions-for-ecafc23687",
+  "maturity": "unknown",
+  "published_at": "2026-08-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.23628v1 Announce Type: new Abstract: A tool call can be perfectly valid yet still leave an autonomous agent unable to determine what to do next. For example, if an external effect commits but its response is lost, committed and uncommitted states may become indistinguishable to the agent even though they require different continuation actions. We study this gap between callability and operability: whether a tool interface exposes the action-relevant state and semantics needed for an agent to continue safely under operational uncertainty. We operationalize tool operability through Agent-First Tooling (AFT), a set of interface mechanisms spanning selective capability discovery, execution lifecycle and recovery, explicit external-effect semantics, machine-readable results, and postcondition verification. We introduce AFT-Bench, a controlled interface-intervention framework that holds the task, backend, initial state, injected failure, agent, and language model fixed while varying the interface exposed to the agent.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Callability Is Not Operability: Controlled Interface Interventions for LLM Agents",
+  "url": "https://arxiv.org/abs/2608.23628"
+}
