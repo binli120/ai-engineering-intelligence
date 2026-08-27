@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-27T19:04:19.441884Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-hybrid-usability-approach-for-rating-evaluation-of-m-commerce-applic-d4badc2490",
+  "maturity": "unknown",
+  "published_at": "2026-08-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.25550v1 Announce Type: new Abstract: The success of any mobile application relies on its usefulness and rating is considered as an important measure in this regard. This research work focuses on identifying usability factors, which contribute significantly towards the rating of M-commerce apps. This work intends to explore existing usability models consisting of different factors along with a set of criteria and evaluate in terms of rating estimation by considering 5 well-known mobile applications, namely (i) daraz, (ii) shophive, (iii) home shopping, (iv) Symbios. (v) yayvo. Then, this work provides a hybrid usability model for rating prediction of M-commerce applications. The initial hybrid usability model comprises of (i) learnability, (ii) consistency, (iii) human factors,(iv)communicativeness,(v)effectiveness, (vi) Operability, (vii) efficiency, (viii) satisfaction. Each factor consists of some criteria. Keeping in view the factors of hybrid usability model, the data was collected from 40 users for each application. Furthermore, Forward Stepwise Multiple Linear Regression based rating prediction model is suggested by analyzing each criterion of all factors of hybrid usability model. Finally, the model is assessed and validated by using PRED(x) and K-fold techniques.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Hybrid Usability Approach for Rating Evaluation of M-Commerce Applications",
+  "url": "https://arxiv.org/abs/2608.25550"
+}

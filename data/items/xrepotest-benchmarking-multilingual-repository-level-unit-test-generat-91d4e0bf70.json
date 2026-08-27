@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-27T19:04:19.441884Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "xrepotest-benchmarking-multilingual-repository-level-unit-test-generat-91d4e0bf70",
+  "maturity": "unknown",
+  "published_at": "2026-08-27T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.25939v1 Announce Type: new Abstract: Large language models (LLMs) have shown promise for automated unit test generation, but existing evaluations largely rely on standalone settings and a narrow set of programming languages, overestimating real-world readiness. We introduce XREPOTEST, a multilingual repository-level benchmark for unit test generation spanning five underexplored languages: Rust, Go, Julia, PHP, and Ruby. XREPOTEST evaluates tests under realistic repository constraints using a containerized execution framework and multiple context augmentation strategies, including file-level, LSP-based, and retrieval-based context. Beyond standard metrics such as test pass rate and coverage, we propose Invocation Rate (IR) to assess whether generated tests meaningfully exercise the intended functionality. Experiments with 14 state-of-the-art LLMs, including Claude 4.5, GPT-5.2, DeepSeek V4-Pro, and Qwen families, reveal a substantial gap between standalone and repository-level performance, as well as trade-offs between richer context and test reliability. Overall, XREPOTEST provides a challenging and informative benchmark to advance scalable and robust unit test generation in realistic software environments. The dataset and code are publicly available at: https://github.com/solis-team/XRepoTest",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "XREPOTEST: Benchmarking Multilingual Repository-Level Unit Test Generation for Large Language Models",
+  "url": "https://arxiv.org/abs/2608.25939"
+}
