@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-28T20:12:00.502298Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-second-set-of-eyes-the-process-and-challenges-of-software-documentat-839173055c",
+  "maturity": "unknown",
+  "published_at": "2026-08-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.26232v1 Announce Type: new Abstract: Organizations assign documentation work to technical writers, yet the knowledge required to produce it is distributed across developers, managers, and other practitioners. Prior work has established quality criteria for judging \"good\" documentation, but it has not examined how practitioners bring that expertise to improve documentation quality or the challenges they face in doing so. Through semi-structured interviews with experienced technical writers ($n=31$) from different organizations, our work reveals the individual and collaborative effort required to maintain documentation quality. We identify five distinct stages of the documentation review process: self review, technical review, editorial review, play testing, and post-publication feedback. Each stage draws on practitioners with distinct expertise to address quality across content, presentation, and user experience. Our findings surface organizational and technical challenges writers face in recruiting expert reviewers, navigating development timelines, and contending with tools not specifically designed for documentation workflows. Our work positions documentation review as a crucial yet understudied site of collaborative work and opens new research and design directions for process improvement and tool support.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "\"A Second Set of Eyes\": The Process and Challenges of Software Documentation Review",
+  "url": "https://arxiv.org/abs/2608.26232"
+}

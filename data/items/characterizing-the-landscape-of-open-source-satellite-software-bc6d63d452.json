@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-28T20:12:00.502298Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "characterizing-the-landscape-of-open-source-satellite-software-bc6d63d452",
+  "maturity": "unknown",
+  "published_at": "2026-08-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.26211v1 Announce Type: new Abstract: Satellites have become fundamental components of modern technological systems, supporting critical infrastructure in communication, navigation, Earth observation, and scientific research. As space exploration advances and demand for satellite-enabled services grows, reliance on complex, heterogeneous satellite software continues to increase. A systematic understanding of the satellite software landscape is therefore increasingly important, yet existing studies still lack a comprehensive empirical examination. To address this gap, we present the first characterization study of open-source satellite software, examining its ecosystem and development practices. We mine and analyze 22,286 satellite-related GitHub projects through three research questions on popularity trends (RQ1), software goals (RQ2), and development practices (RQ3). First, we characterize the temporal evolution of projects and active developers, revealing increasing popularity. Second, through manual inspection of 646 projects, we construct a taxonomy of 43 software-goal categories spanning conceptual design, datasets, system implementation, simulation, testing, and tools. Third, we conduct an in-depth analysis of projects with source code, revealing a highly heterogeneous and task-specialized ecosystem with 66 programming languages and diverse implementation strategies. Finally, we summarize key findings and derive actionable implications for satellite developers and researchers.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Characterizing the Landscape of Open-Source Satellite Software",
+  "url": "https://arxiv.org/abs/2608.26211"
+}

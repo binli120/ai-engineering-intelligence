@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-28T20:12:00.502298Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-green-software-landscape-a-systematic-mapping-study-on-evolution-a-810d80a2ea",
+  "maturity": "unknown",
+  "published_at": "2026-08-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.26229v1 Announce Type: new Abstract: Energy consumption and climate change have made sustainability critical in Software Engineering (SE), driving the emergence of Green SE. Over the past 15 years, numerous solutions for sustainable software systems have been published by the SE community, offering a rich resource for analyzing the field's evolution. To explore this, we conducted a systematic mapping study of Green SE research published between 2010 and 2024. We collected 390 publications, categorizing them by application domain (e.g., mobile, cloud, AI) and research type (e.g., optimisation study, benchmarking, literature review Additionally, we analyzed a representative subset of 79 papers to classify the key elements-such as hardware, measurement, stability, and replicability-considered during energy measurement experiments. Our findings indicate that SE conferences host the majority of energy-related literature. Notably, Green SE studies surged in popularity starting in 2023, largely driven by AI-related publications. Optimization and benchmarking emerged as the most prevalent research types. Ultimately, we aim to inform the SE community about current approaches to energy concerns, highlight critical experimental practices, and advocate for continued action toward more sustainable software engineering.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Green Software Landscape: A Systematic Mapping Study on Evolution, Applications, Software Lifecycle, and Best Practices",
+  "url": "https://arxiv.org/abs/2608.26229"
+}

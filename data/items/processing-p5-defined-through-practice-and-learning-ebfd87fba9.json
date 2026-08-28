@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-28T20:12:00.502298Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "processing-p5-defined-through-practice-and-learning-ebfd87fba9",
+  "maturity": "unknown",
+  "published_at": "2026-08-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.26614v1 Announce Type: new Abstract: Processing/p5 libraries across different programming languages enact consistent priorities for creative coding as a designed experience. While different programming language ecosystems, like Java and JavaScript, are each associated with their own affordances, community norms, and patterns of use, Processing/p5 sketches across these languages share similarities. Based on case studies of building an implementation of Processing/p5 in two host languages, JavaScript and Lua, we propose a list of software decision-making guiding aspects that constitute Processing/p5, regardless of host language. We discuss this framework in the context of decisions in other exploratory and creative tools that demonstrate how each of the guiding aspects can be operationalized differently than in the case studies. The proposed list highlights opportunities for learning, research, and artistic practice through creation of new Processing/p5 libraries for creative coding and algorithmic art.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Processing/p5 Defined through Practice and Learning",
+  "url": "https://arxiv.org/abs/2608.26614"
+}

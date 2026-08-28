@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-28T20:12:00.502298Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "challenges-and-contributions-in-quality-of-ai-based-software-a-systema-a997b3fb70",
+  "maturity": "unknown",
+  "published_at": "2026-08-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.26215v1 Announce Type: new Abstract: Artificial Intelligence (AI) is increasingly embedded in modern software systems, raising important questions about how its quality should be defined, assessed, and assured. This paper presents a Systematic Mapping Study (SMS) on the quality of AI-based software. The study synthesizes primary studies published between January 2020 and January 2026 and selected from five electronic data sources. A total of 33 primary studies were included after automated search, screening, and snowballing. The results identify six recurring challenge categories, with the most prominent being limitations in existing quality assessment models, followed by issues in non-functional requirement management, quality-aware development, and quality assurance. The findings suggest a call for collaboration of researchers and industrial practitioners with standardization organizations, that could possibly devise comprehensive quality assessments and their measurement methods.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Challenges and Contributions in Quality of AI-Based Software: A Systematic Mapping Study",
+  "url": "https://arxiv.org/abs/2608.26215"
+}

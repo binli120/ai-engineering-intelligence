@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-28T20:12:00.502298Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "spec2vision-contract-guided-delivery-of-ai-generated-computer-vision-p-e25131178c",
+  "maturity": "unknown",
+  "published_at": "2026-08-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.26400v1 Announce Type: new Abstract: Generated computer-vision code can be runnable without satisfying the task contract enforced by a downstream evaluator. We study that gap with Spec2Vision, an experimental framework for producing and evaluating specification-grounded CV pipeline bundles through a staged runtime that keeps the task contract explicit across synthesis, screening, testing, and bounded repair. The benchmark evaluates 17 CV tasks, 10 executable conditions, and 5 repeats per task-condition cell, for 850 primary runs. In the primary 850-run evaluation, Spec2Vision reaches 81/85 evaluator-test passes; removing structural repair drops to 55/85, compatibility scaffolding to 58/85, and generator preflight to 39/85. The executable single-agent baselines expose progressively richer task specifications to the model, culminating in direct source-spec exposure, yet remain much weaker overall, from 17/85 for lightweight task grounding to 35/85 evaluator-test passes. The lightweight baseline nevertheless remains core-runnable in 85/85 runs but reaches only 17/85 evaluator-test passes and 6/85 strict-delivery successes, showing that runnability is not equivalent to delivery. Across this benchmark, the strongest evidence comes from keeping the task contract explicit across staged generation, checking, and repair. Artifacts are provided to support audit of run bundles, model-visible inputs, and derived tables.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Spec2Vision: Contract-Guided Delivery of AI-Generated Computer Vision Pipelines",
+  "url": "https://arxiv.org/abs/2608.26400"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-28T20:12:00.502298Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "when-review-alone-no-longer-scales-layered-supervision-in-ai-assisted-315b4326c8",
+  "maturity": "unknown",
+  "published_at": "2026-08-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.26316v1 Announce Type: new Abstract: AI-assisted development tools enable software engineers to generate implementations at substantially higher speed and volume than in traditional workflows. Software teams have long relied on guardrails -- standing control mechanisms such as code review, linting, testing, and CI/CD pipelines -- to maintain quality and coordination. High-throughput AI-assisted generation increases pressure on these guardrails -- straining their capacity to keep pace with the volume and rate of generated changes -- and reshapes how organizations supervise development workflows, yet relatively little is known about how existing guardrails evolve in response. We conducted a qualitative interview study with five software engineering practitioners, situated within a broader practitioner survey. Our findings indicate that organizations distribute the work of supervision across multiple guardrail layers: preventive guardrails (produced by externalizing architectural intent and conventions into machine-interpretable form), executable guardrails (linting, testing, and CI/CD repurposed as scalable supervision infrastructure), and human oversight (shifting from line-by-line inspection toward supervisory interpretation focused on architectural reasoning, explainability, and long-term maintainability). We characterize this as a transition from review- centric guardrails toward layered supervision, in which no single guardrail carries the supervision load alone.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "When Review Alone No Longer Scales: Layered Supervision in AI-Assisted Software Engineering",
+  "url": "https://arxiv.org/abs/2608.26316"
+}
