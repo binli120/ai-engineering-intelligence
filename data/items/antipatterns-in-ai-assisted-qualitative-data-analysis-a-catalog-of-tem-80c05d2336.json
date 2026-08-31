@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "antipatterns-in-ai-assisted-qualitative-data-analysis-a-catalog-of-tem-80c05d2336",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.27927v1 Announce Type: new Abstract: AI-assisted qualitative data analysis (QDA) offers unprecedented opportunities to streamline software engineering (SE) research, yet uncritical use risks compromising analytical rigor and flooding the field with accelerated production of low-quality research. While tactical best practices will naturally evolve over time, SE researchers currently lack strategic guidance to identify and mitigate methodological risks when attempting AI-assisted QDA. Based on our decades of qualitative SE research expertise and experience combined with an understanding of the emerging landscape of AI-assisted QDA, this paper presents a catalog of antipatterns in AI-assisted QDA - a set of assumptions and practices that initially appear advantageous but ultimately undermine analytical rigor and validity. The antipatterns are grouped into three categories reflecting escalating impact: Dangerous Drivers, Operational Missteps, and Analytical Failures. As more SE researchers attempt AI-assisted QDA, these antipatterns will help them identify and avoid common temptations and pitfalls, while reviewers can be equipped with the vocabulary and criteria to call out problematic and failed practice. Ultimately, this catalog of antipatterns can serve as a stepping stone in our responsible methodological evolution toward principled and meaningful human-AI collaboration in qualitative research.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Antipatterns in AI-assisted Qualitative Data Analysis: A Catalog of Temptations and Pitfalls for Software Engineering Researchers",
+  "url": "https://arxiv.org/abs/2608.27927"
+}

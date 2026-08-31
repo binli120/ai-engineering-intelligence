@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "vr-themis-a-scalable-framework-for-virtual-reality-application-clone-d-a69e20272b",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.13290v1 Announce Type: cross Abstract: Repackaging of mobile applications (aka app cloning) not only threatens the security and privacy of mobile users but also infringes upon the copyright of the original app developers. However, existing detection methods that primarily focus on mobile platforms (such as Android) fail to capture the essential features of virtual reality (VR). Consequently, they are inadequate for effectively detecting cloned VR apps, which have often been targeted by illegal users in the VR market. Considering the unique features of VR apps, this paper proposes a two-stage app clone detection framework, namely VR-Themis, based on \\emph{Hierarchy-Object-Behaviour} (HOB). Firstly, VR-Themis exploits the coarse-grained stage to cluster apps based on their retrievable statistical features, making this tool scalable to large-scale VR app datasets. Then, in the fine-grained stage, VR-Themis performs in-depth analysis of the suspicious apps (identified in the first stage) by calculating similarity using our defined \\emph{HOB metrics}. Our extensive experiments indicate that VR-Themis successfully detects 307 suspected clone apps from the collected 4,277 VR apps without false positives, demonstrating its effectiveness and scalability.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "VR-Themis: A Scalable Framework for Virtual Reality Application Clone Detection",
+  "url": "https://arxiv.org/abs/2608.13290"
+}

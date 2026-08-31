@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "sustainability-of-open-source-machine-learning-robustness-assessment-t-7ac64ebdbc",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.28396v1 Announce Type: new Abstract: Robustness evaluation is essential for deploying machine-learning (ML) systems in real-world settings, where models may face adversarial perturbations, distribution shifts, and other operational stressors. Many open-source tools, including Adversarial Robustness Toolbox, Foolbox, and Robustness Gym, support robustness testing and evaluation. However, little is known about how these tools are maintained, publicly engaged with, and sustained over time, even though practitioners may rely on them to select evaluation dependencies, reproduce robustness assessments, and provide evidence for AI assurance. We present an empirical study of the open-source robustness tooling ecosystem. Starting from a curated seed set derived from prior work, we systematically searched GitHub and identified 28 robustness-tool repositories. We analyzed repository artifacts to characterize observable community engagement, maintenance activity, and project longevity using established software-engineering metrics. Our results show that engagement and maintenance are unevenly distributed, with sustained activity concentrated in a small subset of repositories. At the data collection date of January 21, 2026, five repositories were classified as active, 22 as inactive, and one as archived. These findings highlight the need to treat robustness tools as evolving software systems.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Sustainability of Open-Source Machine Learning Robustness Assessment Tools: A Repository Mining Study",
+  "url": "https://arxiv.org/abs/2608.28396"
+}

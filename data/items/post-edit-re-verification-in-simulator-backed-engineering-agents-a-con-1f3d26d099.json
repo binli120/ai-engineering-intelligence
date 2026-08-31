@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "post-edit-re-verification-in-simulator-backed-engineering-agents-a-con-1f3d26d099",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.28147v1 Announce Type: new Abstract: Engineering agents that interact with external simulators may need to coordinate design modification with reacquisition of engineering evidence for the modified state. We ask whether first post-edit re-verification changes when explicit verification-cadence guidance is retained versus omitted while verification-relevant state/facts are held constant. Cadence-Guided (CG) retained an instruction to request a new simulation after a substantive modification, whereas Cadence-Omitted (CO) removed that instruction; neither condition used a hard gate. The study therefore measures instruction-conditioned post-edit verification-policy adherence rather than spontaneous recognition that prior evidence has become stale. Using DWSIM as the simulator backend and continuous valve-pressure adjustment, five Alibaba/Qwen models were evaluated on eight synthetic cases; each model-case-condition combination was executed three times via live API calls, yielding 120 evaluation slots per condition. Re-verification was observed in 94/120 CG slots versus 32/120 CO slots; cadence violations occurred in 26/120 versus 87/120; and bounded final success was reached in 95/120 versus 35/120. qwen3.5-35b-a3b showed minimal re-verification (1/24 in CG and 0/24 in CO) and no final success in either condition. Within this bounded protocol, explicit post-edit verification-cadence guidance was associated with more re-verification, fewer cadence violations, and more frequent bounded final success, supporting the treatment of verification cadence as an explicit interaction-protocol component.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Post-Edit Re-Verification in Simulator-Backed Engineering Agents: A Controlled Comparison of Verification-Cadence Guidance",
+  "url": "https://arxiv.org/abs/2608.28147"
+}

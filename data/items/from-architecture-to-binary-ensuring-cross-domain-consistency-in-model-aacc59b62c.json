@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-architecture-to-binary-ensuring-cross-domain-consistency-in-model-aacc59b62c",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.28156v1 Announce Type: new Abstract: This paper presents an airborne software development approach for manned and unmanned aerial vehicles aimed at reducing inconsistencies across system, model-based functional, and embedded software domains. In environments influenced by standards such as ARP-4754B and DO-178C, these inconsistencies typically stem from insufficient enforcement across domain boundaries rather than missing process definitions. Building on a previously proposed toolchain centered on a relational interface database, we identify recurring failure modes and propose a repository-centered implementation to address them, tailored to small, resource-constrained teams operating without heavyweight process overhead. Each domain is assigned a primary repository with cross-repository references and dedicated CI pipelines that generate, update, and validate the exchanged artifacts. Automated interface updates, differential change notifications, and consistency checks propagate changes with minimal manual effort and surface inconsistencies before the time-consuming code-generation and compilation steps. An initial implementation in an ongoing experimental project is described, with qualitative feedback from its early use.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From Architecture to Binary: Ensuring Cross-Domain Consistency in Model-Based Airborne Software Development",
+  "url": "https://arxiv.org/abs/2608.28156"
+}

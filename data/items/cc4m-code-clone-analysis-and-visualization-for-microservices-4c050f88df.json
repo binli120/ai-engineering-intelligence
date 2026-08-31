@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "cc4m-code-clone-analysis-and-visualization-for-microservices-4c050f88df",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.28111v1 Announce Type: new Abstract: Microservice architecture supports software evolution by decomposing a system into small, loosely coupled services that can be deployed independently. Contrary to the expectation of high modularity, prior studies have reported that code clones exist across service boundaries, some of which are co-modified in the same version. Such clones may require changes to be propagated across service boundaries, thereby undermining service independence and increasing maintenance costs. However, existing tools do not support microservice-aware clone analysis. We present CC4M, a microservice-aware clone analysis and visualization tool. CC4M detects and enriches clone pairs with service-boundary, co-modification, file-category, and metric information. The enriched clones are visualized in an interactive scatter plot with explicit service boundaries, supporting metric-based filtering to prioritize clones with potentially higher maintenance impact. Using an open-source microservice application, we illustrate how CC4M helps identify the potential impact scope of code changes. A demo video and the tool are available at https://www.youtube.com/watch?v=0xOIQPFbkUg and https://doi.org/10.5281/zenodo.21204195, respectively.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "CC4M: Code Clone Analysis and Visualization for Microservices",
+  "url": "https://arxiv.org/abs/2608.28111"
+}

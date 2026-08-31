@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-system-of-systems-case-study-for-the-verification-of-composed-digita-cdfacbdd7c",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.28498v1 Announce Type: new Abstract: Current approaches to engineering dependable Digital Twins (DTs) of Cyber-Physical Systems lack practical guidance on how qualities such as relevance, verifiability, substitutability and fidelity may be formalised and verified. This need is amplified in Systems-of-Systems (SoS), where reliance is placed on the composition of DTs. The goal of this study is to identify foundational challenges that a framework for DT validation and verification should address in an SoS setting, and to investigate the formalisation of individual DT artefacts as a step towards compositional reasoning. We present a case study based on a DT-enabled greenhouse SoS modelled in VDM-RT (Vienna Development Method, Real-Time), including executable formal models, a property-based account of DT qualities, and an analysis of the obstacles arising when attempting to compose these artefacts at the SoS level. We consider how DT qualities may be operationalised as sets of verifiable properties. Formal modelling and analysis techniques and tools supporting their verification are identified. The study reveals how interpretations of DT qualities must adapt to different architectural roles and how local quality guarantees form assumptions for compositional reasoning. Full formalisation and verification of SoS composition is identified as future work.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A System-of-Systems Case Study for the Verification of Composed Digital Twins",
+  "url": "https://arxiv.org/abs/2608.28498"
+}

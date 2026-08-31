@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "restcov-a-tool-for-structural-coverage-analysis-of-rest-apis-f1fe70f750",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.28114v1 Announce Type: new Abstract: REST APIs are widely used in modern software systems, but developers and testers often lack visibility into which parts of an API specification are exercised by a test suite. Traditional coverage analysis usually relies on source-code instrumentation, which is impractical for REST APIs that are distributed, externally maintained, and hence accessible only through black-box execution. This paper presents RESTCov, a lightweight tool that computes structural REST API coverage from an OpenAPI specification and observed HTTP request/response logs, reporting coverage across paths, operations, parameters, media types, status codes, and status classes. RESTCov produces both machine-readable results and a human-readable HTML report, helping users inspect coverage gaps, diagnose specification-log mismatches, and evaluate REST API test suites without requiring access to the implementation. Screencast: https://youtu.be/mNz2P43OyUc Repository: https://github.com/2tolgahan2/RESTCov",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "RESTCov: A Tool for Structural Coverage Analysis of REST APIs",
+  "url": "https://arxiv.org/abs/2608.28114"
+}

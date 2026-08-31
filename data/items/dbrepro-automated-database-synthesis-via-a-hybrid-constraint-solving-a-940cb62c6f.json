@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-08-31T16:09:29.365433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "dbrepro-automated-database-synthesis-via-a-hybrid-constraint-solving-a-940cb62c6f",
+  "maturity": "unknown",
+  "published_at": "2026-08-31T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2608.27822v1 Announce Type: cross Abstract: Slow queries frequently cause severe performance bottlenecks in database management systems. Diagnosing their root causes online risks exacerbating resource contention, while data privacy regulations often prohibit copying production data to test environments. Synthesizing a proxy database from non-intrusive metadata that induces the query optimizer to generate the same physical execution plans is therefore critical for offline diagnosis. High-fidelity reproduction requires preserving global statistical distributions while enforcing exact local cardinalities. Existing data-driven and workload-aware approaches cannot satisfy both requirements simultaneously. We present DBRepro, an automated end-to-end framework that formulates database generation as a constrained distribution synthesis problem. DBRepro initializes a global distribution from lightweight column statistics, extracts execution constraints from target queries, and progressively adjusts the distribution to satisfy these constraints while preserving the global distribution. Experiments on TPC-H and SSB show that DBRepro reduces cardinality error by up to 20.3% over a data-driven baseline while maintaining identical plan consistency. Compared with a workload-aware baseline, it reproduces 15% more consistent execution plans and reduces latency proportion error by 21.5%. We further validate DBRepro on a nearly 1 TB real-world dataset managed by KingbaseES, where it reproduces the execution performance of complex slow queries with high fidelity.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "DBRepro: Automated Database Synthesis via a Hybrid Constraint-Solving Approach for Reproducing Slow Queries",
+  "url": "https://arxiv.org/abs/2608.27822"
+}
