@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-01T13:29:46.572332Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "shape-of-chain-of-thought-in-math-reasoning-2730861053",
+  "maturity": "unknown",
+  "published_at": "2026-09-01T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.28600v1 Announce Type: new Abstract: Large language models (LLMs) achieve strong performance on mathematical reasoning benchmarks, yet the mathematically meaningful skills underlying their reasoning remain underexplored. We introduce \\texttt{SHAPE}, a framework that analyzes Chain-of-Thought (CoT) trajectories through two lenses developed in mathematics education: (1) semantic spaces: the model's evolving mathematical interpretations of a problem (e.g., algebraic, geometric), and (2) heuristics: the specific mathematical actions taken within those spaces (e.g., simplifying the problem, working backward). We first use \\texttt{SHAPE} to analyze the reasoning patterns of various models. Our findings reveal that the mathematical heuristics employed by a model better explain final answer correctness than traditional CoT features. Furthermore, models are likely to reach correct solutions by concentrating their reasoning effort within a few semantic spaces rather than exploring many disparate ones -- a pattern consistent with human behavior. Next, we utilize the \\texttt{SHAPE} lens to evaluate whether post-training truly enhances mathematical proficiency. We find that reinforcement learning induces mode-seeking in heuristic usage. Lastly, we post-train LLMs by promoting diverse heuristics and demonstrate its effectiveness in improving accuracy. Overall, \\texttt{SHAPE} provides a theoretically-grounded diagnostic framework for decoding LLM reasoning and offers a new path toward post-training LLMs for math reasoning. The code for our model is available at https://github.com/holi-lab/SHAPE-of-CoT",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SHAPE of Chain-of-Thought in Math Reasoning",
+  "url": "https://arxiv.org/abs/2608.28600"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-01T13:29:46.572332Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "internreviewer-internadvocate-objective-reward-and-evaluation-for-agen-4671e12b98",
+  "maturity": "unknown",
+  "published_at": "2026-09-01T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2608.28612v1 Announce Type: new Abstract: Generating professional scholarly content, such as peer reviews and rebuttals, requires an intricate synergy between domain reasoning and factual grounding. This work presents a comprehensive framework for the development and evaluation of specialized scholarly agents, InternReviewer and InternAdvocate. We first establish a large-scale, high-quality scholarly dataset and integrate a high-efficiency arXiv retrieval tool to enable active evidence gathering. To optimize these agents, we implement an agentic Reinforcement Learning (RL) paradigm driven by a unified objective metric and reward system. This system avoids the biases of subjective model-based judging by employing multi-dimensional criteria, including reference-anchored semantic alignment, structural compliance, and a strict verification mechanism that cross-checks citations against real-time interaction logs to eliminate hallucinations. Experimental results demonstrate that agents trained within this closed-loop framework exhibit significant improvements in reasoning depth and citation accuracy.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "InternReviewer & InternAdvocate: Objective Reward and Evaluation for Agentic Reinforcement Learning in Peer Review and Rebuttal",
+  "url": "https://arxiv.org/abs/2608.28612"
+}
