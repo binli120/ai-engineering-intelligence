@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-02T12:46:16.778979Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "exploring-quantum-software-testing-across-research-and-practice-emergi-365ad7ac8c",
+  "maturity": "unknown",
+  "published_at": "2026-09-02T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.00354v1 Announce Type: new Abstract: This paper presents preliminary findings from a multivocal literature review investigating how quantum software testing is characterized across academic and practitioner-oriented sources. Our study integrated peer-reviewed studies with gray literature, including blogs, tutorials, forums, technical reports, documentation pages, and company webpages. Our results indicate a rapidly evolving but fragmented ecosystem involving classical adapted testing approaches, quantum-specific techniques, statistical validation methods, simulators, debugging environments, and verification frameworks. The reviewed material also revealed recurring challenges related to scalability limitations, hardware noise, probabilistic execution, limited observability, and immature tooling ecosystems. These findings provide an initial characterization of how research and practice currently discuss quantum software testing challenges, techniques, and tooling.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Exploring Quantum Software Testing Across Research and Practice: Emerging Results from a Multivocal Literature Review",
+  "url": "https://arxiv.org/abs/2609.00354"
+}

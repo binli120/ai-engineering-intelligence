@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-02T12:46:16.778979Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "empirical-software-engineering-in-practice-insights-from-google-106440a1a9",
+  "maturity": "unknown",
+  "published_at": "2026-09-02T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.00247v1 Announce Type: new Abstract: While it is fairly well known how empirical software engineering (ESE) is used in the academic world, we have limited knowledge of how ESE is practiced in industry. As part of our regular column on empirical software engineering (ACM SIGSOFT SEN-ESE), we want to dedicate a series of articles to interviewing ESE practitioners from various companies. Among other things, we want to understand how ESE processes are implemented in industry, e.g., different research methods, how practitioners decide on what to study, how research results are used within companies and beyond, and if they face recurrent impediments to using ESE methods in industrial contexts. In the first edition of \"ESE in Practice\", we are joined by Ciera Jaspan and Collin Green from the Developer Intelligence team at Google. This article is a faithful account of our conversation from August 13, 2026, which we edited for our column.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Empirical Software Engineering in Practice: Insights from Google",
+  "url": "https://arxiv.org/abs/2609.00247"
+}
