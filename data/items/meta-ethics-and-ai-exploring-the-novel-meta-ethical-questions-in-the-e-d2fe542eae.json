@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-03T12:49:10.759762Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "meta-ethics-and-ai-exploring-the-novel-meta-ethical-questions-in-the-e-d2fe542eae",
+  "maturity": "unknown",
+  "published_at": "2026-09-03T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.01685v1 Announce Type: new Abstract: With the development of artificial intelligence (AI), the landscape of meta-ethics, which has largely centred on human ethics, faces pressures that may significantly reconfigure it. In particular, if future AI systems were to exhibit sufficiently integrated capacities for moral reasoning, moral intentionality, and moral reflection, novel meta-ethical questions would arise concerning what I call \"AI's own ethics\", as distinct from ethical principles merely imposed on AI by human designers. This paper offers a conditional and methodological framework for identifying the questions that would emerge if such AI systems were to arise. On that basis, the paper distinguishes four domains of meta-ethical inquiry in the era of AI: questions about the nature of human ethics from the human perspective; questions about the nature of AI's own ethics from the human perspective; questions about the nature of human ethics from the AI perspective; and questions about the nature of AI's own ethics from the AI perspective. The paper then considers how some existing mainstream meta-ethical theories (such as cognitivism and non-cognitivism, error theory and success theory, relativism, and objective realism) might illuminate these domains, while arguing that many familiar human-centred formulations of those theories may not transfer straightforwardly to AI cases without substantial revision. The overall conclusion is that the emergence of AI's own ethics would place significant pressure on current frameworks and may require substantial refinement, reconstruction, or reconceptualisation.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Meta-ethics and AI: exploring the novel meta-ethical questions in the era of AI",
+  "url": "https://arxiv.org/abs/2609.01685"
+}

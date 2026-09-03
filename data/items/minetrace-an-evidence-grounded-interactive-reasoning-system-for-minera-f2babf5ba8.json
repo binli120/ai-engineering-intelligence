@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-03T12:49:10.759762Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "minetrace-an-evidence-grounded-interactive-reasoning-system-for-minera-f2babf5ba8",
+  "maturity": "unknown",
+  "published_at": "2026-09-03T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.02060v1 Announce Type: new Abstract: Mineral exploration requires integrating heterogeneous geochemical, geophysical, and geological evidence, yet existing prospectivity systems often provide only opaque scores or heatmaps. We present MineTRACE, a web-based system for evidence-grounded exploration of eight commodities: Cu, Au, Ni, W, Sn, Co, Ta, and Mn. Users can explore prospectivity maps, query locations or regions, inspect supporting evidence, and interact through natural language. A transparent expert tree, informed by geological knowledge and known deposits, combines multi-source evidence into interpretable prospectivity scores. For a new location, the conversational assistant retrieves the score and supporting evidence from the analysis pipeline and presents them in natural language. The scorer achieves spatial AUC values of up to 0.917 across different test scenarios, while end-to-end evaluation assesses query accuracy and response grounding. MineTRACE makes public geoscience data easier to access, interpret, and verify, supporting more efficient and transparent mineral exploration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "MineTRACE: An Evidence-Grounded Interactive Reasoning System for Mineral Prospectivity",
+  "url": "https://arxiv.org/abs/2609.02060"
+}

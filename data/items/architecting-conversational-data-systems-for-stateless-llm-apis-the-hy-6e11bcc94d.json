@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-03T12:49:10.759762Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "architecting-conversational-data-systems-for-stateless-llm-apis-the-hy-6e11bcc94d",
+  "maturity": "unknown",
+  "published_at": "2026-09-03T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.01834v1 Announce Type: new Abstract: As enterprise platforms transition to conversational reasoning interfaces, the stateless nature of LLM APIs creates an architectural gap. While statelessness enables horizontal scalability for AI providers, it forces client applications to manage the entire burden of conversational state and semantic memory. The work identifies the Hydration Proxy Pattern, an architecture that decouples session persistence from the reasoning engine. The framework ensures platform sovereignty over conversational data while enabling secure, multi-stage semantic grounding. We further propose the Context Stabilization Mandate to resolve the tradeoff between sovereign state management and KV caching.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Architecting Conversational Data Systems for Stateless LLM APIs: The Hydration Proxy Pattern",
+  "url": "https://arxiv.org/abs/2609.01834"
+}

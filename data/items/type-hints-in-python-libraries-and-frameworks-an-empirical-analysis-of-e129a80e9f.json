@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-03T12:49:10.759762Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "type-hints-in-python-libraries-and-frameworks-an-empirical-analysis-of-e129a80e9f",
+  "maturity": "unknown",
+  "published_at": "2026-09-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.02782v1 Announce Type: new Abstract: Context: In Python, type hints allow developers to annotate variables and functions with explicit type information, improving code clarity and reliability. Although type hints are widely available, little is known about how they are adopted and maintained in libraries and frameworks. Objective: We investigate the adoption, usage, maintenance, and rationale of type hints in Python libraries and frameworks. Method: We analyzed 1,000 popular GitHub repositories, identifying libraries and frameworks and extracting their type annotations. We examined annotation coverage, the locations and origins of annotations, their evolution across git histories, and the relationship between developer annotations and types inferred by Pyright. Results: Of the analyzed repositories, 91% of libraries use type hints at least once, although adoption is inconsistent. Among libraries with systematic usage, maintainers prioritize function parameters and return types, with median coverage of 45.8% and 35.9%, respectively, and mainly use built-in types (73.0%). When modified, annotations tend to migrate to more expressive types. Developers annotate members even when Pyright can infer their types, and these annotations often simplify the inferred type. Conclusion: Type hints in Python libraries and frameworks primarily serve as API contracts rather than comprehensive descriptions of implementation details. The findings suggest opportunities for tooling that prioritizes public interfaces, identifies meaningful annotation changes, and supports maintainers in evolving type information.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Type Hints in Python Libraries and Frameworks: An Empirical Analysis of Adoption and Maintenance",
+  "url": "https://arxiv.org/abs/2609.02782"
+}

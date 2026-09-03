@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-03T12:49:10.759762Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "barriers-to-using-static-application-security-testing-sast-tools-a-lit-7f7566d7db",
+  "maturity": "unknown",
+  "published_at": "2026-09-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.01669v1 Announce Type: new Abstract: Developers face a challenging problem with no clear solution. Modern software breaches can wreak havoc on businesses and individuals alike. With code vulnerabilities being a leading cause, securing applications must be a priority for developers. Static Application Security Testing (SAST) has the potential to harden applications by assisting in the identification and resolution of security vulnerabilities. Despite this, many development teams have not adopted SAST tools into their environment. In this paper, we survey the recent literature to uncover why some developers are apprehensive towards SAST and identify what specific problems they encounter when using it. We found a variety of usability problems developers face when using SAST. Some are inherent of the tool and ultimately require some level of developer investment while others are tool shortcomings that SAST tool creators must address. Ultimately, we argue that in order to drive widespread adoption and consistent SAST usage, developers will need to embrace that some investment is required. Simultaneously, developers will be more likely to integrate SAST tools into their workflows if the creators of SAST tools simplify many aspects related to tool usage. Surmounting the primary obstacles preventing the adoption of SAST requires full consideration of both the technical and human factors.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Barriers to Using Static Application Security Testing (SAST) Tools: A Literature Review",
+  "url": "https://arxiv.org/abs/2609.01669"
+}

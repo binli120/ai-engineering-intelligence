@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-03T12:49:10.759762Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-prompting-to-engineering-a-research-agenda-for-prompt-engineering-d23d8f1e0b",
+  "maturity": "unknown",
+  "published_at": "2026-09-03T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.02248v1 Announce Type: new Abstract: Prompt engineering is increasingly used across Software Engineering (SE) activities, including requirements analysis, coding, testing, documentation, repository analysis, and planning. Yet prompts and related instruction artifacts are often created and evolved through task-specific and informal practices, with limited support for their systematic evaluation, management, traceability, and governance. To examine how SE can contribute to the maturation of these practices, we organized a structured community discussion at the First International Workshop on Empirical Prompt Engineering for Software Engineering (PROMPT-SE), co-located with EASE 2026. Participants discussed current prompting practices, challenges to their adoption and evaluation, and future directions for integrating prompt engineering into software development. We synthesized these discussions into five areas: prompt artifacts and standardization; evaluation and benchmarking; lifecycle integration; human-AI collaboration and skills; and governance, privacy, and technical debt. Based on these areas, we outline a research agenda to move prompt engineering from predominantly ad hoc interactions toward more systematic, maintainable, evaluable, traceable, and governable SE practices.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From Prompting to Engineering: A Research Agenda for Prompt Engineering in Software Engineering",
+  "url": "https://arxiv.org/abs/2609.02248"
+}
