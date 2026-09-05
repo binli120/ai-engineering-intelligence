@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-05T11:49:55.236454Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "quantisation-of-abstract-data-types-8bc8a052c5",
+  "maturity": "unknown",
+  "published_at": "2026-09-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.03778v1 Announce Type: cross Abstract: In this paper, we introduce a notion of abstract quantum data type within the framework of universal algebra. This notion provides an algebraic foundation for describing data abstraction in quantum programming. We formally define a quantisation of classical data types and show that their equational specifications can be soundly lifted to the quantum setting. Two standard quantisation methods for classical functions, namely the bit oracle and the phase oracle, arise as special cases of this general construction. We illustrate the framework with applications to quantum arrays and quantum error-correcting codes, showing how they can be understood through the lens of data-type quantisation. We further establish conditions under which quantisation preserves structural relationships and constructions of classical data types, including embeddings, isomorphisms, and products.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Quantisation of Abstract Data Types",
+  "url": "https://arxiv.org/abs/2609.03778"
+}

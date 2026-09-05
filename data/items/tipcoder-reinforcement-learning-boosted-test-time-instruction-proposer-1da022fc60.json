@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-05T11:49:55.236454Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "tipcoder-reinforcement-learning-boosted-test-time-instruction-proposer-1da022fc60",
+  "maturity": "unknown",
+  "published_at": "2026-09-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.03309v1 Announce Type: new Abstract: Test-time scaling for code generation typically explores the solution space by sampling multiple programs from a fixed instruction. We study a complementary direction: instance-level instruction-space exploration. Our observation is that many coding failures stem from missing constraints, overlooked edge cases, or misleading reasoning paths induced by the original prompt. To address this, we propose TipCoder, a test-time instruction proposer that generates problem-specific auxiliary tips before code synthesis. TipCoder distills multi-turn debugging trajectories into proactive guidance and further optimizes the Proposer with reinforcement learning using a marginal-utility reward. At inference time, it generates both a base solution and a tip-guided solution, and applies a Reward Model for post-hoc selection. This exploration-selection design allows tips to expose additional candidate potential while reducing regressions from unnecessary guidance. Across the evaluated code-generation benchmarks and target Code LLMs, TipCoder provides a consistent instruction-level test-time scaling strategy, comparing favorably with stochastic sampling and generic prompt optimization baselines under a shared reward-model-based selection protocol.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "TIPCODER: Reinforcement Learning Boosted Test-time Instruction Proposer for Code Generation",
+  "url": "https://arxiv.org/abs/2609.03309"
+}

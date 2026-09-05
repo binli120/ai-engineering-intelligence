@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-05T11:49:55.236454Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "no-one-left-behind-cross-level-analysis-for-sustainable-software-engin-b91bd5f6eb",
+  "maturity": "unknown",
+  "published_at": "2026-09-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.03861v1 Announce Type: new Abstract: Software engineers expect a software system to be efficient, maintainable, economically viable, and socially responsible throughout its lifecycle. Unfortunately, decisions made at the organizational, process, or product levels of software development - even when they improve one of these goals - often have unintended long-term consequences at other levels. In response, software-engineering research has explored different ways to achieve software sustainability, including energy efficiency, resource optimization, and code maintainability. However, existing research offers limited explanations for how sustainability problems emerge and reinforce one another across the socio-technical levels of software engineering. Moreover, we argue that sustainability challenges are not isolated but rather systemic: They stem from interactions among organizational priorities, development practices, and technical conditions. In this vision paper, we introduce the concept of sustainability antipatterns to capture conditions that systematically produce unsustainable outcomes. We demonstrate how this concept can help expose cross-level misalignments between socio-technical levels and sustainability dimensions that remain difficult to recognize through artifact-centric or dimension-specific analyses. To guide future research, we outline concrete directions for identifying, formalizing, detecting, and mitigating sustainability anti-patterns. We envision sustainability anti-patterns as a foundation for an integrated and actionable research agenda on sustainable software engineering.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "No One Left Behind: Cross-Level Analysis for Sustainable Software Engineering",
+  "url": "https://arxiv.org/abs/2609.03861"
+}
