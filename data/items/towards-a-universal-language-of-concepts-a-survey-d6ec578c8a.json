@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-07T14:14:42.589747Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "towards-a-universal-language-of-concepts-a-survey-d6ec578c8a",
+  "maturity": "unknown",
+  "published_at": "2026-09-07T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.04528v1 Announce Type: new Abstract: Humans can learn and generalize novel concepts from sparse data because they express knowledge in rich structural formats. In this paper, we propose that programs are a strong candidate for universal representation of concepts. We review computational models of concept learning that use programs as their concept representation and evaluate their contribution toward a universal representational language.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Towards a universal language of concepts: A survey",
+  "url": "https://arxiv.org/abs/2609.04528"
+}

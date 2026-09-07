@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-07T14:14:42.589747Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-prompt-triangle-a-registered-report-on-prompts-as-hybrid-artifacts-d8d99a5ee7",
+  "maturity": "unknown",
+  "published_at": "2026-09-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.04209v1 Announce Type: new Abstract: AI-based coding assistants are transforming software development by shifting effort from writing code to crafting prompts that guide code generation. Despite their growing importance, little empirical evidence exists on how prompts function as software engineering artifacts. Building on prior work framing prompts as mixed artifacts combining requirement intent and solution guidance, we build on the Prompt Triangle, a conceptual model describing prompts along three components: Functionality and Quality (requirements), General Solutions (architectural guidance), and Specific Solutions (implementation constraints). This registered report presents the Stage 1 protocol for a confirmatory study investigating how prompts evolve and how their alignment with requirements engineering (RE) activities predicts development outcomes. We preregister four hypotheses examining prompt evolution, developer characteristics, RE activity alignment, and temporal patterns. We employ a controlled experiment (n=30), community uploads, and mined data using dual-coding to test whether prompting patterns predict development success.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Prompt Triangle: A Registered Report on Prompts as Hybrid Artifacts",
+  "url": "https://arxiv.org/abs/2609.04209"
+}

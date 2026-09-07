@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-07T14:14:42.589747Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "dtm-deterministic-approaches-for-black-box-test-suite-minimization-wit-30d97fecd1",
+  "maturity": "unknown",
+  "published_at": "2026-09-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.04205v1 Announce Type: new Abstract: Black-box Test Suite Minimization (TSM) techniques reduce testing costs without requiring access to production code. However, existing effective approaches rely on evolutionary search algorithms, introducing non-determinism that produces inconsistent results across runs, undermining reliability in automated testing pipelines. We propose DTM (Deterministic approaches for black-box Test suite Minimization), a framework that ensures deterministic test suite reduction while preserving effectiveness and efficiency. DTM converts test cases into Abstract Syntax Trees and computes pairwise similarities using four tree-based measures. For subset selection, it employs three deterministic algorithms: Modified Minimum Spanning Tree, Spectral Clustering, and Dynamic Programming. We evaluated DTM on 16 Java projects from Defects4J with 661 buggy versions. Experimental results show that DTM achieved an average accuracy of 0.74 with an execution time of just 0.98 minutes, outperforming all state-of-the-art approaches. Moreover, it consistently produced identical results across multiple runs, ensuring full determinism.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "DTM: Deterministic Approaches for Black-box Test Suite Minimization with Tree-based Similarity",
+  "url": "https://arxiv.org/abs/2609.04205"
+}

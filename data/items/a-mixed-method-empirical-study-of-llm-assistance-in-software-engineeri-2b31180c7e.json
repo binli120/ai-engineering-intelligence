@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-07T14:14:42.589747Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-mixed-method-empirical-study-of-llm-assistance-in-software-engineeri-2b31180c7e",
+  "maturity": "unknown",
+  "published_at": "2026-09-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.04214v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly integrated into software development workflows, yet their effects are often discussed without distinguishing between task types, developer seniority, and verification demands. This paper presents a mixed-method empirical study of LLM-assisted software engineering with first-year and fourth-year undergraduates. Phase 1 is a preliminary survey (n=157) that characterizes LLM exposure, reliance, and trust calibration among the two groups. Phase 2 is a task-based quasi-experiment with a purposive sample from both cohorts (n=20). Here, we compare AI-assisted and non-AI conditions on a structured set of software engineering tasks spanning implementation, constraint-driven algorithm selection, and architectural reasoning. We then analyze performance outcomes alongside behavioral traces captured via screen recording and a qualitative coding process. Survey results indicate widespread LLM adoption and substantial verification effort, alongside cohort differences in perceived LLM capability for constraint-heavy scenarios. The quasi-experiment further shows that AI assistance changes workflow structure. For example, participants frequently adopt AI-first task entry, copy-transfer integration, and AI-mediated debugging, whereas non-AI workflows rely more on documentation, prior templates, and iterative trial-error refinement. Overall, our findings suggest that the benefits of LLM assistance are task-dependent and mediated by expertise and verification practices, rather than by generation speed alone.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Mixed-Method Empirical Study of LLM Assistance in Software Engineering Workflows",
+  "url": "https://arxiv.org/abs/2609.04214"
+}

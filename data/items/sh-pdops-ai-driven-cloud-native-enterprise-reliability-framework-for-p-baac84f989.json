@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-07T14:14:42.589747Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "sh-pdops-ai-driven-cloud-native-enterprise-reliability-framework-for-p-baac84f989",
+  "maturity": "unknown",
+  "published_at": "2026-09-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.04210v1 Announce Type: new Abstract: This paper presents an AI-driven cloud-native enterprise reliability framework designed to improve predictive analytics, intelligent DevOps automation, and system resilience in modern distributed infrastructures. The proposed framework integrates machine learning models, Kubernetes orchestration, observability pipelines, and automated incident response mechanisms to enhance reliability engineering practices. The study explores predictive failure detection, anomaly monitoring, self-healing infrastructure, and CI/CD optimization using cloud-native technologies. Experimental evaluation demonstrates improved operational efficiency, reduced downtime, and enhanced scalability for enterprise environments. The framework provides a practical approach for combining artificial intelligence with DevOps methodologies to achieve adaptive and autonomous infrastructure management.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SH-PDOPS: AI-Driven Cloud Native Enterprise Reliability Framework for Predictive Analytics and Intelligent DevOps Automation",
+  "url": "https://arxiv.org/abs/2609.04210"
+}

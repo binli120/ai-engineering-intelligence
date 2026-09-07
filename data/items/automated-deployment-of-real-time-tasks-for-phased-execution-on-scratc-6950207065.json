@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-07T14:14:42.589747Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "automated-deployment-of-real-time-tasks-for-phased-execution-on-scratc-6950207065",
+  "maturity": "unknown",
+  "published_at": "2026-09-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.04221v1 Announce Type: new Abstract: The increasing throughput demands in real-time systems and the consolidation of functionality on few, high-performance platforms are driving a shift towards parallel architectures. A key challenge for multicore real-time systems is the interference from contention for access to shared memory. Phased execution approaches address this challenge by restricting shared memory access to mutually exclusive memory phases, while computation is limited to memories local to each core. However, the complexity of managing and scheduling said memory phases hinders the adoption of phased execution in real-time applications. To address this challenge, we propose a model-based deployment methodology that automates the process of adapting applications to phased execution. We present an integrated tool-based deployment process that extends the application through the necessary memory phases and provides a runtime environment to orchestrate execution on the target hardware platform. Our approach requires minimal changes to the application implementation since the deployment tool directly extracts the required information from the generated application binaries. We validate our methodology using an avionics case study on a RISC-V multicore system, showcasing its key components and principles of operation.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Automated Deployment of Real-Time Tasks for Phased Execution on Scratchpad-Based Multicore Platforms",
+  "url": "https://arxiv.org/abs/2609.04221"
+}
