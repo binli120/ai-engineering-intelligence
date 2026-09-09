@@ -1,11 +1,11 @@
 {
   "category": "evaluation",
-  "collected_at": "2026-09-07T14:14:42.589747Z",
+  "collected_at": "2026-09-09T12:57:38.757810Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "working-with-evals-openai-api-6e4a8fb18f",
   "maturity": "stable",
-  "published_at": "2026-09-06T04:47:42Z",
+  "published_at": "2026-09-09T09:38:46Z",
   "source_id": "openai_evals_docs",
   "summary": "Learn how to test and improve AI model outputs through evaluations.",
   "tags": [
