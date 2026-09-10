@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-failure-happens-before-the-drift-the-social-dynamics-of-values-in-dad70cd546",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.05514v1 Announce Type: new Abstract: Large Language Model (LLM)-based agents are increasingly used as proxies for human participants in social science research, yet it remains unclear whether they can faithfully simulate diverse and conflicting human value systems. We present a World Values Survey (WVS)-grounded simulation framework where culturally diverse agents with different communication styles engage in longitudinal, value-laden discussions. Across approximately 4,000 conversations involving 1,200 personas, 15 topics, and three models (GPT-4o, Gemini-2.5-Flash, and Gemma-4-E4B), we evaluate value faithfulness, value drift, and conversational realism. We find that more than 50\\% of personas fail to express their assigned WVS profiles from the outset, while 2-7\\% drift after repeated conversations. Ablations removing demographic details improve faithfulness for some models but do not change the broader trend: simulated value distributions still systematically deviate from the assigned WVS profiles. Compared to human discussions, simulated dialogues show a different trade-off between stylistic consistency and semantic diversity, often producing content-wise varied but stylistically repetitive exchanges. These findings suggest that current LLM agents can generate plausible conversations, but remain limited proxies for representing and preserving diverse human value profiles over time.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Failure Happens Before the Drift: The Social Dynamics of Values in LLM Agent Societies",
+  "url": "https://arxiv.org/abs/2609.05514"
+}

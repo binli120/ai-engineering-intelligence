@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "arc-bench-closed-loop-replanning-masks-broken-action-ranking-in-frozen-889ff7060a",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.05461v1 Announce Type: new Abstract: Reward-free latent world models plan by scoring candidate actions with distances in a frozen latent space: an action is preferred if its predicted future embedding lands closer to the goal embedding. This silently assumes that latent closeness is action-rankable, i.e., that ordering candidates by latent distance agrees with ordering them by true cost. We audit this assumption directly. We introduce ARC-Bench, a no-leak, fixed-candidate protocol that measures whether frozen JEPA-style objectives rank candidate actions correctly, and apply it to official released JEPA-WM checkpoints across navigation and manipulation-style control. The assumption fails, severely and structurally: on the official manipulation audits the top-scored candidate is almost always suboptimal, and the same inversion appears in the maze domains. A controlled visual-backbone extension shows that the defect persists when DINOv2 is replaced by video-pretrained V-JEPA 1 and V-JEPA 2 encoders at ViT-L/ViT-G scale. Provenance, undertraining, matched-budget backbone controls, and metric-circularity controls rule out trivial explanations. We then explain why this defect has stayed invisible: closed-loop replanning masks it. When we reduce the planner's replanning frequency, success collapses in both a navigation and a manipulation domain, and the episodes rescued by frequent replanning are enriched for severe first-plan ranking failures in the PointMaze first-plan diagnostic. Closed-loop success rates therefore systematically overstate the rankability of frozen latent representations. ARC-Bench supplies the measurement, and the masking mechanism the explanation, for methods that adapt, amortize, or replan around latent-space planners without directly auditing released JEPA-WM action rankability.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "ARC-Bench: Closed-Loop Replanning Masks Broken Action Ranking in Frozen JEPA World Models",
+  "url": "https://arxiv.org/abs/2609.05461"
+}

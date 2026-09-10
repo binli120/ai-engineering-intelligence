@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "autofyn-technical-report-non-parametric-expert-iteration-for-long-hori-c0732c1b77",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.05446v1 Announce Type: new Abstract: We introduce AutoFyn, an agent harness inspired by the Expert Iteration algorithm, adapting a frozen model across many rounds by updating persistent state from verified reward signals rather than model weights. Each round begins from a fresh model session, and durable information is reintroduced only through explicit interfaces such as persistent memory files, reports, and repository state. Within a round, an orchestrator explores, plans and builds many alternative approaches with specialized agents, while a task-grounded verifier verifies the work and supplies an objective reward for measuring progress. This reward is distilled back into the persistent state, which updates the effective policy for the next round. In this technical report, we formalize this loop and describe its persistent state and verification interfaces. We then demonstrate its use in three domains, namely olympiad mathematics, data science, and cybersecurity. On the six fresh problems of the 2026 International Mathematical Olympiad, every model with room to improve scores higher under AutoFyn than in its provider's own coding agent. AutoFyn also built the top-ranked agent on the Spider 2.0 dbt benchmark, and has produced $16$ maintainer-confirmed vulnerability advisories in Next.js, MetaMask, pnpm, Warp, LiteLLM, Langflow, and Open WebUI.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AutoFyn Technical Report: Non-Parametric Expert Iteration for Long-Horizon Agents",
+  "url": "https://arxiv.org/abs/2609.05446"
+}

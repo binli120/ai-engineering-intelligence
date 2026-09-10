@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "socio-technical-and-ethical-dimensions-of-architecture-practices-in-fl-0a89e0c0b8",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.09975v1 Announce Type: new Abstract: This project investigates how software architecture practices in Free/Libre Open Source Software (FLOSS) are shaped by socio-technical and ethical factors, and how education can support more explicit, inclusive, and reflective architectural work. Motivated by FLOSS's role in digital sovereignty, it is observed that architectural decisions are often undocumented and scattered across issues, pull requests, and mailing lists. While prior research has studied architectural artifacts, erosion, and communication, the interplay between architectural work, governance arrangements, and ethical commitments in FLOSS remains underexplored. The research follows a three-phase design: (1) multi-method case studies of 3-4 domain-pairs of architecturally non-trivial FLOSS projects, (2) framework and intervention design with practitioners and educators, and (3) pilot evaluations in projects and courses. It will produce (i) cross-case empirical evidence on FLOSS architecture practices, (ii) a conceptual framework linking architecture practices to socio-technical conditions and ethical dimensions, and (iii) lightweight practices and teaching formats that render architectural work more explicit and inclusive.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Socio-technical and Ethical Dimensions of Architecture Practices in FLOSS",
+  "url": "https://arxiv.org/abs/2609.09975"
+}

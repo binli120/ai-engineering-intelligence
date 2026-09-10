@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-double-measurement-confound-in-agent-benchmarks-de-scaffolding-gro-361dd8546d",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.09218v1 Announce Type: new Abstract: Agent benchmarks are increasingly used to compare large language models (LLMs) and guide deployment decisions, yet benchmark scores are meaningful only if they measure model capability rather than properties of the evaluation pipeline. We identify a double measurement confound: execution-critical decisions are performed by a fixed scaffold instead of the model, while the scorer evaluates outputs using criteria that may not reflect task correctness. We unify these issues within a measurement-theoretic framework that characterizes when benchmark scores can be interpreted as evidence of model capability, and instantiate it with an audit-and-repair protocol that (i) transfers execution-critical decisions from the scaffold to the model, (ii) replaces shape-based evaluation with seeded ground-truth scoring, and (iii) reports reliability beyond the mean through worst-case and tail-risk metrics. Experiments on ComtradeBench show that the joint intervention transforms a nearly flat leaderboard into a reliability spectrum that distinguishes both average performance and robustness across seeds. Applying the audit to existing benchmarks further shows that scorer validity is benchmark-specific, whereas scaffold ownership is an uncontrolled axis wherever we probed it. Our results suggest that benchmark scores should be interpreted together with their scaffolding level, scoring criterion, and reliability profile, providing a practical framework for more valid evaluation of LLM agents.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Double Measurement Confound in Agent Benchmarks: De-Scaffolding, Ground-Truth Scoring, and Reliability Beyond the Mean",
+  "url": "https://arxiv.org/abs/2609.09218"
+}

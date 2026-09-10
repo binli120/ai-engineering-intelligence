@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "xagent-execution-guided-agentic-ai-for-effective-localization-and-reso-da61f07e29",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.09769v1 Announce Type: new Abstract: Agentic AI has enabled capabilities in leveraging Large Language Models (LLMs) to autonomously resolve repository-level GitHub issues. However, due to the reliance on limited static description of issues, existing agentic approaches suffer from incorrect localization and incomplete validation. Solely relying on this information can bias LLM reasoning toward the narrow scope of the issue description, leading to incomplete patches that fail to address the underlying issue. In this paper, we present XAgent, an execution-guided agentic framework that analyzes dynamic behavior and additional program context to localize and validate issues. The experimental results on the SWE-bench-lite dataset demonstrate that XAgent outperforms other existing approaches, achieving a resolve rate of 62.0% and a function localization accuracy of 72.8%, while maintaining cost efficiency. Our analysis further shows that XAgent successfully resolves 7 additional issues that the top existing baselines fail to address. This work highlights a shift from static, description-oriented patch generation toward dynamic execution-guided issue resolution, opening new opportunities for LLM-based coding agents to achieve more robust and generalizable software maintenance.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "XAgent: eXecution-guided Agentic AI for Effective Localization and Resolution of GitHub Issues",
+  "url": "https://arxiv.org/abs/2609.09769"
+}

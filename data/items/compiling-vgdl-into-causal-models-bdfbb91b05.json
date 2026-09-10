@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "compiling-vgdl-into-causal-models-bdfbb91b05",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.05459v1 Announce Type: new Abstract: Reinforcement learning and large language models often struggle to accurately capture the causal mechanics of game environments. Standard reinforcement learning agents tend to rely on spurious correlations, while large language models are prone to hallucinating game rules. Although causal reinforcement learning improves interpretability, there is currently no formal methodology to map complex game mechanics directly into causal models. To address this, we propose a deterministic framework that compiles games specified in the Video Game Description Language into Dynamic Structural Causal Models. Rather than inferring causal structures from gameplay traces or noisy large language models' outputs, our methodology directly translates game components, including sprite dynamics, interaction rules, and termination conditions, into explicit structural equations. Each game tick represents a causal transition from state variables at time $t$ to $t+1$. By establishing this grounded mapping, the approach guarantees absolute causal fidelity to the ground-truth game mechanics. The resulting models offer transparent causal pathways that support counterfactual reasoning, causal reinforcement learning agent training, and procedural content validation. This framework provides a principled bridge between symbolic game descriptions and causally grounded game AI.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Compiling VGDL into Causal Models",
+  "url": "https://arxiv.org/abs/2609.05459"
+}

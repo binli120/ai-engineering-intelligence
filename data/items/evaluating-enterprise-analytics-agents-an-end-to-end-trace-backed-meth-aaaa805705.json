@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-10T12:54:54.320908Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "evaluating-enterprise-analytics-agents-an-end-to-end-trace-backed-meth-aaaa805705",
+  "maturity": "unknown",
+  "published_at": "2026-09-10T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.09182v1 Announce Type: new Abstract: Enterprise analytics agents are not only text-to-SQL systems. They interpret business intent and choose metric definitions. They select data sources, execute tools, inspect results, and produce natural-language answers. Those answers may influence operational, financial, or executive decisions. Grading final answers hides where these agents fail. A plausible answer can use the wrong source of truth. It can skip a required decomposition, claim causality without support, or change its table interpretation across repeated runs. We present an end-to-end evaluation methodology for analytics agents. The methodology grades agent behavior across three families: semantic understanding, execution quality, and reliability. Grading uses question banks with human-written golden answers, repeated runs, and runtime traces. Each run first passes a run-validity check, then receives tiered, abstention-aware scores that feed a decision framework rather than a release gate. We instantiate the methodology on a controlled internal analytics agent at a large online marketplace. The case study uses 50 analytics questions, two anonymous model configurations, and three randomized repetitions per configuration, yielding 300 traces. The higher-capability configuration reduced early refusal from 73% to 0% and increased real-data answers from 21% to 73%. However, it also exhausted the tool-round budget on 16% of runs. It overran the schema-exploration budget on 77% of traces. It changed its table interpretation on 41 of 50 questions. On finance questions with structured golden answers, source table use and escalation improved, but canonical decomposition remained weak in both configurations. These results show why trust in analytics agents requires end-to-end, trace-backed evaluation rather than SQL correctness or final answer quality alone.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Evaluating Enterprise Analytics Agents: An End-to-End, Trace-Backed Methodology",
+  "url": "https://arxiv.org/abs/2609.09182"
+}
