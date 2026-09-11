@@ -1,0 +1,17 @@
+{
+  "category": "security",
+  "collected_at": "2026-09-11T12:49:40.482988Z",
+  "engineering_impact": 95,
+  "evidence_quality": 90,
+  "id": "owasp-top-10-for-large-language-model-applications-owasp-foundation-dffdbe053b",
+  "maturity": "stable",
+  "published_at": "2026-08-05T19:21:36Z",
+  "source_id": "owasp_llm_top_10",
+  "summary": "Legacy entry point for the OWASP Top 10 for Large Language Model Applications. Get the current 2026 release from the OWASP GenAI Security Project.",
+  "tags": [
+    "security",
+    "documentation"
+  ],
+  "title": "OWASP Top 10 for Large Language Model Applications | OWASP Foundation",
+  "url": "https://owasp.github.io/www-project-top-10-for-large-language-model-applications/"
+}
