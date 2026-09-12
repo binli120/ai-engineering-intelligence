@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-12T12:10:13.514586Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "understanding-lora-rank-trade-offs-in-diffusion-model-fine-tuning-e67be4897a",
+  "maturity": "unknown",
+  "published_at": "2026-09-12T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.10656v1 Announce Type: new Abstract: Selecting LoRA rank for diffusion fine-tuning requires balancing quality and compute cost. We present a controlled study on CIFAR-10 using a DDPM U-Net with ranks {2,4,8,16,32}, fixed optimization settings, and a reproducible local-folder pytorch-fid protocol. We report FID, trainable parameters, runtime, and GPU memory, then validate trends with extended-budget DDPM runs (20 epochs; ranks 4/8/16) and a Tiny DiT backbone (10 epochs; ranks 4/8/16). Results show moderate ranks are most efficient: rank 4 achieves the best DDPM FID (124.1380), rank 8 is close (124.2136), and higher ranks provide limited gains despite larger adaptation cost. These findings support small-to-moderate ranks as practical defaults under fixed training budgets.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Understanding LoRA Rank Trade-offs in Diffusion Model Fine-Tuning",
+  "url": "https://arxiv.org/abs/2609.10656"
+}
