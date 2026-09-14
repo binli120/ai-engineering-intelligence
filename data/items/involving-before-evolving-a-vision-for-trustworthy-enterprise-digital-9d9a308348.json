@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "involving-before-evolving-a-vision-for-trustworthy-enterprise-digital-9d9a308348",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.13071v1 Announce Type: new Abstract: Enterprise Digital Twins (EDTs) promise data-driven decision support at organizational scale, but realizing them requires navigating siloed departments, tacit knowledge, and high-stakes decisions with long-horizon consequences. Existing approaches involve domain experts during model development but focus less on early organizational buy-in in EDTs. We present a vision for trustworthy EDT engineering grounded in an `involving before evolving' paradigm: rapidly involving stakeholders through a working prototype before evolving toward federation and full interoperability. Our three-stage approach combines foundation models for rapid prototyping, an ontological backbone for federated interoperability, and observability tooling for stakeholder trust. We ground our vision in an ongoing collaboration with Michelin, a multinational manufacturer, where an initial prototype has helped support stakeholder buy-in.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Involving before Evolving: A Vision for Trustworthy Enterprise Digital Twin Engineering",
+  "url": "https://arxiv.org/abs/2609.13071"
+}

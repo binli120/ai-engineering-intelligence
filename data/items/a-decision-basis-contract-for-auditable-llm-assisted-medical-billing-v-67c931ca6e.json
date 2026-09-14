@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-decision-basis-contract-for-auditable-llm-assisted-medical-billing-v-67c931ca6e",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.12156v1 Announce Type: new Abstract: This work presents a proof of concept for auditable LLM-assisted medical billing verification based on a decision-basis contract. The contract separates deterministic checks of versioned fee-catalog rules from LLM-based assessment of free-text documentation. The deterministic layer resolves the applicable catalog release and checks code availability, quantity limits, and exclusions. The semantic layer classifies each claimed item as supported, contradicted, or missing required information. Support and contradiction require a verbatim evidence span; unavailable rule context, unsuccessful assessment, or missing required evidence prevents support through fail-closed abstention. We evaluated four locally run open-weight models on a synthetic catalog and 36 curated cases under the contract, an ablation without explicit documentation requirements, and an end-to-end baseline. Outcome agreement varied across models and showed no consistent advantage over the baseline. Explicit documentation requirements improved identification of missing information for all four models. The evidence gate also exposed cases in which correct raw judgments lacked valid evidence and were converted to incomplete decision-basis entries. The results show how explicit decision records can make rule findings, documentation judgments, and abstention reasons inspectable. Evaluation on real catalogs, independently annotated documentation, and with human reviewers is required to assess practical value.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A decision-basis contract for auditable LLM-assisted medical billing verification: deterministic rules, verbatim evidence, and fail-closed abstention",
+  "url": "https://arxiv.org/abs/2609.12156"
+}

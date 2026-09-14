@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "missing-dimensions-integrating-human-and-social-systems-into-digital-t-d521999ac2",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.12131v1 Announce Type: new Abstract: Digital twins (DTs) have emerged as a key technology at the core of digital transformation, yet their engineering practice remains too narrowly focused on engineered and natural systems. This paper argues that four system dimensions must be explicitly recognized in DT engineering: Engineered, Natural/Biological, Human, and Social. Each dimension brings distinct properties, modeling requirements, and ethical obligations that fundamentally shape what a DT must represent and how it must be built. We further argue that as DTs extend into the Human and Social dimensions, the emphasis should shift from automated control toward decision support and occupant empowerment. We illustrate our arguments using a smart building as a running example and identify four open research challenges for multi-dimensional DT engineering.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Missing Dimensions: Integrating Human and Social Systems into Digital Twin Engineering",
+  "url": "https://arxiv.org/abs/2609.12131"
+}

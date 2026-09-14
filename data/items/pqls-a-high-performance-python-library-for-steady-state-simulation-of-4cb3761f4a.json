@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "pqls-a-high-performance-python-library-for-steady-state-simulation-of-4cb3761f4a",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.12309v1 Announce Type: new Abstract: PQLS (Parallel Quantum Liouvillian Solver) is a high-performance Python library for computing steady-state solutions of the Lindblad master equation. It provides a layered user-facing API with three levels of abstraction. The high-level API accepts physical descriptions of atomic ladder systems and automatically determines the required model parameters; the mid- level API accepts quantities such as Rabi frequencies, detunings, decay rates, and network topology; finally the low-level API allows users to directly specify the Hamiltonian and collapse operators. This layered design enables users to choose between physical convenience and direct numerical control depending on the application. PQLS is built on JAX and XLA to enable vectorized and hardware-accelerated computation of large parameter sweeps. Rather than solving the steady-state problem sequentially for each parameter configuration, PQLS represents multiple Hamiltonians as batched tensors and processes them through a JAX-compiled solver, reducing Python-level overhead and improving hardware utilization. This is particularly useful for applications requiring large or multidimensional parameter sweeps, such as computing frequency spectra, evaluating field-dependent responses, and performing Doppler averaging over atomic velocity distributions. PQLS has been benchmarked against QuTiP, QuTiP-JAX, and RydIQule on CPU and GPU platforms, demonstrating substantial computational speedups across the tested configurations.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "PQLS: A High-Performance Python Library for Steady-State Simulation of Open Quantum Systems",
+  "url": "https://arxiv.org/abs/2609.12309"
+}

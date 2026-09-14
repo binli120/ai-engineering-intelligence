@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "learning-to-adapt-gr-1-specifications-through-degradation-603dc25751",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.12231v1 Announce Type: new Abstract: Reactive synthesis is a powerful tool for generating correct-by-construction controllers from formal specifications. GR(1) is an assume-guarantee specification framework that enables efficient synthesis, allowing synthesised controllers to be used in a wide array of applications. The limitation of such controllers is that, should they encounter environment behaviour unspecified in the assumptions of the specification, the specified system guarantees are no longer ensured. Our work proposes an approach based on oracle-guided inductive synthesis to adapt the specification to be consistent with the observed assumption violation, while degrading system guarantees as little as possible to maintain realisability. Our methodology discovers multiple potential solutions, so we propose a preference criteria, based on the ability of the specification to enable robustness under adaptation. Although our approach is capable of degrading the entire specification, for our case studies we successfully discover degradations that preserve the entire set of original guarantees.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Learning to adapt GR(1) specifications through degradation",
+  "url": "https://arxiv.org/abs/2609.12231"
+}

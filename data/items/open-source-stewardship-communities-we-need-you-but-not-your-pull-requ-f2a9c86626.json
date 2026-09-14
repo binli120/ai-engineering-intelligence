@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "open-source-stewardship-communities-we-need-you-but-not-your-pull-requ-f2a9c86626",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.12236v1 Announce Type: new Abstract: Human-centric AI for software engineering means keeping humans responsible for work performed with AI. In Open Source Software (OSS), AI lowers the cost of implementing changes, but reviewing someone else's contribution remains comparatively expensive, so some projects now restrict who may contribute implementations while still welcoming other participation---not because the code is AI-generated, but because it no longer justifies the review cost. We call the resulting form a stewardship community: a small core retains implementation authority while a broader community continues to shape the software without writing code, and access to coding increasingly depends on approval rather than self-initiated contribution. This raises a broader question: what happens to the human community when coding agents let maintainers replace implementation work once supplied by external contributors? For human-centric software engineering, keeping humans in control of AI agents is not enough: AI can replace implementation labor while weakening how OSS communities renew themselves.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Open Source Stewardship Communities: \"We need you, but not your pull request\"",
+  "url": "https://arxiv.org/abs/2609.12236"
+}

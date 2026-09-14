@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-retrieval-augmented-automated-stakeholder-for-requirements-elicitati-5f453e3036",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.12576v1 Announce Type: new Abstract: Developing the skills required for requirements engineering students to conduct effective requirements elicitation interviews is critical yet challenging, as it requires the development of soft skills in addition to technical knowledge. Role-playing is widely adopted in requirements engineering education to support the development of these skills but is often constrained by time and resource limitations. Although recent advances in large language models (LLMs) enable automated and interactive stakeholder simulations for role-playing, their application in requirements engineering education remains limited by hallucinations and inconsistent responses. To address these limitations, this study investigates the use of retrieval-augmented generation (RAG), implemented using the LangChain framework, to support requirements elicitation activities in a requirements engineering course. We conducted controlled experiments with 69 students, comparing cohorts who interacted with non-technical faculty role-players and those who engaged with RAG-based simulated stakeholders. The results indicate that while students perceived invited stakeholders as more realistic and engaging, the RAG-based automated stakeholder produced higher-quality elicitation questions and more complete feature identification.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Retrieval-Augmented Automated Stakeholder for Requirements Elicitation Education: A Comparative Study",
+  "url": "https://arxiv.org/abs/2609.12576"
+}

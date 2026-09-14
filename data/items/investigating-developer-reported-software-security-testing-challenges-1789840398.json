@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-14T15:00:40.315589Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "investigating-developer-reported-software-security-testing-challenges-1789840398",
+  "maturity": "unknown",
+  "published_at": "2026-09-14T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.12008v1 Announce Type: new Abstract: Software security testing (SST) is essential for identifying vulnerabilities and improving software security, but developers often face practical challenges when selecting tools, configuring test environments, interpreting scanner outputs, testing authentication workflows, and acting on reported vulnerabilities. This study empirically characterizes developer-reported SST challenges in Stack Overflow (SO) discussions and examines their prevalence, difficulty, temporal evolution, co-occurrence, and taxonomy stability. We analyze 17,743 SO questions collected using SST-related keywords. Through manual labeling, we identify 582 SST-related questions and construct a taxonomy of 8 categories and 31 subcategories. We then analyze these challenges using prevalence, difficulty, correlation, temporal trend, co-occurrence, and held-out stability analyses. The results show that developers frequently discuss security finding interpretation and reliability, security testing guidance and tool selection, authentication and authorization testing, and security tool integration and automation. Validation-related challenges often require more technical context and longer resolution time. Security finding interpretation and remediation-related actionability show increasing trends over time. Co-occurrence analysis shows that false positives frequently appear with explainability, while integration challenges often appear with tool suggestions and documentation/resources. Overall, developer-reported SST challenges extend beyond vulnerability detection and include workflow, configuration, interpretation, and remediation concerns. These findings can help researchers, practitioners, educators, and tool providers improve SST usability, documentation, result interpretation, and remediation support.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Investigating Developer-Reported Software Security Testing Challenges",
+  "url": "https://arxiv.org/abs/2609.12008"
+}
