@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-15T13:32:43.798408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "toward-a-decision-assurance-layer-for-ai-assisted-flight-planning-in-a-fb9f9bd210",
+  "maturity": "unknown",
+  "published_at": "2026-09-15T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.13552v1 Announce Type: new Abstract: Generative AI is increasingly being used informally in Air Traffic Management (ATM) for tasks such as flight plan generation, trajectory interpretation, and constraint checking. Although these tools can reduce workload and accelerate planning, their non-deterministic outputs create safety and operational risks in human-in-the-loop settings. This paper proposes the AI Trust and Assurance Layer (ATAL), a model-agnostic decision assurance architecture that evaluates whether AI-generated flight-planning outputs are sufficiently reliable for operational use. ATAL combines semantic stability under prompt variation, operational consistency of structured outputs, and normative constraint validation against domain rules, and maps these signals to a Decision Readiness Level (DRL) for human operators. An ATM-inspired experimental study shows how unsafe, inconsistent, or misleading outputs can be identified before influencing flight-plan validation or execution. Although demonstrated in aviation, the framework is also transferable to other safety-critical decision-support domains that require human oversight under regulatory constraints.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Toward a Decision-Assurance Layer for AI-Assisted Flight Planning in Air Traffic Management",
+  "url": "https://arxiv.org/abs/2609.13552"
+}

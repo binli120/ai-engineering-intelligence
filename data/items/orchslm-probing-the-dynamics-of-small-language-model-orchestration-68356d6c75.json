@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-15T13:32:43.798408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "orchslm-probing-the-dynamics-of-small-language-model-orchestration-68356d6c75",
+  "maturity": "unknown",
+  "published_at": "2026-09-15T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.13470v1 Announce Type: new Abstract: Although large language models (LLMs) have demonstrated remarkable capabilities, their reliance on cloud-scale infrastructure poses fundamental challenges for deployment in agentic pipelines, including latency, privacy, connectivity, and substantial computational cost. Small language models (SLMs) offer a compelling alternative: recent studies suggest that many repetitive and narrowly scoped subtasks in agentic workloads may be better served by specialized SLMs than by monolithic LLMs. However, the limited capacity and context windows of SLMs can constrain long-horizon reasoning and interaction-heavy orchestration strategies such as iterative verification and debate. This motivates a complementary, non-interactive paradigm in which heterogeneous SLMs independently generate candidate solutions and a router orchestrates their cached samples without further model interaction. To further understand the mechanisms of such orchestration, we introduce OrchSLM, a routing framework that unifies existing non-interactive orchestration methods and exposes their underlying design choices as controllable parameters. Using OrchSLM as a systematic probe, we reveal how orchestration behavior emerges from diverse knobs, including the task structure, model-pool composition, and multi-agent consensus.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "OrchSLM: Probing the Dynamics of Small Language Model Orchestration",
+  "url": "https://arxiv.org/abs/2609.13470"
+}

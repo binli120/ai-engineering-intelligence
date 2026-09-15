@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-15T13:32:43.798408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "token-efficient-task-execution-via-application-behavior-modeling-for-w-8075db9228",
+  "maturity": "unknown",
+  "published_at": "2026-09-15T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.13491v1 Announce Type: new Abstract: The strong performance of AI Agents across an impressive variety of tasks is driving an unprecedented investment in agentic infrastructures, however the cost of processing tokens is fast increasing. Web agents automate the execution of web-application tasks described in natural language, by analyzing the web-application's user interface (UI) and interacting with it. This work introduces OdoBot, a novel web-agent architecture that completes tasks at a fraction of the cost when compared to conventional web agents. This is achieved by leveraging a behavioral model of the underlying application constructed by analyzing successful task-execution demonstrations. Our experiments with 45 tasks on the Canvas Learning Management System (LMS) demonstrate that OdoBot uses 44% and 80% fewer tokens than two state-of-the-art competitor agents (Agent-E and WebVoyager), while also surpassing WebVoyager in terms of task success rate.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Token Efficient Task Execution via Application Behavior Modeling for Web Agents",
+  "url": "https://arxiv.org/abs/2609.13491"
+}
