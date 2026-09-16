@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-16T13:30:11.226682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "agentguard-learning-execution-guardrails-from-anomalous-coding-agent-t-e68797054a",
+  "maturity": "unknown",
+  "published_at": "2026-09-16T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.16287v1 Announce Type: new Abstract: AI coding agents increasingly rely on execution harnesses to interact with repositories and external tools. However, task success does not guarantee reliable execution. Agents may still modify unrelated files, rewrite tests, issue unsafe commands, or ignore failed validations, motivating behavioral guardrails for reliable execution. We present AgentGuard, an instruction-level guardrail framework that learns conditional execution constraints from anomalous trajectories of coding agents. Rather than relying on manually specified safety rules, AgentGuard automatically extracts recurring execution failure patterns, generalizes them into instruction-level behavioral constraints, and organizes them as a lightweight guardrail skill that dynamically activates only the rules relevant to the current instruction. This design enables behavioral guidance while minimizing unnecessary restrictions on normal execution. We evaluate AgentGuard using 642 documented failure traces collected from real coding-agent executions across 382 repository tasks. Guardrails are learned from 461 traces covering 282 tasks and evaluated on a disjoint set of 100 tasks. Using Claude Code with Claude Haiku 4.5 as the underlying coding agent, we compare the baseline agent with the same agent augmented by AgentGuard. Experimental results show that AgentGuard reduces the Abnormal Execution Rate from 69.0% to 26.7% and increases the Successful Task Completion Rate from 21.7% to 35.0%. These results demonstrate that execution guardrails learned from historical failures can substantially improve the reliability of AI coding agents while highlighting the remaining challenge of balancing safety and task completion.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AgentGuard: Learning Execution Guardrails from Anomalous Coding-Agent Trajectories",
+  "url": "https://arxiv.org/abs/2609.16287"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-16T13:30:11.226682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "search-based-metamorphic-testing-of-vision-language-models-in-autonomo-23aa3ea864",
+  "maturity": "unknown",
+  "published_at": "2026-09-16T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.17007v1 Announce Type: new Abstract: Our industry partner focuses on quality assurance for industrial systems across multiple domains, including maritime systems, such as overwater vessels and autonomous underwater robots (AURs). Despite the strong performance of vision-language models (VLMs) in scene understanding, image captioning, and object recognition, their use in AUR software operating in underwater environments is underexplored. Therefore, in this context, it is important to evaluate the quality of VLMs for integration into AUR software and, so, automated software testing tools are needed to assess their suitability and improve their dependability. To this end, we propose a search-based metamorphic testing approach (MetaVLM) that identifies a minimal set of transformations on underwater images to induce incorrect model predictions, thereby revealing VLM failures. We employ NSGA-II as a multi-objective search algorithm and evaluate it over open-source VLMs, BLIP and CLIP, against a random search baseline. Results demonstrate the strengths and limitations of each VLM in the context of AUR software systems. Based on the results, we derive lessons for software engineering practitioners and researchers working on quality assurance of VLM-based software systems.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Search-Based Metamorphic Testing of Vision-Language Models in Autonomous Underwater Robotic Software",
+  "url": "https://arxiv.org/abs/2609.17007"
+}

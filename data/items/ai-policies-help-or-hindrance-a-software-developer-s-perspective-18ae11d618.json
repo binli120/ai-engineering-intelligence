@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-16T13:30:11.226682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "ai-policies-help-or-hindrance-a-software-developer-s-perspective-18ae11d618",
+  "maturity": "unknown",
+  "published_at": "2026-09-16T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.16496v1 Announce Type: new Abstract: AI policies introduced by software organisations to mitigate LLM-related risks such as sensitive information leaks and unauthorised usage are not useful if software developers do not engage with them. We draw on 19 software developer interviews to show how AI policies help and hinder developers. We suggest approaches to support managers and decision makers with a developer-centric approach to introducing AI policies.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "AI Policies: Help or Hindrance? A Software Developer's Perspective",
+  "url": "https://arxiv.org/abs/2609.16496"
+}

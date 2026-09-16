@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-16T13:30:11.226682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "rectify-an-interactive-workbench-for-post-evaluation-rag-diagnosis-rep-0bf4afccf2",
+  "maturity": "unknown",
+  "published_at": "2026-09-16T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.16764v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) evaluators can identify failures such as weak retrieval, poor grounding, incomplete answers, and unsupported generation, but they rarely help developers decide what to repair next. We present RECTIFY, an interactive Streamlit workbench that turns evaluated RAG cases into auditable repair workflows. RECTIFY filters cases that do not require repair, routes remaining failures into actionable families and finegrained repair slices, and generates editable repair cards that developers can approve, reject, or verify through sandbox reruns. On a controlled RAG benchmark, RECTIFY surfaces interpretable failure profiles across BM25, dense, and hybrid retrieval: BM25 mainly triggers noisy-retrieval repairs, while dense and hybrid retrieval leave smaller sets of multi-part underretrieval and underused-evidence cases. Additional analyses show that pre-filtering reduces unnecessary repair candidates and that slicelevel routing yields more targeted repair cards than broad family-level diagnosis. RECTIFY is publicly available as an open-source Streamlit workbench 1 for helping developers turn evaluation results into inspectable repair decisions.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "RECTIFY: An Interactive Workbench for Post-Evaluation RAG Diagnosis, Repair, and Verification",
+  "url": "https://arxiv.org/abs/2609.16764"
+}

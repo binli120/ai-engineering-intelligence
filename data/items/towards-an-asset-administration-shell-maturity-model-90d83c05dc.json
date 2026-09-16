@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-16T13:30:11.226682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "towards-an-asset-administration-shell-maturity-model-90d83c05dc",
+  "maturity": "unknown",
+  "published_at": "2026-09-16T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.17084v1 Announce Type: new Abstract: The Asset Administration Shell (AAS) is increasingly recognized as a fundamental model for the realization of and data exchange between digital twins in manufacturing. An AAS defines a hierarchical data structure to represent any type of asset throughout its entire lifecycle. In the context of AAS-based systems, comparing different AAS instances constitutes a practical challenge, as neither a widely accepted methodological framework nor a maturity model are available to systematically support such analyses. To address this gap, we propose a novel concept of AAS maturity that characterizes the extent to which established digital twin criteria are met and thus enabling comparability of AAS instances. The concepts are derived from the literature and applied through exemplification. These emerging results enable practitioners and researchers to systematically compare AAS instances and support the identification and assessment of further development steps in the digital twin engineering process.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Towards an Asset Administration Shell Maturity Model",
+  "url": "https://arxiv.org/abs/2609.17084"
+}

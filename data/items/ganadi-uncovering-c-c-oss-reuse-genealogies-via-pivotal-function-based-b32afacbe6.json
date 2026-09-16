@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-16T13:30:11.226682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "ganadi-uncovering-c-c-oss-reuse-genealogies-via-pivotal-function-based-b32afacbe6",
+  "maturity": "unknown",
+  "published_at": "2026-09-16T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.17018v1 Announce Type: new Abstract: We present GANADI, a systematic approach for identifying C/C++ OSS reuse genealogies to enhance software supply chain security. Understanding OSS reuse genealogy is crucial for improving SBOM completeness and prioritizing security remediation across supply chains. Although existing approaches can identify reused compo- nents and vulnerabilities within a project, they fail to trace OSS reuse paths through intermediate projects, limiting their effectiveness in securing supply chain ecosystems. To address this limitation, GANADI constructs reuse genealogies by clustering downstream projects based on shared characteristics of origin-derived code (called pivotal functions), and then inferring reuse direction among the projects within each cluster. When applied to 20 widely reused OSS projects with over 1,500 propagation paths, GANADI achieved 84.85% precision and 95.76% recall in identifying reuse genealogies, outperforming existing approaches that achieved at most 23.21% recall. Leveraging OSS reuse genealogy for vulnerability detection, we identified 48 unpatched vulnerabilities in real-world popular C/C++ projects. Among them, 23 were patched following our responsible disclosure (including one CVE ID assigned), demonstrating the practical impact of genealogy-based vulnerability management.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "GANADI: Uncovering C/C++ OSS Reuse Genealogies via Pivotal Function-Based Clustering to Enhance Supply Chain Security",
+  "url": "https://arxiv.org/abs/2609.17018"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-16T13:30:11.226682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-memorization-floor-for-llm-refinement-of-decompiled-code-1ca97fd2ea",
+  "maturity": "unknown",
+  "published_at": "2026-09-16T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.17236v1 Announce Type: new Abstract: We introduce a memorization floor: a within-item control separating what LLM refinement of decompiler output recovers from its input from what it recovers from its prior. Refine a function, then refine it again from an input whose identifiers have been destroyed, and measure what survives. Because the comparison is within-item, corpus difficulty cannot contribute; it costs twenty API calls. Applied to functions written after our analysis plan was committed, so no released model could have memorized them, it reports two things. Recovery is real: refined output sits +0.072 to +0.137 above an arm-matched permutation null built from its own output vocabulary. But it does not depend on the input we ablate: destroying the input's dataflow changes the naming gain by +0.001 (95% CI [-0.026, +0.026]), and removing type prefixes or permuting names changes it by no more. A second refiner from another vendor, registered in advance and given byte-identical inputs, reproduces this -- twelve contrasts, two models, twelve nulls. Readability stays at ceiling throughout, so a reader is given no signal. The null is bounded, not absolute: contributions under 0.056 are invisible, and the ablation leaves operations intact, so naming from those alone remains a competing reading. No registered hypothesis was confirmed, and we report the five instrument failures behind that in full, including a reassembly harness biased against the treated arm and an equivalence checker we registered without checking it worked on our inputs.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Memorization Floor for LLM Refinement of Decompiled Code",
+  "url": "https://arxiv.org/abs/2609.17236"
+}
