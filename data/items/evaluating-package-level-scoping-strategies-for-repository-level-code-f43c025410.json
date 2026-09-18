@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-18T12:57:45.729646Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "evaluating-package-level-scoping-strategies-for-repository-level-code-f43c025410",
+  "maturity": "unknown",
+  "published_at": "2026-09-18T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.20279v1 Announce Type: new Abstract: Source code is organized in repositories, packages, and projects, yet token-level completion engines rarely exploit this structure. Pharo provides a semantic completion engine based on ordered, lazy heuristics that retrieve and rank candidates. Its default strategy follows language semantics and scoping rules, but ignores package structure and dependencies. Consequently, classes from the same package or project, and classes used by them, receive no special priority. We introduce and evaluate three package-aware heuristics: Lateral Packages, Direct Package Dependencies, and Two-Level Package Dependencies. Our benchmark covers method call sites from 219 packages, including 4,535 classes and 35,972 methods across major Pharo projects such as Iceberg, Moose, Roassal, Seaside, and Spec. We assess class-name and method-name completion and ask whether explicit package dependencies can provide a lightweight structural signal for improving candidate ranking without introducing a new learning model. The Direct Package Dependencies heuristic produced the strongest results. For 3-character prefixes, Mean Reciprocal Rank increased from 0.20 to 0.44 for class-name completion and from 0.10 to 0.41 for method-name completion. These findings show that package-aware strategies provide more accurate and relevant suggestions than the default Semantics-Based strategy on the evaluated projects. Based on the improvement in class-name completion, the Pharo Industrial Consortium adopted the Direct Package Dependencies heuristic for Pharo 13.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Evaluating Package-Level Scoping Strategies for Repository-Level Code Completion in Pharo",
+  "url": "https://arxiv.org/abs/2609.20279"
+}

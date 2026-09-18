@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-18T12:57:45.729646Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "programming-by-example-for-batch-editing-collision-meshes-in-3d-softwa-27145f2925",
+  "maturity": "unknown",
+  "published_at": "2026-09-18T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2607.08804v1 Announce Type: cross Abstract: As 3D software proliferates, software artifacts now extend beyond code and 2D user interfaces to include 3D assets. Among these assets, collision meshes are critical as they define the geometry used by physics engines for collision detection and physical interaction. Although existing tools can automatically generate collision meshes from visual meshes, they often fail to capture the intended interaction behavior. As a result, developers need to manually edit many heterogeneous collision meshes, a process that is time-consuming and challenging to scale. To address this problem, we present a neuro-symbolic program synthesis approach for batch-editing collision meshes. We formulate the task as a programming-by-example problem: given a family of collision meshes with the same editing intent and a small number of user demonstrations, our approach synthesizes a reusable program that captures the editing intent and applies it to non-demonstration meshes. We implement this in a tool named MeshForge, and evaluate it across 24 tasks on 600 collision meshes. MeshForge successfully synthesizes 23/24 tasks, requiring 2.2 demonstrations and 3.5 seconds of synthesis time on average.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Programming-by-Example for Batch-Editing Collision Meshes in 3D Software",
+  "url": "https://arxiv.org/abs/2607.08804"
+}
