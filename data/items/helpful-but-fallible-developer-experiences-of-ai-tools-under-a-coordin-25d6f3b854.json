@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-21T15:05:51.982765Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "helpful-but-fallible-developer-experiences-of-ai-tools-under-a-coordin-25d6f3b854",
+  "maturity": "unknown",
+  "published_at": "2026-09-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.20977v1 Announce Type: new Abstract: AI-enabled software development tools (AI-devtools) are being industrially adopted under strong expectations of productivity gains, yet developers' experiences of such roll-outs are underexplored. Organizations commit budgets, evaluate staff, and revise practice on a partial picture, since the evidence base is mainly tool evaluations, productivity metrics, and surveys, with few qualitative in-situ accounts of ongoing, coordinated roll-outs. We report a case study of a coordinated roll-out of AI-devtools at a large Swedish telecommunications company, investigating how developers experience the roll-out and how they anticipate their profession will change. We conducted semi-structured interviews with 12 software professionals across three sites, analyzed with process coding and thematic analysis, and interpreted through the extended Technology Acceptance Model (TAM2) as a post-hoc analytical lens. Our findings on use cases, productivity, frustrations, and tool limitations corroborate prior survey work. Beyond corroboration, the interviews surface a management-developer expectation gap that maps onto the TAM2 constructs of subjective norm and voluntariness, and show that participants weigh perceived risk heavily, a factor that TAM2 and similar acceptance models do not represent. AI-devtools emerge as helpful but fallible assistants whose value is shaped by organizational expectations, system scale, and developers' skills.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Helpful but Fallible: Developer Experiences of AI Tools Under a Coordinated Industrial Roll-out",
+  "url": "https://arxiv.org/abs/2609.20977"
+}

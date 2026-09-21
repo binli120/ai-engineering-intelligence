@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-21T15:05:51.982765Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "towards-secure-cloud-native-computing-unveiling-kubernetes-misconfigur-99c6d73fa0",
+  "maturity": "unknown",
+  "published_at": "2026-09-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.20834v1 Announce Type: cross Abstract: In the rapidly evolving landscape of cloud-native computing, Organizations are increasingly adopting infrastructure models that emphasize scalability, flexibility, and efficiency. Kubernetes has become the de facto standard for orchestrating containerized applications in these environments. However, the inherent complexity of cloud-native ecosystems introduces significant challenges, particularly in the form of misconfigurations that can compromise both security and performance. This study explores the potential of Large Language Models (LLMs) in identifying Kubernetes misconfigurations. We introduce a comprehensive taxonomy of common misconfiguration types, offering a structured framework to better understand and categorize these issues. Additionally, we conduct an empirical evaluation of state-of-the-art detection tools to benchmark their effectiveness. Furthermore, we analyze the Kubernetes objects most prone to misconfiguration and evaluate the severity of the identified issues. By leveraging advanced machine learning techniques, including LLMs, we provide novel insights into enhancing misconfiguration detection methodologies.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Towards Secure Cloud-Native Computing: Unveiling Kubernetes Misconfigurations with Large Language Models",
+  "url": "https://arxiv.org/abs/2609.20834"
+}

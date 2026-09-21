@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-21T15:05:51.982765Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "combining-type-inference-and-automated-unit-test-generation-for-python-36f85c5dd9",
+  "maturity": "unknown",
+  "published_at": "2026-09-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2507.01477v3 Announce Type: replace Abstract: Automated unit test generation is an established research field that has so far focused on statically-typed programming languages. The lack of type information in dynamically-typed programming languages, such as Python, inhibits test generators, which heavily rely on information about parameter and return types of functions to select suitable arguments when constructing test cases. Since automated test generators inherently rely on frequent execution of candidate tests, we make use of these frequent executions to address this problem by introducing type tracing, which extracts type-related information during execution and gradually refines the available type information. We implement type tracing as an extension of the Pynguin test-generation framework for Python, allowing it (i) to infer parameter types by observing how parameters are used during runtime, (ii) to record the types of values that function calls return, and (iii) to use this type information to increase code coverage. The approach leads to up to 87.8 % more branch coverage, improved mutation scores, and to type information of similar quality to that produced by other state-of-the-art type-inference tools.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Combining Type Inference and Automated Unit Test Generation for Python",
+  "url": "https://arxiv.org/abs/2507.01477"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-21T15:05:51.982765Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "scentree-a-framework-for-generating-scenario-trees-for-multistage-stoc-34c77d9b66",
+  "maturity": "unknown",
+  "published_at": "2026-09-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.21495v1 Announce Type: cross Abstract: We present scentree, an open-source Python package for constructing a scenario fan and a scenario tree for multistage stochastic programming from historical data. It combines machine learning and multivariate time series models to obtain a scenario fan that captures inter-stage dependencies in the stochastic processes. This scenario fan is subsequently transformed into a scenario tree suitable for multistage stochastic optimization, providing a flexible and extensible framework for uncertainty modeling. A key contribution is the automation of the complete workflow, including model selection, parameter estimation, scenario fan generation, and scenario tree construction. Scentree does not rely on assumptions about the underlying data distribution, reducing the statistical expertise required to produce a scenario tree. Furthermore, it is agnostic to the specific multistage stochastic problem to be solved.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Scentree: a framework for generating scenario trees for multistage stochastic programming",
+  "url": "https://arxiv.org/abs/2609.21495"
+}
