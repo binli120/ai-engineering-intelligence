@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "watchpoint-executable-user-feedback-for-real-world-agentic-web-develop-c198a428cd",
+  "maturity": "unknown",
+  "published_at": "2026-09-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.26204v1 Announce Type: new Abstract: When a professional web developer's code fails a test, they do not simply re-read the stack trace. They open the application in a browser, click buttons, inspect computed styles, and run diagnostic commands to understand what went wrong. Existing feedback mechanisms for coding agents rely on screenshots, LLM-as-a-judge scoring, or natural-language corrections, but few interact with the live application the way a developer would. We introduce WatchPoint, a simulated-user system that mimics real developer behavior by generating and executing diagnostic scripts against the running application, producing structured observations that guide the coding model's retry. Unlike prior approaches that target single-file edits or evaluate using non-executable metrics, we operate on Web-Bench, a benchmark of 50 multi-file web projects comprising 1,000 sequentially dependent tasks, verified by deterministic end-to-end tests. WatchPoint recovers 57.6% of the tasks it diagnoses, and a controlled user study confirms the simulation's realism: human testers achieve a comparable recovery rate (54.5%), providing evidence that automated diagnostic scripts can substitute for interactive human testing on sequential web development tasks. We further identify a pattern of capability gaps that governs when simulated-user feedback is helpful and when it should be withheld.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "WatchPoint: Executable User Feedback for Real-World Agentic Web Development",
+  "url": "https://arxiv.org/abs/2609.26204"
+}

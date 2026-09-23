@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "cancept-model-based-can-traffic-generation-and-manipulation-32689289ee",
+  "maturity": "unknown",
+  "published_at": "2026-09-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.26263v1 Announce Type: new Abstract: Testing timing-related safety properties of Controller Area Network (CAN)-based software requires precise control over transmitted data and communication timing. Existing open-source tools typically encode such scenarios in low-level scripts, making them difficult to maintain and evolve. We present \\toolName{}, an open-source model-based tool for specifying, generating, replaying, and manipulating CAN traffic. A traffic schedule model (TSM) defines message timing and content transformations, and a DBC-based communication model (DCM) defines encoding and decoding between message-level traffic and CAN frames. \\toolName{} combines both models in one execution mechanism for generated and manipulated traffic, including replay of transformed traces. A preliminary evaluation indicates that \\toolName{} realizes the specified scenarios, with low timing deviation and stable execution under elevated traffic rates.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "CANcept: Model-based CAN Traffic Generation and Manipulation",
+  "url": "https://arxiv.org/abs/2609.26263"
+}

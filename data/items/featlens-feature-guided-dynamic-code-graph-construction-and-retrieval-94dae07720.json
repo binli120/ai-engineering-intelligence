@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "featlens-feature-guided-dynamic-code-graph-construction-and-retrieval-94dae07720",
+  "maturity": "unknown",
+  "published_at": "2026-09-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.26480v1 Announce Type: new Abstract: Recent code generation research has moved from isolated function completion toward repository-level generation in existing codebases. To implement a target function correctly, an LLM must identify reusable repository dependencies such as existing functions, APIs, and cross-file definitions. Existing retrieval methods provide such context through code similarity search, persistent whole-repository graphs, or LLM-driven graph exploration, but often incur high graph construction, reasoning, and token costs. Feature-oriented methods offer a natural view of software functionality, yet they mainly support requirement decomposition, planning, or feature editing rather than code dependency retrieval. This paper presents \\textbf{FeatLens}, a feature-guided dynamic code graph construction and retrieval approach for repository-level code generation. FeatLens builds a feature index that links natural-language feature descriptions to function-level code entities. Given a generation task, it dynamically constructs a task-specific seed graph from the feature index and applies semantic-structural graph reasoning with personalized PageRank to select a compact reasoning graph. This design replaces persistent whole-repository graph maintenance and LLM exploration with deterministic and lightweight dependency retrieval. Experiments on DevEval and EvoCodeBench show that FeatLens achieves the best DR@15 among sparse, dense, and graph-based baselines (0.501 and 0.460). On DevEval generation, it obtains the highest DIR@1, reaching 52.91\\% with DeepSeek-V3.2 and 53.58\\% with GPT-5-mini, while maintaining competitive Pass@1 and producing shorter code. Compared with the strongest graph-based baseline, FeatLens reduces graph nodes by 61.0\\%, edges by 86.2\\%, and total token overhead by 45.9\\%, with no LLM tokens used during retrieval.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "FeatLens: Feature-Guided Dynamic Code Graph Construction and Retrieval for Repository-Level Code Generation",
+  "url": "https://arxiv.org/abs/2609.26480"
+}

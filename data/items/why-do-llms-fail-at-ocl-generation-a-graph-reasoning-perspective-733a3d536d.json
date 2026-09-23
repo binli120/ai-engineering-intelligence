@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "why-do-llms-fail-at-ocl-generation-a-graph-reasoning-perspective-733a3d536d",
+  "maturity": "unknown",
+  "published_at": "2026-09-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.26122v1 Announce Type: new Abstract: Large Language Models (LLMs) are increasingly used to generate Object Constraint Language (OCL) constraints from natural language specifications and UML class diagrams. However, existing work mainly focuses on improving accuracy, with limited understanding of why these models fail. Aims. This study investigates the underlying causes of LLM failures in OCL generation, framing the task as a graph reasoning problem over UML class diagrams. Method. We conduct an empirical evaluation using the PathOCL dataset across six state-of-the-art LLMs. We analyze the impact of UML structural properties (e.g., navigation depth and model complexity), lexical similarity, prompt ordering strategies, and graph-aware prompting on OCL correctness. Results. We find that OCL generation performance significantly degrades with increasing navigation depth and structural complexity. Lexical similarity has limited influence, while textual ordering of UML elements affects performance. Graph-based prompting yields partial improvements but does not eliminate structural reasoning errors. Conclusions. OCL generation is primarily constrained by graph reasoning limitations rather than purely linguistic factors. These results highlight structural reasoning as a key bottleneck for current LLMs in model-driven engineering tasks.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Why Do LLMs Fail at OCL Generation? A Graph Reasoning Perspective",
+  "url": "https://arxiv.org/abs/2609.26122"
+}

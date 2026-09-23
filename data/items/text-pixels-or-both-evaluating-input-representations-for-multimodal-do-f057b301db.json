@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "text-pixels-or-both-evaluating-input-representations-for-multimodal-do-f057b301db",
+  "maturity": "unknown",
+  "published_at": "2026-09-23T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.22628v1 Announce Type: new Abstract: Every document QA system begins with a choice that is rarely studied on its own: whether to feed the model page images, extracted text, or both. We isolate this choice, holding the prompt, judge, and scoring pipeline fixed, across four commercial model endpoints, two corpora, and two context regimes (gold evidence pages and the full document). On documents that fit the image budget, page images lead on accuracy at every document length on both corpora, but this advantage carries a growing latency and cost premium: text latency stays roughly flat as documents lengthen while image latency rises steadily. Text and images also fail on different questions, with exactly one representation correct on 19--25% of items across the reported cells, so neither subsumes the other. Exploiting this complementarity, a lightweight TF-IDF router that reads only the question text gains 2.6 points over always-text while cutting median latency 30% relative to always-vision, on a document-disjoint held-out split.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Text, Pixels, or Both? Evaluating Input Representations for Multimodal Document QA",
+  "url": "https://arxiv.org/abs/2609.22628"
+}

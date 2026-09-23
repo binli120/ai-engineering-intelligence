@@ -1,9 +1,9 @@
 {
   "category": "security",
-  "collected_at": "2026-09-21T15:05:51.982765Z",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
-  "id": "owasp-foundation-bd38bf4b34",
+  "id": "owasp-top-10-for-large-language-model-applications-owasp-foundation-bd38bf4b34",
   "maturity": "stable",
   "published_at": null,
   "source_id": "owasp_llm_top_10",
@@ -12,6 +12,6 @@
     "security",
     "documentation"
   ],
-  "title": "OWASP Foundation",
+  "title": "OWASP Top 10 for Large Language Model Applications | OWASP Foundation",
   "url": "https://owasp.org/projects/top-10-for-large-language-model-applications"
 }

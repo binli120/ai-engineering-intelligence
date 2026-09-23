@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "dynamic-conformance-testing-of-webgpu-through-specification-driven-mut-d206274639",
+  "maturity": "unknown",
+  "published_at": "2026-09-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.25520v1 Announce Type: new Abstract: WebGPU is a low-level graphics and compute API that exposes modern GPU functionality to web applications. While the official WebGPU Conformance Test Suite (CTS) focuses on well-formed usage under the WebGPU specification, it is not designed to stress implementations with semantic edge cases or adversarial inputs. General-purpose fuzzers, in contrast, struggle with WebGPU because of its complex graphics stack and multi-process architecture. We introduce LANTERN, a specification-guided dynamic conformance testing framework that mutates CTS tests using constraints extracted from the WebGPU specification. LANTERN extracts explicit syntactic API rules from WebIDL definitions and recovers semantic constraints, such as command ordering and object lifetimes, from natural-language specification text. Selected rules guide AST-located textual transformations that generate both valid and intentionally invalid CTS variants. We execute the resulting tests at scale on AddressSanitizer-instrumented Chromium to discover bugs. Our evaluation discovers three reproducible bugs, including a heap corruption, in Chromium versions current at the time of study. These results demonstrate that syntactically seeded, semantics-aware mutation of conformance tests provides a way to uncover browser bugs during WebGPU testing.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Dynamic Conformance Testing of WebGPU Through Specification-Driven Mutation",
+  "url": "https://arxiv.org/abs/2609.25520"
+}

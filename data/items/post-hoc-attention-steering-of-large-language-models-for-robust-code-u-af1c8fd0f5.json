@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-23T13:38:47.186376Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "post-hoc-attention-steering-of-large-language-models-for-robust-code-u-af1c8fd0f5",
+  "maturity": "unknown",
+  "published_at": "2026-09-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.26102v1 Announce Type: new Abstract: Code obfuscation is widely used in software systems and malware to conceal program logic and hinder analysis, posing significant challenges for both human developers and automated tools. While large language models (LLMs) have shown strong capabilities in code understanding, their robustness to obfuscation remains poorly understood. Our preliminary study shows that LLM performance significantly degrades on obfuscated code, suggesting a reliance on superficial lexical cues rather than deep semantic reasoning. To address this limitation, we propose CodeSteer, a novel attention steering approach that reallocates model attention toward semantically relevant program elements, including backward slices for output prediction and control-flow paths for execution reasoning. Our method integrates lightweight program analysis with inference-time attention steering to guide LLMs toward the core input-to-output dependencies of a program. Experiments across multiple models and datasets demonstrate that CodeSteer significantly improves performance on obfuscated code, often recovering comparable accuracy to the level of unobfuscated programs. We also show CodeSteer's practical utility through a case study on buffer overflow detection, highlighting its potential for malware/vulnerability analysis and reverse engineering of obfuscated code.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Post-Hoc Attention Steering of Large Language Models for Robust Code Understanding under Obfuscation",
+  "url": "https://arxiv.org/abs/2609.26102"
+}
