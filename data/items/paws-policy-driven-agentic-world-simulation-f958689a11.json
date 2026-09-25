@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "paws-policy-driven-agentic-world-simulation-f958689a11",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.28547v1 Announce Type: new Abstract: Policy interventions propagate through public communication, institutional decisions, and stakeholder responses, yet datasets for financial multi-agent simulation rarely connect these processes to temporally aligned historical evidence. We introduce PAWS, a Policy-driven Agentic World Simulation dataset covering 36 verified U.S. financial and economic policy episodes, 12,727 policy-linked news records, and 65,291 source-grounded stakeholder actions. Each action is linked to its supporting news and represented by a multi-layer event frame capturing its interaction mode, financial-action family and subtype, semantic attributes, and conditional mappings to external taxonomies. Entities are resolved to normalized organizations, and actions are aligned with daily market-return context to support policy-agent simulation replay. On 2,522 stratified action samples, independent AI and human reviewers achieved 89.4% initial agreement on interaction mode, with disagreements subsequently adjudicated. Case studies of the 2008 short-selling ban and 2001 decimalization recover documented policy timelines and associated market patterns across both dense and sparse news settings. A replay study further shows that high accuracy can mask failure to detect rare stakeholder actions, identifying action timing and calibration as central challenges. PAWS provides an auditable substrate for evaluating agent influence, policy-response cascades, and action-outcome alignment in historically grounded financial simulations.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "PAWS: Policy-driven Agentic World Simulation",
+  "url": "https://arxiv.org/abs/2609.28547"
+}

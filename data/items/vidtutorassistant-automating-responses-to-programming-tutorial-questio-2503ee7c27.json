@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "vidtutorassistant-automating-responses-to-programming-tutorial-questio-2503ee7c27",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.29129v1 Announce Type: new Abstract: Programming tutorial videos on YouTube are an important information resource for software developers and students, and their comment sections have evolved into active spaces where viewers ask follow-up questions. The volume of these questions, however, often exceeds what content creators can address, leaving learners without the clarifications they need. We present VidTutorAssistant, a web platform that automates responses to viewer questions on programming video tutorials. VidTutorAssistant implements a retrieval-augmented generation pipeline that extracts a video's transcript, then segments it and embeds it. It then classifies each viewer comment as being a question or non-question, retrieves the most relevant transcript segments to each identified question via cosine similarity, and then generates an answer to the question using an LLM (GPT-4), while grounding the response using the retrieved transcript segments as context. We validate VidTutorAssistant through a study on a subset of 440 user comments selected from a larger dataset of 105,553 comments extracted from 7,522 Python and Java tutorials. VidTutorAssistant is evaluated on various criteria: a) its ability to identify the programming language in a video, achieving a 0.99 accuracy; b) its ability to classify comments into questions and non-questions, reaching a 0.96 accuracy; and c) its ability to produce correct and complete answers to questions, producing 98% correct and 99.5% complete responses, compared with 89% and 90% for the original creators' answers.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "VidTutorAssistant: Automating Responses to Programming Tutorial Questions",
+  "url": "https://arxiv.org/abs/2609.29129"
+}

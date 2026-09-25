@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "developing-a-unified-verification-and-validation-activity-standard-at-9567a5415d",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.28600v1 Announce Type: new Abstract: Verification and validation practices (V&amp;V) at NASA's Jet Propulsion Laboratory (JPL) have diverged over the past decade, creating fragmentation that increases overhead, reduces cross-project efficiencies, and inhibits institutional knowledge transfer. We present a unified V&amp;V activity schema developed through human-centered design workshops involving 29 practitioners across multiple mission types and disciplines. The schema builds on a relationship-based architecture that allows for separating methods (Test, Analysis, Inspection, Demonstration, and Review of Design) while maintaining a common attribute set. Formalized as a platform-agnostic SysML model, the schema defines bidirectional relationships between requirements, V&amp;V activities, venues, and evidence. Implementation in JPL's Jama platform demonstrates controlled customization through templates and modular item types, balancing rigor with agility while enabling automations, pattern reuse, and digital thread integration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Developing a Unified Verification and Validation Activity Standard at JPL",
+  "url": "https://arxiv.org/abs/2609.28600"
+}

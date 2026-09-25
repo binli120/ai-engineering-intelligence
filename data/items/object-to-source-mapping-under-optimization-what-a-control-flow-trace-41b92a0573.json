@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "object-to-source-mapping-under-optimization-what-a-control-flow-trace-41b92a0573",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.29656v1 Announce Type: new Abstract: Within a validated interval, control-flow trace can reconstruct machine-level execution, but source-level structural coverage additionally requires a validated attribution from generated instructions and branch outcomes to source obligations. This paper defines that boundary and illustrates it with exact compiler output. Optimization can fuse multiple source conditions into one branch, replace a branch with a conditional select or move, and degrade provenance in debug and mapping information. In such cases, trace may be complete for the generated binary while condition-level source evidence remains unresolved. We therefore separate trace completeness, source attribution, and coverage satisfaction; distinguish source-to-object transformations from object-region attribution states; and explain when internal reconvergence makes aggregate branch observations insufficient and ordered per-instance condition-evaluation histories necessary. We compare measuring a less-optimized build, constraining code generation, and adding state-writing instrumentation. Finally, we describe a pre-compilation supplementation mechanism disclosed in WO 2026/162831 A1 that preserves selected source distinctions as trace-observable control flow without writes to application-resident coverage state. An appendix demonstrates the mechanism end-to-end on real silicon for the worked example: the supplemented -O3 build keeps each condition individually trace-observable, per-instance histories and an MC/DC verdict are reconstructed from a captured ETM trace, and code-size and cycle costs are measured. Its use remains subject to build-specific preservation, final-image mapping, trace-validity, and probe-effect verification.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Object-to-Source Mapping under Optimization: What a Control-Flow Trace Can Show, and Where Source-Level Coverage Breaks",
+  "url": "https://arxiv.org/abs/2609.29656"
+}

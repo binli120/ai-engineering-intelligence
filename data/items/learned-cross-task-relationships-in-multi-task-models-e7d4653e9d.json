@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "learned-cross-task-relationships-in-multi-task-models-e7d4653e9d",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.28776v1 Announce Type: new Abstract: We propose a framework that learns cross-task relationships in multi-task models by approximating the joint distribution of task labels through targeted pairwise relationships. This approach improves performance via transfer learning and enhances information extraction without the intractable complexity of modeling the full joint space. Although our framework applies to any multi-task system, we demonstrate its efficacy within YouTube's production recommendation systems. Experiments across the Notifications, Homepage, and Watch Next surfaces show improvements in both accuracy and user satisfaction metrics. Finally, we propose a workflow template to facilitate broader future implementation.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Learned Cross-Task Relationships in Multi-Task Models",
+  "url": "https://arxiv.org/abs/2609.28776"
+}

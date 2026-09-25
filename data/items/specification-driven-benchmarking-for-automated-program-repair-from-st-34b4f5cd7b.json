@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "specification-driven-benchmarking-for-automated-program-repair-from-st-34b4f5cd7b",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.28896v1 Announce Type: new Abstract: Automated Program Repair (APR) benchmarks have traditionally been constructed as static datasets whose characteristics are inherited from the defects they contain. While this paradigm has enabled decades of progress, finite corpora provide limited experimental control, become increasingly susceptible to contamination as they are reused, and cannot be systematically regenerated or adapted as evaluation requirements evolve. We propose specification-driven benchmarking, a paradigm in which benchmarks are defined by executable specifications and realized through benchmark generation. The specification explicitly declares the intended properties of the benchmark (including program context, fault taxonomy, difficulty, validation strategy, and corpus constraints) while a generation pipeline realizes those requirements through independent generation, validation, and corpus management components. We develop the conceptual foundations of this approach by introducing a taxonomy of benchmark specification dimensions, establishing how each specification dimension maps to deterministic architectural responsibilities, and arguing that independent validation is a structural requirement for trustworthy benchmark generation. An end-to-end example illustrates how specification choices propagate through the pipeline to produce benchmark instances whose properties are independently verifiable. By treating the benchmark as an executable specification rather than a static dataset, the proposed paradigm shifts benchmark construction from artifact curation to declarative experimental design.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Specification-Driven Benchmarking for Automated Program Repair From Static Corpora to Executable Specifications",
+  "url": "https://arxiv.org/abs/2609.28896"
+}

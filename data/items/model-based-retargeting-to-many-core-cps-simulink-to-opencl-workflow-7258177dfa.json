@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "model-based-retargeting-to-many-core-cps-simulink-to-opencl-workflow-7258177dfa",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.29311v1 Announce Type: new Abstract: This paper addresses the software portability gap between Model-Based Development (MBD) and advanced many-core execution for Cyber-Physical Systems (CPS). We present a workflow-preserving retargeting approach for Simulink-based CPS applications with candidate-wise data parallelism to OpenCL-based many-core processors. Rather than manually rewriting models for new platforms, our toolchain uses MathWorks GPU Coder to extract data-parallel CUDA code, which is then translated into OpenCL host and device code via a custom framework. The conversion handles syntax rewriting, API emulation, and platform-specific argument packing. We deployed this workflow for a computationally intensive Frenet-frame trajectory planner on the Kalray MPPA Coolidge2. The results demonstrate the feasibility of a workflow-preserving retargeting pipeline for the evaluated CPS workload and platform.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Model-Based Retargeting to Many-Core CPS: Simulink-to-OpenCL Workflow",
+  "url": "https://arxiv.org/abs/2609.29311"
+}

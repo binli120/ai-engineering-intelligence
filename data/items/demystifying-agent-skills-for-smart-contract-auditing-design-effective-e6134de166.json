@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "demystifying-agent-skills-for-smart-contract-auditing-design-effective-e6134de166",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.29454v1 Announce Type: new Abstract: LLM agents, notably Claude Code and OpenAI Codex, are emerging as versatile tools beyond coding agents only. These agents can be enhanced with skills---reusable artifacts that package domain knowledge, workflows, and tool-use instructions. To date, however, little is known about how such skills are designed or how they affect agent effectiveness and behavior in practice. In this paper, we investigate these questions in smart contract security auditing, a domain in which agents have shown substantial promise. We systematically collect 83 smart contract audit skills from the wild and evaluate them on EVMBench across seven agent--model configurations. Our study examines three dimensions: (i) the design characteristics of audit skills, including their structure, knowledge representations, workflows, and tool dependencies; (ii) their effectiveness in improving vulnerability detection; and (iii) their influence on agent execution trajectories. We find that audit skills are mostly lightweight but heterogeneous in design, covering a broad yet imbalanced range of vulnerability types. Their effectiveness is determined primarily by the model rather than the agent harness: Codex/GPT-5.5 achieves the largest gains, improving detection score by 22.8% and captured award by 43.2%. We further find that skill triggering is a key bottleneck. When triggered, skills preserve a shared six-stage audit workflow while exhibiting distinct loading patterns and differential effects on agent behavior across configurations. We release our skill corpus and artifacts to support future research.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Demystifying Agent Skills for Smart Contract Auditing: Design, Effectiveness, Behavioral Impact",
+  "url": "https://arxiv.org/abs/2609.29454"
+}

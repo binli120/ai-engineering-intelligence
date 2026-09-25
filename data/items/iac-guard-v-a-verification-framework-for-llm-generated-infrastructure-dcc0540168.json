@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-25T13:46:11.101408Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "iac-guard-v-a-verification-framework-for-llm-generated-infrastructure-dcc0540168",
+  "maturity": "unknown",
+  "published_at": "2026-09-25T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.28488v1 Announce Type: new Abstract: Infrastructure-as-Code (IaC) misconfigurations are a leading cause of cloud security incidents, and Large Language Models (LLMs) are increasingly proposed as automated repair agents. Yet the trustworthiness of LLM-generated IaC repairs remains underexplored. IaC presents distinctive verification challenges: security scanners may behave differently across tools and configurations, infrastructure semantics cannot be validated through ordinary unit tests, and provider-specific rules create a fragmented verification landscape. We present IaC-Guard-V, a verification-centered framework that evaluates AI-generated IaC repairs through four dimensions: syntactic validity, target-issue resolution, regression safety, and patch minimality. We construct a benchmark of 70 real-world misconfigured Terraform and Kubernetes artifacts spanning 70 unique scanner rules and eight violation classes, and evaluate three repair strategies across three LLM families in 630 runs. Although all models achieve 100% syntactic validity, only 32-50% of single-shot repairs pass full verification. Verification-guided iterative repair significantly improves verified-fix rates to 68-92%. An open-source model with verification-guided repair outperforms the strongest commercial model without verification at one-twelfth the cost per verified fix. Kubernetes repairs reach near-perfect rates for commercial models but require verification-guided iteration for the open-source model. Structured prompting consistently reduces Terraform repair quality, challenging common assumptions about constrained LLM output. The benchmark and artifacts are released for reproducibility.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "IaC-Guard-V: A Verification Framework for LLM-Generated Infrastructure-as-Code Repairs",
+  "url": "https://arxiv.org/abs/2609.28488"
+}
