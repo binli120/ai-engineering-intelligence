@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-28T16:44:48.462440Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "closing-the-loop-continuous-measurement-driven-refinement-of-offloadin-eeb7cb0d50",
+  "maturity": "unknown",
+  "published_at": "2026-09-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.30429v1 Announce Type: new Abstract: Modern vehicles increasingly offload computation- ally intensive perception and decision functions to backend servers, requiring accurate predictions of absolute performance metrics such as Round-Trip Time (RTT), processing time, and utilization. In practice, strong temporal variability, heterogeneous backend hardware, and multimodal latency regimes cause offline- trained predictors to drift, creating a reliability gap for latency- sensitive functions. We address this gap with an operational, measurement-driven closed loop that continuously recalibrates absolute-value predictors during runtime. The system aligns real execution measurements with predicted values and performs incremental online updates of a lightweight multi-head neural network while preserving model stability. The model implicitly learns the broad, non-Gaussian spread of input metrics, and a sigma-based error analysis in our evaluation characterizes resid- ual variability under dynamic conditions. Experiments across two Kubernetes clusters show that continuous measurement- driven refinement reduces prediction drift, improves accuracy for RTT, processing time, and utilization, and stabilizes prediction behavior across heterogeneous latency regimes. However, the broad and multimodal distribution of input metrics imposes fundamental limits on absolute-value prediction, with residual errors frequently exceeding configured thresholds. Overall, online calibration proves feasible and necessary for robust computation offloading in dynamic vehicular edge environments, while high- lighting the need for future mechanisms that address extreme latency regimes and high-variance operating conditions.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Closing the Loop: Continuous Measurement-Driven Refinement of Offloading Predictions",
+  "url": "https://arxiv.org/abs/2609.30429"
+}

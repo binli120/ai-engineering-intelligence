@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-28T16:44:48.462440Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "silent-success-a-release-gate-that-passed-on-checks-it-never-ran-and-e-a916d8c792",
+  "maturity": "unknown",
+  "published_at": "2026-09-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.30307v1 Announce Type: new Abstract: A blocking quality gate in a production release pipeline reported PASS on a run in which one subgate had executed neither of its two checks and another had run six of its eight. Both keys that decided the run asked whether a violation had been observed, and both computed that from a population already stripped of the cases that failed to run, so absent data answered \"no\" and a run that checked almost nothing scored perfectly, for two weeks of green builds. Introducing a third value, pass, violate, and unable to determine, turned those silent passes into failures and put the shortfall into the exit status; separate work on the same specifications then found a detector firing with a margin of 0.000177 percentage points, its firing floor holding at the sixth decimal place. Eight further instances of the same form followed: five more from the same engagement, two in open-source projects, a gateway where a configured cache TTL was declared but never applied on the write path, and an inference server whose count of free cache slots was credited on every step for releases that returned nothing, and one committed by the author while writing this paper, using tooling built to prevent exactly it. What the nine cases are offered for is not the novelty of the category but the convergence of the remedy, nine different missed questions, one kind of act, seven of the nine answerable by a single query, command, or comparison, and that convergence is falsifiable, which is what this paper asks to be judged on.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Silent Success: A Release Gate That Passed on Checks It Never Ran, and Eight More",
+  "url": "https://arxiv.org/abs/2609.30307"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-28T16:44:48.462440Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "joule-profiler-profiling-the-energy-consumption-of-build-automation-to-3e28449d25",
+  "maturity": "unknown",
+  "published_at": "2026-09-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.31228v1 Announce Type: new Abstract: Build pipelines are integral to modern software development, yet their energy footprint remains largely invisible to practitioners. Existing CI energy tools either rely on model-based estimation (due to hardware access restrictions in cloud runners) or report only total pipeline energy without decomposing it into meaningful phases. Joule-Profiler is an open-source command-line tool for Linux that measures hardware energy consumption via Intel RAPL (CPU), NVML (NVIDIA GPU), and attributes it to user-defined program phases by monitoring standard output. In this tool paper, we demonstrate Joule-Profiler in the context of Maven build pipelines using Google Gson as a case study. By applying a token pattern-matching Maven plugin invocations, we analyze builds across the 5 most recent Gson releases into per-phase energy profiles, comparing cold builds (empty local repository) and warm builds (cached dependencies).",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Joule-Profiler: Profiling the Energy Consumption of Build Automation Tools Made Easy",
+  "url": "https://arxiv.org/abs/2609.31228"
+}

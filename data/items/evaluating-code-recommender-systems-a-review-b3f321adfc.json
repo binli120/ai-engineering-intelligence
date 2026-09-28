@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-28T16:44:48.462440Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "evaluating-code-recommender-systems-a-review-b3f321adfc",
+  "maturity": "unknown",
+  "published_at": "2026-09-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.30351v1 Announce Type: new Abstract: Context: Code recommender systems (CRSs) are specialized software systems operating on source artifacts to provide automatically generated recommendations to software developers in all phases of development. The goal is to improve software quality while enhancing developers' efficiency, effectiveness, and experience. Problem: Despite the growing importance, little is known about the state of evaluating these systems in a human-centric manner. Research Approach: We conducted a systematic literature review to identify and to synthesize primary studies evaluating CRSs (2017-2024). Ninety-two publications were included and subjected to a systematic content analysis. Results: Our study confirms that Offline Evaluations are the most common, system-centric evaluation type, whereas user-centric evaluations (Online Evaluations, User Studies) are rarely reported. Evaluations are concentrated on the Software Construction phase. Most studies explicitly report threats to validity, with External threats to study Materials being the most common. Conclusion: The state of evaluations on CRSs is narrowly focused on single or a few system qualities. There is an imbalance between a majority of system-centric evaluations and a minority of user-centric evaluations. Combined, multi-type evaluations are rarely reported.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Evaluating Code Recommender Systems: A Review",
+  "url": "https://arxiv.org/abs/2609.30351"
+}

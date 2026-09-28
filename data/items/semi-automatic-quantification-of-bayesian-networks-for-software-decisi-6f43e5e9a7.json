@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-28T16:44:48.462440Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "semi-automatic-quantification-of-bayesian-networks-for-software-decisi-6f43e5e9a7",
+  "maturity": "unknown",
+  "published_at": "2026-09-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.31275v1 Announce Type: new Abstract: Expert-driven Bayesian networks can support recurring software decisions when historical data are limited, but quantifying their conditional probability tables (CPTs) requires many probability judgments. Semi-automatic methods reduce direct elicitation, yet practitioners have little comparative evidence from operational decision processes. We report an embedded case study comparing the Weighted Sum Algorithm (WSA) and Ranked Nodes Method (RNM) as complete elicitation-and-quantification pipelines in two contexts within a single software research and development (R&amp;D) organization: feature selection for Internet of Things projects and user interface design selection. Within each context, the pipelines shared the graph, root priors, and decision evidence. We evaluated them through 15 expert-defined model-walkthrough scenarios and retrospective reconstructions of alternatives recorded in decision meetings. WSA matched 7/7 and 6/8 walkthrough expectations, whereas RNM matched 4/7 and 4/8. Both pipelines placed the selected alternatives near the top of the retrospective rankings. Their complete distributions nevertheless differed: the median total variation distance was 0.304 across four distinct feature patterns and 0.340 across seven distinct design patterns, rising to 0.890 for one design pattern. These results concern two ordinal value-estimation models in one organization. They show that similar shortlist behavior does not imply equivalent representations of uncertainty. For comparable software decision-support models, method selection and validation should consider node semantics, the judgments experts can provide, calibration requirements, complete output distributions, and the intended downstream use of the probabilities.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Semi-Automatic Quantification of Bayesian Networks for Software Decision Support: Comparing WSA and RNM in a Software R&D Organization",
+  "url": "https://arxiv.org/abs/2609.31275"
+}

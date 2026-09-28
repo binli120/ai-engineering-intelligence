@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-28T16:44:48.462440Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "untangling-the-spaghetti-code-in-game-development-a-review-of-challeng-4ec3a6ca94",
+  "maturity": "unknown",
+  "published_at": "2026-09-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.30349v1 Announce Type: new Abstract: The code quality in the game domain is perceived as less structured and more convoluted than in other domains, which results in lower maintainability and higher bug frequency. In this work, we conduct a systematic literature review to address four main research questions: (1) how the incidence of code smells and technical debt differs in game development compared to other software domains; (2) what academic solutions are proposed to mitigate these code quality issues; (3) whether researchers collaborate effectively with developers to implement these solutions; and (4) if the proposed solutions are sufficient to tackle the diagnosed problems. Thirty-four works were mapped and analyzed. We found that the game domain is affected by a short-term mentality, continuous requirements changes, reduced code reuse, and minimal to no automated testing. As potential solutions, we identified tools and models to detect code smells, along with testing practices and product lines adapted for game development. Although these solutions exist, they are not widely adopted by practitioners, highlighting the need to investigate barriers to their integration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Untangling the Spaghetti Code in Game Development: A Review of Challenges and Academic Solutions",
+  "url": "https://arxiv.org/abs/2609.30349"
+}
