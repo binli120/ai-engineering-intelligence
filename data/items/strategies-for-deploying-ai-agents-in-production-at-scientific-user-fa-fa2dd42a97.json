@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-30T14:54:36.940482Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "strategies-for-deploying-ai-agents-in-production-at-scientific-user-fa-fa2dd42a97",
+  "maturity": "unknown",
+  "published_at": "2026-09-30T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.36362v1 Announce Type: new Abstract: Agentic artificial intelligence (AI) is moving beyond research demonstrations toward production use at scientific user facilities, including light sources, neutron sources, nanoscience centers, and autonomous laboratories. Its scientific value extends beyond increasing throughput. Agents can perform repeatable tasks in calibration, measurement execution, and quality control, as well as initial analyses that turn data into reviewable evidence, allowing scientists to focus on hypotheses, unexpected observations, and interpretation. Drawing on deployments of LLM-driven agents at the APS, this perspective distills practical strategies with an emphasis on elements that can be reused across instruments and facilities. We discuss agent harnesses for beamline control, facility knowledge retrieval, and data analysis while keeping the underlying design principles independent of any specific implementation. These principles cover inference endpoints, tool-server architectures, non-text data, computationally intensive services, reusable skills, and governed learning throughout an instrument's lifecycle. We also consider how network and Linux operations, governed shared memory, and deterministic orchestration can extend these patterns across facility services. Because LLM capabilities continue to evolve, these recommendations represent a snapshot of the technology as of the date on the cover.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Strategies for Deploying AI Agents in Production at Scientific User Facilities",
+  "url": "https://arxiv.org/abs/2609.36362"
+}

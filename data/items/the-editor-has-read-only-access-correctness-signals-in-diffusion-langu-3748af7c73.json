@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-30T14:54:36.940482Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-editor-has-read-only-access-correctness-signals-in-diffusion-langu-3748af7c73",
+  "maturity": "unknown",
+  "published_at": "2026-09-30T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.36783v1 Announce Type: new Abstract: Diffusion language models generate code by repeatedly updating a partially masked sequence. We ask whether their internal activations encode code correctness and whether that information can improve generation. Across six diffusion models, linear probes distinguish passing from failing attempts, with the strongest reads generally appearing beyond the early layers. Controls using small semantic mutations support a connection to correctness rather than surface style alone. In comparisons with model confidence, probe point estimates offer no consistent advantage. Adding a probe-derived direction to the residual stream does not yield a dependable improvement in the tested steering settings, while the opposite direction degrades performance. We distinguish these observations from claims about statistical significance or a general inability to steer. Supplementary methods, archived results, and code document the tested interventions and the limits of their statistical calibration and reproducibility.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Editor Has Read-Only Access: Correctness Signals in Diffusion Language Models",
+  "url": "https://arxiv.org/abs/2609.36783"
+}

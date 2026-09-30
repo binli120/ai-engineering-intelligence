@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-30T14:54:36.940482Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "live-architecture-models-for-cloud-native-architecture-as-code-early-r-d9c1979a49",
+  "maturity": "unknown",
+  "published_at": "2026-09-30T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.36148v1 Announce Type: new Abstract: Infrastructure drift can separate a running Kubernetes system from its documented architectural intent. This paper investigates live architecture models: editable architectural representations connected to selected runtime facts through explicit correspondences and recurring conformance checks. The approach is instantiated through an Archer-specific subset of Kubernetes Deployment Language (KDL) and Archer, a VS Code prototype with synchronized textual and graphical views. Snapshot recovery extracts selected Kubernetes facts into KDL; periodic and on-demand read-only checks report model-cluster inconsistencies without enforcing or repairing deployment state. We assess feasibility on three feature-selected Kubernetes example applications under an author-defined protocol, reporting precision and recall for snapshot recovery and selected inconsistency detection. Recovery scores can be reproduced from saved ground-truth and recovered models; detection uses a documented manual perturbation protocol. The results support feasibility within the evaluated KDL scope. They do not establish comparative superiority, detection of arbitrary production drift, scalability, or developer benefit. Storage coverage and ingress-host representation/default handling remain limitations.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Live Architecture Models for Cloud-Native Architecture-as-Code: Early Results from Kubernetes Conformance Checking",
+  "url": "https://arxiv.org/abs/2609.36148"
+}

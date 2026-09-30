@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-09-30T14:54:36.940482Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "agent-callable-feature-coverage-measuring-software-readiness-for-ai-ag-0ffefd404d",
+  "maturity": "unknown",
+  "published_at": "2026-09-30T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.35789v1 Announce Type: new Abstract: AI agents already operate graphical software through screenshot-based computer use, so the pressing question is not whether agents can operate software, but how well software supports them through structured, controllable channels. We formalize this need as the GUI-API parity principle: every capability available to human users through a graphical interface should also be accessible to agents through a structured, callable interface with appropriate safety metadata. To operationalize this principle, we introduce two contributions. First, Agent-Callable Feature Coverage (ACFC), a product-level readiness metric quantifying how much of a system's human-facing functionality agents can access and use. Second, Agent Readiness Conformance (ARC), a framework that scores each capability on three axes: Accessibility (can an agent call it), Discoverability (can an agent find and understand it), and Controllability (can an agent use it safely), each on a 0-3 scale, yielding a composite 0-9 readiness score. Drawing on the Richardson Maturity Model, ARC provides finer-grained assessment than binary coverage. In an empirical study of 30 software systems across five categories, ARC-based ACFC scores are substantially lower than Accessibility-only metrics would suggest: most systems achieve moderate API coverage but lag on agent-oriented documentation and safety governance. In a controlled testbed of ten deployed systems, API-only agents completed 56 of 58 tasks whose target capabilities were exposed through structured interfaces; a documentation ablation reduced this to 50 of 58, showing that Discoverability affects execution even among accessible capabilities, while inaccessible capabilities, included as negative controls, were not solved. These findings hold across three agent models, including Google's open-weights Gemma4 run locally.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Agent-Callable Feature Coverage: Measuring Software Readiness for AI Agents",
+  "url": "https://arxiv.org/abs/2609.35789"
+}
