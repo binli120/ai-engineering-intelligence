@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-01T15:26:38.946195Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "toward-quantum-software-automation-a-quantum-aware-harness-for-llm-gui-9812991662",
+  "maturity": "unknown",
+  "published_at": "2026-10-01T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.38883v1 Announce Type: new Abstract: Quantum software is critical for improving the efficiency and reliability of scarce quantum hardware. However, its design still relies heavily on ad-hoc, handcrafted heuristics that are often suboptimal and quickly become obsolete as quantum hardware evolves. LLM-guided evolutionary search offers a promising way to automatically explore complex software designs, but existing search frameworks lack the quantum-specific support needed for efficient evolution: verification is expensive, feedback is sparse, and heterogeneous quantum programs require different optimization objectives. In this paper, we present QSA, a quantum-aware harness for LLM-guided evolutionary search toward automating quantum software design. QSA equips the search with three forms of quantum-specific guidance: an evolution-hardness-guided coreset and approximate scoring to reduce verification cost, static and snapshot analyses to provide fine-grained execution context, and task-specific rewards for compiler passes and runtime policies. We evaluate QSA on the IBM Quantum platform across three benchmark suites. For multiprogramming, QSA improves QPU utilization by 4.2%-9.5% and Hellinger fidelity by 15.2%-19.5% over the state of the art. For error mitigation, QSA reduces mitigation time by at least 96.8% while achieving comparable or better fidelity. These gains require only $6.9 in LLM API cost over 11.3 hours.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Toward Quantum Software Automation: A Quantum-Aware Harness for LLM-Guided Evolution",
+  "url": "https://arxiv.org/abs/2609.38883"
+}

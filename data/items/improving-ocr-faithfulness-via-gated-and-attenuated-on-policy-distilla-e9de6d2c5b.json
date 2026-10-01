@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-01T15:26:38.946195Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "improving-ocr-faithfulness-via-gated-and-attenuated-on-policy-distilla-e9de6d2c5b",
+  "maturity": "unknown",
+  "published_at": "2026-10-01T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2609.38282v1 Announce Type: new Abstract: Vision-language models may rewrite anomalous text in images into linguistically plausible expressions, compromising OCR transcription faithfulness. Sequence-level task rewards and local teacher guidance are complementary, but guidance from the same teacher may not remain equally effective as the student improves. Offline analysis shows that supervision from a fixed teacher becomes progressively less favorable as the student improves, both across training checkpoints and across response groups with different task rewards. Motivated by this observation, we introduce GAD-RL, which adaptively regulates teacher supervision during joint post-training according to the student's current task performance and local distributions. A frozen teacher conditions on reference transcriptions and student-generated prefixes. GAD-RL disables distillation for response groups containing an output with task reward at least 0.95 and continuously attenuates distillation strength as group-mean reward increases. It also weights forward KL by the student's probability of the teacher's Top-1 token, moderating local auxiliary updates when student support for that candidate is low. On Qwen3.5-2B, GAD-RL achieves 59.92% Micro Recall on CHAOS-Bench, surpassing GRPO and GRPO+OPD (fixed-weight) by 8.45 and 4.43 percentage points, respectively, while achieving an Overall score of 91.18 on OmniDocBench v1.6.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Improving OCR Faithfulness via Gated and Attenuated On-Policy Distillation",
+  "url": "https://arxiv.org/abs/2609.38282"
+}
