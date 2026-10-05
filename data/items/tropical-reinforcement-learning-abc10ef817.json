@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-05T17:08:14.027500Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "tropical-reinforcement-learning-abc10ef817",
+  "maturity": "unknown",
+  "published_at": "2026-10-05T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2610.02478v1 Announce Type: new Abstract: Reinforcement learning for large language models typically maximizes expected return, adding up the probabilities of all successful trajectories. However, the classical sum formulation can only report how often the model policy succeeds, not which solution actually worked, and because probabilities sum to one, reinforcing one solution can make the model forget another that was never shown to be wrong. This makes expected return a poor fit for compositional reasoning, where a solution must be assembled from reasoning steps that the model produces in separate, often failed, attempts but rarely produces together. To address this, we propose Tropical Reinforcement Learning, which rests on a simple change of algebra: instead of adding the probabilities of alternative solutions, we take their maximum, which yields the tropical semiring. The value of a state then becomes the log-probability of its most likely verified solution, together with an explicit path that can be replayed and reused. This enables true composition, since the best prefix and the best suffix meeting at a shared state can be joined even when they come from different rollouts. To put this into practice, we introduce TROPIC, a training algorithm for deterministic, resettable environments with verifiable outcomes. On four agentic tasks (Sokoban, Countdown, FrozenLake, WebShop), TROPIC outperforms the strongest on-policy baselines by up to 16 percentage points. Changing the algebra of reinforcement learning, not just its estimators, can thus substantially improve compositional reasoning in language models",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Tropical Reinforcement Learning",
+  "url": "https://arxiv.org/abs/2610.02478"
+}

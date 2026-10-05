@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-05T17:08:14.027500Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "veripy-source-preserving-verification-and-compatibility-checking-for-p-18ed0d3e16",
+  "maturity": "unknown",
+  "published_at": "2026-10-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.02814v1 Announce Type: new Abstract: Keeping a Python program and its formal guarantees aligned is a continuing maintenance problem. Specifications must describe the implementation that actually runs, and updates must preserve the behavior on which existing callers depend. VeriPy brings these obligations into a common workflow for annotated Python components. Developers and agents express contracts, invariants, and proof hooks as Python comments, then refine checked auxiliary lemmas using source-located diagnostics. Direct encoders produce Dafny or Lean artifacts while retaining admitted executable bodies and explicit models of their dependencies. A relational product checks whether an updated component still admits old inputs and preserves returned values and modeled exceptions. The resulting workflow connects source-level proof development with functional verification and backward compatibility, recording the assumptions under which each guarantee applies. The code is available at https://github.com/astrio-labs/veripy.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "VeriPy Source-Preserving Verification and Compatibility Checking for Python Components",
+  "url": "https://arxiv.org/abs/2610.02814"
+}

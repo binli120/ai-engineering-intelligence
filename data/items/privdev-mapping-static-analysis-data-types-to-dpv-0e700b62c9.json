@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-05T17:08:14.027500Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "privdev-mapping-static-analysis-data-types-to-dpv-0e700b62c9",
+  "maturity": "unknown",
+  "published_at": "2026-10-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.03518v1 Announce Type: cross Abstract: Static-analysis scanners can identify personal-data types in source code, but they lack mechanisms to connect these findings to standardized privacy vocabularies. PrivDev maps 122 Bearer CLI data types to Data Privacy Vocabulary Personal Data (DPV-PD) categories and links them to potentially relevant GDPR provisions. Our approach combines deterministic mapping for 43 exact-label matches with a retrieval-grounded Large Language Model (LLM) to resolve the remaining 79 non-trivial mappings. The resulting RDF knowledge graph contains 118 ODRL policy resources that were structurally validated using SHACL. The artifact passed five complementary validation gates that cover structural correctness, query consistency, retrieval quality, LLM-based assessment, and human evaluation. In human evaluation, nine annotators produced 711 judgments, yielding a raw agreement of 0.72, Gwet's AC1 of 0.68, and Gwet's AC2 of 0.88. Our results indicate that the proposed mappings are plausible and reproducible, while also revealing ambiguities in scanner-defined data-type labels and coverage gaps in DPV-PD.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "PrivDev: Mapping Static-Analysis Data Types to DPV",
+  "url": "https://arxiv.org/abs/2610.03518"
+}

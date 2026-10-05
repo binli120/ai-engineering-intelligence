@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-05T17:08:14.027500Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "compound-ai-system-reliability-a-failure-taxonomy-and-resilience-patte-a277ed3140",
+  "maturity": "unknown",
+  "published_at": "2026-10-05T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.02503v1 Announce Type: new Abstract: Deploying compound AI systems reliably and safely requires understanding failure modes that emerge at component boundaries, not within individual models. Cascading errors propagate across component boundaries, silent quality degradation evades standard monitoring, and coordination failures yield incorrect collective behavior from individually correct parts. We analyze 150 production incident reports from open-source compound AI projects and anonymized enterprise deployments to construct a taxonomy of 23 failure modes organized into five categories: retrieval failures, generation failures, tool failures, orchestration failures, and integration failures. For each category, we propose resilience patterns with measured effectiveness from controlled fault injection experiments. Circuit breakers reduce cascade propagation by 89%, output quality gates catch 73% of silent degradation before user impact, and component isolation reduces blast radius by 64%. Systems implementing three or more resilience patterns from our catalog reduce mean-time-to-recovery (MTTR) by 71% compared to unstructured monitoring baselines. We release the incident taxonomy and pattern catalog as a practitioner resource.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Compound AI System Reliability: A Failure Taxonomy and Resilience Pattern Catalog from 150 Production Incidents",
+  "url": "https://arxiv.org/abs/2610.02503"
+}
