@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-07T15:33:04.454647Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "rapo-sol-retrieval-augmented-preference-optimization-for-repository-le-b5e0df9f92",
+  "maturity": "unknown",
+  "published_at": "2026-10-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.08429v1 Announce Type: new Abstract: Smart contracts written in Solidity manage assets, permissions, and irreversible state changes, making code generation both useful and security-critical. Repository-level Solidity generation is challenging because models must synthesize complete contracts or libraries while preserving consistency across state variables, modifiers, events, inheritance, external calls, and access-control logic. We present RAPO-Sol, a two-stage training framework for repository-level Solidity code generation. First, Retrieval-Augmented Fine-Tuning (RAFT) augments each training input with similar Solidity examples, helping the model learn recurring contract-level patterns while remaining retrieval-free at inference time. Second, Direct Preference Optimization (DPO) trains the model to prefer reference contracts over close but semantically flawed alternatives. We construct rejected samples using Solidity Semantic-Anchor Perturbation (SAP), which perturbs validation statements, visibility modifiers, data-location keywords, context variables, payment operations, and low-level calls. Experiments on SolidityBench with CodeLlama-7B-Instruct, DeepSeek-Coder-6.7B-Instruct, and Qwen2.5-Coder-7B-Instruct show that RAFT consistently improves over supervised fine-tuning, while SAP-based DPO provides further gains in BLEU and SolidityScore. The full RAFT+DPO pipeline achieves the best performance across all three models, demonstrating complementary benefits from retrieval during training and Solidity-aware preference optimization without adding retrieval cost at inference.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "RAPO-Sol: Retrieval-Augmented Preference Optimization for Repository-Level Solidity Code Generation",
+  "url": "https://arxiv.org/abs/2610.08429"
+}

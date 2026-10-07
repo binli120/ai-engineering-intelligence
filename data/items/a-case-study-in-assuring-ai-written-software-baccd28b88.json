@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-07T15:33:04.454647Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-case-study-in-assuring-ai-written-software-baccd28b88",
+  "maturity": "unknown",
+  "published_at": "2026-10-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.08651v1 Announce Type: new Abstract: Software-engineering agents can enable people without formal software training to build systems they could not otherwise implement and simultaneously can produce more code than even experts can meaningfully inspect. In both cases, exhaustive code review is not reliable as the sole basis for human control. We report a case study of a production healthcare platform built through coding agents and governed by an operator without formal software-engineering training. Over time, its workflow grew into a human-led meta-agent system where one agent wrote code, other agents supervised and reviewed it, and project rules carried lessons forward. The operator found that tests, monitors and reviewing agents used to supervise the system were fallible. Some monitors measured proxies rather than outcomes, some audits failed silently, missing checks disappeared from reported results and one automated repair caused operational disruption. In this case, human control depended on keeping the intended outcome, the evidence used to judge it, the agents' permissions and the final human decision were all tied to the same underlying objective.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Case Study in Assuring AI-Written Software",
+  "url": "https://arxiv.org/abs/2610.08651"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-07T15:33:04.454647Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-epic-framework-for-spec-driven-development-8649b0c174",
+  "maturity": "unknown",
+  "published_at": "2026-10-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.07534v1 Announce Type: new Abstract: One practitioner we interviewed said their team writes \"must\" instead of \"should\" when instructing a coding agent, because the agent may treat \"should\" as optional. Small wording choices matter because agents often fill gaps in their instructions with their own assumptions. Spec-driven development (SDD) asks developers to write a specification, plan, and tasks before the agent writes code. SDD frameworks provide templates for these artifacts, but the templates do not help developers judge whether they have written enough or clearly enough. We studied what good SDD specifications contain. We scored the artifacts of 114 open-source SDD repositories against ISO/IEC/IEEE 29148 and derived practices from the highest-scoring ones. The resulting framework, EPIC, has 40 practices in 10 quality dimensions that guide developers in making expectations and decisions explicit in specifications, plans, and tasks for coding agents. The majority of SDD practitioners (N=15) endorsed every practice. Repositories in the top third of specification quality spent 11.8% of their commits on bug fixes, compared with 20.4% in the bottom third, and had a median of 4x as many contributors. Developers can use EPIC to find and fill the gaps in a specification before the agent does.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The EPIC Framework for Spec-Driven Development",
+  "url": "https://arxiv.org/abs/2610.07534"
+}

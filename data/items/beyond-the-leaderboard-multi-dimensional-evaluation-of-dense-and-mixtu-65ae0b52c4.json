@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-07T15:33:04.454647Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "beyond-the-leaderboard-multi-dimensional-evaluation-of-dense-and-mixtu-65ae0b52c4",
+  "maturity": "unknown",
+  "published_at": "2026-10-07T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.08173v1 Announce Type: new Abstract: Automated Program Repair (APR) with language models is usually evaluated by whether a generated patch passes the test suite, which can hide differences in maintainability, security, and computational cost. We propose a Weighted Quality Index (QI), inspired by the ISO/IEC 25010 software quality model, that combines functional correctness, maintainability, security, and generation efficiency under configurable weighting schemes. We evaluate three dense Qwen2.5-Coder models (3B, 7B, 14B) and the 16B-parameter DeepSeek-Coder-V2-Lite Mixture-of-Experts (MoE) model (2.4B active parameters) on 40 QuixBugs and 90 Defects4J bugs, all run locally on identical hardware to control for infrastructure effects. Model rankings change with the weighting scheme, showing that single-metric evaluation can hide trade-offs. The MoE model shows almost no statistically significant difference in correctness from the 7B and 14B dense models (McNemar's exact test) while using 3-6 times fewer active parameters, whereas correctness increases significantly across the three dense scales. These results suggest that active parameter count can be a more informative lens than total parameter count for sparse code models.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Beyond the Leaderboard: Multi-Dimensional Evaluation of Dense and Mixture-of-Experts Models for Automated Program Repair",
+  "url": "https://arxiv.org/abs/2610.08173"
+}
