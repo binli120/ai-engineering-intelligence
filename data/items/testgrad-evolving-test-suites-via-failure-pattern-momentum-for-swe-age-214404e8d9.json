@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-08T15:35:46.878772Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "testgrad-evolving-test-suites-via-failure-pattern-momentum-for-swe-age-214404e8d9",
+  "maturity": "unknown",
+  "published_at": "2026-10-08T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.10242v1 Announce Type: new Abstract: SWE-agent ensembles improve issue resolution by combining candidate patches from different agents with complementary strengths. The central problem is therefore test-based selection: generate tests, execute candidate patches, and identify the best patch. We formulate this process as test-space optimization: evolving an executable repository test suite until it distinguishes competing patches. Existing test-generation methods are limited optimizers. They usually lack an explicit loss for ensemble selection, optimize through incomplete directions that mostly create new tests or delete old ones, and perform one-off generation without feedback from repeated failures. Inspired by gradient descent with momentum, we introduce TestGRAD, a framework for automatic test optimization. TestGRAD centers on three concepts. Differential loss gives the optimizer an explicit execution-defined target: useful tests should separate candidate patches by behavior. Full CRUD gradients expand the update direction from merely creating or deleting tests to reading existing test infrastructure, creating new tests, updating stale assertions, and deleting only obsolete tests. Failure Pattern Momentum mines frequent failure sequences from memory, allowing the optimizer to avoid repeated non-discriminative directions while compressing the failure-history context. On SWE-bench Verified, TestGRAD achieves 84.2% Pass@1 with a 4-agent ensemble, outperforming the strongest baseline (80.6%) by an absolute improvement of 3.6 percentage points, while compressing failure-history context by over $100\\times$.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "TestGRAD: Evolving Test Suites via Failure Pattern Momentum for SWE-Agent Ensemble",
+  "url": "https://arxiv.org/abs/2610.10242"
+}

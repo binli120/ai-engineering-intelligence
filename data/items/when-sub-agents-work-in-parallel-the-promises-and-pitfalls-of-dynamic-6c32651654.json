@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-08T15:35:46.878772Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "when-sub-agents-work-in-parallel-the-promises-and-pitfalls-of-dynamic-6c32651654",
+  "maturity": "unknown",
+  "published_at": "2026-10-08T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.10263v1 Announce Type: new Abstract: As coding agents advance from bounded software engineering tasks toward long horizon development, dynamic concurrency offers a promising way to scale complex development tasks. Under this policy, agents decide during execution whether and how to spawn concurrent sub-agents. Model capability largely determines outcomes on shorter tasks, whereas long horizon development makes orchestration central to task completion. Existing work, focused on coding agent failures on shorter tasks or collaboration in predefined multiagent workflows, offers little insight into dynamic concurrency in frontier agents across task complexity. We study dynamic concurrency as an execution policy through controlled comparisons of matched Codex, Claude Code, and Kimi Code executions with the policy enabled or disabled. Across 354 tasks and 2,124 executions spanning a range of task complexities and execution horizons, we evaluate its end to end effects and scheduling behavior, and analyze matched trajectories to characterize 13 concurrency specific failure modes, 28 observable patterns, and the conditions under which it provides an advantage.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "When Sub-Agents Work in Parallel: The Promises and Pitfalls of Dynamic Concurrency in Long-Horizon Coding Tasks",
+  "url": "https://arxiv.org/abs/2610.10263"
+}

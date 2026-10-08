@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-08T15:35:46.878772Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "analysis-and-visualization-of-the-linux-kernel-s-software-evolution-us-437a79739b",
+  "maturity": "unknown",
+  "published_at": "2026-10-08T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.09910v1 Announce Type: new Abstract: The Linux kernel is one of the largest and longest-maintained open source projects in existence. With more than 40 million lines of code, understanding the kernel's internal structure and assessing its software evolution is a great challenge. In this paper, we present an approach to visualize the Linux kernel using our software visualization tool ExplorViz. We analyze commits from the Linux Git repository using a custom analysis service. The web-based frontend utilizes the 3D city metaphor for visualization of the software structure. Metrics such as the number of lines are collected for each file and are accumulated for directories and commits. Calculated metrics can be mapped to the building's dimensions or be displayed via a heat map. A wide range of visualization, search, and filter options enable the interactive exploration of the visualized data. We present both a visualization of all files in the kernel repository and a visual analysis of the code evolution of Rust files in the Linux kernel. Demo video: https://youtu.be/3ODnERqD8g0",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Analysis and Visualization of the Linux Kernel's Software Evolution Using the City Metaphor",
+  "url": "https://arxiv.org/abs/2610.09910"
+}

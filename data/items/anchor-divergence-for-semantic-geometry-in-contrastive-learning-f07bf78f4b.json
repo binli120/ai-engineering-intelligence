@@ -1,11 +1,11 @@
 {
   "category": "research",
-  "collected_at": "2026-10-07T15:33:04.454647Z",
+  "collected_at": "2026-10-08T15:35:46.878772Z",
   "engineering_impact": 60,
   "evidence_quality": 90,
   "id": "anchor-divergence-for-semantic-geometry-in-contrastive-learning-f07bf78f4b",
   "maturity": "unknown",
-  "published_at": "2026-10-07T04:00:00Z",
+  "published_at": "2026-10-08T04:00:00Z",
   "source_id": "arxiv_cs_ai",
   "summary": "arXiv:2610.06919v1 Announce Type: new Abstract: This paper concerns how semantic context determines geometry in learned vector representations. Similarity is typically measured using cosine similarity, which provides a single fixed geometry. Semantic similarity, however, is inherently context dependent: two images may be similar because they depict the same object, share a visual style, or are relevant to the same clinical finding. We show that contrastive representations naturally encompass a family of geometries that can be specialized to particular semantic structure. The key idea is to use an interplay between contrastive learning, exponential families, and information geometry to establish a correspondence between probability distributions over \"anchors\" and Bregman geometries on the representation space. We use this correspondence to define \"Anchor Divergences\", a method for specifying context-specific semantic geometries on fixed representations. Under this correspondence, modeling the anchor distribution models the geometry itself. Experiments on retrieval show that anchor divergences provide an effective and efficient way to specify context-specific semantic similarity.",
   "tags": [

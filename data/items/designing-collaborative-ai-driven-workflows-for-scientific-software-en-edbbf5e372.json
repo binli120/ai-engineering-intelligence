@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-08T15:35:46.878772Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "designing-collaborative-ai-driven-workflows-for-scientific-software-en-edbbf5e372",
+  "maturity": "unknown",
+  "published_at": "2026-10-08T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.09995v1 Announce Type: new Abstract: Agentic artificial intelligence systems can carry out a broad range of tasks in software engineering and scientific research, from writing and translating code to running workflows for data analysis and visualization. In scientific computing, the difficulty is verifying that agent-generated code is both correct and understandable to teams whose members bring different areas of expertise. We therefore argue that these systems are best used within collaborative team structures rather than as full automation. In the workflows we propose, domain experts write the specification and plan, and agents operate under a deterministic orchestration pattern to write the target code. Each stage ends with a numerical comparison against the reference code and requires human review and approval before the next begins. We evaluate these workflows on the translation of a large high-energy physics application from Fortran to C++, running the same task under different orchestrators, design patterns, and models. Across fourteen experiments, a simple author--reviewer loop with enforced limits completed a comparable number of files to a multi-agent workflow at about one-third of the cost per file.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Designing Collaborative AI-Driven Workflows for Scientific Software Engineering",
+  "url": "https://arxiv.org/abs/2610.09995"
+}

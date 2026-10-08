@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-08T15:35:46.878772Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "evaluating-change-point-detection-methods-for-software-performance-reg-4dcaa2ca8c",
+  "maturity": "unknown",
+  "published_at": "2026-10-08T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.09023v1 Announce Type: new Abstract: Performance issues in software systems are a critical quality issue that can erode user trust, violate service-level agreements, and ultimately affect business efficiency. Consequently, software performance engineering has shifted its focus to developing robust techniques to detect performance regressions as early as possible in the development cycle. Performance regression analysis often relies on time series of performance measurements to detect significant changes in performance behavior. Change Point Detection (CPD) methods have been widely used to automate the identification of such changes in various domains, including finance, healthcare, and performance monitoring. However, the effectiveness of these methods for software performance measurements has not been thoroughly evaluated. In this paper, we present a comprehensive study to evaluate the effectiveness of various CPD methods on real-world software performance measurement datasets. We start by collecting performance measurement data from three large software systems and characterizing the unique properties of performance time series data. Then, we undertake a large-scale effort to annotate and evaluate the consistency of human annotators' identification of potential performance changes. Thereafter, we evaluate the accuracy of twelve distinct CPD methods in detecting potential performance changes, providing insights into their applicability and effectiveness in software performance regression analysis.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Evaluating Change Point Detection Methods for Software Performance Regression Analysis",
+  "url": "https://arxiv.org/abs/2610.09023"
+}

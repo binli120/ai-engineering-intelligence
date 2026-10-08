@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-08T15:35:46.878772Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "mitigating-uncertainty-interactions-in-genai-based-adaptive-systems-vi-d5bd4dbd74",
+  "maturity": "unknown",
+  "published_at": "2026-10-08T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.08881v1 Announce Type: new Abstract: Modern software-intensive systems increasingly incorporate GenAI components, including LLM and agentic subsystems, which introduce novel and compounding sources of uncertainty across system layers. The self-adaptive systems community has made significant strides in understanding and managing uncertainty. The intrinsic characteristics of GenAI, including probabilistic outputs, hallucinations, context window limitations, and memory staleness, demand a re-examination of existing frameworks and mitigation strategies for dealing with uncertainty, and especially, the interactions among uncertainty occurrences and manifestations. This position paper posits an initial conceptual framework that establishes preliminary guidelines for characterizing and mitigating uncertainty interactions in GenAI-based software-intensive systems. We argue that mitigation must be considered across the full software lifecycle, encompassing requirements analysis, design-time decisions, and run-time adaptations, which implies the unfeasibility of decoupling it from monitoring and analysis at execution. We introduce the notion of a mitigation function that maps uncertainty interaction categories, involved uncertainty types, system design characteristics, criticality, and mitigating architectural tactics to impacted quality attributes and corresponding tradeoffs. As a proof of concept, we apply the framework to three illustrative use cases: LLM serving, AI-driven software operations, and agentic cloud management.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Mitigating Uncertainty Interactions in GenAI-based Adaptive Systems: Vision, Challenges and Preliminary Guidelines",
+  "url": "https://arxiv.org/abs/2610.08881"
+}
