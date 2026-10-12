@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-12T17:53:27.599402Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "don-t-guess-just-ask-evaluating-interactive-requirement-clarification-f9a83e774f",
+  "maturity": "unknown",
+  "published_at": "2026-10-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.13022v1 Announce Type: new Abstract: As LLMs become increasingly capable of implementing software, a critical bottleneck emerges: whether they truly understand what users want. Users often begin with vague intent, leaving important requirements to be clarified through interaction. In repository-level development, misunderstandings can propagate and cause costly rework. However, existing benchmarks typically evaluate implementation from complete specifications or underspecified requests, overlooking pre-coding requirement clarification. Prior clarification studies mainly focus on function-level tasks. It therefore remains unclear how well LLMs can transform vague intent into clear requirements through interaction and how this capability affects subsequent code generation. We introduce ReqClarifyBench, an interactive requirement clarification benchmark for repository-level software development. It contains 341 tasks spanning game, miniapp, and web development, each with a vague user intent, a human-validated requirement document, and code evaluation artifacts. We employ LLM-based user simulators with diverse personas derived from real-world conversations. We evaluate six LLMs in terms of clarification effectiveness and generated requirement document quality. Results show that stronger clarification effectiveness does not necessarily translate into higher document quality, and performance varies substantially across user personas. We also find that coding-agent harnesses do not further improve requirement document quality compared with their base LLMs. These findings offer insights for building LLM-based end-to-end software development systems.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Don't Guess, Just Ask: Evaluating Interactive Requirement Clarification for Repository-Level Software Development",
+  "url": "https://arxiv.org/abs/2610.13022"
+}

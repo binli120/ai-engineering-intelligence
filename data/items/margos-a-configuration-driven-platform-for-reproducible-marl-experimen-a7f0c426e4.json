@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-12T17:53:27.599402Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "margos-a-configuration-driven-platform-for-reproducible-marl-experimen-a7f0c426e4",
+  "maturity": "unknown",
+  "published_at": "2026-10-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.13772v1 Announce Type: new Abstract: Multi-agent reinforcement learning (MARL) has become a prominent research direction, particularly within collective robotics, where the ARGoS simulator is widely used to study emergent swarm behavior. Yet despite this growth, systematic support for reuse and reproducibility in MARL-based swarm robotics remains limited and insufficiently standardized: a single experiment is assembled from manually aligned simulator files, training scripts, configuration values, paths, seeds, and environment details, so reuse and reproduction stay fragile even within one research group. To address this gap, we introduce MARGoS, a lightweight, configuration-driven platform developed in this project that elevates these experiment-defining inputs to first-class, platform-managed artifacts. MARGoS enables reproducible experimentation through configuration hashing, end-to-end seed propagation, frozen (immutable) configurations, structured logging, environment fingerprinting, and exportable experiment bundles that facilitate sharing, replay, and verification of results across machines and over time. A five-dimension evaluation (architecture, efficiency, reproducibility, usability, and collaboration) supports our claim that managing experiment variation as a platform responsibility makes ARGoS+MARL experiments easier to reuse, reproduce, and hand off. Our code is available at https://github.com/tombackert/margos.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS",
+  "url": "https://arxiv.org/abs/2610.13772"
+}

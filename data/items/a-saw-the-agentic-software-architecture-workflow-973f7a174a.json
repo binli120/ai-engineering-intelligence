@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-12T17:53:27.599402Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-saw-the-agentic-software-architecture-workflow-973f7a174a",
+  "maturity": "unknown",
+  "published_at": "2026-10-12T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.13647v1 Announce Type: new Abstract: AI assistance in software engineering focuses on implementation and verification, leaving the design phase, and in particular the maintenance of architecture documentation, comparatively underserved. Architecture as Code makes architectural artifacts versionable, diffable, and machine-readable, but it does not reduce the effort of keeping them updated, so design documentation still ends up as a fragmented, author-dependent, and only partially trusted record of why a system looks the way it does. In this paper we introduce the Agentic Software Architecture Workflow (A-SAW), a process-level artifact that extends Architecture as Code with a persistent agent layer: an IDE-integrated agent drafts architecture documents from a version-controlled C4 model, a typed element catalog, and instrumented templates. Every draft passes a mandatory human review gate before it is accepted. We evaluate it in a large industrial organization along two tracks: a rubric assessment of 45 architecture documents including 13 matched source-regeneration pairs, and 13 task-anchored practitioner interviews. Our results show that the workflow collapses the between-author variance that made quality unpredictable. Intrinsic quality also rises, by a median of +19 points across the matched pair. The cohort has a mean of 58% and 89% bundle templates, catalog, agent, and a richer regeneration context. So they bound the agent's contribution from above rather than isolating it. In the agent-generated documents, completeness (100%), consistency (93%), and machine-readability (99%) reach or approach the rubric maximum, while traceability reaches 79%. Eleven of the 13 participants rejected agent output that no human had reviewed, and one warned that polished output may lead reviewers to skip the review. Our work supports keeping human review mandatory and concentrating it where the agent must infer beyond the repository.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A-SAW: The Agentic Software Architecture Workflow",
+  "url": "https://arxiv.org/abs/2610.13647"
+}
