@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-15T13:24:56.516804Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "swe-nexus-automated-composition-of-software-engineering-tasks-from-tes-14f62cbbd7",
+  "maturity": "unknown",
+  "published_at": "2026-10-15T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.20038v1 Announce Type: new Abstract: Historical code changes provide convenient task boundaries, but do not identify which production functions selected tests exercise or support composing validated behaviors beyond a single change. We present SWE-Nexus, a fully automated pipeline that constructs repository-level implementation tasks from test execution. Four construction agents select tests, adapt tracing and evaluation protocols to each repository, and generate behavioral specifications. For each selected test file, tracing records an observed execution footprint of production function bodies. A scope is retained only if all expected scoring points pass in the original repository and masking the traced bodies causes at least one failure or error. Compatible scopes are composed deterministically, with shared functions counted once and every constituent test file revalidated under the complete combined mask. The benchmark contains 600 tasks from 105 repositories across six programming languages, including 116 atomic and 484 composite tasks. We evaluate 12 models under three agent scaffolds. The best configuration resolves 37.8% of tasks in one attempt, and scope-weighted scoring measures partial recovery. SWE-Nexus enables task construction from validated behavior beyond individual historical changes.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SWE-Nexus: Automated Composition of Software Engineering Tasks from Test Execution",
+  "url": "https://arxiv.org/abs/2610.20038"
+}

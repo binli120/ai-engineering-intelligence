@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-15T13:24:56.516804Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "os-bench-evaluating-swe-agents-on-cross-os-code-migration-ed3cf60c2f",
+  "maturity": "unknown",
+  "published_at": "2026-10-15T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.19368v1 Announce Type: new Abstract: Language-model (LM) agents are increasingly evaluated on repository-level software engineering (SWE) benchmarks derived from GitHub issues and pull requests. Although these benchmarks cover a broad range of development tasks, they provide limited insight into a common yet technically distinct challenge: migrating an existing implementation from one operating system (OS) to another while preserving behavior on both. We introduce OS-Bench, an executable benchmark for cross-OS code migration between Linux and Windows. Motivated by case studies showing that cross-platform features are frequently implemented on one OS before support is added for another, OS-Bench identifies migration opportunities by comparing execution coverage collected from the same repository on both systems. Platform-specific regions are then verified, organized into five migration scenarios, and transformed into repository-level tasks with target-platform tests and source-platform regression tests. The resulting benchmark contains 140 validated tasks from 111 repositories across C, C++, C#, Go, and Rust, comprising 91 Windows-to-Linux and 49 Linux-to-Windows migrations. We evaluate six models with SWE-agent, Claude Code, OpenHands, and Win-agent. The best configurations achieve only 26.4% success on Linux-target tasks and 20.4% on Windows-target tasks while preserving correctness across both systems. These results indicate that cross-OS migration is a challenging and underexplored capability, and OS-Bench is a testbed for improving platform-aware SWE agents.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "OS-Bench: Evaluating SWE Agents on Cross-OS Code Migration",
+  "url": "https://arxiv.org/abs/2610.19368"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-15T13:24:56.516804Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "controllable-diverse-sampling-through-pullback-directions-e2eea2f565",
+  "maturity": "unknown",
+  "published_at": "2026-10-15T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2610.14294v1 Announce Type: new Abstract: Conditional diffusion models can generate high-quality images that align closely with a given prompt. However, samples generated from different random seeds may remain visually similar, limiting creative exploration. Existing approaches can increase variation, but often require additional optimization or sampling overhead, while stronger perturbations may introduce distortions that degrade image quality or prompt alignment. We propose a training-free method that leverages the local pullback geometry induced by the mapping from the conditioning-embedding space to the image space to identify directions of maximal output sensitivity. By steering different sampling trajectories along these directions, we encourage distinct generations while maintaining consistency with the conditioning signal. Experiments on MS-COCO and BrushNet show the efficacy of the method in improving diversity on prompt-conditioned image generation and inpainting.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Controllable Diverse Sampling through Pullback Directions",
+  "url": "https://arxiv.org/abs/2610.14294"
+}

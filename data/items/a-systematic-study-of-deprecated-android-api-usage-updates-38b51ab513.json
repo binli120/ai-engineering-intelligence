@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-15T13:24:56.516804Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "a-systematic-study-of-deprecated-android-api-usage-updates-38b51ab513",
+  "maturity": "unknown",
+  "published_at": "2026-10-15T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.19150v1 Announce Type: new Abstract: Android Application Programming Interfaces (APIs) continuously evolve, causing existing APIs to become deprecated and requiring developers to migrate their usages to recommended replacements. Although prior studies have proposed automated migration techniques, their effectiveness is often limited by the diversity and contextual complexity of API changes. This paper presents a systematic study of deprecated Android APIs, their recommended replacements, and real-world usage updates performed by developers. Based on an analysis of 1,000 deprecated APIs and 4,336 migration examples collected from GitHub, we identify six migration categories and derive recurring usage-update patterns involving Android-version checks, parameter adaptation, object initialization, data-type conversion, and changes in API interaction mechanisms. To assess their applicability, we augment the zero-shot GUPPY benchmark prompts with the migration category and corresponding usage-update pattern. On 156 benchmark tasks, the pattern-guided prompt improves correct updates from 139 to 147 and performs better in five of the six categories.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "A Systematic Study of Deprecated Android API Usage Updates",
+  "url": "https://arxiv.org/abs/2610.19150"
+}

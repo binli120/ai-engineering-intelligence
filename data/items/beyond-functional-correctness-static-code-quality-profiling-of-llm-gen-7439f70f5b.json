@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-15T13:24:56.516804Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "beyond-functional-correctness-static-code-quality-profiling-of-llm-gen-7439f70f5b",
+  "maturity": "unknown",
+  "published_at": "2026-10-15T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.19167v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly used for code generation, yet most evaluations still focus on whether generated code passes benchmark test suites. Functional correctness alone, however, provides only a limited view of quality: benchmark tests are often incomplete, and passing them does not guarantee that code is maintainable, reliable, or well-structured. This paper {presents a large-scale static quality profiling of} LLM-generated Python code, with a focus on maintainability and reliability. Using 65{,}663 programs from 73 models in LiveCodeBench, we evaluate generated code with established static analysis tools, including Pylint, Radon, and SonarQube. Our results show systematic differences across models that are not captured by correctness alone, with maintainability emerging as the clearest source of variation. We further find that correctness often comes with structural trade-offs rather than uniformly simpler solutions. Overall, our findings motivate evaluation frameworks that assess LLM-generated code beyond pass rates alone.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Beyond Functional Correctness: Static Code Quality Profiling of LLM-Generated Code",
+  "url": "https://arxiv.org/abs/2610.19167"
+}
