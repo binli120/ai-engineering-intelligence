@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-19T15:35:14.200043Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "code-skill-server-a-large-scale-search-engine-for-code-generation-skil-b3c1cd6552",
+  "maturity": "unknown",
+  "published_at": "2026-10-19T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.23186v1 Announce Type: new Abstract: Agent skills have proven to be an effective technique for improving agent ability on specific tasks, including software engineering, natural science, and mathematics. During such a process, using agent skills often involves manually discovering and organizing skills from heterogeneous sources, while existing skill retrieval methods mainly focus on selecting relevant skills from established skill libraries. However, with the rapidly increasing number and variety of reusable agent skills, manually searching for relevant skills across heterogeneous sources is becoming impractical at scale. In this paper, we introduce the Code Skill Server (CSS), a large-scale search engine for finding the most useful code generation skills for a target task. CSS consists of a skill server that incrementally collects and indexes publicly available code generation skills from multiple sources, with 993 skills included in the corpus used in this work. Extensive experiments across different retrieval methods and code generation benchmarks show that the best CSS configuration improves Pass@1 by up to 13.91% and consistently improves all evaluated models by at least 4.21% in the cross-model evaluation. These results demonstrate that CSS can effectively search for and serve relevant skills, improving code generation quality and enhancing models' code generation capabilities. Code and the CSS-993 corpus are available at {https://github.com/haoyuli-sdu/CodeSkillServer}.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Code Skill Server: A Large-Scale Search Engine for Code Generation Skills",
+  "url": "https://arxiv.org/abs/2610.23186"
+}

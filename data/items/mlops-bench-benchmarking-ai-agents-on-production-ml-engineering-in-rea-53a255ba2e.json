@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-19T15:35:14.200043Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "mlops-bench-benchmarking-ai-agents-on-production-ml-engineering-in-rea-53a255ba2e",
+  "maturity": "unknown",
+  "published_at": "2026-10-19T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.23506v1 Announce Type: new Abstract: AI agents are increasingly expected to modify and maintain machine-learning systems in production, yet existing benchmarks primarily evaluate either competition-style ML experimentation or generic repository issue resolution. We introduce MLOps-Bench, a repository-grounded benchmark for production ML engineering. Unlike prior ML-agent benchmarks, MLOps-Bench evaluates executable lifecycle changes inside real ML repositories, spanning data pipelines, feature engineering, model training, model serving, monitoring, CI/CD and governance, and end-to-end integration. Each task is grounded in repository evidence and includes a natural-language requirement, oracle patch, plausible buggy baseline, fail-to-pass tests, pass-to-pass tests, and provenance metadata. The benchmark contains 212 validated tasks from 31 public ML repositories, with 636 fail-to-pass tests and 856 pass-to-pass tests. We evaluate six agents and find that the best system solves 31.2% of tasks while passing 68.7% of tests, showing that current agents often make partial progress but still fail production-relevant behavioral requirements. MLOps-Bench shifts agent evaluation beyond model building and issue fixing toward repository-native MLOps work where correctness depends on lifecycle reasoning, behavioral robustness, and preservation of existing system behavior.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "MLOps-Bench: Benchmarking AI Agents on Production ML Engineering in Real Repositories",
+  "url": "https://arxiv.org/abs/2610.23506"
+}

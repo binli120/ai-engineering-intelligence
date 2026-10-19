@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-19T15:35:14.200043Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "empirical-insights-from-ai-powered-software-engineering-in-practice-b9d4045df5",
+  "maturity": "unknown",
+  "published_at": "2026-10-19T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.23632v1 Announce Type: new Abstract: Generative Artificial Intelligence (GenAI) is becoming indispensable in future software engineering. Its application spans a wide spectrum - from assisted development to autonomous software engineering, requiring organizations to address associated risks and challenges. This paper investigates these issues through three case studies, highlighting practical problems encountered during GenAI integration. Based on these findings, it provides targeted recommendations for managing risks and ensuring reliable outcomes. This paper provides guidance for effective and responsible GenAI adoption in software engineering based on empirical insights.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Empirical Insights from AI-Powered Software Engineering in Practice",
+  "url": "https://arxiv.org/abs/2610.23632"
+}

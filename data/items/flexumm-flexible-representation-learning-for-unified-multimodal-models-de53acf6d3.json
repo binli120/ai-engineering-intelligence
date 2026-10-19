@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-19T15:35:14.200043Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "flexumm-flexible-representation-learning-for-unified-multimodal-models-de53acf6d3",
+  "maturity": "unknown",
+  "published_at": "2026-10-19T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2610.22682v1 Announce Type: new Abstract: Unified multimodal models (UMMs) can integrate understanding and generation within a single backbone. However, it is commonly known that these two capabilities can cause conflicting representations, leading to a central question: how representation and computation should be shared across functionalities? Existing UMMs often rely on a largely fixed structure, where different inputs and functionalities follow the same depth and parameter-sharing pattern. We argue that this assumption is too restrictive: more effective unification requires sharing the computation that supports cross-functional communication while specializing the capacity that becomes task- or input-specific. We introduce FlexUMM, a flexible UMM framework that dynamically decides when to preserve shared computation, when to route specialized capacity, and when to stop further processing. Evidence shows that this flexible allocation improves UMMs along two complementary axes. It improves accuracy by reducing harmful competition between functionalities, and it improves efficiency by avoiding unnecessary computation once an input representation is sufficiently mature. Beyond simple architectural unification from the pre-trained models, FlexUMM works as a model-agnostic, functional plug-in to make existing UMMs more unified, stronger, and efficient. Code is available at: https://github.com/AIFrontierLab/TorchUMM/tree/main/src/umm/post_training/flexumm.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "FlexUMM: Flexible Representation Learning for Unified Multimodal Models",
+  "url": "https://arxiv.org/abs/2610.22682"
+}
