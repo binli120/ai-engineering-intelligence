@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-21T13:47:07.286721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "industrial-agentic-ai-llm-driven-new-generation-agents-for-smart-manuf-c1a0d864f0",
+  "maturity": "unknown",
+  "published_at": "2026-10-21T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2610.26941v1 Announce Type: new Abstract: Large language models (LLMs) are enabling agents to move beyond predefined workflows toward autonomous planning and execution, creating new opportunities for smart manufacturing. However, dynamic environments, complex physical constraints, and stringent reliability requirements hinder the direct deployment of general-purpose agents in smart manufacturing. This article presents a systematic overview of LLM-driven industrial agents. First, we analyze five key challenges and discuss the concept and core characteristics of industrial agents. We then establish a unified taxonomy covering application scenarios, embodiment forms, and five capability levels. Next, we propose a four-layer system architecture and detail its core modules and operational mechanisms for closed-loop task execution. Finally, we review representative applications across the industrial lifecycle and outline future research directions. This article provides a structured reference for the design, development, and application of industrial agents.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Industrial Agentic AI: LLM-Driven New-Generation Agents for Smart Manufacturing",
+  "url": "https://arxiv.org/abs/2610.26941"
+}

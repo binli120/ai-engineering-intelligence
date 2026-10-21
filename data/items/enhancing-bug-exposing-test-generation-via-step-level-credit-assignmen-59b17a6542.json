@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-21T13:47:07.286721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "enhancing-bug-exposing-test-generation-via-step-level-credit-assignmen-59b17a6542",
+  "maturity": "unknown",
+  "published_at": "2026-10-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.27694v1 Announce Type: new Abstract: Large Language Models have shown strong code generation capabilities, yet their outputs often contain subtle bugs. Automatically repairing such code requires informative tests: inputs that expose faulty behavior, paired with correct expected outputs. Recent RL-based test generation methods apply the same outcome reward to all reasoning steps, which can discourage useful reasoning and reinforce flawed steps. They also fail to effectively learn from trajectories that find bug-triggering inputs but predict incorrect outputs, leaving their verified bug-triggering progress insufficiently exploited. To address these limitations, we propose SCALF, a process-supervised RL approach that combines Step-level Credit Assignment with targeted Learning from valuable Failed trajectories. SCALF derives step-specific advantages from process rewards, allowing each reasoning stage to receive its own learning signal. It further routes trajectories that expose bugs but predict incorrect outputs to on-policy self-distillation, using execution feedback to learn from their valuable bug-triggering progress. Across three benchmarks, SCALF outperforms strong prompting and post-training baselines by up to 2.97, 5.26, and 3.53 percentage points in joint success rate, output correctness rate, and bug-triggering rate, respectively. Our code and datasets are available at https://anonymous.4open.science/r/SCALF-F4D1.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Enhancing Bug-Exposing Test Generation via Step-Level Credit Assignment and Self-Distillation from Valuable Failures",
+  "url": "https://arxiv.org/abs/2610.27694"
+}

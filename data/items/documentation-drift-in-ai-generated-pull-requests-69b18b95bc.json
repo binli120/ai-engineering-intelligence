@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-21T13:47:07.286721Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "documentation-drift-in-ai-generated-pull-requests-69b18b95bc",
+  "maturity": "unknown",
+  "published_at": "2026-10-21T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.27381v1 Announce Type: new Abstract: AI coding agents now contribute to software repositories at scale, yet their documentation practices remain uncharacterised. We analyse 29,669 AI-generated pull requests from 2,585 repositories in the AIDev dataset, measuring documentation co-change: whether code-file modifications are accompanied by a documentation-file update in the same PR. We find that 63.2% of AI PRs change code without updating any documentation. This varies sharply by task type: 55.2% for features and 77.5% for refactoring. Undocumented code files are followed by a fix to the same file 8.6 to 11.7% more often than documented files across 30 to 90-day windows. A raw PR-level comparison shows the opposite because documented PRs are 3.9 times larger and therefore attract more fixes. Controlling for size exposure reverses this result. Documented changes also merge faster despite their larger size (median: 40 seconds versus 184 seconds), although merging is largely automated in this dataset. Documentation drift also compounds: within 90 days, a file changed without documentation is later re-documented at roughly half the rate of a file changed with documentation (24% versus 48%). This suggests that documentation debt tends to accumulate rather than be revisited.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Documentation Drift in AI-Generated Pull Requests",
+  "url": "https://arxiv.org/abs/2610.27381"
+}
