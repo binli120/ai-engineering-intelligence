@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-23T13:25:12.740433Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-customer-is-the-builder-how-ai-coding-agents-are-rewriting-the-eco-03bb9faa0e",
+  "maturity": "unknown",
+  "published_at": "2026-10-23T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.30307v1 Announce Type: new Abstract: AI coding agents could change whether organizations buy software or build the functionality they need. We focus on organizations and professional buyers whose domain knowledge can help them specify and evaluate tools for their work. We define the software substitution frontier as the functions customers could build and maintain at an acceptable standard for less than buying them. Using public data, we compare growing capacity to build with indicators of market change. Since 2023, the length of benchmark tasks that leading agents can complete at 50 percent success, measured in human working time, has doubled about every 129 days. A broad search identified 575 potential open-source alternatives to selected commercial products, although some functional matches still require independent validation. The Craft suite produced 12 application repositories over 12.0 days of public development, but these remain early versions with unverified completeness and reliability. Market evidence is mixed: purchased software gained US investment share and tracked commercial installations grew. Yet 32 percent of respondents to an organizational survey reported forgoing at least one software purchase because their organization could build the functionality with coding agents. These self-reports do not establish the spending displaced or the reliability of the resulting tools. The gap motivates a warning: customers' capacity to build could affect individual buying decisions before a broad purchasing shift becomes visible. We examine this possibility using benchmark projections and observable market tests. The projections are an extrapolation, not a forecast of customer switching.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Customer Is the Builder: How AI Coding Agents Are Rewriting the Economics of Software",
+  "url": "https://arxiv.org/abs/2610.30307"
+}
