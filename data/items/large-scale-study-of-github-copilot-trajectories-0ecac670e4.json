@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-26T15:10:47.775432Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "large-scale-study-of-github-copilot-trajectories-0ecac670e4",
+  "maturity": "unknown",
+  "published_at": "2026-10-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.32313v1 Announce Type: new Abstract: AI coding agents are increasingly integrated into software development workflows. However, most coding agent studies rely on benchmarks similar to SWE-bench, which assume autonomous agents operating in a single trajectory. This assumption does not mirror real-world usage, where developers interactively collaborate with agents. We address this gap by studying human-in-the-loop agent trajectories in the wild, focusing on 7,581 Copilot-authored PRs with publicly accessible session data. We find that 58% of Copilot PRs have no human intervention, and that when developers do intervene, collaboration is brief (median of 2 Human-AI loops). Merged PRs also tend to have fewer initial trajectory iterations than unmerged ones. We also find that the trajectory following the first human intervention exhibits a significant drop of 20.8 iterations and 8.4 min in duration. However, trajectories following later interventions show minimal iteration drops and no significant duration change, signifying that most of the work happens in the initial trajectory. Our qualitative analysis of illustrative PRs explains this pattern: many developer interventions are small, focused requests that Copilot completes in shorter later trajectories. We also illustrate that developers collaborate with Copilot in multiple ways, including delegated work through feedback as well as adding their own commits. However, we find that developers may need to guide Copilot through multiple (sometimes repeated) interventions in the PR, or even across multiple editions of the PR.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Large-Scale Study of GitHub Copilot Trajectories",
+  "url": "https://arxiv.org/abs/2610.32313"
+}

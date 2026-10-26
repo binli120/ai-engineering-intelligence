@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-26T15:10:47.775432Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "barc-bench-benign-asks-risky-consequences-2b781858cb",
+  "maturity": "unknown",
+  "published_at": "2026-10-26T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2610.32024v1 Announce Type: new Abstract: Task instructions from users for agents are inherently underspecified, especially regarding safety boundaries--creating behavioral risks. To study these risks, we introduce BARC-Bench, a collection of 110 tasks across nine simulated workspace environments where benign requests leave openings for unsafe actions. In this benchmark, we evaluate agent behavior against safety boundaries established by workspace records, implicit environmental context, and unstated social norms. For example, an agent asked to schedule off-boarding discussions must arrange the meeting without prematurely revealing an employee's resignation through a shared calendar invitation. Evaluating four frontier model configurations across five attempts per task reveals that models are not consistently safe: the share of tasks completed safely on all five attempts ranges from 9.1% to 72.7%, with even the strongest configuration producing a safety violation on 27.3% of tasks. These results highlight an asymmetric operational risk: while models frequently complete complex workflows, their inability to consistently respect unstated boundaries presents a substantial barrier to safe autonomous delegation.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "BARC-Bench: Benign Asks, Risky Consequences",
+  "url": "https://arxiv.org/abs/2610.32024"
+}

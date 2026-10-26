@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-26T15:10:47.775432Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "crowdstrike-channel-file-291-an-engineering-analysis-of-a-global-endpo-86b42b880d",
+  "maturity": "unknown",
+  "published_at": "2026-10-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.32078v1 Announce Type: new Abstract: On July 19, 2024, a CrowdStrike Falcon content update caused Windows systems to crash, affecting about 8.5 million devices according to a Microsoft estimate. The immediate defect was an inconsistency between a detection template that declared 21 inputs and sensor code that supplied 20. A new matching criterion exposed an unchecked array access in the kernel-mode content interpreter. This article reconstructs the incident from vendor technical reports, Microsoft's crash analysis and recovery guidance, congressional records, and operational impact reports. It distinguishes documented findings from engineering inferences and examines how interface validation, test selection, deployment policy, and recovery dependencies interacted. Four assurance gaps were consequential: validation against a definition the consumer did not meet, tests that avoided the missing input, distribution without health-gated promotion, and recovery paths requiring connectivity that some crashing hosts could not maintain. Recommended controls separate defect prevention, exposure containment, and service restoration, with verification criteria, release-cadence constraints, and operational tradeoffs. The case shows why configuration consumed by privileged software requires lifecycle assurance comparable to code, and why release reversion, endpoint recovery, and service restoration must be assessed separately.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "CrowdStrike Channel File 291: An Engineering Analysis of a Global Endpoint Outage",
+  "url": "https://arxiv.org/abs/2610.32078"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-26T15:10:47.775432Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "beyond-correctness-how-novice-software-engineering-students-exercise-o-e741b53fa6",
+  "maturity": "unknown",
+  "published_at": "2026-10-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.32118v1 Announce Type: new Abstract: Generative AI (GenAI) is shifting software engineering students' work from producing artefacts towards evaluating and supervising AI-generated outputs. However, little is known about what characteristics students identify in outputs when reporting interventions, or how they exercise oversight during authentic software engineering work. We analysed 962 student-AI interaction turns documented by 145 first-year software engineering students through structured AI Journals, including 172 student-declared interventions. Using a multi-dimensional coding framework, we characterised the output characteristics identified in these reported interventions, students' reasons for intervening, the actions they took, and how those actions were enacted. Fitness problems were identified in 74.4% of interventions, compared with 16.9% involving correctness problems, indicating that oversight more often concerned whether plausible AI outputs were suitable for the engineering task than whether they contained explicit errors. Among classifiable interventions, students most frequently modified generated outputs (51.0%) or refined their prompts (28.2%), with both response types commonly associated with engineering fit. Within-student analysis further showed that outputs perceived as containing minor flaws were associated with lower evaluation confidence than outputs perceived as perfect. Taken together, these findings characterise novice AI oversight as a process that extends beyond error detection to encompass both judgement of fitness for purpose and active intervention in AI-assisted engineering work.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Beyond Correctness: How Novice Software Engineering Students Exercise Oversight of Generative AI",
+  "url": "https://arxiv.org/abs/2610.32118"
+}

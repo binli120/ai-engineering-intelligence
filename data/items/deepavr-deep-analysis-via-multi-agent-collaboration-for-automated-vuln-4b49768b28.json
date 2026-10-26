@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-26T15:10:47.775432Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "deepavr-deep-analysis-via-multi-agent-collaboration-for-automated-vuln-4b49768b28",
+  "maturity": "unknown",
+  "published_at": "2026-10-26T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.32345v1 Announce Type: new Abstract: Automated Vulnerability Repair (AVR) has emerged as a critical defense against software security flaws, aiming to triage and fix bugs autonomously. Early LLM-based approaches focused on patch generation under the assumption of perfect fault localization, while recent end-to-end methods attempt to repair vulnerabilities directly from sanitizer logs. However, these methods often fail when the root cause is deeply hidden--either physically distant from the crash site or logically masked by interdependent errors--making the initial report insufficient. We propose DeepAVR, a multi-agent framework for end-to-end AVR that performs deep analysis by transforming intermediate repair outcomes into structured diagnostic feedback. DeepAVR decomposes repair into specialized roles--Fault Localization, Patch Generation, Compile Validation, Security Validation, Functionality Validation, and Patch Review--and routes feedback across these roles to iteratively refine both localization and patch hypotheses. In particular, DeepAVR introduces patch-conditioned re-localization, which treats execution results from intermediate patches as diagnostic signals to uncover hidden root causes, and a root-cause-oriented patch review stage that detects symptom-level fixes and incomplete repairs beyond execution-based validation. Evaluation on the real-world C/C++ vulnerability repair dataset VulnLoc shows that DeepAVR significantly outperforms prior methods, generating correct patches for 92.3% of vulnerabilities. Furthermore, results on SAN2VULN demonstrate strong generalization, with DeepAVR effectively repairing vulnerabilities unseen during training.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "DeepAVR: Deep Analysis via Multi-Agent Collaboration for Automated Vulnerability Repair",
+  "url": "https://arxiv.org/abs/2610.32345"
+}
