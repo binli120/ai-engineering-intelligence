@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-28T15:05:06.621906Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "generation-and-verification-human-agent-collaboration-for-safety-criti-f7cc663a5d",
+  "maturity": "unknown",
+  "published_at": "2026-10-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.35982v1 Announce Type: new Abstract: Research on coding agents mainly focuses on generation quality. Yet, safety-critical automotive software makes two additional demands. It prioritizes verification, since every change is reviewed, traced to a requirement, and checked against industry standards such as MISRA and AUTOSAR before it can be committed. It is also a narrow domain, written against layered architectures, embedded resource constraints, and organization-specific interface conventions that are scarce in the data general-purpose LLMs are trained on. We present a coding assistant for automotive C/C++ that addresses both demands. First, it exposes three tools to the user over the Model Context Protocol (generate, edit, and verify), allowing developers to run verify on any code on demand rather than relying on the agent to check its own output. Second, rather than using a general-purpose model, we customize the underlying LLM for the automotive domain through prompt engineering and fine-tuning. We construct a dataset from automotive production code of AUMOVIO, where each function is paired with the requirement texts and Unified Modeling Language (UML) behavior it must satisfy. In a two-week pilot on active production projects, developers report verify as the most-used tool and confirm using it on their own code and not only on generated output. Comparing model customization strategies, 75% prefer the faster prompt-engineered configuration. MISRA- and AUTOSAR-inspired pattern checkers indicate that prompt engineering achieves a lower number of violations on C, while fine-tuning shows better conformance with architecture patterns for C++.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Generation and Verification: Human-Agent Collaboration for Safety-Critical Automotive Software Engineering",
+  "url": "https://arxiv.org/abs/2610.35982"
+}

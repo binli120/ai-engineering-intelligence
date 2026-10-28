@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-28T15:05:06.621906Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "before-the-first-edit-measuring-when-coding-agent-guidance-actually-ar-8948026160",
+  "maturity": "unknown",
+  "published_at": "2026-10-28T04:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.35992v1 Announce Type: new Abstract: When a coding-agent harness promises guidance before the first source edit, what event does it actually intercept? We audit five separate events: policy assignment, request eligibility, trigger, plan delivery, and observed source-content change. A prescribed-action comparison exposes the coverage of three gate rules but cannot tell us how an agent would continue after receiving a plan. We therefore run local agents on public software issues and hash Python files before and after each executed action. In a pilot-guided, 76-arm study using Qwen2.5-Coder 14B, 15 arms change Python source across seven tasks and three repositories. Guidance precedes every observed first change, but every change uses a structured editor and the study misses its prespecified 20-arm coverage target. Post hoc local tests find seven changed arms that pass the tested target and regression selectors; four of those seven use incomplete regression lists. Public PAUSE and SI2CA trajectories add source-text changes bracketed by adjacent reads, but lack synchronized filesystem states and cannot identify exact first mutations. The audit makes the timing claim testable within a stated source scope. These data do not show that planning improves repair correctness or covers shell-first writes in live agent runs.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Before the First Edit? Measuring When Coding-Agent Guidance Actually Arrives",
+  "url": "https://arxiv.org/abs/2610.35992"
+}

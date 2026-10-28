@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-10-28T15:05:06.621906Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "why-and-how-to-do-science-when-ai-is-better-at-it-a-framework-grounded-9c9e41670f",
+  "maturity": "unknown",
+  "published_at": "2026-10-28T04:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2610.36116v1 Announce Type: new Abstract: As AI begins to match or exceed human researchers at core scientific tasks, two questions become pressing: \\emph{why} should humans keep doing science, and \\emph{how} should they use AI when they do? This paper argues that the second can be answered only by answering the first. It holds that one indispensable aim of science is \\emph{durable, collective human understanding of the world, pursued in service of human ends and values}. From this principle it derives a two-part test for when a research task can be delegated to AI. The first part, \\emph{human understanding}, requires that the scientific community remain able to explain, defend and contest the resulting claims, and retain the skills to do so. The second, \\emph{human direction}, requires that judgments about which questions matter and what findings mean stay with accountable humans. Applying the test to each phase of research in the Contributor Roles Taxonomy (CRediT) yields recommendations that fields can tailor to their questions and methods. The framework differs from existing guidance in three ways. It rests on an account of what science is for rather than on integrity norms. It holds even if AI outperforms human researchers, rather than depending on AI's current limitations. And it judges each use of AI by its effects on human understanding and direction rather than by the type of tool, across every phase of research, including peer review and the training of new researchers. It closes with the reforms needed to keep science aimed at human understanding and direction.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Why and How to Do Science When AI Is Better at It: A Framework Grounded in Human Understanding and Direction",
+  "url": "https://arxiv.org/abs/2610.36116"
+}
