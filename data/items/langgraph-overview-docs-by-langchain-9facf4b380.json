@@ -1,11 +1,11 @@
 {
   "category": "agent_framework",
-  "collected_at": "2026-10-28T15:05:06.621906Z",
+  "collected_at": "2026-10-29T15:13:00.396258Z",
   "engineering_impact": 100,
   "evidence_quality": 90,
   "id": "langgraph-overview-docs-by-langchain-9facf4b380",
   "maturity": "stable",
-  "published_at": "2026-10-28T14:18:26Z",
+  "published_at": "2026-10-29T14:28:56Z",
   "source_id": "langgraph_docs",
   "summary": "Current snapshot of LangGraph Documentation.",
   "tags": [
