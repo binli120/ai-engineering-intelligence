@@ -1,11 +1,11 @@
 {
   "category": "ai_coding",
-  "collected_at": "2026-10-29T15:13:00.396258Z",
+  "collected_at": "2026-10-31T14:30:58.848100Z",
   "engineering_impact": 90,
   "evidence_quality": 90,
   "id": "extend-claude-with-skills-claude-code-docs-c2e414e1e3",
   "maturity": "stable",
-  "published_at": "2026-10-29T13:00:00Z",
+  "published_at": "2026-10-31T01:06:59Z",
   "source_id": "claude_code_skills_docs",
   "summary": "Current snapshot of Claude Code Skills Documentation.",
   "tags": [

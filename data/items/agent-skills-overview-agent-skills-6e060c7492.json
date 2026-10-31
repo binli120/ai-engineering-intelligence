@@ -1,11 +1,11 @@
 {
   "category": "ai_coding",
-  "collected_at": "2026-10-29T15:13:00.396258Z",
+  "collected_at": "2026-10-31T14:30:58.848100Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "agent-skills-overview-agent-skills-6e060c7492",
   "maturity": "stable",
-  "published_at": "2026-10-29T10:26:08Z",
+  "published_at": "2026-10-30T20:40:39Z",
   "source_id": "agent_skills_standard",
   "summary": "Current snapshot of Agent Skills Standard.",
   "tags": [

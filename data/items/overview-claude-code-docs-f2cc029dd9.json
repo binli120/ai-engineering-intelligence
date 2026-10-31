@@ -1,0 +1,17 @@
+{
+  "category": "ai_coding",
+  "collected_at": "2026-10-31T14:30:58.848100Z",
+  "engineering_impact": 95,
+  "evidence_quality": 90,
+  "id": "overview-claude-code-docs-f2cc029dd9",
+  "maturity": "stable",
+  "published_at": "2026-10-31T08:22:09Z",
+  "source_id": "claude_code_docs",
+  "summary": "Current snapshot of Claude Code Documentation.",
+  "tags": [
+    "ai-coding",
+    "documentation"
+  ],
+  "title": "Overview - Claude Code Docs",
+  "url": "https://code.claude.com/docs/en/overview"
+}
