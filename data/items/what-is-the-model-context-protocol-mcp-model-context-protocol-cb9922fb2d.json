@@ -1,11 +1,11 @@
 {
   "category": "mcp",
-  "collected_at": "2026-10-31T14:30:58.848100Z",
+  "collected_at": "2026-11-01T15:05:45.824607Z",
   "engineering_impact": 100,
   "evidence_quality": 90,
   "id": "what-is-the-model-context-protocol-mcp-model-context-protocol-cb9922fb2d",
   "maturity": "stable",
-  "published_at": "2026-10-31T08:11:09Z",
+  "published_at": "2026-10-31T18:10:26Z",
   "source_id": "mcp_docs",
   "summary": "Current snapshot of Model Context Protocol Documentation.",
   "tags": [
