@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-02T18:20:28.405008Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "dittany-contribution-guided-repair-framework-for-mas-applications-1a9e6d9cd8",
+  "maturity": "unknown",
+  "published_at": "2026-11-02T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.42144v1 Announce Type: new Abstract: LLM-based multi-agent system (MAS) applications can produce useful intermediate results while leaving task requirements unsatisfied. Repairing such executions requires identifying the work still needed and the completed results that can support it. We present \\tool, a contribution-guided runtime repair framework for MAS applications. \\tool derives expected contributions and acceptance conditions from task requirements and method specifications, and connects their dependencies in a contribution graph. Runtime checks locate unmet conditions and establish which results remain usable. These results guide action-level correction when available inputs suffice, or graph-level recovery when prerequisites or unfinished work need revision. Both repair scopes retain validated contributions and check repaired outputs before subsequent work uses them. We evaluate \\tool on 30 applications across six MAS frameworks and 9,000 tasks. It detects runtime failures with 88.28\\% precision and 79.18\\% recall, and achieves 84.76\\% task accuracy, improving over Native execution by 26.74 percentage points and the strongest of four recovery baselines by 21.28 points. Estimated deployment token consumption is 17.92\\% above Native, but 24.19\\% below Reflexion and 13.05\\% below Iterative Rollback. Ablation results show that combining the two repair scopes achieves higher accuracy and lower token consumption than graph-level repair alone.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Dittany: Contribution-Guided Repair Framework for MAS Applications",
+  "url": "https://arxiv.org/abs/2610.42144"
+}

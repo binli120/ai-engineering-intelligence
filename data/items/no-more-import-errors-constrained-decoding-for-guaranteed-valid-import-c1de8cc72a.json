@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-02T18:20:28.405008Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "no-more-import-errors-constrained-decoding-for-guaranteed-valid-import-c1de8cc72a",
+  "maturity": "unknown",
+  "published_at": "2026-11-02T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2610.41878v1 Announce Type: new Abstract: One of the most common failure reasons of LLM-based test generation pipelines is import errors. Grammar constrained decoding can modify the probabilities of the LLM's final layer during token generation to guarantee valid imports. However, we find that it can lead to degenerate solutions, i.e., repetitive valid imports (import streaks) that exhaust the token budget before a test is generated. We propose Constrained Beam Decoding with Lookup (CBDL), a novel method that guarantees import validity while addressing import streaks by avoiding premature commitment to tokens that lead to repetitive imports. Because it operates at the decoding stage, CBDL can be integrated into existing LLM-based test generation pipelines. We implement CBDL for Python and Java and evaluate it on two test generation tasks, showing that generated tests have 100% valid imports, outperforming both static (RAG and LIBRO) and dynamic (Agentic Repair) import-validity approaches that leave 45%, 10%, and 43% of import errors unresolved. CBDL converts on average 14% of initial import errors into functionally correct tests, increasing overall test correctness by 1-4 percentage points over unconstrained generation. Even when import validity does not directly lead to a correct test, it allows agentic repair pipelines to allocate the repair budget to remaining errors, increasing correct tests by 2-7 percentage points for Python and 1-6 for Java. Finally, we show that a hybrid pipeline, where a small local model equipped with CBDL generates imports while the frontier GPT-5.2 model generates the test body, outperforms generating both with GPT-5.2 alone by 1-3 percentage points. Overall, CBDL removes a major bottleneck in LLM-based test generation: by guaranteeing import validity with a small overhead (16-21 seconds per test), it improves test correctness and enables cost-effective hybrid generation.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "No More Import Errors: Constrained Decoding for Guaranteed Valid Imports in LLM-Generated Tests",
+  "url": "https://arxiv.org/abs/2610.41878"
+}
