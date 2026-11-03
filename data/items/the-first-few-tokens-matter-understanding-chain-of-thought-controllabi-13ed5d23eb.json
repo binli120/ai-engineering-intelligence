@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-03T16:13:38.188773Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-first-few-tokens-matter-understanding-chain-of-thought-controllabi-13ed5d23eb",
+  "maturity": "unknown",
+  "published_at": "2026-11-02T05:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2610.40939v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising way to oversee increasingly capable agents. It succeeds in part because current models appear limited in their ability to control what they verbalize in their reasoning traces. We investigate the source of this limitation and link it to an entropy collapse in the first few tokens following the opening thinking tag. We exploit this mechanism to recover CoT controllability through two inference-time interventions on initial tokens: prefilling, where even a single token can substantially increase controllability, and banning frequent opening tokens combined with in-context examples, which improves average compliance by 34-41 percentage points across models. These interventions recover mainly addition and style controllability (adding or transforming information), while suppression controllability (avoiding or removing information) exhibits more varied responses, suggesting distinct underlying mechanisms. Consistent with this, the two groups behave as separate capabilities: across models, performance correlates positively within these groups, while cross-group correlations are mostly negative. Importantly, we find that the relationship with monitorability depends on the evaluation: addition and style controllability more consistently positively correlate with monitorability, while suppression often shows negative associations. Our findings motivate the development of controllability evaluations that distinguish difficulty initiating a specific opening from general limitations of the ability to alter reasoning content, alongside separate reporting of control tasks and categories.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The First Few Tokens Matter: Understanding Chain-of-Thought Controllability",
+  "url": "https://arxiv.org/abs/2610.40939"
+}
