@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-05T16:27:26.352682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "sweops-bench-evaluating-agents-for-end-to-end-resolution-of-software-i-9a1bca1397",
+  "maturity": "unknown",
+  "published_at": "2026-11-05T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.06099v1 Announce Type: new Abstract: As autonomous agents advance, the traditional boundary between software development and cloud operations gradually blurs, increasing the need for integrated incident detection, localization, and remediation. Existing benchmarks evaluate isolated diagnostic queries or repository-level program repair, failing to test continuous incident resolution across operational clusters and source repositories. We introduce SWEOps-Bench, an interactive benchmark comprising 55 reproducible incident tasks derived from confirmed historical defects across 16 Kubernetes operator projects. Each task preserves the original software repository and initializes in a healthy cluster before a controlled workload triggers the historical fault. Agents investigate runtime evidence and submit source or configuration repairs through a terminal interface, while the harness builds and deploys the changes within a shared time budget. Evaluation covers stage-wise accuracy, verified recovery, penalized lifecycle latency, and token consumption. Across six agent-model configurations, faulty-state detection ranges from 72.7% to 90.9%, whereas overall recovery ranges from only 14.5% to 52.7%, exposing a substantial gap between recognizing incidents and resolving them end to end. Trajectory analysis further shows that reported diagnosis and final recovery only partially coincide: some tasks achieve verified recovery despite an incorrect reported RCA, while runtime symptom clearance can still fail fix-specific functional verification. SWEOps-Bench establishes a rigorous foundation for evaluating autonomous agents in integrated development and operational environments.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SWEOps-Bench: Evaluating Agents for End-to-End Resolution of Software-Induced Cloud Incidents",
+  "url": "https://arxiv.org/abs/2611.06099"
+}

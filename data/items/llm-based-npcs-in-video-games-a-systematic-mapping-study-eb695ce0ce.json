@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-05T16:27:26.352682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "llm-based-npcs-in-video-games-a-systematic-mapping-study-eb695ce0ce",
+  "maturity": "unknown",
+  "published_at": "2026-11-05T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.05427v1 Announce Type: new Abstract: For decades, non-player characters (NPCs) have been driven by rule-based systems whose personalities and interactions are scripted before release. Large language models (LLMs) promise NPCs that converse openly, adapt to new situations, and behave in ways developers did not fully author, prompting a wave of research and commercial experimentation. Yet the field lacks a unified picture of what has been built, how well it works, and at what cost. We address this gap with a systematic mapping study of 377 papers from the academic literature, yielding 42 papers analysed against a main research question and ten sub-questions across four thematic axes. We provide the first quantitative characterisation of component adoption, latency, safety coverage, and reproducibility: short-term memory and world-state grounding are near-universal (60% and 69%), whereas long-term memory (31%), reflection (38%), and retrieval-augmented generation (14%) remain rare, and response times span 2.6 to 15 seconds. Finally, we identify six structural barriers to commercial adoption and offer evidence-based recommendations for developers and researchers.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "LLM-based NPCs in Video Games: A Systematic Mapping Study",
+  "url": "https://arxiv.org/abs/2611.05427"
+}

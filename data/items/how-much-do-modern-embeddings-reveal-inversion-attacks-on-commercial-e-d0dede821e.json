@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-05T16:27:26.352682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "how-much-do-modern-embeddings-reveal-inversion-attacks-on-commercial-e-d0dede821e",
+  "maturity": "unknown",
+  "published_at": "2026-11-05T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.05716v1 Announce Type: new Abstract: Text embedding inversion reconstructs source text from fixed-dimensional vectors, posing a privacy risk to systems that store embeddings instead of raw text. We adapt the vec2text framework (Morris et al., 2023) to support text-embedding-3-small and mistral-embed alongside GTR-base. We evaluate 800 samples per category across general instructions, Wikipedia passages, paraphrased instructions, health-related instructions, and short literal code snippets, using a common 60-80-character range and paired original and paraphrased instructions. Under the evaluated vec2text configuration, text-embedding-3-small achieves the highest exact-match rate in all five categories, including 47.4% on health-related instructions and 24.5% on general instructions under the evaluation's case-insensitive, whitespace-stripped matching rule. BERTScore F1 exceeds 87 on the 0-100 scale for every prose category and embedder, indicating high contextual similarity to the references. Short code snippets yield lower reconstruction scores. These findings characterize one attack configuration and the selected datasets; they do not establish attack-independent rankings or sensitive-attribute recovery rates. They nevertheless motivate explicit assessment of inversion risk and access controls for stored embeddings.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "How Much Do Modern Embeddings Reveal? Inversion Attacks on Commercial Embedding Models",
+  "url": "https://arxiv.org/abs/2611.05716"
+}

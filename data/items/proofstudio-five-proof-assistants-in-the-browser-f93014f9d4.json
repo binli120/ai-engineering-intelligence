@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-05T16:27:26.352682Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "proofstudio-five-proof-assistants-in-the-browser-f93014f9d4",
+  "maturity": "unknown",
+  "published_at": "2026-11-05T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.05540v1 Announce Type: new Abstract: Recent advances in AI-assisted proof automation are extending the use of proof assistants in software verification and mathematics. However, greater proof automation does not remove users' responsibility to assess whether formal statements capture their intended requirements, making education in formal specification and reasoning essential. To lower the installation and learning barriers associated with mature proof assistants, we present ProofStudio, a browser-based environment integrating Isabelle/HOL, Lean, Rocq, HOL4, and HOL Light with corresponding worked examples, preconfigured proof search, and contextual AI assistance. With ProofStudio, users can explore formal specifications and proofs across five systems without local installation, inspecting native prover feedback and experimenting with automation through a common interface.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "ProofStudio: Five Proof Assistants in the Browser",
+  "url": "https://arxiv.org/abs/2611.05540"
+}
