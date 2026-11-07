@@ -1,11 +1,11 @@
 {
   "category": "ai_coding",
-  "collected_at": "2026-11-05T16:27:26.352682Z",
+  "collected_at": "2026-11-07T14:53:33.130361Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "overview-claude-code-docs-f2cc029dd9",
   "maturity": "stable",
-  "published_at": "2026-11-05T09:04:25Z",
+  "published_at": "2026-11-07T04:12:26Z",
   "source_id": "claude_code_docs",
   "summary": "Current snapshot of Claude Code Documentation.",
   "tags": [
