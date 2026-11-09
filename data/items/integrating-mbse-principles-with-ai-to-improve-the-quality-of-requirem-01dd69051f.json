@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-09T18:47:00.988411Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "integrating-mbse-principles-with-ai-to-improve-the-quality-of-requirem-01dd69051f",
+  "maturity": "unknown",
+  "published_at": "2026-11-09T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.09234v1 Announce Type: new Abstract: Model-Based Systems Engineering (MBSE) is a promising approach to improve systems engineering practices, particularly by enhancing requirement management, traceability, and early validation and verification (V\\&amp;V). However, its adoption remains challenging, especially for small and medium-sized enterprises (SMEs), which often lack structured processes and solutions adapted to their scale and constraints. Our goal is to propose a lightweight MBSE methodology tailored to the needs and constraints of SMEs. This paper focuses specifically on requirements refinement, traceability, and early V\\&amp;V. The approach integrates MBSE principles with artificial intelligence-assisted analysis to improve requirements quality while remaining compatible with existing tools and practices. A proof of concept is developed and applied in an industrial case study to evaluate the feasibility of the approach. The results demonstrate how early V\\&amp;V activities can be supported within an SME context, while improving traceability across engineering artifacts. These findings highlight the potential of a lightweight, integrated MBSE approach to support the progressive adoption of MBSE in SMEs, thereby improving overall engineering efficiency.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Integrating MBSE Principles with AI to Improve the Quality of Requirements in SMEs Context",
+  "url": "https://arxiv.org/abs/2611.09234"
+}

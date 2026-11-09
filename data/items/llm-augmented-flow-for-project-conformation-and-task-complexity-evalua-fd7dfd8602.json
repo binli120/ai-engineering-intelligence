@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-09T18:47:00.988411Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "llm-augmented-flow-for-project-conformation-and-task-complexity-evalua-fd7dfd8602",
+  "maturity": "unknown",
+  "published_at": "2026-11-09T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.08931v1 Announce Type: new Abstract: The software development process, from inception to a working product or solution, can be divided into two major phases: discovery (Discovery) and delivery (Delivery). The Discovery is further subdivided into High-Level Discovery (HLD) and Low-Level Discovery (LLD). During HLD, management identifies the business solution or product to be integrated into the company's infrastructure. LLD, in turn, produces requirement documentation artifacts, including the Product Requirements Document (PRD), Business Requirements Document (BRD), and Functional Specifications Document (FSD). Story Points (SP) are a widely used modern approach to measuring the effort required to accomplish predetermined tasks, and the artifacts listed above help derive SP more precisely. With the rapid growth of LLM technologies, one of the main questions that arises is whether the whole Discovery phase, or most of it, can be completed with the help of LLM tools. In this paper, we test a framework that structures requirement documentation generation and task complexity scoring, based on the model introduced by (Tran, L\\'evesque, and Meunier 2004) and executed with the help of agentic tools. The approach is applied to a real-world commercial project in the fintech domain as a feasibility study rather than a validation: development effort was not recorded for the tasks examined, and the resulting complexity scores are therefore reported as the output of the instrument rather than as validated estimates of effort.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "LLM-Augmented Flow for Project Conformation and Task Complexity Evaluation Based on the TLM Framework",
+  "url": "https://arxiv.org/abs/2611.08931"
+}

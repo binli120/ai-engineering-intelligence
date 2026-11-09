@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-09T18:47:00.988411Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "greyzone-production-quality-agentic-application-threats-d8c6e398bb",
+  "maturity": "unknown",
+  "published_at": "2026-11-09T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.09161v1 Announce Type: new Abstract: Agents are increasingly deployed across domains such as coding, banking, and commerce. Their ability to invoke tools and change application state makes security testing important for reliable deployment. Although agent security has been studied through various adversarial testing approaches, benchmarks grounded in production agent environments remain limited. We introduce GreyZone, a benchmark for evaluating automated red-teaming services against real-world agent applications. Unlike benchmarks such as AgentDojo, which primarily evaluate subject agents under attack, GreyZone evaluates services' ability to generate and deliver attacks that cause verified security-policy violations. We select independently developed, open-source agent applications with security boundaries concerning access permissions, confidentiality, and action authorization. These applications expose diverse attack surfaces, including those arising from multi-agent interactions and multimodal inputs. By grounding evaluation in application environments that preserve production-relevant workflows and independently verifying outcomes, GreyZone supports research on automated agent security testing. Specifically, we present two preliminary case studies using Promptfoo on Letta Code and Clawith to examine attack delivery, agent behavior, and verified outcomes. We release the benchmark, including subject agents and attack surfaces for each application, to support further research on agent testing methods.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "GreyZone: Production-quality Agentic Application Threats",
+  "url": "https://arxiv.org/abs/2611.09161"
+}
