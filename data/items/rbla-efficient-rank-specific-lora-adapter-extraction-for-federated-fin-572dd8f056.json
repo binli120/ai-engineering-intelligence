@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-11T16:09:04.788925Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "rbla-efficient-rank-specific-lora-adapter-extraction-for-federated-fin-572dd8f056",
+  "maturity": "unknown",
+  "published_at": "2026-11-11T05:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2611.12961v1 Announce Type: new Abstract: Federated fine-tuning with low-rank adaptation (LoRA) reduces communication and computational overhead by training and exchanging compact trainable LoRA factors. Clients may use different LoRA ranks to meet adapter communication budgets and accommodate different local adaptation needs. The server must process these differences during aggregation and construct adapters at each client's rank for local training. We distinguish pre-aggregation alignment, which handles factor dimensions and scaling conventions before aggregation and rank-specific LoRA adapter extraction, which constructs client-sized pairs from the aggregated global model. Two common approaches to rank-specific extraction are direct rank truncation and Singular Value Decomposition (SVD) of the dense update. Direct prefix truncation keeps the leading columns of one aggregated factor and the corresponding rows of the other. It is cheap but can increase reconstruction error. The dense SVD approach first forms the product of aggregated LoRA factors. It then decomposes this matrix and retains the leading singular components to construct adapters at the target rank. This gives the optimal rank-constrained approximation in Frobenius norm but incurs significant computational overhead. To address this trade-off, we propose RBLA+ as an extension of RBLA. It uses established compact QR/core-SVD decomposition to minimize Frobenius error for the extracted LoRA update without forming the dense update. It also accounts for client and server scaling conventions during upload and broadcast. Across vision and language tasks, RBLA+ improves accuracy over RBLA in multiple heterogeneous settings. In CPU benchmarks with synthetic adapters, RBLA+ has lower extraction time than the dense partial-SVD baseline. RBLA+ preserves each client's prescribed adapter size and per-round communication payload.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "RBLA+: Efficient Rank-Specific LoRA Adapter Extraction for Federated Fine-Tuning with Heterogeneous Clients",
+  "url": "https://arxiv.org/abs/2611.12961"
+}

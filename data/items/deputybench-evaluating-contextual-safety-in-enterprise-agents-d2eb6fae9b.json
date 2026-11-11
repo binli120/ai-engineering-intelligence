@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-11T16:09:04.788925Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "deputybench-evaluating-contextual-safety-in-enterprise-agents-d2eb6fae9b",
+  "maturity": "unknown",
+  "published_at": "2026-11-11T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.13355v1 Announce Type: new Abstract: Enterprise agents must determine whether ordinary requests are permitted by organizational records and policies while continuing legitimate work. We introduce DEPUTYBENCH, an executable benchmark with 79 base items, 375 instances, paired permission contexts, and graded evidence requirements. Across 12 models, revised audits give 88.0% pooled safety and 79.1% paired success. A controlled study of 28 derived tasks and six models tests authorization-fact flips, evidence masking, and irrelevant rewrites. Outcomes track backend permissions, yet restricted execution is more frequent with missing evidence than explicit non-permission: 10.3% versus 3.5% on 27 matched tasks, a 6.8-percentage-point difference (95% interval: 1.9-13.0; secondary analysis). A post-hoc analysis locates 61 of 100 masked-condition executions in four privacy tasks requiring complete cumulative counts or person-specific consent. The difference persists when the most error-prone model or the largest contributing task is excluded, but is much smaller outside those four tasks. Thus high safety with available evidence does not establish reliable stopping when permission cannot be verified. Mean paired success is equivalent within a prespecified five-point margin under irrelevant rewrites, while strong-model safety remains near ceiling. Scorer validation improves from 178 to 266 correctly scored cases out of 284 held-out counterexamples. Two security experts manually verified task ground truth over a two-week period; stage labels remain LLM-generated. The concentration analysis describes task structure and audited outcomes, not an identified internal mechanism.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents",
+  "url": "https://arxiv.org/abs/2611.13355"
+}

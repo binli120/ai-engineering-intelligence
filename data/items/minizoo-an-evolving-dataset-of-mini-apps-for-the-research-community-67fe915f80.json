@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-11T16:09:04.788925Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "minizoo-an-evolving-dataset-of-mini-apps-for-the-research-community-67fe915f80",
+  "maturity": "unknown",
+  "published_at": "2026-11-11T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.13125v1 Announce Type: new Abstract: Mini apps run within host applications (apps) such as WeChat, Alipay, Baidu, and Telegram, providing services without requiring users to install separate native apps. Their growing ecosystem has attracted research on software quality, security, and privacy, creating a need for reusable datasets. However, building and maintaining such datasets is challenging, requiring platform-specific collection infrastructure and mechanisms to handle incomplete packages, changing availability, and heterogeneous metadata. A shared, continuously maintained collection is still lacking, therefore motivating the development of a common research resource, whose value has been demonstrated by the experience of AndroZoo in the Android ecosystem. In this paper, we present MiniZoo, an evolving corpus of mini apps and associated metadata. The initial release comprises 16,273 mini-app packages, with multiple versions of the same mini apps. The dataset is managed and distributed through AndroZoo under its existing access conditions. To facilitate its reuse, we describe the collection process, data organization, provenance, and limitations, and explain how researchers can select and access the data. MiniZoo is designed to grow continuously through the addition of newly discovered mini apps, the inclusion of further host ecosystems, and the collection of successive versions of previously collected apps. This ongoing expansion will enable both comparisons across ecosystems and longitudinal studies of how mini apps evolve over time.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "MiniZoo: An Evolving Dataset of Mini Apps for the Research Community",
+  "url": "https://arxiv.org/abs/2611.13125"
+}
