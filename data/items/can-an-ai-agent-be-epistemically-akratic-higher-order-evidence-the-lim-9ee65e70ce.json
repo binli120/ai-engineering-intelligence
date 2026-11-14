@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-14T15:03:20.503761Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "can-an-ai-agent-be-epistemically-akratic-higher-order-evidence-the-lim-9ee65e70ce",
+  "maturity": "unknown",
+  "published_at": "2026-11-14T05:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2611.14889v1 Announce Type: new Abstract: When we judge that our reasoning was defective, it seems plausible that we should abandon the conclusion it produced. This thought has special force for AI agents built to assess and correct their own work. Yet obeying such judgments can make an agent worse at distinguishing sound reasoning from defective reasoning. An AI agent may rely on information about its reasoning when deciding which conclusions to keep, while the part that judges whether those conclusions are justified cannot use that information. The agent can then exercise an epistemic competence by retaining conclusions it judges unjustified, even when its self-assessments are generally reliable. Nor is the difficulty resolved by training the agent to make its conclusions and assessments agree: agreement can be achieved by degrading either one. Crucially, I argue that a negative assessment can remain valuable by identifying conclusions requiring further scrutiny, without having authority to eliminate them. The result challenges a central assumption about AI self-correction: that bringing an agent's beliefs into agreement with its own self-assessment about their justification makes it better at correcting its mistakes.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Can an AI Agent Be Epistemically Akratic? Higher-Order Evidence & the Limits of Self-Correction",
+  "url": "https://arxiv.org/abs/2611.14889"
+}
