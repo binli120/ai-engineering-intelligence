@@ -1,11 +1,11 @@
 {
   "category": "rag",
-  "collected_at": "2026-11-15T15:39:06.050426Z",
+  "collected_at": "2026-11-16T18:30:59.126175Z",
   "engineering_impact": 95,
   "evidence_quality": 90,
   "id": "vector-embeddings-openai-api-92575d14b4",
   "maturity": "stable",
-  "published_at": "2026-11-14T03:24:26Z",
+  "published_at": "2026-11-16T18:28:30Z",
   "source_id": "openai_embeddings_docs",
   "summary": "Learn how to turn text into numbers, unlocking use cases like search, clustering, and more with OpenAI API embeddings.",
   "tags": [

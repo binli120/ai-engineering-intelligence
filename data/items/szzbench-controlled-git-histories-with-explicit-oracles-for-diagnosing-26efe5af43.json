@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-16T18:30:59.126175Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "szzbench-controlled-git-histories-with-explicit-oracles-for-diagnosing-26efe5af43",
+  "maturity": "unknown",
+  "published_at": "2026-11-16T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.17669v1 Announce Type: new Abstract: The SZZ algorithm traces a bug-fixing commit back to the commits that introduced the bug. Its labels underlie defect-prediction data sets and many mining software repositories studies. SZZ implementations are mostly evaluated against oracles mined from real projects. Such oracles are realistic, but each case mixes the history factors that make an implementation succeed or fail, and an aggregate score cannot show why. We present SZZBench, a tool that shows why: it generates ordinary Git repositories from declarative scenarios with explicit oracles, scores the predictions of any SZZ implementation under declared evaluation policies, and reads each result against 26 naive baselines, such as always answering the second commit. SZZBench also checks the declarations of new scenarios, such as the tier, against the results of the naive baselines. Currently, SZZBench ships 279 scenarios in 17 categories and adapters for four SZZ tools. Running these tools in nine configurations without changing their code, we find that PyDriller passes 161 scenarios and a rule that always answers the second commit passes 160, yet only 97 scenarios are passed by both: the two succeed on different scenarios, which the number of passed scenarios hides and the per-scenario results reveal. SZZBench is available at https://github.com/higolab/SZZBench.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "SZZBench: Controlled Git Histories with Explicit Oracles for Diagnosing SZZ Implementations",
+  "url": "https://arxiv.org/abs/2611.17669"
+}

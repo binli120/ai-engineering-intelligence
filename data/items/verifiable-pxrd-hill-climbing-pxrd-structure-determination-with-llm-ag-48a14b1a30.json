@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-16T18:30:59.126175Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "verifiable-pxrd-hill-climbing-pxrd-structure-determination-with-llm-ag-48a14b1a30",
+  "maturity": "unknown",
+  "published_at": "2026-11-16T05:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2611.17539v1 Announce Type: new Abstract: Autonomous crystal-structure determination from powder X-ray diffraction (pXRD) remains a key bottleneck for self-driving materials laboratories. We formulate the task of pXRD structure determination as a verifiable agentic search problem: candidate structures can be assessed during inference through forward-simulated profile agreement and during evaluation through structural matching to a known reference. To benchmark progress, we introduce pXRD-Bench, a suite of 200 simulated single-phase problems spanning in-distribution structure determination, challenging and polymorphic structures, and controlled compositional and topological distribution shifts. Agent adaptation raises selected structural recovery from 27% to 69%, with further gains from repeated sampling and verifier-guided inference-time scaling. We extend this approach to experimental multiphase pXRD through a reflexive evolution framework that learns from self-generated synthetic problems. A replaceable laboratory specification defines the sample family and measurement conditions. An evolver agent uses the known generating structures and measurement parameters to diagnose solver failures and develop persistent guidance and executable tools, which are then provided to agents on measured patterns. This supplies verifiable training experience without requiring a collection of solved experimental measurements. On 15 measured patterns from solid-state synthesis, the evolved package improves average profile agreement and transfers an analogue-substitution procedure that recovers a phase whose structure is absent from the supplied reference library. These results demonstrate how learning from verifiable synthetic experience can improve agentic characterization of experimental samples whose structures are not known in advance.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Verifiable pXRD: Hill-climbing pXRD structure determination with LLM agents",
+  "url": "https://arxiv.org/abs/2611.17539"
+}

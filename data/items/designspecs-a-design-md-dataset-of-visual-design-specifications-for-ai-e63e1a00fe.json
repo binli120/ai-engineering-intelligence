@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-16T18:30:59.126175Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "designspecs-a-design-md-dataset-of-visual-design-specifications-for-ai-e63e1a00fe",
+  "maturity": "unknown",
+  "published_at": "2026-11-16T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.17713v1 Announce Type: new Abstract: While AI agents increasingly generate and modify user interfaces, they rarely rely on a visual design specification for a certain project. The DESIGN.md format, which originated from Google's AI design tool Stitch and which was open-sourced in April 2026, addresses this gap by describing a visual identity through design tokens (such as named colors, text styles) and Markdown prose. To our knowledge, no large-scale research dataset of such design specification files exists. We present DesignSpecs, a dataset of 36,906 DESIGN.md files from 15,794 public, non-fork GitHub repositories, representing 17,240 unique file contents. We collected 613,207 files named DESIGN.md in October 2026. Because the same file name also denotes architectural plans and other design documents, we filtered those with YAML front matter, a design-system name, at least one recognized design token, and zero errors under the official linter. Our JSON Lines dataset provides file-level and deduplicated views of the original Markdown, links files to repositories, paths, and commits, and is released with related scripts. We outline research opportunities on visual design knowledge and design-aware AI agents. Dataset is available at: https://huggingface.co/datasets/Jl-wei/DesignSpecs",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "DesignSpecs: A DESIGN.md Dataset of Visual Design Specifications for AI Agents",
+  "url": "https://arxiv.org/abs/2611.17713"
+}
