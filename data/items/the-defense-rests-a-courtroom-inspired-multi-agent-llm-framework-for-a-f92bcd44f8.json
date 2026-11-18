@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-18T17:14:34.333255Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "the-defense-rests-a-courtroom-inspired-multi-agent-llm-framework-for-a-f92bcd44f8",
+  "maturity": "unknown",
+  "published_at": "2026-11-18T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.21618v1 Announce Type: new Abstract: Safety cases are widely used to demonstrate that mission-critical systems, such as autonomous vehicles and unmanned aerial systems, can operate safely after deployment. However, manually constructing safety cases is complex, time-consuming, and labor-intensive, which calls for the proposal of automated approaches to support their creation. Inspired by the legal nature of safety case construction, we formalize the safety case creation problem through a courtroom analogy, where stakeholders collaboratively propose, examine, criticize, review, improve and validate safety claims and their supporting evidence. In this analogy, the safety analyst acts as a prosecutor by identifying hazards and safety concerns, while the assurance case developer serves as a defense attorney by constructing and substantiating safety arguments. An orchestrator acts as a judge by coordinating stakeholder interactions, and a review board serves as a jury by assessing argument completeness and persuasiveness. Based on this formalization, we propose eTrustWare, a Large Language Model (LLM)-based multi-agent framework for automated safety case generation and review. Our experiments on several safety cases of ML-enabled autonomous driving systems demonstrate the feasibility of coordinated LLM-based agents for generating safety cases.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "The Defense Rests: A Courtroom-Inspired Multi-Agent LLM Framework for Automated Safety Case Generation",
+  "url": "https://arxiv.org/abs/2611.21618"
+}

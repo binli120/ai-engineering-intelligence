@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-18T17:14:34.333255Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "stochastic-modeling-of-the-mean-time-between-software-failures-a-revie-952861642d",
+  "maturity": "unknown",
+  "published_at": "2026-11-18T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.21619v1 Announce Type: new Abstract: A review of several models for the software failure detection stochastic process is per- formed. We focus on how the Mean Time Between Failures is obtained from those models and present a comparative study. The models considered involve some of the well known based on non- homogeneous Poisson processes and a recently proposed model based on contagion. Our main target is to evaluate the models performance when they are applied to modern software projects developed under Agile methodologies. Recently developed Software Engineering practices (TDD, Scrum, etc.), propose an iterative procedure be- tween development, testing and debugging, introducing this way, particular challenges to Software Reliability modeling. As opposed to the non-homogeneous Poisson processes, the failure rate of the contagion model depends not just on time but also on the number of previously detected failures. All the considered models are particular cases of non- homogeneous Birth Processes, a general fundamental theory on how to obtain time to failure and time between failures expectations is also shown.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Stochastic Modeling of the Mean Time Between Software Failures: A review",
+  "url": "https://arxiv.org/abs/2611.21619"
+}

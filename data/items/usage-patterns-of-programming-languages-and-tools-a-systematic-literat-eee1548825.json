@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-18T17:14:34.333255Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "usage-patterns-of-programming-languages-and-tools-a-systematic-literat-eee1548825",
+  "maturity": "unknown",
+  "published_at": "2026-11-18T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.21627v1 Announce Type: new Abstract: Technology and the popularity of languages and tools are rapidly evolving. Thus, it is important to constantly assess the most popular languages and tools used in industry, furthering the collaboration between research and the software industry. In this study, we use a systematic literature review and investigate 37 studies published between 2015 -- 2024, which explored the programming languages, IDEs and CI tools used in industry. We observed that Java is most often listed among the most popular languages, and there are limited studies that investigate specific IDE usage. Also, Travis CI and GitHub Actions are the most common CI tools identified as being top CI tools used in industry. Overall, evidence shows that there is a lack of research focused on popular languages and tools used in industry, largely as there are many limitations with the possible methodology approaches. For example, lack of access to closed-source projects and sampling biases are potential issues that limit our understanding of popular languages and tools used in industry. In this regard, there is a need for more recent studies into development tools used in industry, involving multiple research approaches, to balance the limitations of each approach.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Usage Patterns of Programming Languages and Tools: A Systematic Literature Review",
+  "url": "https://arxiv.org/abs/2611.21627"
+}

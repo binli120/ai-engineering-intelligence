@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-18T17:14:34.333255Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "on-improving-the-adoption-usability-and-retention-of-static-applicatio-1c411fe37f",
+  "maturity": "unknown",
+  "published_at": "2026-11-18T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.21621v1 Announce Type: new Abstract: As the Internet connects more of the world, software vulnerabilities create growing security risks. Because software developers are responsible for building and maintaining secure applications, they rely on tools and techniques that help identify vulnerabilities early in development. Static Application Security Testing (SAST) tools analyze source code to identify potential security weaknesses before software is deployed. Although SAST can help developers address vulnerabilities proactively, these tools also present usability and adoption challenges. This thesis examines those challenges and explores ways to improve the adoption, usability, and continued use of SAST. First, a literature review of 89 research works related to SAST implementation and continued usage identifies recurring developer concerns, including false positives and other usability barriers that can reduce trust in SAST results. Second, the thesis presents a process for automating the execution of SAST tools and formatting their output so that findings are more meaningful and actionable to developers. A real-world use case evaluates an implementation of this process and gathers developer feedback. Participants reported satisfaction with several aspects of the process and indicated that it increased their willingness to use the SAST tool.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "On Improving the Adoption, Usability, and Retention of Static Application Security Testing (SAST) Tools",
+  "url": "https://arxiv.org/abs/2611.21621"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-18T17:14:34.333255Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "reusing-battle-tested-code-a-systematic-literature-review-of-automated-a47ae1d68b",
+  "maturity": "unknown",
+  "published_at": "2026-11-18T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.21630v1 Announce Type: new Abstract: Software reuse remains a fundamental challenge in software engineering, often caught between the security risks of external libraries and the reliability concerns of generative AI. Automated software transplantation offers a compelling alternative by enabling the direct extraction and integration, into new host systems, of battle-tested logic (code that has already survived the rigors of production, possibly over many years of extensive in-production use). This paper presents a systematic literature review to evaluate the current state-of-the-art and identify the remaining barriers preventing this technology from becoming a mainstream engineering practice. We identified 27 distinct automated software transplantation approaches. Our analysis reveals that while the adaptation of code is highly automated, significant bottlenecks remain in the manual prerequisite steps of organ location and test suite augmentation. We conclude with a research roadmap that suggests how these manual obstacles might be overcome, including the strategic use of Large Language Models to assist in identifying and verifying high-value, production-hardened logic for transplantation.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Reusing Battle-tested Code: A Systematic Literature Review of Automated Software Transplantation",
+  "url": "https://arxiv.org/abs/2611.21630"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-18T17:14:34.333255Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "does-your-agent-need-to-know-its-budget-a-placebo-controlled-experimen-92f637c090",
+  "maturity": "unknown",
+  "published_at": "2026-11-18T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.21614v1 Announce Type: new Abstract: Organizations deploying autonomous coding agents impose token budgets, yet the causal effects of a budget, and of telling the agent about it, are unmeasured. We conduct a placebo-controlled factorial experiment under a frozen, timestamped protocol, crossing budget enforcement with budget disclosure on two executable program-repair benchmarks (5,835 runs, two open models, three cap levels). Enforcing a calibrated cap reduced task resolution by 20.0 percentage points while reducing tokens per resolved task roughly twelvefold. Disclosing the enforced budget never helped: the placebo-controlled risk difference was -2.8 pp (95% CI [-6.2, +0.7]) at the medium cap and -4.2 pp ([-8.1, -0.2], nominally significant, unadjusted) at the tight cap, with every prompt wording and per-turn feedback variant far below the 10-point effect size of interest. Observed run-to-run outcome variance was roughly 1.5x the uncapped level under caps, though part of this reflects resolution rates moving nearer one half. These results make budget governance for coding agents an enforcement-design problem: no communication variant produced an effect beyond that of an unrelated sentence, which itself raised resolution by 7.2 pp (95% CI [+4.0, +10.5]) over silent enforcement, a sentence effect that only a placebo control removes.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Does Your Agent Need to Know Its Budget? A Placebo-Controlled Experiment on LLM Coding Agents",
+  "url": "https://arxiv.org/abs/2611.21614"
+}

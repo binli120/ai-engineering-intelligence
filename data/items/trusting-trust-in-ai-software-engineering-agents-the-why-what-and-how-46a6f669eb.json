@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-18T17:14:34.333255Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "trusting-trust-in-ai-software-engineering-agents-the-why-what-and-how-46a6f669eb",
+  "maturity": "unknown",
+  "published_at": "2026-11-18T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.21634v1 Announce Type: new Abstract: AI software engineering agents are increasingly integrated into development workflows, from autocomplete assistants to autonomous repair agents and multi-agent software development pipelines. Trust matters because these agents can produce, revise, and pass on artifacts that developers, other agents, or organisations may later rely on under uncertainty and risk. Yet trust in such systems is often treated as a single measurable property of an AI system. This is insufficient for software engineering, where trust depends on who relies on the agent, how that reliance is structured, and which properties must hold in that deployment. We propose a structural framework for reasoning about trust in AI software engineering agents. Inspired by the recursive nature of trust in software systems, we decompose trust into three analytical questions: Why trust?, identifying the trust scenario; What trust?, identifying the trust configuration; and How much trust?, identifying the trust properties. From these questions, we derive three scenarios, four configurations, and five trust-relevant properties, state which of these are closed by construction and which remain open to revision, and instantiate the resulting profile on a ChatDev-style multi-agent workflow. The framework is conceptual, and is offered as a foundation for the empirical work that would validate it, rather than as a numerical trust metric.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Trusting Trust in AI Software Engineering Agents: The Why, What, and How?",
+  "url": "https://arxiv.org/abs/2611.21634"
+}
