@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-19T17:21:58.199634Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "structure-behavior-coalescence-for-model-based-systems-engineering-e829e30d6b",
+  "maturity": "unknown",
+  "published_at": "2026-11-19T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.23255v1 Announce Type: new Abstract: Model-Based Systems Engineering (MBSE) has advanced system design and analysis for decades, yet traditional approaches often treat structure and behavior separately, resulting in inconsistencies, incomplete models, and ambiguity. This paper introduces Structure-Behavior Coalescence (SBC) as a formal and unified definition of systems for MBSE. SBC defines a system as a single integrated entity in which structure and behavior are coalesced through interaction, providing both a conceptual foundation and a formal process-algebra framework. Well-formedness constraints ensure that interactions are structurally grounded and compositions are valid, enabling consistency by construction. Boundary processes, including 0 for terminal states and a checkpoint construct for paused or suspended states, allow inactive and intermediate states to be represented while preserving system unity. Illustrative examples and a Smart Healthcare IoT case study demonstrate how SBC supports sequential, parallel, and alternative behaviors while maintaining structural-behavioral coherence. SBC provides a foundation for formal verification, compositional modeling, and systematic inconsistency detection, connecting a rigorous definition of systems with practical MBSE applications.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Structure-Behavior Coalescence for Model-Based Systems Engineering",
+  "url": "https://arxiv.org/abs/2611.23255"
+}

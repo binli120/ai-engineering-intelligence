@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-19T17:21:58.199634Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "skill-roulette-measuring-skill-invocation-rate-across-llm-coding-agent-2e5d332cda",
+  "maturity": "unknown",
+  "published_at": "2026-11-19T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.23266v1 Announce Type: new Abstract: Agent skills package procedures for large language model (LLM) coding agents. An agent selects a skill from its name and description before reading the procedure. It may complete the task without invoking a relevant skill. We investigate how reliably coding agents invoke relevant skills and which factors affect that decision. We estimate invocation rates by repeating trials with identical inputs; invocation rate is the proportion of trials in which the agent invokes the relevant skill. We test 9 non-directional hypotheses about skill metadata, competing skills, contextual instructions, and task wording and composition. Eight concern invocation; the ninth tests whether making a skill available changes the occurrence of an action that the task does not request. We use tasks from 4 software engineering categories in a synthetic repository, running each of 4 coding-agent harnesses with 2 models. The planned 20,400 trials include 60 repetitions per Baseline category and configuration, 60 more per category in Claude Code with Sonnet 5.5 that admit each category's task and skill, and 10 per experimental condition. Comparisons are specified before collection and evaluated within each model and harness configuration using Boschloo's exact test.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Skill Roulette: Measuring Skill Invocation Rate Across LLM Coding Agents",
+  "url": "https://arxiv.org/abs/2611.23266"
+}

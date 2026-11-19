@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-19T17:21:58.199634Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "controlled-natural-language-for-requirements-specification-a-systemati-90fefefec6",
+  "maturity": "unknown",
+  "published_at": "2026-11-19T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.23259v1 Announce Type: new Abstract: Requirements are critical artifacts of the software development life-cycle. They express capabilities that the system should provide, guiding both the development and testing process. Given their significance, require- ments specification has attracted the interest of researchers and practitioners in recent years. Requirements specification is an activity where requirements are specified, i.e., documented. In this context, Controlled Natural Languages (CNL) were proposed as a compromise between the ambiguity of natural language and the complexity of formal languages. CNLs enable the specification of requirements using accurate statements that can be processed automatically, while remaining understandable by stakeholders. In this article, we perform a Systematic Literature Review (SLR) to identify, categorize, and compare CNL approaches for requirements specification. The SLR covers 133 primary studies published between 2000 and 2024. We evaluate them accord- ing to seven dimensions: context, scope, targeted requirements types, specification technique, tool support, validation method, and adoption. We provide a categorization framework that summarizes the evaluated dimensions, and we identify directions for future research. Our main results reveal: (1) four types of CNL: standalone templates, requirement patterns, elementary templates, and linguistic rules, (2) limited support for automated tools and domain vocabulary usage, and (3) lack of validation through case studies and limited adoption for the majority of approaches.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Controlled Natural Language for Requirements Specification: A Systematic Literature Review",
+  "url": "https://arxiv.org/abs/2611.23259"
+}

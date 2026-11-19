@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-19T17:21:58.199634Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "agent-native-applications-a-new-application-paradigm-ea5bdb05ed",
+  "maturity": "unknown",
+  "published_at": "2026-11-19T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.23243v1 Announce Type: new Abstract: Traditional application architectures assume behavioral logic authored in advance, leaving reachable behavior largely bounded by explicit code and workflow rules. Large language model (LLM)-based agents challenge this assumption by enabling runtime reasoning and autonomous action to become part of application behavior, allowing applications to address situations not enumerated at design time. Extending this pattern, this paper identifies a new application paradigm in which LLM-based agents serve as central reasoning and action components responsible for the application's core logic and, where permitted, for adapting the application graph itself at runtime. We call these agent-native applications. While such applications significantly expand their possible behavioral space beyond explicit code and workflow rules, they also face a major control problem in which useful agentic reasoning should be preserved while application behavior should remain within a permissible space. We therefore propose an architectural model that represents the application as a portable graph of agents, tools, data sources, and human-in-the-loop (HITL) checkpoints, and encodes the application's permitted behavior as a behavioral envelope within a declarative application specification. At runtime, an application orchestrator serves as the control plane that coordinates tasks and governs how the graph and its permissions evolve, while an agent mesh serves as the data plane that mediates policy-relevant interactions and produces audit events. We then discuss the trust layer that makes agent-native applications governable and the supporting foundations required for practical operation. Two use cases illustrate the architecture, while Agent-Native Runtime (ANR) demonstrates selected core mechanisms in an executable prototype.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Agent-Native Applications: A New Application Paradigm",
+  "url": "https://arxiv.org/abs/2611.23243"
+}

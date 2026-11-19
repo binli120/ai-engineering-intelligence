@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-19T17:21:58.199634Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "artificial-intelligence-in-finance-and-the-early-career-skills-shift-a-0c03e274c1",
+  "maturity": "unknown",
+  "published_at": "2026-11-19T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.23261v1 Announce Type: new Abstract: Artificial intelligence is becoming a general interaction and decision-support layer across finance. Banks use AI for research retrieval, document synthesis, meeting follow-up, customer service, coding, fraud detection, risk support, and increasingly multi-step workflows. This paper asks which parts of finance work can be delegated safely, which remain human-owned, and how education should change when AI compresses the tasks through which novices traditionally build judgment. It presents a structured evidence synthesis of research and public evidence released from 2023 through October 2026 across finance, labor economics, education, bank deployments, and financial regulation. Numerical results and deployment claims remain attributed to their original sources. Four connections emerge: AI is strongest at retrieval, transformation, coding, and first-pass analysis; financial institutions are moving toward constrained rather than unrestricted autonomy; productivity assistance can weaken apprenticeship when assisted output improves faster than unaided capability; and delegation should depend jointly on consequence, reversibility, verification strength, and operational resilience. The paper develops a Finance Work Stack, Decision Delegation Matrix, AI Apprenticeship Paradox, Apprenticeship Preservation Protocol, and Career Readiness Stack. It argues that useful financial AI must improve productivity without weakening accountability, human capability, cyber resilience, or the future talent pipeline.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Artificial Intelligence in Finance and the Early-Career Skills Shift: A Structured Evidence Synthesis of Decision Delegation, Bank Deployments, and Business Education",
+  "url": "https://arxiv.org/abs/2611.23261"
+}

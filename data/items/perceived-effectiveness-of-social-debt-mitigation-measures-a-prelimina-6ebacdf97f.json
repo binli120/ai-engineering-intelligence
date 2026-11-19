@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-19T17:21:58.199634Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "perceived-effectiveness-of-social-debt-mitigation-measures-a-prelimina-6ebacdf97f",
+  "maturity": "unknown",
+  "published_at": "2026-11-19T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.23263v1 Announce Type: new Abstract: Software engineering is a socio-technical discipline in which unresolved social and organizational problems accumulate as social debt, gradually eroding collaboration and project health. The literature offers a solid vocabulary for these problems but says little about which countermeasures practitioners consider effective. We address this gap with a vignette-based survey: six social debt problem dimensions (Organizational Silo, Newcomer Isolation, Communication Breakdown, Knowledge Bottleneck, Cultural and Geographical Distance, Psychological Safety Deficit) were presented as realistic team scenarios, and 23 IT professionals and advanced students rated 41 literature-derived mitigation measures. Rankings were analyzed with paired t-tests and a hierarchical Bayesian model that accounts for the within-subject design and yields, for each measure, the probability of being the best option in its scenario. Only for Communication Breakdown is the answer unambiguous: consolidating communication into a single primary channel is almost certainly preferred (P(best)=0.91). For the other five dimensions, the model identifies favorites with moderate evidence (P(best) between 0.38 and 0.58), such as structured knowledge transfer and blameless retrospectives. Across scenarios, structural measures that change how information, decisions, and knowledge are organized were rated higher than role-based or attitudinal measures (by 0.3 to 0.4 scale points), although not in every scenario. Given the small convenience sample, the results are exploratory, but they offer software engineering managers an evidence-graded starting point for selecting mitigation measures.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Perceived Effectiveness of Social Debt Mitigation Measures: A Preliminary Vignette-Based Survey",
+  "url": "https://arxiv.org/abs/2611.23263"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-19T17:21:58.199634Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "software-engineering-for-llm-based-agents-a-lifecycle-oriented-survey-b0fd6c32e8",
+  "maturity": "unknown",
+  "published_at": "2026-11-19T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.23260v1 Announce Type: new Abstract: Large language model (LLM)-based Agents perform tasks through tool use and interaction with external environments. Public engineering guidance commonly begins with a target task, selects a suitable workflow or autonomous Agent design, and refines prompts, tools, and execution strategies using task outcomes, latency, and cost. When delivered as software systems, Agents must also satisfy stakeholder requirements, action boundaries, quality checks, and maintenance needs. Model-directed execution can vary across runs, failures can span model decisions and tools, and changes to prompts, models, or interfaces can affect previously accepted behavior. This survey examines how LLM-based Agents are engineered across five software lifecycle stages: Requirements Engineering, Architecture and Design, Implementation and Integration, Testing and Assurance, and Maintenance and Evolution. Based on a main collection of 355 papers, we compare the engineering problems addressed, explain how methods and practices work, and examine their reported evaluations and limitations within each stage. We synthesize how existing research supports Agent development activities and identify open problems and research directions. The result is a lifecycle-oriented reference for understanding, selecting, and further developing methods for engineering Agent software.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Software Engineering for LLM-Based Agents: A Lifecycle-Oriented Survey",
+  "url": "https://arxiv.org/abs/2611.23260"
+}
