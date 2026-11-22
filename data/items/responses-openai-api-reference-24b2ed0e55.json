@@ -1,11 +1,11 @@
 {
   "category": "platform",
-  "collected_at": "2026-11-21T16:07:45.613634Z",
+  "collected_at": "2026-11-22T16:15:24.684034Z",
   "engineering_impact": 100,
   "evidence_quality": 90,
   "id": "responses-openai-api-reference-24b2ed0e55",
   "maturity": "stable",
-  "published_at": "2026-11-21T15:11:13Z",
+  "published_at": "2026-11-22T07:41:27Z",
   "source_id": "openai_responses_api_docs",
   "summary": "Current snapshot of OpenAI Responses API Documentation.",
   "tags": [
