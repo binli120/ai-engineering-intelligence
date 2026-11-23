@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-6g-capabilities-to-software-business-value-a-multivocal-review-of-c071d6e8a9",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.27675v1 Announce Type: new Abstract: Sixth-generation (6G) technology is expected to enable intelligent, autonomous, and software-defined ecosystems, creating new ways for software firms to generate value. However, evidence on the characteristics, opportunities, and challenges of 6G software businesses remains fragmented across academic and practitioner literature. We conducted a multivocal literature review of 133 sources (102 peer-reviewed studies and 31 grey literature sources) to examine this emerging landscape from the perspective of software-producing organizations. Thematic analysis identified 18 characteristics grouped into five themes, 32 business opportunities across eight themes, and 19 challenges and constraints across six themes. Three independent raters assessed the reliability of factor-to-theme classification, with Fleiss' kappa indicating substantial to almost perfect agreement (0.744 to 0.832). Findings suggest that value creation depends not only on technological capabilities but also on translating them into viable services and business models while addressing integration complexity, organizational and economic barriers, regulatory uncertainty, and security and sustainability concerns. The synthesis reveals that characteristics, opportunities, and challenges are interdependent dimensions of 6G software businesses. By integrating academic and practitioner evidence, this study provides a traceable foundation for future empirical research and strategic decision-making as 6G technologies, standards, and markets evolve.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From 6G Capabilities to Software-Business Value: A Multivocal Review of Characteristics, Opportunities, Challenges",
+  "url": "https://arxiv.org/abs/2611.27675"
+}

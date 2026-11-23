@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "perceived-differences-in-activity-and-experience-between-developing-so-8e426ff52c",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.27947v1 Announce Type: new Abstract: The fundamental changes in software engineering driven by generative AI will have profound effects not only on the number of available software engineering jobs but also on what software engineering itself looks like. As the career evolves, questions arise about what the skillset and interests of the next generation of software engineers will be and whether long-time engineers will continue to be attracted to the career. In this paper, we contribute to answering these questions by studying how software development with AI tools is perceived to differ from traditional development and how the differences are modulated by years of programming experience. We find that, in terms of programming activities, engineers report less talking with peers about technical problems, less decomposition, less searching of documentation, and less using a debugger, while they report more task switching. We also find experiential differences, including less deep focus and less sense of control over code and design. We call these the different craft results, in contrast to core code-production activities such as writing, refactoring, and fixing code, which show only small mean differences. We also find that these differences are amplified by years of programming experience (an experience gradient), with software engineers who started programming before the age of generative AI perceiving greater changes in both activity and developer experience. We discuss our findings and their implications on training of the next generation of engineers and on engineers who may have difficulty transitioning to the AI-infused world of software engineering.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Perceived Differences in Activity and Experience Between Developing Software With and Without AI",
+  "url": "https://arxiv.org/abs/2611.27947"
+}

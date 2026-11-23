@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "codereviewbench-an-automated-benchmark-for-evaluating-the-software-fac-4083af93b4",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.26942v1 Announce Type: cross Abstract: As AI agents ship more code with minimal human oversight, code review becomes the critical quality-control checkpoint -- but one without a reliable, objective verifier: review quality is nuanced and ultimately a judgment call by the PR author. Existing benchmarks are structurally misaligned with this: annotators are third-party reviewers, like the bots they evaluate, not the PR authors who actually decide what to fix. They also rely on small, static issue sets that require full re-evaluation as tools update, limiting how frequently progress can be tracked. We introduce CodeReviewBench, built on a fundamentally different signal: revealed developer preferences -- if a developer acts on a bot's suggestion, we treat it as useful; if they ignore it, we do not. This signal is mined daily from the public GitHub event stream, yielding 500K+ judged PRs across 18 tools, and refreshes continuously as tools evolve. We validate the developer preference against an independent offline benchmark: the two agree on precision rankings and independently detect the same product updates within days of vendor releases. Together, these form the benchmark.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "CodeReviewBench: An Automated Benchmark for Evaluating the Software Factory",
+  "url": "https://arxiv.org/abs/2611.26942"
+}

@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "run-one-get-two-near-free-streaming-safety-checks-for-local-llms-98953a6d2f",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2611.26975v1 Announce Type: new Abstract: Local LLM assistants decode for one user at a time, so decoding is bound by memory bandwidth and leaves compute idle. Streaming safety checks today trade accuracy against cost. A dedicated guard model is accurate but nearly doubles the latency per token, while a hidden-state probe is cheap but less accurate. We present ToRA, an adapter that runs a second model as an extra row in the generator's decode step, sharing its weights and KV cache. Dual-row kernels read each weight once for both rows. On Qwen3-0.6B, ToRA matches or beats a dedicated streaming guard, with higher F1 on 12 of 17 benchmarks. It detects 11.8 points more unsafe responses than the probe at a similar cost, under 4% added latency per token.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs",
+  "url": "https://arxiv.org/abs/2611.26975"
+}

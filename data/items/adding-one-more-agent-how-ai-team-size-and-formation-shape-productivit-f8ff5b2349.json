@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "adding-one-more-agent-how-ai-team-size-and-formation-shape-productivit-f8ff5b2349",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_ai",
+  "summary": "arXiv:2611.26663v1 Announce Type: new Abstract: Generative AI has improved individual productivity, but whether adding a plurality of AI partners helps or hurts remains open. We crossed AI partnership (one versus two) with behavioral formation (calibrated to average human behavior versus customized by the participant) in a brainstorming experiment ($N$=168) with human-human dyads as reference. Two-AI rooms posted more ideas to the shared board, but human-authored ideas dropped substantially. With one AI partner, formation mattered: humans paired with an average-calibrated AI posted more than any other condition. With two, this effect vanished. Humans continued talking but converted fewer ideas into board posts. AI social talk predicted more human posts, while AI posting volume predicted fewer. AI presence increased global diversity of human-authored ideas, but only a second AI increased within-session differentiation. The number of AI partners and their formation can reshape what the human contributes; single-agent results do not generalize to multi-agent teams.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Adding One More Agent: How AI Team Size and Formation Shape Productivity and Diversity in Human-AI Brainstorming Teams",
+  "url": "https://arxiv.org/abs/2611.26663"
+}

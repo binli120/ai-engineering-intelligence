@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "from-correctness-to-consistency-redefining-reliability-for-the-agentwa-4b1774388c",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.27829v1 Announce Type: new Abstract: The rise of \"vibe coding\" has marginalized requirements analysis, allowing unverified \"Make it Work\" assumptions to accumulate into complex defects that evade standard testing. In the absence of a reliable ground truth oracle, we advocate a paradigm shift from correctness verification to logic consistency. We introduce Differential Logic Analysis (DLA), a framework that utilizes Logical Inference to detect internal contradictions across parallel and sequential development workflows. Preliminary simulations demonstrate that DLA successfully intercepts logic drift, such as contradictions and unspecified assumptions, and offers a new perspective on reliability assessment in the AI-assistant development era.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "From Correctness to Consistency: Redefining Reliability for the Agentware Era",
+  "url": "https://arxiv.org/abs/2611.27829"
+}

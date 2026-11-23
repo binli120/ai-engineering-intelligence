@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "how-developers-split-roles-among-them-and-a-coding-agent-and-what-coll-80b2d98e26",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.26668v1 Announce Type: new Abstract: Background: Coding agents such as Claude Code become more and more competent, so that their role in the development process can grow. Objective: How do developers characterize the role-split between them and their agent? How would they ideally want to collaborate with their agent? Methods: We perform a 3-step, mixed-methods study. We apply qualitative open coding to 2025 early adopters' blog articles; perform a quantitative survey of 2026 practitioners; develop and apply a method for coding-agent-supported open coding of survey freetext responses. Results: The 2025 practitioners have the agent work in supporting roles only. Accountability was firmly human. In 2026, both are fundamentally still true. Gradually, however, the role-split is now different, with much more agent involvement. The developers' notion of collaboration has three facets: Predominantly a separation into human-only, agent-only, and collaborative work steps, with defined conditions and goals. Second, accommodating personal preferences without engineering justification. Third, a holistic view of collaboration covering the entire development process. Conclusions: Defining one's role relative to the agent will need to be a recurring activity. The different views on collaboration are likely a source of friction and conflict for teams; future work should find out how to cope with that.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "How developers split roles among them and a coding agent and what \"collaboration\" means",
+  "url": "https://arxiv.org/abs/2611.26668"
+}

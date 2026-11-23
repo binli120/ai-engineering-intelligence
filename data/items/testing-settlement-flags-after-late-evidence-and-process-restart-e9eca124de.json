@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "testing-settlement-flags-after-late-evidence-and-process-restart-e9eca124de",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.26665v1 Announce Type: new Abstract: A settlement flag can survive an application restart while the economic effects remain ambiguous. We define a contract linking the fixed plan, source admission at two cutoffs, identity-keyed ledger effects and post-invocation state. We generated 504 synthetic histories, ran each through a file implementation and a separately coded SQLite implementation, and observed 672 controlled process exits. The file implementation missed 54 same-identity payment-date conflicts, including 27 that credited cash early, and a monitor using run flags, artifact presence and purchase counts accepted all 54. The same contract distinguishes a purchase awaiting closure from a correct quote wait for a single writer on a running kernel and filesystem.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Testing Settlement Flags after Late Evidence and Process Restart",
+  "url": "https://arxiv.org/abs/2611.26665"
+}

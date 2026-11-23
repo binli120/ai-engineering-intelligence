@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "simulation-based-testing-of-rcm-constrained-robotic-software-via-task-b1132c2a00",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.27144v1 Announce Type: new Abstract: System-level testing of surgical robots requires generating executable test scenarios that exercise diverse, safety-critical behaviors. However, remote-center-of-motion (RCM) surgical manipulators operate within tightly constrained workspaces governed by coupled task geometry, inverse kinematics, and motor limits. Direct sampling in motor-command or Cartesian spaces frequently wastes testing budgets on physically unfeasible configurations. To address this limitation, we present a manifold-centered testing framework that decouples feasible test-domain construction from downstream test-generation strategies. Candidate inputs are generated directly within this constructed feasible domain and mapped to lower-level joint commands for simulation execution. Offline trajectory safety oracles and a spatial reference grid then evaluate failure yield and coverage. We compare our task-manifold representation against Cartesian XYZ and principal component analysis (PCA) under random testing, systematic traversal, and genetic search strategies. Results demonstrate that the feasible task domain improves test-generation efficiency and enables systematic reference-cell coverage. Crucially, random and genetic search strategies detect a broader spectrum of failure patterns than baseline representations, revealing that complete reference-cell coverage alone does not exhaust intra-cell behavioral dynamics. Furthermore, differential testing between defective and patched controller versions reveals that targeted evolutionary search detects aggregate failure-rate shifts from software repairs. Finally, a cross-platform study on a 7-DoF Kinova Gen3 arm in MoveIt 2 confirms workflow transferability to kinematically redundant manipulators. Together, these findings highlight the necessity of combining feasibility-aware domain modeling with complementary search strategies for systematic testing of robot software.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Simulation-Based Testing of RCM-Constrained Robotic Software via Task Manifolds",
+  "url": "https://arxiv.org/abs/2611.27144"
+}

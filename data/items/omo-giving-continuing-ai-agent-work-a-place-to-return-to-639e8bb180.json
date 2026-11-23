@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "omo-giving-continuing-ai-agent-work-a-place-to-return-to-639e8bb180",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.27107v1 Announce Type: new Abstract: AI coding agents now keep working while the people who started them are away. Coming back is the hard part: a session list tells you which agent is where, but not what it was asked to do, what it changed, or what to tell it next. We present Omo, which gives each piece of continuing agent work a persistent place to return to. We built the idea twice. Omo Space is an open-source Minecraft mod in which rooms and screens that people build are live terminals on their own machine. Omo Theia brings the same rooms and desks into a customizable IDE, one step away from the editor and the Git patch. Both keep agent sessions running on the host after the view is closed. We describe the two systems, four lessons from building them, and a study designed to test whether returning to a place helps people pick up agent work correctly.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Omo: Giving Continuing AI-Agent Work a Place to Return To",
+  "url": "https://arxiv.org/abs/2611.27107"
+}

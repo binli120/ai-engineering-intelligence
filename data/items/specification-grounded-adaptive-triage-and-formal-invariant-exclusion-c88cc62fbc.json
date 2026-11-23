@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-23T20:12:11.498214Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "specification-grounded-adaptive-triage-and-formal-invariant-exclusion-c88cc62fbc",
+  "maturity": "unknown",
+  "published_at": "2026-11-23T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.26815v1 Announce Type: cross Abstract: Closing the final 5%-15% of code and functional coverage remains a major schedule bottleneck in silicon tapeouts. Existing LLM-based coverage closure loops feed raw uncovered RTL lines or branches directly into iterative prompts, failing on industrial subsystems due to: (1) token and context explosion from querying thousands of correlated holes independently; (2) illegal stimulus that violates cross-signal invariants and yields dirty coverage; and (3) unsafe exclusion hallucination on structurally unreachable dead code. We present ARGUS (Autonomous Reachability & Guided Unified Stimulus), a specification-grounded, dual-regime coverage closure and formal exclusion synthesis engine. ARGUS mines microarchitectural specs and SystemVerilog Assertions into a formal Block Contract (C), then runs adaptive Macro-Clustering vs. Micro-Surgery triage gated by a per-module hole-density threshold (tau): dense modules collapse correlated holes into root-cause mode, FSM, and backpressure clusters, while sparse modules use AST and loop-domain reachability to separate reachable corners from provably unreachable invariants. Directed tests pair with bit-exact golden scoreboards, and unreachable invariants emit tool-native .el exclusions with formal proofs. Across five core benchmarks -- three open-source LowRISC OpenTitan IPs (uart_core, i2c_core, aes_cipher_core) and two commercial AI accelerator Tensor Layout Converter datapaths (53 SV modules, 376,127 coverage points) -- plus a 2,626-module industrial interconnect subsystem, ARGUS triages 2,626 modules in 0.265 s, cuts token usage by 27.2x to >180x, achieves zero dirty merges via 3-step sanity gating, and reaches 99.32%-100.0% effective coverage with 0 false exclusions across 21,071+ proven exclusions.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Specification-Grounded Adaptive Triage and Formal Invariant Exclusion Synthesis for Autonomous Silicon Coverage Closure",
+  "url": "https://arxiv.org/abs/2611.26815"
+}
