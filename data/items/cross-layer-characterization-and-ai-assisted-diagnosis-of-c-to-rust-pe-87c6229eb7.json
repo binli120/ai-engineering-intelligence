@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-26T18:24:58.551054Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "cross-layer-characterization-and-ai-assisted-diagnosis-of-c-to-rust-pe-87c6229eb7",
+  "maturity": "unknown",
+  "published_at": "2026-11-26T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2611.33490v1 Announce Type: cross Abstract: Migrating C code to Rust can significantly improve software security, but understanding the performance implications of such migrations remains challenging. While Rust is often claimed to match C's performance, runtime safety checks, compiler optimizations, and hardware microarchitecture interact in ways that complicate performance diagnosis. We first conduct a systematic cross-layer characterization of 12 benchmarks comprising C implementations and their Rust counterparts. Our study reveals that runtime safety checks do not necessarily dominate performance overhead, as compiler and microarchitectural optimizations often mitigate their costs. Across 8 of the 12 benchmarks, at least one Rust implementation performs within 10% of its C counterpart or outperforms it. Motivated by these findings, we introduce FerroScope, an AI-assisted performance debugger that integrates source-level analysis, compiler optimization remarks, dynamic instruction traces, and hardware performance counters to diagnose performance differences between C and Rust. FerroScope reproduces our manual findings while providing more precise explanations in several cases, including identifying compiler optimizations inhibited by redundant bounds checks. Guided by these diagnoses, we develop an LLVM compiler pass that hoists redundant bounds checks through guarded loop versioning while preserving Rust's panic behavior. The pass enables downstream compiler optimizations, including loop unrolling and conditional-move conversion, reducing Selection Sort's overhead from 2.95x to 1.00x and improving Merge Sort from 1.43x to 0.91x relative to C. Together, our results demonstrate how cross-layer performance characterization and AI-assisted diagnosis can guide safety-preserving compiler optimizations for efficient C-to-Rust migration.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Cross-Layer Characterization and AI-Assisted Diagnosis of C-to-Rust Performance",
+  "url": "https://arxiv.org/abs/2611.33490"
+}

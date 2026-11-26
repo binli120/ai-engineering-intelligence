@@ -1,0 +1,17 @@
+{
+  "category": "research",
+  "collected_at": "2026-11-26T18:24:58.551054Z",
+  "engineering_impact": 60,
+  "evidence_quality": 90,
+  "id": "agent-calibration-under-deployment-change-acceptance-contracts-traject-1b3cebab26",
+  "maturity": "unknown",
+  "published_at": "2026-11-26T05:00:00Z",
+  "source_id": "arxiv_cs_se",
+  "summary": "arXiv:2609.35149v4 Announce Type: replace-cross Abstract: An agent can remain operational after a model, tool, or user-context change while losing capabilities required at its destination. We define agent calibration as qualification against a versioned deployment contract. The contract specifies basic capabilities and end-to-end reachability, technical and professional precision, and acceptance by intended users. For each requirement, a source-to-destination map records what must be preserved, transformed, added, or retired. Experts supply benchmarks, positive and negative examples, annotated trajectories, and cost limits. These instruments guide changes to prompts and context, tool calls and other harness settings, or an external compact policy while the foundation model remains frozen. Candidate revisions are evaluated against fixed acceptance criteria using independent evidence. We compare the costs of maintaining a harness with and without an external policy, including annotation, training, serving, review, and rework. Three diagnostic audits illustrate the limits of aggregate scores. On a 100-item intent task, each model solved cases the other missed. In a 60-record synthetic financial reporting fixture, five records passed a numeric proxy but failed the reporting contract. In a target-only WebMall snapshot, quota interruptions affected 132 of 171 attempts. These observations motivate paired reruns, checkpoint replay, and separate measurement of repaired and newly failed cases. We specify controlled experiments to test whether calibration increases accepted deliveries at a given cost.",
+  "tags": [
+    "research",
+    "rss"
+  ],
+  "title": "Agent Calibration under Deployment Change: Acceptance Contracts, Trajectory Repair, and Adaptation Costs",
+  "url": "https://arxiv.org/abs/2609.35149"
+}
